@@ -1,7 +1,7 @@
 {
   "generated": "2026-04-08",
-  "total_properties": 1141,
-  "total_competitors": 24,
+  "total_properties": 1209,
+  "total_competitors": 26,
   "current": [
     {
       "competitor": "Garnsey Brothers",
@@ -176,6 +176,29 @@
       ]
     },
     {
+      "competitor": "KMA Property Group",
+      "platform": "kma_custom",
+      "count": 40,
+      "with_address": 40,
+      "cities": [
+        "Acton",
+        "Alfred",
+        "Barnstead",
+        "Bartlett",
+        "Jackson",
+        "Kennebunk",
+        "Newfield",
+        "Ogunquit",
+        "Rye",
+        "Scarborough",
+        "Shapleigh",
+        "Waterboro",
+        "Wells",
+        "Wildwood Gables",
+        "York"
+      ]
+    },
+    {
       "competitor": "Ogunquit Rental Properties",
       "platform": "ogunquit_custom",
       "count": 36,
@@ -216,6 +239,28 @@
         "Ogunquit",
         "Wells",
         "York"
+      ]
+    },
+    {
+      "competitor": "TopHost Vacation Rentals",
+      "platform": "hospitable",
+      "count": 28,
+      "with_address": 28,
+      "cities": [
+        "Biddeford",
+        "Cumberland",
+        "Falmouth",
+        "Greenville",
+        "Harrison",
+        "Kennebunkport",
+        "Naples",
+        "Newry",
+        "Portland",
+        "Saco",
+        "Scarborough",
+        "South Portland",
+        "Wells",
+        "Westbrook"
       ]
     },
     {
@@ -385,6 +430,7 @@
       "Garnsey Brothers": 89,
       "Goose Rocks Beach Rentals": 47,
       "Jean Knapp Rentals": 47,
+      "KMA Property Group": 40,
       "KPT Luxury Properties": 29,
       "KPort Concierge": 54,
       "Kennebunk Beach Realty": 19,
@@ -400,6 +446,7 @@
       "Seagrass Property Rentals": 31,
       "Seashore Property Management": 25,
       "Tamarack Rentals": 52,
+      "TopHost Vacation Rentals": 28,
       "Vacasa": 88
     }
   },
@@ -490,6 +537,16 @@
         "all_time_change": 1,
         "all_time_pct": 2.2,
         "trend": "stable"
+      },
+      "KMA Property Group": {
+        "current": 40,
+        "wow_prev": 0,
+        "wow_change": 40,
+        "wow_pct": null,
+        "first": 0,
+        "all_time_change": 40,
+        "all_time_pct": null,
+        "trend": "growing"
       },
       "KPT Luxury Properties": {
         "current": 29,
@@ -641,6 +698,16 @@
         "all_time_pct": 0.0,
         "trend": "stable"
       },
+      "TopHost Vacation Rentals": {
+        "current": 28,
+        "wow_prev": 0,
+        "wow_change": 28,
+        "wow_pct": null,
+        "first": 0,
+        "all_time_change": 28,
+        "all_time_pct": null,
+        "trend": "growing"
+      },
       "Vacasa": {
         "current": 88,
         "wow_prev": 88,
@@ -652,7 +719,30 @@
         "trend": "stable"
       }
     },
-    "growing": [],
+    "growing": [
+      {
+        "name": "KMA Property Group",
+        "current": 40,
+        "wow_prev": 0,
+        "wow_change": 40,
+        "wow_pct": null,
+        "first": 0,
+        "all_time_change": 40,
+        "all_time_pct": null,
+        "trend": "growing"
+      },
+      {
+        "name": "TopHost Vacation Rentals",
+        "current": 28,
+        "wow_prev": 0,
+        "wow_change": 28,
+        "wow_pct": null,
+        "first": 0,
+        "all_time_change": 28,
+        "all_time_pct": null,
+        "trend": "growing"
+      }
+    ],
     "declining": [],
     "stable": [
       {
@@ -2328,8 +2418,414 @@
     }
   },
   "listing_changes": {
-    "dates": {},
-    "total_gained": 0,
+    "dates": {
+      "2026-04-08": {
+        "gained": [
+          {
+            "property_name": "21 Surf KBK",
+            "address": "21 Surf Lane",
+            "city": "Kennebunk",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "AMV \u00b7 Family Friendly Studio",
+            "address": "River Run Drive",
+            "city": "Bartlett",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Beaulieu Ln Cottage",
+            "address": "5 Beaulieu Ln",
+            "city": "York",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Birchlea Loop #5",
+            "address": "5 Birchlea Loop",
+            "city": "Bartlett",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Camp S'mores",
+            "address": "151 Granny Kent Pond",
+            "city": "Shapleigh",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Cara Mara 309",
+            "address": "6701 Atlantic Ave",
+            "city": "Wildwood Gables",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Cornish Cottage ",
+            "address": "3 Cornish Avenue",
+            "city": "York",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "District of Maine",
+            "address": "112 Highland Avenue",
+            "city": "Ogunquit",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Drift Haus on Estes",
+            "address": "49 Branch View Terrace",
+            "city": "Alfred",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Eagle's Landing",
+            "address": "81 Eagle Rd",
+            "city": "Acton",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Unit A",
+            "address": "14 Hovey Street",
+            "city": "Kennebunk",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Unit B",
+            "address": "14 Hovey Street",
+            "city": "Kennebunk",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Whole House",
+            "address": "14 Hovey Street",
+            "city": "Kennebunk",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Lakefront Retreat",
+            "address": "176 Onamor Drive",
+            "city": "Newfield",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Locke Lake Oasis",
+            "address": "18 Belmont Drive",
+            "city": "Barnstead",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Main Squeeze",
+            "address": "83 Main Street",
+            "city": "York",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Morning View Cottage",
+            "address": "159 Crescent Drive",
+            "city": "Waterboro",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Nautical Mile 217",
+            "address": "1072 Post Road",
+            "city": "Wells",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Nautical Mile 234",
+            "address": "1072 Post Road",
+            "city": "Wells",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Nautical Mile 239",
+            "address": "1072 Post Road",
+            "city": "Wells",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Ogunquit Place",
+            "address": "297 Main St",
+            "city": "Ogunquit",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Ogunquit Place",
+            "address": "297 Main St",
+            "city": "Ogunquit",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Rock Haven Cottage",
+            "address": "114 Onamor Drive",
+            "city": "Newfield",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Rye by the Beach",
+            "address": "1300 Ocean Blvd",
+            "city": "Rye",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Rye by the Beach",
+            "address": "1300 Ocean Blvd",
+            "city": "Rye",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Rye by the Beach #3",
+            "address": "1300 Ocean Blvd",
+            "city": "Rye",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Sunny Knoll",
+            "address": "22 Freeman Street",
+            "city": "York",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "The Alpine Nest",
+            "address": "18 Lucas Lane",
+            "city": "Jackson",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "The Beached Whale",
+            "address": "23 Grenier Lane",
+            "city": "Wells",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "The Hill",
+            "address": "91 Shore Road ",
+            "city": "York",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "The Shore Escape",
+            "address": "177 Shore Road Unit #3",
+            "city": "Ogunquit",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "The Timeless Retreat",
+            "address": "11 Hovey Street",
+            "city": "Kennebunk",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Tidepools Retreat",
+            "address": "236 Long Sands Road",
+            "city": "York",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Time of Wonder",
+            "address": " 63 Shore Road",
+            "city": "Alfred",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Tree Bear",
+            "address": "18 Diamond Dr",
+            "city": "Waterboro",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Paulee Suites",
+            "address": "182 East Grand Avenue ",
+            "city": "Scarborough",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Paulee Suites",
+            "address": "182 East Grand Avenue ",
+            "city": "Scarborough",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Wellington Manor 233",
+            "address": "1762 Post Rd Unit 233",
+            "city": "Wells",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Paulee Suites",
+            "address": "182 East Grand Avenue ",
+            "city": null,
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          },
+          {
+            "property_name": "Willow Creek Homestead",
+            "address": "5 Roberts Pond Road",
+            "city": "Alfred",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-04-08"
+          }
+        ],
+        "lost": []
+      }
+    },
+    "total_gained": 40,
     "total_lost": 0
   }
 }
