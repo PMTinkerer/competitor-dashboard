@@ -137,6 +137,7 @@
     <div class="tabs">
       <div class="tab active" data-tab="competitors">Competitors</div>
       <div class="tab" data-tab="franchise">Grand Welcome Locations</div>
+      <div class="tab" data-tab="changes">Listing Changes</div>
     </div>
 
     <!-- ==================== COMPETITORS TAB ==================== -->
@@ -248,6 +249,30 @@
           <tfoot id="f-detail-footer"></tfoot>
         </table>
       </div>
+    </div>
+
+    <!-- ==================== LISTING CHANGES TAB ==================== -->
+    <div class="tab-content" id="tab-changes">
+      <div class="stats">
+        <div class="stat-card">
+          <div class="label">Total Gained (All Time)</div>
+          <div class="value change-up" id="lc-total-gained">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Total Lost (All Time)</div>
+          <div class="value change-down" id="lc-total-lost">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Net Change</div>
+          <div class="value" id="lc-net">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Dates Tracked</div>
+          <div class="value" id="lc-dates">-</div>
+        </div>
+      </div>
+
+      <div id="lc-timeline"></div>
     </div>
   </div>
 
@@ -374,6 +399,7 @@
       document.getElementById('last-updated').textContent = data.generated;
       renderCompetitors(data);
       renderFranchise(data.franchise);
+      renderListingChanges(data.listing_changes);
     }
 
     // ==================== COMPETITORS ====================
@@ -614,6 +640,89 @@
         <td class="num">${totalBR.toLocaleString()}</td>
         <td></td><td></td><td></td><td></td>
       </tr>`;
+    }
+
+    // ==================== LISTING CHANGES ====================
+    function renderListingChanges(lc) {
+      if (!lc || (!lc.total_gained && !lc.total_lost)) {
+        document.getElementById('lc-total-gained').textContent = '0';
+        document.getElementById('lc-total-lost').textContent = '0';
+        document.getElementById('lc-net').textContent = '0';
+        document.getElementById('lc-dates').textContent = '0';
+        document.getElementById('lc-timeline').innerHTML = `
+          <div class="chart-container">
+            <h2>Change Log</h2>
+            <p style="color:var(--muted);padding:24px 0">No listing changes recorded yet. Changes will appear after the next weekly scrape detects gained or lost properties.</p>
+          </div>`;
+        return;
+      }
+
+      const dates = Object.keys(lc.dates).sort().reverse();
+      const net = lc.total_gained - lc.total_lost;
+      document.getElementById('lc-total-gained').textContent = lc.total_gained;
+      document.getElementById('lc-total-lost').textContent = lc.total_lost;
+      const netEl = document.getElementById('lc-net');
+      netEl.textContent = (net >= 0 ? '+' : '') + net;
+      netEl.className = 'value ' + (net > 0 ? 'change-up' : net < 0 ? 'change-down' : 'change-flat');
+      document.getElementById('lc-dates').textContent = dates.length;
+
+      let html = '';
+      dates.forEach(d => {
+        const day = lc.dates[d];
+        const gained = day.gained || [];
+        const lost = day.lost || [];
+
+        html += `<div class="chart-container" style="margin-bottom:16px">
+          <h2 style="display:flex;justify-content:space-between;align-items:center">
+            ${d}
+            <span style="font-size:0.8rem;font-weight:400">
+              ${gained.length ? `<span class="change-up">+${gained.length} gained</span>` : ''}
+              ${gained.length && lost.length ? ' &nbsp;/&nbsp; ' : ''}
+              ${lost.length ? `<span class="change-down">-${lost.length} lost</span>` : ''}
+            </span>
+          </h2>`;
+
+        if (lost.length) {
+          html += `<div style="margin-top:12px">
+            <div style="font-size:0.75rem;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Lost Listings</div>
+            <table><thead><tr>
+              <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th><th>Last Seen</th>
+            </tr></thead><tbody>`;
+          lost.forEach(item => {
+            html += `<tr>
+              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${item.property_name || '-'}</td>
+              <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
+              <td>${item.city || '-'}</td>
+              <td><span class="badge">${item.competitor}</span></td>
+              <td class="num">${item.bedrooms || '-'}</td>
+              <td style="color:var(--muted)">${item.date_last_seen || '-'}</td>
+            </tr>`;
+          });
+          html += '</tbody></table></div>';
+        }
+
+        if (gained.length) {
+          html += `<div style="margin-top:${lost.length ? '16' : '12'}px">
+            <div style="font-size:0.75rem;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Gained Listings</div>
+            <table><thead><tr>
+              <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th>
+            </tr></thead><tbody>`;
+          gained.forEach(item => {
+            html += `<tr>
+              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${item.property_name || '-'}</td>
+              <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
+              <td>${item.city || '-'}</td>
+              <td><span class="badge">${item.competitor}</span></td>
+              <td class="num">${item.bedrooms || '-'}</td>
+            </tr>`;
+          });
+          html += '</tbody></table></div>';
+        }
+
+        html += '</div>';
+      });
+
+      document.getElementById('lc-timeline').innerHTML = html;
     }
 
     load();

@@ -2326,5 +2326,10 @@
         }
       ]
     }
+  },
+  "listing_changes": {
+    "dates": {},
+    "total_gained": 0,
+    "total_lost": 0
   }
 }
