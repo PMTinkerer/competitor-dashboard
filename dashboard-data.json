@@ -466,7 +466,7 @@
         "first": 47,
         "all_time_change": 1,
         "all_time_pct": 2.1,
-        "trend": "stable"
+        "trend": "growing"
       },
       "Bayley Vacation Rentals": {
         "current": 53,
@@ -496,7 +496,7 @@
         "first": 49,
         "all_time_change": 3,
         "all_time_pct": 6.1,
-        "trend": "stable"
+        "trend": "growing"
       },
       "Evolve Vacation Rentals": {
         "current": 69,
@@ -506,7 +506,7 @@
         "first": 0,
         "all_time_change": 69,
         "all_time_pct": null,
-        "trend": "stable"
+        "trend": "growing"
       },
       "Garnsey Brothers": {
         "current": 89,
@@ -516,7 +516,7 @@
         "first": 88,
         "all_time_change": 1,
         "all_time_pct": 1.1,
-        "trend": "stable"
+        "trend": "growing"
       },
       "Goose Rocks Beach Rentals": {
         "current": 47,
@@ -526,7 +526,7 @@
         "first": 0,
         "all_time_change": 47,
         "all_time_pct": null,
-        "trend": "stable"
+        "trend": "growing"
       },
       "Jean Knapp Rentals": {
         "current": 47,
@@ -536,7 +536,7 @@
         "first": 46,
         "all_time_change": 1,
         "all_time_pct": 2.2,
-        "trend": "stable"
+        "trend": "growing"
       },
       "KMA Property Group": {
         "current": 40,
@@ -556,7 +556,7 @@
         "first": 0,
         "all_time_change": 29,
         "all_time_pct": null,
-        "trend": "stable"
+        "trend": "growing"
       },
       "KPort Concierge": {
         "current": 54,
@@ -586,7 +586,7 @@
         "first": 0,
         "all_time_change": 25,
         "all_time_pct": null,
-        "trend": "stable"
+        "trend": "growing"
       },
       "Maine Seaside Rentals": {
         "current": 77,
@@ -626,7 +626,7 @@
         "first": 0,
         "all_time_change": 72,
         "all_time_pct": null,
-        "trend": "stable"
+        "trend": "growing"
       },
       "Ogunquit Rental Properties": {
         "current": 36,
@@ -636,7 +636,7 @@
         "first": 0,
         "all_time_change": 36,
         "all_time_pct": null,
-        "trend": "stable"
+        "trend": "growing"
       },
       "Saco Bay Rentals": {
         "current": 25,
@@ -721,6 +721,39 @@
     },
     "growing": [
       {
+        "name": "Ocean Park Realty",
+        "current": 72,
+        "wow_prev": 72,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 0,
+        "all_time_change": 72,
+        "all_time_pct": null,
+        "trend": "growing"
+      },
+      {
+        "name": "Evolve Vacation Rentals",
+        "current": 69,
+        "wow_prev": 69,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 0,
+        "all_time_change": 69,
+        "all_time_pct": null,
+        "trend": "growing"
+      },
+      {
+        "name": "Goose Rocks Beach Rentals",
+        "current": 47,
+        "wow_prev": 47,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 0,
+        "all_time_change": 47,
+        "all_time_pct": null,
+        "trend": "growing"
+      },
+      {
         "name": "KMA Property Group",
         "current": 40,
         "wow_prev": 0,
@@ -728,6 +761,28 @@
         "wow_pct": null,
         "first": 0,
         "all_time_change": 40,
+        "all_time_pct": null,
+        "trend": "growing"
+      },
+      {
+        "name": "Ogunquit Rental Properties",
+        "current": 36,
+        "wow_prev": 36,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 0,
+        "all_time_change": 36,
+        "all_time_pct": null,
+        "trend": "growing"
+      },
+      {
+        "name": "KPT Luxury Properties",
+        "current": 29,
+        "wow_prev": 29,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 0,
+        "all_time_change": 29,
         "all_time_pct": null,
         "trend": "growing"
       },
@@ -741,10 +796,29 @@
         "all_time_change": 28,
         "all_time_pct": null,
         "trend": "growing"
-      }
-    ],
-    "declining": [],
-    "stable": [
+      },
+      {
+        "name": "Luxury Maine Rentals",
+        "current": 25,
+        "wow_prev": 25,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 0,
+        "all_time_change": 25,
+        "all_time_pct": null,
+        "trend": "growing"
+      },
+      {
+        "name": "Coastline Vacation Rentals",
+        "current": 52,
+        "wow_prev": 52,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 49,
+        "all_time_change": 3,
+        "all_time_pct": 6.1,
+        "trend": "growing"
+      },
       {
         "name": "Anchor Real Estate Rentals",
         "current": 48,
@@ -754,8 +828,33 @@
         "first": 47,
         "all_time_change": 1,
         "all_time_pct": 2.1,
-        "trend": "stable"
+        "trend": "growing"
       },
+      {
+        "name": "Garnsey Brothers",
+        "current": 89,
+        "wow_prev": 89,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 88,
+        "all_time_change": 1,
+        "all_time_pct": 1.1,
+        "trend": "growing"
+      },
+      {
+        "name": "Jean Knapp Rentals",
+        "current": 47,
+        "wow_prev": 47,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 46,
+        "all_time_change": 1,
+        "all_time_pct": 2.2,
+        "trend": "growing"
+      }
+    ],
+    "declining": [],
+    "stable": [
       {
         "name": "Bayley Vacation Rentals",
         "current": 53,
@@ -779,72 +878,6 @@
         "trend": "stable"
       },
       {
-        "name": "Coastline Vacation Rentals",
-        "current": 52,
-        "wow_prev": 52,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 49,
-        "all_time_change": 3,
-        "all_time_pct": 6.1,
-        "trend": "stable"
-      },
-      {
-        "name": "Evolve Vacation Rentals",
-        "current": 69,
-        "wow_prev": 69,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 0,
-        "all_time_change": 69,
-        "all_time_pct": null,
-        "trend": "stable"
-      },
-      {
-        "name": "Garnsey Brothers",
-        "current": 89,
-        "wow_prev": 89,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 88,
-        "all_time_change": 1,
-        "all_time_pct": 1.1,
-        "trend": "stable"
-      },
-      {
-        "name": "Goose Rocks Beach Rentals",
-        "current": 47,
-        "wow_prev": 47,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 0,
-        "all_time_change": 47,
-        "all_time_pct": null,
-        "trend": "stable"
-      },
-      {
-        "name": "Jean Knapp Rentals",
-        "current": 47,
-        "wow_prev": 47,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 46,
-        "all_time_change": 1,
-        "all_time_pct": 2.2,
-        "trend": "stable"
-      },
-      {
-        "name": "KPT Luxury Properties",
-        "current": 29,
-        "wow_prev": 29,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 0,
-        "all_time_change": 29,
-        "all_time_pct": null,
-        "trend": "stable"
-      },
-      {
         "name": "KPort Concierge",
         "current": 54,
         "wow_prev": 54,
@@ -864,17 +897,6 @@
         "first": 19,
         "all_time_change": 0,
         "all_time_pct": 0.0,
-        "trend": "stable"
-      },
-      {
-        "name": "Luxury Maine Rentals",
-        "current": 25,
-        "wow_prev": 25,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 0,
-        "all_time_change": 25,
-        "all_time_pct": null,
         "trend": "stable"
       },
       {
@@ -908,28 +930,6 @@
         "first": 20,
         "all_time_change": 0,
         "all_time_pct": 0.0,
-        "trend": "stable"
-      },
-      {
-        "name": "Ocean Park Realty",
-        "current": 72,
-        "wow_prev": 72,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 0,
-        "all_time_change": 72,
-        "all_time_pct": null,
-        "trend": "stable"
-      },
-      {
-        "name": "Ogunquit Rental Properties",
-        "current": 36,
-        "wow_prev": 36,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 0,
-        "all_time_change": 36,
-        "all_time_pct": null,
         "trend": "stable"
       },
       {
@@ -1972,19 +1972,19 @@
       },
       "growing": [
         {
-          "name": "Austin",
-          "current": 72,
-          "first": 71,
-          "all_time_change": 1,
-          "all_time_pct": 1.4,
-          "trend": "growing"
-        },
-        {
           "name": "Branson",
           "current": 389,
           "first": 386,
           "all_time_change": 3,
           "all_time_pct": 0.8,
+          "trend": "growing"
+        },
+        {
+          "name": "Austin",
+          "current": 72,
+          "first": 71,
+          "all_time_change": 1,
+          "all_time_pct": 1.4,
           "trend": "growing"
         },
         {

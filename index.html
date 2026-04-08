@@ -184,7 +184,7 @@
               <th>Platform</th>
               <th style="text-align:right">Properties</th>
               <th style="text-align:right">Coverage</th>
-              <th style="text-align:right">W/W</th>
+              <th style="text-align:right">M/M</th>
               <th style="text-align:right">All-Time</th>
               <th>Trend</th>
             </tr>
@@ -240,7 +240,7 @@
               <th style="text-align:right">Properties</th>
               <th style="text-align:right">Total BR</th>
               <th style="text-align:right">Avg BR</th>
-              <th style="text-align:right">W/W</th>
+              <th style="text-align:right">M/M</th>
               <th style="text-align:right">All-Time</th>
               <th>Trend</th>
             </tr>
@@ -325,10 +325,11 @@
       }
 
       const compDates = trends.comparison_dates;
-      const window = compDates.month_ago ? 'month' : compDates.week_ago ? 'week' : 'all-time';
-      const changeKey = compDates.month_ago ? 'mom_change' : compDates.week_ago ? 'wow_change' : 'all_time_change';
-      const pctKey = compDates.month_ago ? 'mom_pct' : compDates.week_ago ? 'wow_pct' : 'all_time_pct';
-      const windowLabel = compDates.month_ago ? 'vs. last month' : compDates.week_ago ? 'vs. last week' : 'since first scrape';
+      // Prefer month-over-month, then fall back to all-time (most useful with limited data)
+      const hasMonth = compDates.month_ago;
+      const changeKey = hasMonth ? 'mom_change' : 'all_time_change';
+      const pctKey = hasMonth ? 'mom_pct' : 'all_time_pct';
+      const windowLabel = hasMonth ? 'vs. last month' : `since ${compDates.first}`;
 
       let html = '';
 
@@ -510,7 +511,7 @@
           <td><span class="badge">${c.platform}</span></td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${c.count}</span></td>
           <td class="num"><span class="coverage ${cls}">${pct}%</span></td>
-          <td class="num">${changeHtml(t.wow_change, t.wow_pct)}</td>
+          <td class="num">${changeHtml(t.mom_change != null ? t.mom_change : t.all_time_change, t.mom_pct != null ? t.mom_pct : t.all_time_pct)}</td>
           <td class="num">${changeHtml(t.all_time_change, t.all_time_pct)}</td>
           <td>${t.trend ? `<span class="trend-badge ${t.trend}">${t.trend}</span>` : ''}</td>
         </tr>`;
@@ -633,7 +634,7 @@
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${l.property_count}</span></td>
           <td class="num">${l.total_bedrooms || '-'}</td>
           <td class="num">${l.avg_bedrooms || '-'}</td>
-          <td class="num">${changeHtml(t.wow_change, t.wow_pct)}</td>
+          <td class="num">${changeHtml(t.mom_change != null ? t.mom_change : t.all_time_change, t.mom_pct != null ? t.mom_pct : t.all_time_pct)}</td>
           <td class="num">${changeHtml(t.all_time_change, t.all_time_pct)}</td>
           <td>${t.trend ? `<span class="trend-badge ${t.trend}">${t.trend}</span>` : ''}</td>
         </tr>`;
