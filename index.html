@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Competitor Inventory Dashboard</title>
+  <title>STR Intelligence Dashboard</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
   <style>
     :root {
@@ -27,7 +27,34 @@
       margin: 0 auto;
     }
     h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 4px; }
-    .subtitle { color: var(--muted); font-size: 0.875rem; margin-bottom: 24px; }
+    .subtitle { color: var(--muted); font-size: 0.875rem; margin-bottom: 20px; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      user-select: none;
+    }
+    .tab:hover { color: var(--text); }
+    .tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Shared */
     .stats {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -42,6 +69,7 @@
     }
     .stat-card .label { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
     .stat-card .value { font-size: 1.75rem; font-weight: 700; margin-top: 4px; }
+    .stat-card .detail { color: var(--muted); font-size: 0.75rem; margin-top: 2px; }
     .chart-container {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -51,6 +79,7 @@
     }
     .chart-container h2 { font-size: 1rem; font-weight: 600; margin-bottom: 16px; }
     .chart-wrapper { position: relative; height: 350px; }
+    .chart-wrapper.tall { height: 600px; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -73,9 +102,6 @@
     }
     tr:hover td { background: rgba(56, 189, 248, 0.05); }
     td.num { text-align: right; font-variant-numeric: tabular-nums; }
-    .change-pos { color: var(--green); }
-    .change-neg { color: var(--red); }
-    .change-zero { color: var(--muted); }
     .badge {
       display: inline-block;
       padding: 2px 8px;
@@ -94,7 +120,6 @@
       z-index: 0;
     }
     .bar-cell span { position: relative; z-index: 1; }
-    .coverage { font-size: 0.75rem; color: var(--muted); }
     .coverage-good { color: var(--green); }
     .coverage-warn { color: var(--yellow); }
     .coverage-bad { color: var(--red); }
@@ -104,6 +129,7 @@
       border-radius: 8px;
       overflow: auto;
       max-height: 600px;
+      margin-bottom: 24px;
     }
     .table-container h2 {
       font-size: 1rem;
@@ -112,65 +138,121 @@
     }
     #loading { text-align: center; padding: 48px; color: var(--muted); }
     #error { text-align: center; padding: 48px; color: var(--red); display: none; }
+    .highlight-row td { background: rgba(56, 189, 248, 0.08); font-weight: 600; }
   </style>
 </head>
 <body>
-  <h1>Competitor Inventory Dashboard</h1>
-  <p class="subtitle">Southern Coastal Maine STR Properties &mdash; Updated <span id="last-updated">...</span></p>
+  <h1>STR Intelligence Dashboard</h1>
+  <p class="subtitle">Southern Coastal Maine &mdash; Updated <span id="last-updated">...</span></p>
 
   <div id="loading">Loading dashboard data...</div>
-  <div id="error">Failed to load dashboard data. Check that dashboard-data.json exists.</div>
+  <div id="error">Failed to load dashboard data.</div>
 
   <div id="content" style="display:none">
-    <div class="stats">
-      <div class="stat-card">
-        <div class="label">Total Properties</div>
-        <div class="value" id="total-props">-</div>
+    <div class="tabs">
+      <div class="tab active" data-tab="competitors">Competitors</div>
+      <div class="tab" data-tab="franchise">Grand Welcome Locations</div>
+    </div>
+
+    <!-- ==================== COMPETITORS TAB ==================== -->
+    <div class="tab-content active" id="tab-competitors">
+      <div class="stats">
+        <div class="stat-card">
+          <div class="label">Total Properties</div>
+          <div class="value" id="total-props">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Competitors Tracked</div>
+          <div class="value" id="total-comps">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Address Coverage</div>
+          <div class="value" id="address-rate">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Snapshots Recorded</div>
+          <div class="value" id="snapshot-count">-</div>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="label">Competitors Tracked</div>
-        <div class="value" id="total-comps">-</div>
+
+      <div class="chart-container">
+        <h2>Inventory Over Time</h2>
+        <div class="chart-wrapper"><canvas id="history-chart"></canvas></div>
       </div>
-      <div class="stat-card">
-        <div class="label">Address Coverage</div>
-        <div class="value" id="address-rate">-</div>
+
+      <div class="chart-container">
+        <h2>Properties by Competitor</h2>
+        <div class="chart-wrapper"><canvas id="bar-chart"></canvas></div>
       </div>
-      <div class="stat-card">
-        <div class="label">Snapshots Recorded</div>
-        <div class="value" id="snapshot-count">-</div>
+
+      <div class="table-container">
+        <h2>Competitor Detail</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Competitor</th>
+              <th>Platform</th>
+              <th style="text-align:right">Properties</th>
+              <th style="text-align:right">With Address</th>
+              <th style="text-align:right">Coverage</th>
+              <th>Towns</th>
+            </tr>
+          </thead>
+          <tbody id="detail-table"></tbody>
+          <tfoot id="detail-footer"></tfoot>
+        </table>
       </div>
     </div>
 
-    <div class="chart-container">
-      <h2>Inventory Over Time</h2>
-      <div class="chart-wrapper">
-        <canvas id="history-chart"></canvas>
+    <!-- ==================== FRANCHISE TAB ==================== -->
+    <div class="tab-content" id="tab-franchise">
+      <div class="stats">
+        <div class="stat-card">
+          <div class="label">Total Locations</div>
+          <div class="value" id="f-total-locs">-</div>
+          <div class="detail" id="f-active-locs"></div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Total Properties</div>
+          <div class="value" id="f-total-props">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Total Bedrooms</div>
+          <div class="value" id="f-total-br">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Maine (Our Market)</div>
+          <div class="value" id="f-maine-props">-</div>
+          <div class="detail" id="f-maine-rank"></div>
+        </div>
       </div>
-    </div>
 
-    <div class="chart-container">
-      <h2>Properties by Competitor</h2>
-      <div class="chart-wrapper">
-        <canvas id="bar-chart"></canvas>
+      <div class="chart-container">
+        <h2>Total Properties Over Time</h2>
+        <div class="chart-wrapper"><canvas id="f-history-chart"></canvas></div>
       </div>
-    </div>
 
-    <div class="table-container">
-      <h2>Competitor Detail</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Competitor</th>
-            <th>Platform</th>
-            <th style="text-align:right">Properties</th>
-            <th style="text-align:right">With Address</th>
-            <th style="text-align:right">Coverage</th>
-            <th>Towns</th>
-          </tr>
-        </thead>
-        <tbody id="detail-table"></tbody>
-        <tfoot id="detail-footer"></tfoot>
-      </table>
+      <div class="chart-container">
+        <h2>Top 20 Locations by Properties</h2>
+        <div class="chart-wrapper tall"><canvas id="f-bar-chart"></canvas></div>
+      </div>
+
+      <div class="table-container">
+        <h2>All Locations</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th style="text-align:right">Properties</th>
+              <th style="text-align:right">Total BR</th>
+              <th style="text-align:right">Avg BR</th>
+              <th style="text-align:right">Change</th>
+            </tr>
+          </thead>
+          <tbody id="f-detail-table"></tbody>
+          <tfoot id="f-detail-footer"></tfoot>
+        </table>
+      </div>
     </div>
   </div>
 
@@ -183,6 +265,19 @@
       '#8b5cf6','#10b981','#f59e0b','#ef4444','#6366f1',
     ];
 
+    const charts = {};
+
+    // ==================== Tab switching ====================
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // ==================== Data loading ====================
     async function load() {
       try {
         const resp = await fetch('dashboard-data.json');
@@ -201,22 +296,26 @@
       document.getElementById('content').style.display = 'block';
       document.getElementById('last-updated').textContent = data.generated;
 
-      // Stats
+      renderCompetitors(data);
+      renderFranchise(data.franchise);
+    }
+
+    // ==================== COMPETITORS ====================
+    function renderCompetitors(data) {
       const totalAddr = data.current.reduce((s, c) => s + c.with_address, 0);
       const addrPct = data.total_properties > 0
-        ? Math.round((totalAddr / data.total_properties) * 100)
-        : 0;
+        ? Math.round((totalAddr / data.total_properties) * 100) : 0;
       document.getElementById('total-props').textContent = data.total_properties.toLocaleString();
       document.getElementById('total-comps').textContent = data.total_competitors;
       document.getElementById('address-rate').textContent = addrPct + '%';
       document.getElementById('snapshot-count').textContent = Object.keys(data.history).length;
 
-      renderBarChart(data);
-      renderHistoryChart(data);
-      renderTable(data);
+      renderCompBar(data);
+      renderCompHistory(data);
+      renderCompTable(data);
     }
 
-    function renderBarChart(data) {
+    function renderCompBar(data) {
       const ctx = document.getElementById('bar-chart').getContext('2d');
       const sorted = [...data.current].sort((a, b) => b.count - a.count);
       new Chart(ctx, {
@@ -231,132 +330,218 @@
           }]
         },
         options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          indexAxis: 'y',
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y',
           plugins: { legend: { display: false } },
           scales: {
-            x: {
-              grid: { color: 'rgba(51,65,85,0.5)' },
-              ticks: { color: '#94a3b8' },
-            },
-            y: {
-              grid: { display: false },
-              ticks: { color: '#e2e8f0', font: { size: 11 } },
-            }
+            x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
+            y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } }
           }
         }
       });
     }
 
-    function renderHistoryChart(data) {
+    function renderCompHistory(data) {
       const dates = Object.keys(data.history).sort();
       if (dates.length < 1) return;
-
       const ctx = document.getElementById('history-chart').getContext('2d');
-
-      // Get top 10 competitors by latest count for the line chart
       const latestDate = dates[dates.length - 1];
       const latestCounts = data.history[latestDate] || {};
       const topComps = Object.entries(latestCounts)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 10)
-        .map(e => e[0]);
+        .sort((a, b) => b[1] - a[1]).slice(0, 10).map(e => e[0]);
 
-      // Also add a "Total" dataset
       const datasets = [{
-        label: 'Total',
-        data: dates.map(d => {
-          const dayData = data.history[d] || {};
-          return Object.values(dayData).reduce((s, v) => s + v, 0);
-        }),
-        borderColor: '#e2e8f0',
-        backgroundColor: 'rgba(226,232,240,0.1)',
-        borderWidth: 2,
-        fill: true,
-        tension: 0.3,
-        yAxisID: 'y1',
+        label: 'Total', borderColor: '#e2e8f0', backgroundColor: 'rgba(226,232,240,0.1)',
+        borderWidth: 2, fill: true, tension: 0.3, yAxisID: 'y1',
+        data: dates.map(d => Object.values(data.history[d] || {}).reduce((s, v) => s + v, 0)),
       }];
-
       topComps.forEach((comp, i) => {
         datasets.push({
-          label: comp,
+          label: comp, borderColor: COLORS[i % COLORS.length], borderWidth: 1.5,
+          pointRadius: 3, tension: 0.3,
           data: dates.map(d => (data.history[d] || {})[comp] || 0),
-          borderColor: COLORS[i % COLORS.length],
-          borderWidth: 1.5,
-          pointRadius: 3,
-          tension: 0.3,
         });
       });
 
       new Chart(ctx, {
-        type: 'line',
-        data: { labels: dates, datasets },
+        type: 'line', data: { labels: dates, datasets },
         options: {
-          responsive: true,
-          maintainAspectRatio: false,
+          responsive: true, maintainAspectRatio: false,
           interaction: { mode: 'index', intersect: false },
-          plugins: {
-            legend: {
-              labels: { color: '#94a3b8', font: { size: 11 }, boxWidth: 12 },
-              position: 'bottom',
-            }
-          },
+          plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 }, boxWidth: 12 }, position: 'bottom' } },
           scales: {
-            x: {
-              grid: { color: 'rgba(51,65,85,0.5)' },
-              ticks: { color: '#94a3b8' },
-            },
-            y: {
-              position: 'left',
-              grid: { color: 'rgba(51,65,85,0.5)' },
-              ticks: { color: '#94a3b8' },
-              title: { display: true, text: 'Per Competitor', color: '#94a3b8' },
-            },
-            y1: {
-              position: 'right',
-              grid: { drawOnChartArea: false },
-              ticks: { color: '#94a3b8' },
-              title: { display: true, text: 'Total', color: '#94a3b8' },
-            }
+            x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
+            y: { position: 'left', grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' }, title: { display: true, text: 'Per Competitor', color: '#94a3b8' } },
+            y1: { position: 'right', grid: { drawOnChartArea: false }, ticks: { color: '#94a3b8' }, title: { display: true, text: 'Total', color: '#94a3b8' } }
           }
         }
       });
     }
 
-    function renderTable(data) {
+    function renderCompTable(data) {
       const tbody = document.getElementById('detail-table');
       const maxCount = Math.max(...data.current.map(c => c.count));
       let totalProps = 0, totalAddr = 0;
-
       data.current.forEach(c => {
         totalProps += c.count;
         totalAddr += c.with_address;
         const pct = c.count > 0 ? Math.round((c.with_address / c.count) * 100) : 0;
-        const coverageClass = pct >= 90 ? 'coverage-good' : pct >= 70 ? 'coverage-warn' : 'coverage-bad';
-        const barWidth = maxCount > 0 ? (c.count / maxCount * 100) : 0;
-
+        const cls = pct >= 90 ? 'coverage-good' : pct >= 70 ? 'coverage-warn' : 'coverage-bad';
+        const barW = maxCount > 0 ? (c.count / maxCount * 100) : 0;
         tbody.innerHTML += `<tr>
           <td>${c.competitor}</td>
           <td><span class="badge">${c.platform}</span></td>
-          <td class="num bar-cell">
-            <div class="bar-fill" style="width:${barWidth}%"></div>
-            <span>${c.count}</span>
-          </td>
+          <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${c.count}</span></td>
           <td class="num">${c.with_address}</td>
-          <td class="num"><span class="coverage ${coverageClass}">${pct}%</span></td>
+          <td class="num"><span class="coverage ${cls}">${pct}%</span></td>
           <td style="font-size:0.75rem;color:var(--muted)">${c.cities.join(', ')}</td>
         </tr>`;
       });
-
       const footerPct = totalProps > 0 ? Math.round((totalAddr / totalProps) * 100) : 0;
       document.getElementById('detail-footer').innerHTML = `<tr style="font-weight:600">
-        <td>Total</td>
-        <td></td>
-        <td class="num">${totalProps}</td>
-        <td class="num">${totalAddr}</td>
-        <td class="num">${footerPct}%</td>
-        <td></td>
+        <td>Total</td><td></td><td class="num">${totalProps}</td>
+        <td class="num">${totalAddr}</td><td class="num">${footerPct}%</td><td></td>
+      </tr>`;
+    }
+
+    // ==================== FRANCHISE ====================
+    function renderFranchise(f) {
+      if (!f || !f.locations || f.locations.length === 0) {
+        document.getElementById('tab-franchise').innerHTML = '<p style="padding:48px;text-align:center;color:var(--muted)">No franchise data available yet.</p>';
+        return;
+      }
+
+      document.getElementById('f-total-locs').textContent = f.total_locations;
+      document.getElementById('f-active-locs').textContent = f.active_locations + ' with properties';
+      document.getElementById('f-total-props').textContent = f.total_properties.toLocaleString();
+      document.getElementById('f-total-br').textContent = f.total_bedrooms.toLocaleString();
+
+      // Find Maine
+      const maine = f.locations.find(l => l.slug === 'maine-southern-coastal' || l.location.toLowerCase().includes('maine'));
+      if (maine) {
+        document.getElementById('f-maine-props').textContent = maine.property_count;
+        const rank = f.locations.filter(l => l.property_count > maine.property_count).length + 1;
+        document.getElementById('f-maine-rank').textContent = `#${rank} of ${f.total_locations} locations`;
+      }
+
+      renderFranchiseBar(f);
+      renderFranchiseHistory(f);
+      renderFranchiseTable(f);
+    }
+
+    function renderFranchiseBar(f) {
+      const ctx = document.getElementById('f-bar-chart').getContext('2d');
+      const top20 = f.locations.slice(0, 20);
+      const maineSlug = 'maine-southern-coastal';
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: top20.map(l => l.location),
+          datasets: [{
+            label: 'Properties',
+            data: top20.map(l => l.property_count),
+            backgroundColor: top20.map(l =>
+              l.slug === maineSlug ? '#38bdf8' : 'rgba(148, 163, 184, 0.4)'
+            ),
+            borderRadius: 4,
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
+            y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } }
+          }
+        }
+      });
+    }
+
+    function renderFranchiseHistory(f) {
+      const dates = Object.keys(f.history).sort();
+      if (dates.length < 1) return;
+      const ctx = document.getElementById('f-history-chart').getContext('2d');
+
+      // Total line + top 8 locations + Maine
+      const latestDate = dates[dates.length - 1];
+      const latestCounts = f.history[latestDate] || {};
+      let topLocs = Object.entries(latestCounts)
+        .sort((a, b) => b[1] - a[1]).slice(0, 8).map(e => e[0]);
+      // Ensure Maine is included
+      const maineName = f.locations.find(l => l.slug === 'maine-southern-coastal')?.location;
+      if (maineName && !topLocs.includes(maineName)) topLocs.push(maineName);
+
+      const datasets = [{
+        label: 'Total', borderColor: '#e2e8f0', backgroundColor: 'rgba(226,232,240,0.1)',
+        borderWidth: 2, fill: true, tension: 0.3, yAxisID: 'y1',
+        data: dates.map(d => Object.values(f.history[d] || {}).reduce((s, v) => s + v, 0)),
+      }];
+
+      topLocs.forEach((loc, i) => {
+        const isMaine = loc === maineName;
+        datasets.push({
+          label: loc,
+          borderColor: isMaine ? '#38bdf8' : COLORS[(i + 1) % COLORS.length],
+          borderWidth: isMaine ? 2.5 : 1.5,
+          borderDash: isMaine ? [] : [4, 2],
+          pointRadius: 3, tension: 0.3,
+          data: dates.map(d => (f.history[d] || {})[loc] || 0),
+        });
+      });
+
+      new Chart(ctx, {
+        type: 'line', data: { labels: dates, datasets },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 }, boxWidth: 12 }, position: 'bottom' } },
+          scales: {
+            x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
+            y: { position: 'left', grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' }, title: { display: true, text: 'Per Location', color: '#94a3b8' } },
+            y1: { position: 'right', grid: { drawOnChartArea: false }, ticks: { color: '#94a3b8' }, title: { display: true, text: 'Total', color: '#94a3b8' } }
+          }
+        }
+      });
+    }
+
+    function renderFranchiseTable(f) {
+      const tbody = document.getElementById('f-detail-table');
+      const maxCount = Math.max(...f.locations.map(l => l.property_count));
+      const dates = Object.keys(f.history).sort();
+      const hasHistory = dates.length > 1;
+
+      let totalProps = 0, totalBR = 0;
+      f.locations.forEach(l => {
+        totalProps += l.property_count;
+        totalBR += l.total_bedrooms || 0;
+
+        let change = '';
+        if (hasHistory) {
+          const first = (f.history[dates[0]] || {})[l.location] || 0;
+          const last = l.property_count;
+          const diff = last - first;
+          if (diff > 0) change = `<span class="coverage-good">+${diff}</span>`;
+          else if (diff < 0) change = `<span class="coverage-bad">${diff}</span>`;
+          else change = `<span style="color:var(--muted)">-</span>`;
+        }
+
+        const isMaine = l.slug === 'maine-southern-coastal';
+        const rowClass = isMaine ? 'highlight-row' : '';
+        const barW = maxCount > 0 ? (l.property_count / maxCount * 100) : 0;
+
+        tbody.innerHTML += `<tr class="${rowClass}">
+          <td>${l.location}${isMaine ? ' <span class="badge" style="background:rgba(56,189,248,0.25)">Our Market</span>' : ''}</td>
+          <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${l.property_count}</span></td>
+          <td class="num">${l.total_bedrooms || '-'}</td>
+          <td class="num">${l.avg_bedrooms || '-'}</td>
+          <td class="num">${change}</td>
+        </tr>`;
+      });
+
+      document.getElementById('f-detail-footer').innerHTML = `<tr style="font-weight:600">
+        <td>Total (${f.total_locations} locations)</td>
+        <td class="num">${totalProps.toLocaleString()}</td>
+        <td class="num">${totalBR.toLocaleString()}</td>
+        <td></td><td></td>
       </tr>`;
     }
 

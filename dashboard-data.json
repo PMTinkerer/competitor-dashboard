@@ -1,34 +1,8 @@
 {
   "generated": "2026-04-08",
-  "total_properties": 1407,
-  "total_competitors": 25,
+  "total_properties": 1141,
+  "total_competitors": 24,
   "current": [
-    {
-      "competitor": "Airbnb",
-      "platform": "airbnb",
-      "count": 266,
-      "with_address": 266,
-      "cities": [
-        "Acton",
-        "Alfred",
-        "Arundel",
-        "Biddeford",
-        "Cape Elizabeth",
-        "Kennebunk",
-        "Kennebunkport",
-        "Kittery",
-        "North Berwick",
-        "Ogunquit",
-        "Old Orchard Beach",
-        "Rye",
-        "Saco",
-        "Sanford",
-        "Scarborough",
-        "South Berwick",
-        "Wells",
-        "York"
-      ]
-    },
     {
       "competitor": "Rental Pro / Garnsey Brothers",
       "platform": "rentalpro_custom",
@@ -305,7 +279,6 @@
   ],
   "history": {
     "2026-04-08": {
-      "Airbnb": 266,
       "Anchor Real Estate Rentals": 48,
       "Bayley Vacation Rentals": 53,
       "Coastal Getaways": 28,
@@ -330,6 +303,572 @@
       "Seashore Property Management": 25,
       "Tamarack Rentals": 52,
       "Vacasa": 88
+    }
+  },
+  "franchise": {
+    "total_locations": 55,
+    "active_locations": 55,
+    "total_properties": 2133,
+    "total_bedrooms": 5257,
+    "locations": [
+      {
+        "location": "Branson",
+        "slug": "missouri-branson",
+        "property_count": 389,
+        "total_bedrooms": 1011,
+        "avg_bedrooms": 2.6
+      },
+      {
+        "location": "Orlando",
+        "slug": "florida-orlando",
+        "property_count": 163,
+        "total_bedrooms": 570,
+        "avg_bedrooms": 3.5
+      },
+      {
+        "location": "Mammoth Lakes",
+        "slug": "california-mammoth-lakes",
+        "property_count": 103,
+        "total_bedrooms": 258,
+        "avg_bedrooms": 2.5
+      },
+      {
+        "location": "Nashville",
+        "slug": "tennessee-nashville",
+        "property_count": 102,
+        "total_bedrooms": 230,
+        "avg_bedrooms": 2.2
+      },
+      {
+        "location": "Nevada North Lake Tahoe",
+        "slug": "california-nevada-north-lake-tahoe",
+        "property_count": 87,
+        "total_bedrooms": 304,
+        "avg_bedrooms": 3.5
+      },
+      {
+        "location": "Hawaii",
+        "slug": "hawaii",
+        "property_count": 73,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "South Lake Tahoe",
+        "slug": "california-south-lake-tahoe",
+        "property_count": 73,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Austin",
+        "slug": "texas-austin",
+        "property_count": 72,
+        "total_bedrooms": 264,
+        "avg_bedrooms": 3.7
+      },
+      {
+        "location": "Lake Of The Ozarks",
+        "slug": "missouri-lake-of-the-ozarks",
+        "property_count": 65,
+        "total_bedrooms": 325,
+        "avg_bedrooms": 5.0
+      },
+      {
+        "location": "Smoky Mountains",
+        "slug": "tennessee-smoky-mountains",
+        "property_count": 63,
+        "total_bedrooms": 158,
+        "avg_bedrooms": 2.5
+      },
+      {
+        "location": "Big Island",
+        "slug": "hawaii-big-island",
+        "property_count": 58,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Sea Ranch",
+        "slug": "california-sea-ranch",
+        "property_count": 48,
+        "total_bedrooms": 144,
+        "avg_bedrooms": 3.0
+      },
+      {
+        "location": "Lake Geneva",
+        "slug": "wisconsin-lake-geneva",
+        "property_count": 44,
+        "total_bedrooms": 187,
+        "avg_bedrooms": 4.2
+      },
+      {
+        "location": "Carolina Hilton Head Island",
+        "slug": "south-carolina-hilton-head-island",
+        "property_count": 41,
+        "total_bedrooms": 82,
+        "avg_bedrooms": 2.0
+      },
+      {
+        "location": "Palm Springs",
+        "slug": "california-palm-springs",
+        "property_count": 40,
+        "total_bedrooms": 110,
+        "avg_bedrooms": 2.8
+      },
+      {
+        "location": "Southern Coastal",
+        "slug": "maine-southern-coastal",
+        "property_count": 40,
+        "total_bedrooms": 180,
+        "avg_bedrooms": 4.5
+      },
+      {
+        "location": "Southern",
+        "slug": "utah-southern",
+        "property_count": 37,
+        "total_bedrooms": 185,
+        "avg_bedrooms": 5.0
+      },
+      {
+        "location": "Bend Central Oregon",
+        "slug": "oregon-bend-central-oregon",
+        "property_count": 36,
+        "total_bedrooms": 120,
+        "avg_bedrooms": 3.3
+      },
+      {
+        "location": "Glacier Country",
+        "slug": "montana-glacier-country",
+        "property_count": 36,
+        "total_bedrooms": 108,
+        "avg_bedrooms": 3.0
+      },
+      {
+        "location": "Monterey Bay Sierra Foothills",
+        "slug": "california-monterey-bay-sierra-foothills",
+        "property_count": 35,
+        "total_bedrooms": 114,
+        "avg_bedrooms": 3.2
+      },
+      {
+        "location": "Panama City Beach",
+        "slug": "florida-panama-city-beach",
+        "property_count": 33,
+        "total_bedrooms": 99,
+        "avg_bedrooms": 3.0
+      },
+      {
+        "location": "Broken Bow",
+        "slug": "oklahoma-broken-bow",
+        "property_count": 32,
+        "total_bedrooms": 64,
+        "avg_bedrooms": 2.0
+      },
+      {
+        "location": "Breckenridge",
+        "slug": "colorado-breckenridge",
+        "property_count": 29,
+        "total_bedrooms": 91,
+        "avg_bedrooms": 3.1
+      },
+      {
+        "location": "Palm Beach",
+        "slug": "florida-palm-beach",
+        "property_count": 29,
+        "total_bedrooms": 72,
+        "avg_bedrooms": 2.5
+      },
+      {
+        "location": "Port Aransas North Padre Island",
+        "slug": "texas-port-aransas-north-padre-island",
+        "property_count": 24,
+        "total_bedrooms": 72,
+        "avg_bedrooms": 3.0
+      },
+      {
+        "location": "Hill Country",
+        "slug": "texas-hill-country",
+        "property_count": 23,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Destin And Miramar Beach",
+        "slug": "florida-destin-and-miramar-beach",
+        "property_count": 21,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Gulf Shores",
+        "slug": "alabama-gulf-shores",
+        "property_count": 21,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Long Beach",
+        "slug": "california-long-beach",
+        "property_count": 21,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "New Braunfels",
+        "slug": "texas-new-braunfels",
+        "property_count": 21,
+        "total_bedrooms": 42,
+        "avg_bedrooms": 2.0
+      },
+      {
+        "location": "St Augustine",
+        "slug": "florida-st-augustine",
+        "property_count": 21,
+        "total_bedrooms": 56,
+        "avg_bedrooms": 2.7
+      },
+      {
+        "location": "Beaches",
+        "slug": "delaware-beaches",
+        "property_count": 20,
+        "total_bedrooms": 80,
+        "avg_bedrooms": 4.0
+      },
+      {
+        "location": "Big Bear Lake Arrowhead",
+        "slug": "california-big-bear-lake-arrowhead",
+        "property_count": 20,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Galveston",
+        "slug": "texas-galveston",
+        "property_count": 20,
+        "total_bedrooms": 50,
+        "avg_bedrooms": 2.5
+      },
+      {
+        "location": "Park City",
+        "slug": "utah-park-city",
+        "property_count": 19,
+        "total_bedrooms": 86,
+        "avg_bedrooms": 4.5
+      },
+      {
+        "location": "Hollywood Sunny Isles",
+        "slug": "florida-hollywood-sunny-isles",
+        "property_count": 18,
+        "total_bedrooms": 72,
+        "avg_bedrooms": 4.0
+      },
+      {
+        "location": "North Georgia Mountains",
+        "slug": "georgia-north-georgia-mountains",
+        "property_count": 17,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Franklin",
+        "slug": "tennessee-franklin",
+        "property_count": 15,
+        "total_bedrooms": 45,
+        "avg_bedrooms": 3.0
+      },
+      {
+        "location": "Oahu",
+        "slug": "hawaii-oahu",
+        "property_count": 15,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Orange Beach",
+        "slug": "alabama-orange-beach",
+        "property_count": 15,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Newport Beach",
+        "slug": "california-newport-beach",
+        "property_count": 12,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Oceanside Carlsbad",
+        "slug": "california-oceanside-carlsbad",
+        "property_count": 12,
+        "total_bedrooms": 36,
+        "avg_bedrooms": 3.0
+      },
+      {
+        "location": "Santa Barbara",
+        "slug": "california-santa-barbara",
+        "property_count": 11,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Miami",
+        "slug": "florida-miami",
+        "property_count": 8,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "North Atlanta",
+        "slug": "georgia-north-atlanta",
+        "property_count": 8,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "White Mountains",
+        "slug": "seacoast-white-mountains",
+        "property_count": 8,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Cape Cod Falmouth Mashpee",
+        "slug": "massachusetts-cape-cod-falmouth-mashpee",
+        "property_count": 7,
+        "total_bedrooms": 24,
+        "avg_bedrooms": 3.5
+      },
+      {
+        "location": "Scottsdale",
+        "slug": "arizona-scottsdale",
+        "property_count": 7,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Vail Valley",
+        "slug": "colorado-vail-valley",
+        "property_count": 7,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Carolina Lake Norman",
+        "slug": "north-carolina-lake-norman",
+        "property_count": 5,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Houston",
+        "slug": "texas-houston",
+        "property_count": 2,
+        "total_bedrooms": 8,
+        "avg_bedrooms": 4.0
+      },
+      {
+        "location": "Mesa",
+        "slug": "arizona-mesa",
+        "property_count": 2,
+        "total_bedrooms": 10,
+        "avg_bedrooms": 5.0
+      },
+      {
+        "location": "San Antonio",
+        "slug": "texas-san-antonio",
+        "property_count": 2,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Winter Park And Grand County",
+        "slug": "colorado-winter-park-and-grand-county",
+        "property_count": 2,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      },
+      {
+        "location": "Space Coast",
+        "slug": "florida-space-coast",
+        "property_count": 1,
+        "total_bedrooms": null,
+        "avg_bedrooms": null
+      }
+    ],
+    "history": {
+      "2026-03-19": {
+        "Austin": 71,
+        "Beaches": 20,
+        "Bend Central Oregon": 36,
+        "Big Bear Lake Arrowhead": 20,
+        "Big Island": 58,
+        "Branson": 386,
+        "Breckenridge": 29,
+        "Broken Bow": 32,
+        "Cape Cod Falmouth Mashpee": 7,
+        "Carolina Hilton Head Island": 41,
+        "Carolina Lake Norman": 5,
+        "Destin And Miramar Beach": 21,
+        "Franklin": 15,
+        "Galveston": 20,
+        "Glacier Country": 36,
+        "Gulf Shores": 21,
+        "Hawaii": 73,
+        "Hill Country": 23,
+        "Hollywood Sunny Isles": 18,
+        "Houston": 2,
+        "Lake Geneva": 44,
+        "Lake Of The Ozarks": 65,
+        "Long Beach": 21,
+        "Mammoth Lakes": 103,
+        "Mesa": 2,
+        "Miami": 8,
+        "Monterey Bay Sierra Foothills": 35,
+        "Nashville": 101,
+        "Nevada North Lake Tahoe": 87,
+        "New Braunfels": 21,
+        "Newport Beach": 12,
+        "North Atlanta": 8,
+        "North Georgia Mountains": 17,
+        "Oahu": 15,
+        "Oceanside Carlsbad": 12,
+        "Orange Beach": 15,
+        "Orlando": 163,
+        "Palm Beach": 29,
+        "Palm Springs": 40,
+        "Panama City Beach": 33,
+        "Park City": 19,
+        "Port Aransas North Padre Island": 24,
+        "San Antonio": 2,
+        "Santa Barbara": 11,
+        "Scottsdale": 7,
+        "Sea Ranch": 48,
+        "Smoky Mountains": 63,
+        "South Lake Tahoe": 73,
+        "Southern": 37,
+        "Southern Coastal": 40,
+        "Space Coast": 1,
+        "St Augustine": 20,
+        "Vail Valley": 7,
+        "White Mountains": 8,
+        "Winter Park And Grand County": 2
+      },
+      "2026-03-21": {
+        "Austin": 72,
+        "Beaches": 20,
+        "Bend Central Oregon": 36,
+        "Big Bear Lake Arrowhead": 20,
+        "Big Island": 58,
+        "Branson": 389,
+        "Breckenridge": 29,
+        "Broken Bow": 32,
+        "Cape Cod Falmouth Mashpee": 7,
+        "Carolina Hilton Head Island": 41,
+        "Carolina Lake Norman": 5,
+        "Destin And Miramar Beach": 21,
+        "Franklin": 15,
+        "Galveston": 20,
+        "Glacier Country": 36,
+        "Gulf Shores": 21,
+        "Hawaii": 73,
+        "Hill Country": 23,
+        "Hollywood Sunny Isles": 18,
+        "Houston": 2,
+        "Lake Geneva": 44,
+        "Lake Of The Ozarks": 65,
+        "Long Beach": 21,
+        "Mammoth Lakes": 103,
+        "Mesa": 2,
+        "Miami": 8,
+        "Monterey Bay Sierra Foothills": 35,
+        "Nashville": 102,
+        "Nevada North Lake Tahoe": 87,
+        "New Braunfels": 21,
+        "Newport Beach": 12,
+        "North Atlanta": 8,
+        "North Georgia Mountains": 17,
+        "Oahu": 15,
+        "Oceanside Carlsbad": 12,
+        "Orange Beach": 15,
+        "Orlando": 163,
+        "Palm Beach": 29,
+        "Palm Springs": 40,
+        "Panama City Beach": 33,
+        "Park City": 19,
+        "Port Aransas North Padre Island": 24,
+        "San Antonio": 2,
+        "Santa Barbara": 11,
+        "Scottsdale": 7,
+        "Sea Ranch": 48,
+        "Smoky Mountains": 63,
+        "South Lake Tahoe": 73,
+        "Southern": 37,
+        "Southern Coastal": 40,
+        "Space Coast": 1,
+        "St Augustine": 21,
+        "Vail Valley": 7,
+        "White Mountains": 8,
+        "Winter Park And Grand County": 2
+      },
+      "2026-03-22": {
+        "Austin": 72,
+        "Beaches": 20,
+        "Bend Central Oregon": 36,
+        "Big Bear Lake Arrowhead": 20,
+        "Big Island": 58,
+        "Branson": 389,
+        "Breckenridge": 29,
+        "Broken Bow": 32,
+        "Cape Cod Falmouth Mashpee": 7,
+        "Carolina Hilton Head Island": 41,
+        "Carolina Lake Norman": 5,
+        "Destin And Miramar Beach": 21,
+        "Franklin": 15,
+        "Galveston": 20,
+        "Glacier Country": 36,
+        "Gulf Shores": 21,
+        "Hawaii": 73,
+        "Hill Country": 23,
+        "Hollywood Sunny Isles": 18,
+        "Houston": 2,
+        "Lake Geneva": 44,
+        "Lake Of The Ozarks": 65,
+        "Long Beach": 21,
+        "Mammoth Lakes": 103,
+        "Mesa": 2,
+        "Miami": 8,
+        "Monterey Bay Sierra Foothills": 35,
+        "Nashville": 102,
+        "Nevada North Lake Tahoe": 87,
+        "New Braunfels": 21,
+        "Newport Beach": 12,
+        "North Atlanta": 8,
+        "North Georgia Mountains": 17,
+        "Oahu": 15,
+        "Oceanside Carlsbad": 12,
+        "Orange Beach": 15,
+        "Orlando": 163,
+        "Palm Beach": 29,
+        "Palm Springs": 40,
+        "Panama City Beach": 33,
+        "Park City": 19,
+        "Port Aransas North Padre Island": 24,
+        "San Antonio": 2,
+        "Santa Barbara": 11,
+        "Scottsdale": 7,
+        "Sea Ranch": 48,
+        "Smoky Mountains": 63,
+        "South Lake Tahoe": 73,
+        "Southern": 37,
+        "Southern Coastal": 40,
+        "Space Coast": 1,
+        "St Augustine": 21,
+        "Vail Valley": 7,
+        "White Mountains": 8,
+        "Winter Park And Grand County": 2
+      }
     }
   }
 }
