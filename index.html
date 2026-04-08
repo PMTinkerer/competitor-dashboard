@@ -263,13 +263,18 @@
           <div class="value change-down" id="lc-total-lost">-</div>
         </div>
         <div class="stat-card">
-          <div class="label">Net Change</div>
+          <div class="label">Net Change (All Time)</div>
           <div class="value" id="lc-net">-</div>
         </div>
         <div class="stat-card">
-          <div class="label">Dates Tracked</div>
-          <div class="value" id="lc-dates">-</div>
+          <div class="label">Months Tracked</div>
+          <div class="value" id="lc-months">-</div>
         </div>
+      </div>
+
+      <div class="chart-container">
+        <h2>Month-over-Month Changes</h2>
+        <div class="chart-wrapper"><canvas id="lc-mom-chart"></canvas></div>
       </div>
 
       <div id="lc-timeline"></div>
@@ -648,47 +653,89 @@
         document.getElementById('lc-total-gained').textContent = '0';
         document.getElementById('lc-total-lost').textContent = '0';
         document.getElementById('lc-net').textContent = '0';
-        document.getElementById('lc-dates').textContent = '0';
+        document.getElementById('lc-months').textContent = '0';
         document.getElementById('lc-timeline').innerHTML = `
           <div class="chart-container">
-            <h2>Change Log</h2>
+            <h2>Monthly Change Log</h2>
             <p style="color:var(--muted);padding:24px 0">No listing changes recorded yet. Changes will appear after the next weekly scrape detects gained or lost properties.</p>
           </div>`;
         return;
       }
 
-      const dates = Object.keys(lc.dates).sort().reverse();
+      // Aggregate by month (YYYY-MM)
+      const months = {};
+      Object.entries(lc.dates).forEach(([d, day]) => {
+        const month = d.substring(0, 7); // YYYY-MM
+        if (!months[month]) months[month] = { gained: [], lost: [], byComp: {} };
+        const m = months[month];
+        (day.gained || []).forEach(item => {
+          m.gained.push(item);
+          const c = m.byComp[item.competitor] || (m.byComp[item.competitor] = { gained: 0, lost: 0 });
+          c.gained++;
+        });
+        (day.lost || []).forEach(item => {
+          m.lost.push(item);
+          const c = m.byComp[item.competitor] || (m.byComp[item.competitor] = { gained: 0, lost: 0 });
+          c.lost++;
+        });
+      });
+
+      const monthKeys = Object.keys(months).sort().reverse();
       const net = lc.total_gained - lc.total_lost;
       document.getElementById('lc-total-gained').textContent = lc.total_gained;
       document.getElementById('lc-total-lost').textContent = lc.total_lost;
       const netEl = document.getElementById('lc-net');
       netEl.textContent = (net >= 0 ? '+' : '') + net;
       netEl.className = 'value ' + (net > 0 ? 'change-up' : net < 0 ? 'change-down' : 'change-flat');
-      document.getElementById('lc-dates').textContent = dates.length;
+      document.getElementById('lc-months').textContent = monthKeys.length;
 
+      // M/M bar chart
+      renderMoMChart(monthKeys.slice().reverse(), months);
+
+      // Monthly timeline
+      const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
       let html = '';
-      dates.forEach(d => {
-        const day = lc.dates[d];
-        const gained = day.gained || [];
-        const lost = day.lost || [];
+      monthKeys.forEach(mk => {
+        const m = months[mk];
+        const [y, mo] = mk.split('-');
+        const label = monthNames[parseInt(mo) - 1] + ' ' + y;
+        const mNet = m.gained.length - m.lost.length;
 
         html += `<div class="chart-container" style="margin-bottom:16px">
           <h2 style="display:flex;justify-content:space-between;align-items:center">
-            ${d}
+            ${label}
             <span style="font-size:0.8rem;font-weight:400">
-              ${gained.length ? `<span class="change-up">+${gained.length} gained</span>` : ''}
-              ${gained.length && lost.length ? ' &nbsp;/&nbsp; ' : ''}
-              ${lost.length ? `<span class="change-down">-${lost.length} lost</span>` : ''}
+              <span class="change-up">+${m.gained.length}</span>
+              &nbsp;/&nbsp;
+              <span class="change-down">-${m.lost.length}</span>
+              &nbsp;=&nbsp;
+              <span class="${mNet > 0 ? 'change-up' : mNet < 0 ? 'change-down' : 'change-flat'}">${mNet >= 0 ? '+' : ''}${mNet} net</span>
             </span>
           </h2>`;
 
-        if (lost.length) {
+        // Per-competitor summary bar
+        const compEntries = Object.entries(m.byComp).sort((a, b) => (b[1].gained - b[1].lost) - (a[1].gained - a[1].lost));
+        if (compEntries.length) {
+          html += `<div style="margin:12px 0;display:flex;flex-wrap:wrap;gap:8px">`;
+          compEntries.forEach(([comp, counts]) => {
+            const cNet = counts.gained - counts.lost;
+            const cls = cNet > 0 ? 'change-up' : cNet < 0 ? 'change-down' : 'change-flat';
+            html += `<span style="background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:0.75rem">
+              ${comp}: <span class="${cls}">${cNet >= 0 ? '+' : ''}${cNet}</span>
+              <span style="color:var(--muted)">(+${counts.gained}/-${counts.lost})</span>
+            </span>`;
+          });
+          html += '</div>';
+        }
+
+        // Lost listings detail
+        if (m.lost.length) {
           html += `<div style="margin-top:12px">
-            <div style="font-size:0.75rem;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Lost Listings</div>
+            <div style="font-size:0.75rem;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Lost (${m.lost.length})</div>
             <table><thead><tr>
               <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th><th>Last Seen</th>
             </tr></thead><tbody>`;
-          lost.forEach(item => {
+          m.lost.forEach(item => {
             html += `<tr>
               <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${item.property_name || '-'}</td>
               <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
@@ -701,13 +748,14 @@
           html += '</tbody></table></div>';
         }
 
-        if (gained.length) {
-          html += `<div style="margin-top:${lost.length ? '16' : '12'}px">
-            <div style="font-size:0.75rem;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Gained Listings</div>
+        // Gained listings detail
+        if (m.gained.length) {
+          html += `<div style="margin-top:${m.lost.length ? '16' : '12'}px">
+            <div style="font-size:0.75rem;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Gained (${m.gained.length})</div>
             <table><thead><tr>
               <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th>
             </tr></thead><tbody>`;
-          gained.forEach(item => {
+          m.gained.forEach(item => {
             html += `<tr>
               <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${item.property_name || '-'}</td>
               <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
@@ -723,6 +771,61 @@
       });
 
       document.getElementById('lc-timeline').innerHTML = html;
+    }
+
+    function renderMoMChart(monthKeys, months) {
+      const ctx = document.getElementById('lc-mom-chart').getContext('2d');
+      const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const labels = monthKeys.map(mk => {
+        const [y, mo] = mk.split('-');
+        return monthNames[parseInt(mo) - 1] + ' ' + y;
+      });
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: 'Gained',
+              data: monthKeys.map(mk => months[mk].gained.length),
+              backgroundColor: 'rgba(74, 222, 128, 0.7)',
+              borderRadius: 4,
+            },
+            {
+              label: 'Lost',
+              data: monthKeys.map(mk => -months[mk].lost.length),
+              backgroundColor: 'rgba(248, 113, 113, 0.7)',
+              borderRadius: 4,
+            }
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color: '#94a3b8', font: { size: 11 } } },
+            tooltip: {
+              callbacks: {
+                label: ctx => {
+                  const v = Math.abs(ctx.raw);
+                  return `${ctx.dataset.label}: ${v}`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
+            y: {
+              grid: { color: 'rgba(51,65,85,0.5)' },
+              ticks: {
+                color: '#94a3b8',
+                callback: v => Math.abs(v),
+              },
+              title: { display: true, text: 'Listings', color: '#94a3b8' }
+            }
+          }
+        }
+      });
     }
 
     load();
