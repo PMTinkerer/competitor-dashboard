@@ -9,6 +9,7 @@
     :root {
       --bg: #0f172a;
       --surface: #1e293b;
+      --surface2: #253349;
       --border: #334155;
       --text: #e2e8f0;
       --muted: #94a3b8;
@@ -20,125 +21,109 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      padding: 24px;
-      max-width: 1200px;
-      margin: 0 auto;
+      background: var(--bg); color: var(--text);
+      padding: 24px; max-width: 1200px; margin: 0 auto;
     }
     h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 4px; }
     .subtitle { color: var(--muted); font-size: 0.875rem; margin-bottom: 20px; }
 
     /* Tabs */
-    .tabs {
-      display: flex;
-      gap: 0;
-      margin-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-    }
+    .tabs { display: flex; gap: 0; margin-bottom: 24px; border-bottom: 1px solid var(--border); }
     .tab {
-      padding: 10px 20px;
-      cursor: pointer;
-      color: var(--muted);
-      font-size: 0.875rem;
-      font-weight: 500;
-      border-bottom: 2px solid transparent;
-      transition: all 0.2s;
-      user-select: none;
+      padding: 10px 20px; cursor: pointer; color: var(--muted);
+      font-size: 0.875rem; font-weight: 500;
+      border-bottom: 2px solid transparent; transition: all 0.2s; user-select: none;
     }
     .tab:hover { color: var(--text); }
-    .tab.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
+    .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
     .tab-content { display: none; }
     .tab-content.active { display: block; }
 
-    /* Shared */
+    /* Cards */
     .stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      margin-bottom: 32px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px; margin-bottom: 24px;
     }
     .stat-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 16px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 16px;
     }
     .stat-card .label { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
     .stat-card .value { font-size: 1.75rem; font-weight: 700; margin-top: 4px; }
     .stat-card .detail { color: var(--muted); font-size: 0.75rem; margin-top: 2px; }
+
+    /* Movers panel */
+    .movers-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+    @media (max-width: 768px) { .movers-row { grid-template-columns: 1fr; } }
+    .movers-panel {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 16px;
+    }
+    .movers-panel h2 { font-size: 0.875rem; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .mover-item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 8px 0; border-bottom: 1px solid var(--border);
+      font-size: 0.8125rem;
+    }
+    .mover-item:last-child { border-bottom: none; }
+    .mover-name { color: var(--text); }
+    .mover-stats { display: flex; gap: 12px; align-items: center; }
+    .mover-count { color: var(--muted); font-size: 0.75rem; }
+    .mover-change { font-weight: 600; font-variant-numeric: tabular-nums; }
+    .change-up { color: var(--green); }
+    .change-down { color: var(--red); }
+    .change-flat { color: var(--muted); }
+    .trend-arrow { font-size: 0.7rem; }
+    .no-movers { color: var(--muted); font-size: 0.8125rem; font-style: italic; padding: 8px 0; }
+
+    /* Charts */
     .chart-container {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 24px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 20px; margin-bottom: 24px;
     }
     .chart-container h2 { font-size: 1rem; font-weight: 600; margin-bottom: 16px; }
     .chart-wrapper { position: relative; height: 350px; }
     .chart-wrapper.tall { height: 600px; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.875rem;
-    }
-    th, td {
-      text-align: left;
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--border);
-    }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
     th {
-      color: var(--muted);
-      font-weight: 500;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      position: sticky;
-      top: 0;
-      background: var(--surface);
+      color: var(--muted); font-weight: 500; font-size: 0.75rem;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      position: sticky; top: 0; background: var(--surface);
     }
     tr:hover td { background: rgba(56, 189, 248, 0.05); }
     td.num { text-align: right; font-variant-numeric: tabular-nums; }
     .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 0.7rem;
-      font-weight: 500;
-      background: rgba(56, 189, 248, 0.15);
-      color: var(--accent);
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 0.7rem; font-weight: 500;
+      background: rgba(56, 189, 248, 0.15); color: var(--accent);
     }
     .bar-cell { position: relative; }
     .bar-fill {
-      position: absolute;
-      top: 2px; bottom: 2px; left: 0;
-      background: rgba(56, 189, 248, 0.12);
-      border-radius: 3px;
-      z-index: 0;
+      position: absolute; top: 2px; bottom: 2px; left: 0;
+      background: rgba(56, 189, 248, 0.12); border-radius: 3px; z-index: 0;
     }
     .bar-cell span { position: relative; z-index: 1; }
     .coverage-good { color: var(--green); }
     .coverage-warn { color: var(--yellow); }
     .coverage-bad { color: var(--red); }
     .table-container {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: auto;
-      max-height: 600px;
-      margin-bottom: 24px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; overflow: auto; max-height: 600px; margin-bottom: 24px;
     }
-    .table-container h2 {
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 16px 16px 0;
+    .table-container h2 { font-size: 1rem; font-weight: 600; padding: 16px 16px 0; }
+    .trend-badge {
+      display: inline-block; padding: 1px 6px; border-radius: 3px;
+      font-size: 0.7rem; font-weight: 600;
     }
+    .trend-badge.growing { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+    .trend-badge.declining { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+    .trend-badge.stable { background: rgba(148, 163, 184, 0.1); color: var(--muted); }
+    .highlight-row td { background: rgba(56, 189, 248, 0.08); font-weight: 600; }
     #loading { text-align: center; padding: 48px; color: var(--muted); }
     #error { text-align: center; padding: 48px; color: var(--red); display: none; }
-    .highlight-row td { background: rgba(56, 189, 248, 0.08); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -160,6 +145,7 @@
         <div class="stat-card">
           <div class="label">Total Properties</div>
           <div class="value" id="total-props">-</div>
+          <div class="detail" id="total-props-change"></div>
         </div>
         <div class="stat-card">
           <div class="label">Competitors Tracked</div>
@@ -170,10 +156,13 @@
           <div class="value" id="address-rate">-</div>
         </div>
         <div class="stat-card">
-          <div class="label">Snapshots Recorded</div>
+          <div class="label">Weekly Snapshots</div>
           <div class="value" id="snapshot-count">-</div>
+          <div class="detail" id="snapshot-range"></div>
         </div>
       </div>
+
+      <div class="movers-row" id="comp-movers"></div>
 
       <div class="chart-container">
         <h2>Inventory Over Time</h2>
@@ -193,9 +182,10 @@
               <th>Competitor</th>
               <th>Platform</th>
               <th style="text-align:right">Properties</th>
-              <th style="text-align:right">With Address</th>
               <th style="text-align:right">Coverage</th>
-              <th>Towns</th>
+              <th style="text-align:right">W/W</th>
+              <th style="text-align:right">All-Time</th>
+              <th>Trend</th>
             </tr>
           </thead>
           <tbody id="detail-table"></tbody>
@@ -215,6 +205,7 @@
         <div class="stat-card">
           <div class="label">Total Properties</div>
           <div class="value" id="f-total-props">-</div>
+          <div class="detail" id="f-total-props-change"></div>
         </div>
         <div class="stat-card">
           <div class="label">Total Bedrooms</div>
@@ -226,6 +217,8 @@
           <div class="detail" id="f-maine-rank"></div>
         </div>
       </div>
+
+      <div class="movers-row" id="franchise-movers"></div>
 
       <div class="chart-container">
         <h2>Total Properties Over Time</h2>
@@ -246,7 +239,9 @@
               <th style="text-align:right">Properties</th>
               <th style="text-align:right">Total BR</th>
               <th style="text-align:right">Avg BR</th>
-              <th style="text-align:right">Change</th>
+              <th style="text-align:right">W/W</th>
+              <th style="text-align:right">All-Time</th>
+              <th>Trend</th>
             </tr>
           </thead>
           <tbody id="f-detail-table"></tbody>
@@ -265,9 +260,92 @@
       '#8b5cf6','#10b981','#f59e0b','#ef4444','#6366f1',
     ];
 
-    const charts = {};
+    // ===== Helpers =====
+    function fmtChange(val, showPct, pct) {
+      if (val == null) return '';
+      const sign = val > 0 ? '+' : '';
+      let s = sign + val;
+      if (showPct && pct != null) s += ` (${sign}${pct}%)`;
+      return s;
+    }
+    function changeClass(val) {
+      if (val > 0) return 'change-up';
+      if (val < 0) return 'change-down';
+      return 'change-flat';
+    }
+    function changeHtml(val, pct) {
+      if (val == null) return '<span class="change-flat">-</span>';
+      const cls = changeClass(val);
+      const arrow = val > 0 ? '&#9650;' : val < 0 ? '&#9660;' : '';
+      const sign = val > 0 ? '+' : '';
+      let text = `${sign}${val}`;
+      if (pct != null && pct !== 0) text += ` <span style="font-size:0.7rem;opacity:0.7">(${sign}${pct}%)</span>`;
+      return `<span class="${cls}">${arrow} ${text}</span>`;
+    }
 
-    // ==================== Tab switching ====================
+    // ===== Movers Panel =====
+    function renderMovers(containerId, trends) {
+      const container = document.getElementById(containerId);
+      if (!trends || (!trends.growing.length && !trends.declining.length)) {
+        container.innerHTML = `<div class="movers-panel" style="grid-column:1/-1">
+          <h2>Inventory Changes</h2>
+          <div class="no-movers">No changes detected yet. Trends will appear after additional weekly scrapes.</div>
+        </div>`;
+        return;
+      }
+
+      const compDates = trends.comparison_dates;
+      const window = compDates.month_ago ? 'month' : compDates.week_ago ? 'week' : 'all-time';
+      const changeKey = compDates.month_ago ? 'mom_change' : compDates.week_ago ? 'wow_change' : 'all_time_change';
+      const pctKey = compDates.month_ago ? 'mom_pct' : compDates.week_ago ? 'wow_pct' : 'all_time_pct';
+      const windowLabel = compDates.month_ago ? 'vs. last month' : compDates.week_ago ? 'vs. last week' : 'since first scrape';
+
+      let html = '';
+
+      // Growing
+      html += `<div class="movers-panel">
+        <h2><span style="color:var(--green)">&#9650;</span> Growing <span style="font-weight:400;color:var(--muted);font-size:0.75rem">${windowLabel}</span></h2>`;
+      if (trends.growing.length) {
+        trends.growing.slice(0, 8).forEach(e => {
+          const ch = e[changeKey] || e.all_time_change;
+          const pct = e[pctKey] || e.all_time_pct;
+          html += `<div class="mover-item">
+            <span class="mover-name">${e.name}</span>
+            <div class="mover-stats">
+              <span class="mover-count">${e.current} props</span>
+              <span class="mover-change change-up">+${ch}${pct != null ? ` (${pct > 0 ? '+' : ''}${pct}%)` : ''}</span>
+            </div>
+          </div>`;
+        });
+      } else {
+        html += '<div class="no-movers">No competitors gaining inventory</div>';
+      }
+      html += '</div>';
+
+      // Declining
+      html += `<div class="movers-panel">
+        <h2><span style="color:var(--red)">&#9660;</span> Declining <span style="font-weight:400;color:var(--muted);font-size:0.75rem">${windowLabel}</span></h2>`;
+      if (trends.declining.length) {
+        trends.declining.slice(0, 8).forEach(e => {
+          const ch = e[changeKey] || e.all_time_change;
+          const pct = e[pctKey] || e.all_time_pct;
+          html += `<div class="mover-item">
+            <span class="mover-name">${e.name}</span>
+            <div class="mover-stats">
+              <span class="mover-count">${e.current} props</span>
+              <span class="mover-change change-down">${ch}${pct != null ? ` (${pct}%)` : ''}</span>
+            </div>
+          </div>`;
+        });
+      } else {
+        html += '<div class="no-movers">No competitors losing inventory</div>';
+      }
+      html += '</div>';
+
+      container.innerHTML = html;
+    }
+
+    // ===== Tab switching =====
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', () => {
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -277,7 +355,7 @@
       });
     });
 
-    // ==================== Data loading ====================
+    // ===== Data loading =====
     async function load() {
       try {
         const resp = await fetch('dashboard-data.json');
@@ -287,7 +365,6 @@
       } catch (e) {
         document.getElementById('loading').style.display = 'none';
         document.getElementById('error').style.display = 'block';
-        console.error(e);
       }
     }
 
@@ -295,7 +372,6 @@
       document.getElementById('loading').style.display = 'none';
       document.getElementById('content').style.display = 'block';
       document.getElementById('last-updated').textContent = data.generated;
-
       renderCompetitors(data);
       renderFranchise(data.franchise);
     }
@@ -303,13 +379,33 @@
     // ==================== COMPETITORS ====================
     function renderCompetitors(data) {
       const totalAddr = data.current.reduce((s, c) => s + c.with_address, 0);
-      const addrPct = data.total_properties > 0
-        ? Math.round((totalAddr / data.total_properties) * 100) : 0;
+      const addrPct = data.total_properties > 0 ? Math.round((totalAddr / data.total_properties) * 100) : 0;
       document.getElementById('total-props').textContent = data.total_properties.toLocaleString();
       document.getElementById('total-comps').textContent = data.total_competitors;
       document.getElementById('address-rate').textContent = addrPct + '%';
-      document.getElementById('snapshot-count').textContent = Object.keys(data.history).length;
 
+      const dates = Object.keys(data.history).sort();
+      document.getElementById('snapshot-count').textContent = dates.length;
+      if (dates.length >= 2) {
+        document.getElementById('snapshot-range').textContent = `${dates[0]} to ${dates[dates.length-1]}`;
+      }
+
+      // Total change
+      if (data.trends && data.trends.comparison_dates) {
+        const cd = data.trends.comparison_dates;
+        const refDate = cd.month_ago || cd.week_ago || cd.first;
+        if (refDate && data.history[refDate]) {
+          const prevTotal = Object.values(data.history[refDate]).reduce((s,v) => s+v, 0);
+          const diff = data.total_properties - prevTotal;
+          if (diff !== 0) {
+            const el = document.getElementById('total-props-change');
+            el.className = 'detail ' + changeClass(diff);
+            el.textContent = (diff > 0 ? '+' : '') + diff + ' since ' + refDate;
+          }
+        }
+      }
+
+      renderMovers('comp-movers', data.trends);
       renderCompBar(data);
       renderCompHistory(data);
       renderCompTable(data);
@@ -322,12 +418,7 @@
         type: 'bar',
         data: {
           labels: sorted.map(c => c.competitor),
-          datasets: [{
-            label: 'Properties',
-            data: sorted.map(c => c.count),
-            backgroundColor: sorted.map((_, i) => COLORS[i % COLORS.length]),
-            borderRadius: 4,
-          }]
+          datasets: [{ label: 'Properties', data: sorted.map(c => c.count), backgroundColor: sorted.map((_, i) => COLORS[i % COLORS.length]), borderRadius: 4 }]
         },
         options: {
           responsive: true, maintainAspectRatio: false, indexAxis: 'y',
@@ -344,24 +435,16 @@
       const dates = Object.keys(data.history).sort();
       if (dates.length < 1) return;
       const ctx = document.getElementById('history-chart').getContext('2d');
-      const latestDate = dates[dates.length - 1];
-      const latestCounts = data.history[latestDate] || {};
-      const topComps = Object.entries(latestCounts)
-        .sort((a, b) => b[1] - a[1]).slice(0, 10).map(e => e[0]);
-
+      const latestCounts = data.history[dates[dates.length - 1]] || {};
+      const topComps = Object.entries(latestCounts).sort((a, b) => b[1] - a[1]).slice(0, 10).map(e => e[0]);
       const datasets = [{
         label: 'Total', borderColor: '#e2e8f0', backgroundColor: 'rgba(226,232,240,0.1)',
         borderWidth: 2, fill: true, tension: 0.3, yAxisID: 'y1',
         data: dates.map(d => Object.values(data.history[d] || {}).reduce((s, v) => s + v, 0)),
       }];
       topComps.forEach((comp, i) => {
-        datasets.push({
-          label: comp, borderColor: COLORS[i % COLORS.length], borderWidth: 1.5,
-          pointRadius: 3, tension: 0.3,
-          data: dates.map(d => (data.history[d] || {})[comp] || 0),
-        });
+        datasets.push({ label: comp, borderColor: COLORS[i % COLORS.length], borderWidth: 1.5, pointRadius: 3, tension: 0.3, data: dates.map(d => (data.history[d] || {})[comp] || 0) });
       });
-
       new Chart(ctx, {
         type: 'line', data: { labels: dates, datasets },
         options: {
@@ -380,26 +463,31 @@
     function renderCompTable(data) {
       const tbody = document.getElementById('detail-table');
       const maxCount = Math.max(...data.current.map(c => c.count));
+      const trends = data.trends ? data.trends.entities : {};
       let totalProps = 0, totalAddr = 0;
+
       data.current.forEach(c => {
         totalProps += c.count;
         totalAddr += c.with_address;
         const pct = c.count > 0 ? Math.round((c.with_address / c.count) * 100) : 0;
         const cls = pct >= 90 ? 'coverage-good' : pct >= 70 ? 'coverage-warn' : 'coverage-bad';
         const barW = maxCount > 0 ? (c.count / maxCount * 100) : 0;
+        const t = trends[c.competitor] || {};
+
         tbody.innerHTML += `<tr>
           <td>${c.competitor}</td>
           <td><span class="badge">${c.platform}</span></td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${c.count}</span></td>
-          <td class="num">${c.with_address}</td>
           <td class="num"><span class="coverage ${cls}">${pct}%</span></td>
-          <td style="font-size:0.75rem;color:var(--muted)">${c.cities.join(', ')}</td>
+          <td class="num">${changeHtml(t.wow_change, t.wow_pct)}</td>
+          <td class="num">${changeHtml(t.all_time_change, t.all_time_pct)}</td>
+          <td>${t.trend ? `<span class="trend-badge ${t.trend}">${t.trend}</span>` : ''}</td>
         </tr>`;
       });
+
       const footerPct = totalProps > 0 ? Math.round((totalAddr / totalProps) * 100) : 0;
       document.getElementById('detail-footer').innerHTML = `<tr style="font-weight:600">
-        <td>Total</td><td></td><td class="num">${totalProps}</td>
-        <td class="num">${totalAddr}</td><td class="num">${footerPct}%</td><td></td>
+        <td>Total</td><td></td><td class="num">${totalProps}</td><td class="num">${footerPct}%</td><td></td><td></td><td></td>
       </tr>`;
     }
 
@@ -415,7 +503,22 @@
       document.getElementById('f-total-props').textContent = f.total_properties.toLocaleString();
       document.getElementById('f-total-br').textContent = f.total_bedrooms.toLocaleString();
 
-      // Find Maine
+      // Total change
+      if (f.trends && f.trends.comparison_dates) {
+        const dates = Object.keys(f.history).sort();
+        const cd = f.trends.comparison_dates;
+        const refDate = cd.month_ago || cd.week_ago || cd.first;
+        if (refDate && f.history[refDate]) {
+          const prevTotal = Object.values(f.history[refDate]).reduce((s,v) => s+v, 0);
+          const diff = f.total_properties - prevTotal;
+          if (diff !== 0) {
+            const el = document.getElementById('f-total-props-change');
+            el.className = 'detail ' + changeClass(diff);
+            el.textContent = (diff > 0 ? '+' : '') + diff + ' since ' + refDate;
+          }
+        }
+      }
+
       const maine = f.locations.find(l => l.slug === 'maine-southern-coastal' || l.location.toLowerCase().includes('maine'));
       if (maine) {
         document.getElementById('f-maine-props').textContent = maine.property_count;
@@ -423,6 +526,7 @@
         document.getElementById('f-maine-rank').textContent = `#${rank} of ${f.total_locations} locations`;
       }
 
+      renderMovers('franchise-movers', f.trends);
       renderFranchiseBar(f);
       renderFranchiseHistory(f);
       renderFranchiseTable(f);
@@ -431,19 +535,11 @@
     function renderFranchiseBar(f) {
       const ctx = document.getElementById('f-bar-chart').getContext('2d');
       const top20 = f.locations.slice(0, 20);
-      const maineSlug = 'maine-southern-coastal';
       new Chart(ctx, {
         type: 'bar',
         data: {
           labels: top20.map(l => l.location),
-          datasets: [{
-            label: 'Properties',
-            data: top20.map(l => l.property_count),
-            backgroundColor: top20.map(l =>
-              l.slug === maineSlug ? '#38bdf8' : 'rgba(148, 163, 184, 0.4)'
-            ),
-            borderRadius: 4,
-          }]
+          datasets: [{ label: 'Properties', data: top20.map(l => l.property_count), backgroundColor: top20.map(l => l.slug === 'maine-southern-coastal' ? '#38bdf8' : 'rgba(148,163,184,0.4)'), borderRadius: 4 }]
         },
         options: {
           responsive: true, maintainAspectRatio: false, indexAxis: 'y',
@@ -460,34 +556,19 @@
       const dates = Object.keys(f.history).sort();
       if (dates.length < 1) return;
       const ctx = document.getElementById('f-history-chart').getContext('2d');
-
-      // Total line + top 8 locations + Maine
-      const latestDate = dates[dates.length - 1];
-      const latestCounts = f.history[latestDate] || {};
-      let topLocs = Object.entries(latestCounts)
-        .sort((a, b) => b[1] - a[1]).slice(0, 8).map(e => e[0]);
-      // Ensure Maine is included
+      const latestCounts = f.history[dates[dates.length - 1]] || {};
+      let topLocs = Object.entries(latestCounts).sort((a, b) => b[1] - a[1]).slice(0, 8).map(e => e[0]);
       const maineName = f.locations.find(l => l.slug === 'maine-southern-coastal')?.location;
       if (maineName && !topLocs.includes(maineName)) topLocs.push(maineName);
-
       const datasets = [{
         label: 'Total', borderColor: '#e2e8f0', backgroundColor: 'rgba(226,232,240,0.1)',
         borderWidth: 2, fill: true, tension: 0.3, yAxisID: 'y1',
         data: dates.map(d => Object.values(f.history[d] || {}).reduce((s, v) => s + v, 0)),
       }];
-
       topLocs.forEach((loc, i) => {
         const isMaine = loc === maineName;
-        datasets.push({
-          label: loc,
-          borderColor: isMaine ? '#38bdf8' : COLORS[(i + 1) % COLORS.length],
-          borderWidth: isMaine ? 2.5 : 1.5,
-          borderDash: isMaine ? [] : [4, 2],
-          pointRadius: 3, tension: 0.3,
-          data: dates.map(d => (f.history[d] || {})[loc] || 0),
-        });
+        datasets.push({ label: loc, borderColor: isMaine ? '#38bdf8' : COLORS[(i+1) % COLORS.length], borderWidth: isMaine ? 2.5 : 1.5, borderDash: isMaine ? [] : [4, 2], pointRadius: 3, tension: 0.3, data: dates.map(d => (f.history[d] || {})[loc] || 0) });
       });
-
       new Chart(ctx, {
         type: 'line', data: { labels: dates, datasets },
         options: {
@@ -506,34 +587,24 @@
     function renderFranchiseTable(f) {
       const tbody = document.getElementById('f-detail-table');
       const maxCount = Math.max(...f.locations.map(l => l.property_count));
-      const dates = Object.keys(f.history).sort();
-      const hasHistory = dates.length > 1;
-
+      const trends = f.trends ? f.trends.entities : {};
       let totalProps = 0, totalBR = 0;
+
       f.locations.forEach(l => {
         totalProps += l.property_count;
         totalBR += l.total_bedrooms || 0;
-
-        let change = '';
-        if (hasHistory) {
-          const first = (f.history[dates[0]] || {})[l.location] || 0;
-          const last = l.property_count;
-          const diff = last - first;
-          if (diff > 0) change = `<span class="coverage-good">+${diff}</span>`;
-          else if (diff < 0) change = `<span class="coverage-bad">${diff}</span>`;
-          else change = `<span style="color:var(--muted)">-</span>`;
-        }
-
+        const t = trends[l.location] || {};
         const isMaine = l.slug === 'maine-southern-coastal';
-        const rowClass = isMaine ? 'highlight-row' : '';
         const barW = maxCount > 0 ? (l.property_count / maxCount * 100) : 0;
 
-        tbody.innerHTML += `<tr class="${rowClass}">
+        tbody.innerHTML += `<tr class="${isMaine ? 'highlight-row' : ''}">
           <td>${l.location}${isMaine ? ' <span class="badge" style="background:rgba(56,189,248,0.25)">Our Market</span>' : ''}</td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${l.property_count}</span></td>
           <td class="num">${l.total_bedrooms || '-'}</td>
           <td class="num">${l.avg_bedrooms || '-'}</td>
-          <td class="num">${change}</td>
+          <td class="num">${changeHtml(t.wow_change, t.wow_pct)}</td>
+          <td class="num">${changeHtml(t.all_time_change, t.all_time_pct)}</td>
+          <td>${t.trend ? `<span class="trend-badge ${t.trend}">${t.trend}</span>` : ''}</td>
         </tr>`;
       });
 
@@ -541,7 +612,7 @@
         <td>Total (${f.total_locations} locations)</td>
         <td class="num">${totalProps.toLocaleString()}</td>
         <td class="num">${totalBR.toLocaleString()}</td>
-        <td></td><td></td>
+        <td></td><td></td><td></td><td></td>
       </tr>`;
     }
 
