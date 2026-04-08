@@ -1459,7 +1459,8 @@
         "St Augustine": 20,
         "Vail Valley": 7,
         "White Mountains": 8,
-        "Winter Park And Grand County": 2
+        "Winter Park And Grand County": 2,
+        "Grand Welcome Total": 2127
       },
       "2026-03-21": {
         "Austin": 72,
@@ -1516,7 +1517,8 @@
         "St Augustine": 21,
         "Vail Valley": 7,
         "White Mountains": 8,
-        "Winter Park And Grand County": 2
+        "Winter Park And Grand County": 2,
+        "Grand Welcome Total": 2133
       },
       "2026-03-22": {
         "Austin": 72,
@@ -1573,7 +1575,8 @@
         "St Augustine": 21,
         "Vail Valley": 7,
         "White Mountains": 8,
-        "Winter Park And Grand County": 2
+        "Winter Park And Grand County": 2,
+        "Grand Welcome Total": 2133
       }
     },
     "trends": {
@@ -1968,9 +1971,24 @@
           "all_time_change": 0,
           "all_time_pct": 0.0,
           "trend": "stable"
+        },
+        "Grand Welcome Total": {
+          "current": 2133,
+          "first": 2127,
+          "all_time_change": 6,
+          "all_time_pct": 0.3,
+          "trend": "growing"
         }
       },
       "growing": [
+        {
+          "name": "Grand Welcome Total",
+          "current": 2133,
+          "first": 2127,
+          "all_time_change": 6,
+          "all_time_pct": 0.3,
+          "trend": "growing"
+        },
         {
           "name": "Branson",
           "current": 389,

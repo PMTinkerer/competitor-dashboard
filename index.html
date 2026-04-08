@@ -688,11 +688,16 @@
         </tr>`;
       });
 
-      document.getElementById('f-detail-footer').innerHTML = `<tr style="font-weight:600">
-        <td>Total (${f.total_locations} locations)</td>
+      // Total row with trend data and drill-down
+      const totalTrend = (f.trends && f.trends.entities) ? f.trends.entities['Grand Welcome Total'] || {} : {};
+      document.getElementById('f-detail-footer').innerHTML = `<tr style="font-weight:600;cursor:pointer" data-entity="Grand Welcome Total" data-type="franchise" onclick="openDrillDown(this)">
+        <td>Grand Welcome Total (${f.total_locations} locations)</td>
         <td class="num">${totalProps.toLocaleString()}</td>
         <td class="num">${totalBR.toLocaleString()}</td>
-        <td></td><td></td><td></td><td></td>
+        <td></td>
+        <td class="num">${changeHtml(totalTrend.mom_change != null ? totalTrend.mom_change : totalTrend.all_time_change, totalTrend.mom_pct != null ? totalTrend.mom_pct : totalTrend.all_time_pct)}</td>
+        <td class="num">${changeHtml(totalTrend.all_time_change, totalTrend.all_time_pct)}</td>
+        <td>${totalTrend.trend ? `<span class="trend-badge ${totalTrend.trend}">${totalTrend.trend}</span>` : ''}</td>
       </tr>`;
     }
 
