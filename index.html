@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competitor Inventory Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --border: #334155;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --green: #4ade80;
+      --red: #f87171;
+      --yellow: #fbbf24;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 4px; }
+    .subtitle { color: var(--muted); font-size: 0.875rem; margin-bottom: 24px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .stat-card .label { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .stat-card .value { font-size: 1.75rem; font-weight: 700; margin-top: 4px; }
+    .chart-container {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .chart-container h2 { font-size: 1rem; font-weight: 600; margin-bottom: 16px; }
+    .chart-wrapper { position: relative; height: 350px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+    }
+    tr:hover td { background: rgba(56, 189, 248, 0.05); }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .change-pos { color: var(--green); }
+    .change-neg { color: var(--red); }
+    .change-zero { color: var(--muted); }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+    }
+    .bar-cell { position: relative; }
+    .bar-fill {
+      position: absolute;
+      top: 2px; bottom: 2px; left: 0;
+      background: rgba(56, 189, 248, 0.12);
+      border-radius: 3px;
+      z-index: 0;
+    }
+    .bar-cell span { position: relative; z-index: 1; }
+    .coverage { font-size: 0.75rem; color: var(--muted); }
+    .coverage-good { color: var(--green); }
+    .coverage-warn { color: var(--yellow); }
+    .coverage-bad { color: var(--red); }
+    .table-container {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: auto;
+      max-height: 600px;
+    }
+    .table-container h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 16px 16px 0;
+    }
+    #loading { text-align: center; padding: 48px; color: var(--muted); }
+    #error { text-align: center; padding: 48px; color: var(--red); display: none; }
+  </style>
+</head>
+<body>
+  <h1>Competitor Inventory Dashboard</h1>
+  <p class="subtitle">Southern Coastal Maine STR Properties &mdash; Updated <span id="last-updated">...</span></p>
+
+  <div id="loading">Loading dashboard data...</div>
+  <div id="error">Failed to load dashboard data. Check that dashboard-data.json exists.</div>
+
+  <div id="content" style="display:none">
+    <div class="stats">
+      <div class="stat-card">
+        <div class="label">Total Properties</div>
+        <div class="value" id="total-props">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Competitors Tracked</div>
+        <div class="value" id="total-comps">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Address Coverage</div>
+        <div class="value" id="address-rate">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Snapshots Recorded</div>
+        <div class="value" id="snapshot-count">-</div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <h2>Inventory Over Time</h2>
+      <div class="chart-wrapper">
+        <canvas id="history-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <h2>Properties by Competitor</h2>
+      <div class="chart-wrapper">
+        <canvas id="bar-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <h2>Competitor Detail</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Competitor</th>
+            <th>Platform</th>
+            <th style="text-align:right">Properties</th>
+            <th style="text-align:right">With Address</th>
+            <th style="text-align:right">Coverage</th>
+            <th>Towns</th>
+          </tr>
+        </thead>
+        <tbody id="detail-table"></tbody>
+        <tfoot id="detail-footer"></tfoot>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const COLORS = [
+      '#38bdf8','#4ade80','#fbbf24','#f87171','#a78bfa',
+      '#fb923c','#2dd4bf','#e879f9','#60a5fa','#34d399',
+      '#f472b6','#facc15','#818cf8','#fb7185','#22d3ee',
+      '#a3e635','#c084fc','#f97316','#14b8a6','#e11d48',
+      '#8b5cf6','#10b981','#f59e0b','#ef4444','#6366f1',
+    ];
+
+    async function load() {
+      try {
+        const resp = await fetch('dashboard-data.json');
+        if (!resp.ok) throw new Error(resp.statusText);
+        const data = await resp.json();
+        render(data);
+      } catch (e) {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('error').style.display = 'block';
+        console.error(e);
+      }
+    }
+
+    function render(data) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+      document.getElementById('last-updated').textContent = data.generated;
+
+      // Stats
+      const totalAddr = data.current.reduce((s, c) => s + c.with_address, 0);
+      const addrPct = data.total_properties > 0
+        ? Math.round((totalAddr / data.total_properties) * 100)
+        : 0;
+      document.getElementById('total-props').textContent = data.total_properties.toLocaleString();
+      document.getElementById('total-comps').textContent = data.total_competitors;
+      document.getElementById('address-rate').textContent = addrPct + '%';
+      document.getElementById('snapshot-count').textContent = Object.keys(data.history).length;
+
+      renderBarChart(data);
+      renderHistoryChart(data);
+      renderTable(data);
+    }
+
+    function renderBarChart(data) {
+      const ctx = document.getElementById('bar-chart').getContext('2d');
+      const sorted = [...data.current].sort((a, b) => b.count - a.count);
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: sorted.map(c => c.competitor),
+          datasets: [{
+            label: 'Properties',
+            data: sorted.map(c => c.count),
+            backgroundColor: sorted.map((_, i) => COLORS[i % COLORS.length]),
+            borderRadius: 4,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          plugins: { legend: { display: false } },
+          scales: {
+            x: {
+              grid: { color: 'rgba(51,65,85,0.5)' },
+              ticks: { color: '#94a3b8' },
+            },
+            y: {
+              grid: { display: false },
+              ticks: { color: '#e2e8f0', font: { size: 11 } },
+            }
+          }
+        }
+      });
+    }
+
+    function renderHistoryChart(data) {
+      const dates = Object.keys(data.history).sort();
+      if (dates.length < 1) return;
+
+      const ctx = document.getElementById('history-chart').getContext('2d');
+
+      // Get top 10 competitors by latest count for the line chart
+      const latestDate = dates[dates.length - 1];
+      const latestCounts = data.history[latestDate] || {};
+      const topComps = Object.entries(latestCounts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10)
+        .map(e => e[0]);
+
+      // Also add a "Total" dataset
+      const datasets = [{
+        label: 'Total',
+        data: dates.map(d => {
+          const dayData = data.history[d] || {};
+          return Object.values(dayData).reduce((s, v) => s + v, 0);
+        }),
+        borderColor: '#e2e8f0',
+        backgroundColor: 'rgba(226,232,240,0.1)',
+        borderWidth: 2,
+        fill: true,
+        tension: 0.3,
+        yAxisID: 'y1',
+      }];
+
+      topComps.forEach((comp, i) => {
+        datasets.push({
+          label: comp,
+          data: dates.map(d => (data.history[d] || {})[comp] || 0),
+          borderColor: COLORS[i % COLORS.length],
+          borderWidth: 1.5,
+          pointRadius: 3,
+          tension: 0.3,
+        });
+      });
+
+      new Chart(ctx, {
+        type: 'line',
+        data: { labels: dates, datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              labels: { color: '#94a3b8', font: { size: 11 }, boxWidth: 12 },
+              position: 'bottom',
+            }
+          },
+          scales: {
+            x: {
+              grid: { color: 'rgba(51,65,85,0.5)' },
+              ticks: { color: '#94a3b8' },
+            },
+            y: {
+              position: 'left',
+              grid: { color: 'rgba(51,65,85,0.5)' },
+              ticks: { color: '#94a3b8' },
+              title: { display: true, text: 'Per Competitor', color: '#94a3b8' },
+            },
+            y1: {
+              position: 'right',
+              grid: { drawOnChartArea: false },
+              ticks: { color: '#94a3b8' },
+              title: { display: true, text: 'Total', color: '#94a3b8' },
+            }
+          }
+        }
+      });
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('detail-table');
+      const maxCount = Math.max(...data.current.map(c => c.count));
+      let totalProps = 0, totalAddr = 0;
+
+      data.current.forEach(c => {
+        totalProps += c.count;
+        totalAddr += c.with_address;
+        const pct = c.count > 0 ? Math.round((c.with_address / c.count) * 100) : 0;
+        const coverageClass = pct >= 90 ? 'coverage-good' : pct >= 70 ? 'coverage-warn' : 'coverage-bad';
+        const barWidth = maxCount > 0 ? (c.count / maxCount * 100) : 0;
+
+        tbody.innerHTML += `<tr>
+          <td>${c.competitor}</td>
+          <td><span class="badge">${c.platform}</span></td>
+          <td class="num bar-cell">
+            <div class="bar-fill" style="width:${barWidth}%"></div>
+            <span>${c.count}</span>
+          </td>
+          <td class="num">${c.with_address}</td>
+          <td class="num"><span class="coverage ${coverageClass}">${pct}%</span></td>
+          <td style="font-size:0.75rem;color:var(--muted)">${c.cities.join(', ')}</td>
+        </tr>`;
+      });
+
+      const footerPct = totalProps > 0 ? Math.round((totalAddr / totalProps) * 100) : 0;
+      document.getElementById('detail-footer').innerHTML = `<tr style="font-weight:600">
+        <td>Total</td>
+        <td></td>
+        <td class="num">${totalProps}</td>
+        <td class="num">${totalAddr}</td>
+        <td class="num">${footerPct}%</td>
+        <td></td>
+      </tr>`;
+    }
+
+    load();
+  </script>
+</body>
+</html>

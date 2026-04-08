@@ -1,0 +1,335 @@
+{
+  "generated": "2026-04-08",
+  "total_properties": 1407,
+  "total_competitors": 25,
+  "current": [
+    {
+      "competitor": "Airbnb",
+      "platform": "airbnb",
+      "count": 266,
+      "with_address": 266,
+      "cities": [
+        "Acton",
+        "Alfred",
+        "Arundel",
+        "Biddeford",
+        "Cape Elizabeth",
+        "Kennebunk",
+        "Kennebunkport",
+        "Kittery",
+        "North Berwick",
+        "Ogunquit",
+        "Old Orchard Beach",
+        "Rye",
+        "Saco",
+        "Sanford",
+        "Scarborough",
+        "South Berwick",
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Rental Pro / Garnsey Brothers",
+      "platform": "rentalpro_custom",
+      "count": 89,
+      "with_address": 74,
+      "cities": [
+        "Ogunquit",
+        "Wells"
+      ]
+    },
+    {
+      "competitor": "Vacasa",
+      "platform": "vacasa",
+      "count": 88,
+      "with_address": 87,
+      "cities": [
+        "Kennebunk",
+        "Kennebunkport",
+        "Kittery",
+        "Ogunquit",
+        "Old Orchard Beach",
+        "Saco",
+        "Scarborough",
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Maine Seaside Rentals",
+      "platform": "maineseaside_custom",
+      "count": 77,
+      "with_address": 57,
+      "cities": [
+        "#3 Biddeford Pool",
+        "Biddeford",
+        "Biddeford Biddeford Pool"
+      ]
+    },
+    {
+      "competitor": "Ocean Park Realty",
+      "platform": "oceanpark_custom",
+      "count": 72,
+      "with_address": 72,
+      "cities": [
+        "Old Orchard Beach"
+      ]
+    },
+    {
+      "competitor": "Sand Dollar Real Estate",
+      "platform": "jeanknapp_custom",
+      "count": 72,
+      "with_address": 72,
+      "cities": [
+        "Biddeford",
+        "Kennebunkport"
+      ]
+    },
+    {
+      "competitor": "Evolve Vacation Rentals",
+      "platform": "evolve",
+      "count": 69,
+      "with_address": 69,
+      "cities": [
+        "Arundel",
+        "Biddeford",
+        "East Waterboro",
+        "Kennebunk",
+        "Kennebunkport",
+        "Lyman",
+        "Ogunquit",
+        "Old Orchard Beach",
+        "Saco",
+        "Scarborough",
+        "Waterboro",
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Salt & Shine Vacation Rentals",
+      "platform": "ownerrez",
+      "count": 61,
+      "with_address": 61,
+      "cities": [
+        "Kennebunk",
+        "Ogunquit",
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "KPort Concierge",
+      "platform": "lodgify",
+      "count": 54,
+      "with_address": 54,
+      "cities": [
+        "Arundel",
+        "Biddeford",
+        "Kennebunk",
+        "Kennebunkport",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Bayley Vacation Rentals",
+      "platform": "bayley_custom",
+      "count": 53,
+      "with_address": 53,
+      "cities": [
+        "Kennebunk",
+        "Old Orchard Beach",
+        "Saco",
+        "Scarborough"
+      ]
+    },
+    {
+      "competitor": "Coastline Vacation Rentals",
+      "platform": "ownerrez",
+      "count": 52,
+      "with_address": 52,
+      "cities": [
+        "Biddeford",
+        "Kennebunk",
+        "Kennebunkport",
+        "Ogunquit",
+        "Shapleigh",
+        "Wells"
+      ]
+    },
+    {
+      "competitor": "Tamarack Rentals",
+      "platform": "hostfully",
+      "count": 52,
+      "with_address": 52,
+      "cities": [
+        "Old Orchard Beach",
+        "Saco"
+      ]
+    },
+    {
+      "competitor": "Anchor Real Estate Rentals",
+      "platform": "lodgify",
+      "count": 48,
+      "with_address": 47,
+      "cities": [
+        "Kittery",
+        "Ogunquit",
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Goose Rocks Beach Rentals",
+      "platform": "gooserocksbeach_custom",
+      "count": 47,
+      "with_address": 47,
+      "cities": [
+        "Kennebunk",
+        "Kennebunkport"
+      ]
+    },
+    {
+      "competitor": "Jean Knapp Rentals",
+      "platform": "jeanknapp_custom",
+      "count": 47,
+      "with_address": 47,
+      "cities": [
+        "Ogunquit",
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Ogunquit Rental Properties",
+      "platform": "ogunquit_custom",
+      "count": 36,
+      "with_address": 36,
+      "cities": [
+        "Ogunquit"
+      ]
+    },
+    {
+      "competitor": "Seagrass Property Rentals",
+      "platform": "seagrass_custom",
+      "count": 31,
+      "with_address": 31,
+      "cities": [
+        "Arundel",
+        "Kennebunk",
+        "Kennebunkport",
+        "Wells"
+      ]
+    },
+    {
+      "competitor": "KPT Luxury Properties",
+      "platform": "seagrass_custom",
+      "count": 29,
+      "with_address": 29,
+      "cities": [
+        "Kennebunk",
+        "Kennebunkport"
+      ]
+    },
+    {
+      "competitor": "Coastal Getaways",
+      "platform": "hostfully",
+      "count": 28,
+      "with_address": 28,
+      "cities": [
+        "Kennebunk",
+        "Ogunquit",
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Luxury Maine Rentals",
+      "platform": "liverez",
+      "count": 25,
+      "with_address": 25,
+      "cities": [
+        "Portland"
+      ]
+    },
+    {
+      "competitor": "Saco Bay Rentals",
+      "platform": "liverez",
+      "count": 25,
+      "with_address": 25,
+      "cities": [
+        "Saco"
+      ]
+    },
+    {
+      "competitor": "Seashore Property Management",
+      "platform": "liverez",
+      "count": 25,
+      "with_address": 25,
+      "cities": [
+        "Old Orchard Beach"
+      ]
+    },
+    {
+      "competitor": "Maine Street Property Management",
+      "platform": "hostaway",
+      "count": 22,
+      "with_address": 22,
+      "cities": [
+        "Ogunquit",
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Ocean Dreams Maine",
+      "platform": "guesty",
+      "count": 20,
+      "with_address": 19,
+      "cities": [
+        "Wells",
+        "York"
+      ]
+    },
+    {
+      "competitor": "Kennebunk Beach Realty",
+      "platform": "guesty",
+      "count": 19,
+      "with_address": 19,
+      "cities": [
+        "Kennebunk",
+        "Kennebunkport"
+      ]
+    }
+  ],
+  "history": {
+    "2026-04-08": {
+      "Airbnb": 266,
+      "Anchor Real Estate Rentals": 48,
+      "Bayley Vacation Rentals": 53,
+      "Coastal Getaways": 28,
+      "Coastline Vacation Rentals": 52,
+      "Evolve Vacation Rentals": 69,
+      "Goose Rocks Beach Rentals": 47,
+      "Jean Knapp Rentals": 47,
+      "KPT Luxury Properties": 29,
+      "KPort Concierge": 54,
+      "Kennebunk Beach Realty": 19,
+      "Luxury Maine Rentals": 25,
+      "Maine Seaside Rentals": 77,
+      "Maine Street Property Management": 22,
+      "Ocean Dreams Maine": 20,
+      "Ocean Park Realty": 72,
+      "Ogunquit Rental Properties": 36,
+      "Rental Pro / Garnsey Brothers": 89,
+      "Saco Bay Rentals": 25,
+      "Salt & Shine Vacation Rentals": 61,
+      "Sand Dollar Real Estate": 72,
+      "Seagrass Property Rentals": 31,
+      "Seashore Property Management": 25,
+      "Tamarack Rentals": 52,
+      "Vacasa": 88
+    }
+  }
+}
