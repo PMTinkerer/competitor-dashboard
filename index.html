@@ -86,12 +86,13 @@
     .chart-wrapper.tall { height: 600px; }
 
     /* Tables */
-    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
-    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; table-layout: auto; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    td:first-child { white-space: normal; min-width: 140px; }
     th {
       color: var(--muted); font-weight: 500; font-size: 0.75rem;
       text-transform: uppercase; letter-spacing: 0.05em;
-      position: sticky; top: 0; background: var(--surface);
+      position: sticky; top: 0; background: var(--surface); z-index: 2;
     }
     tr:hover td { background: rgba(56, 189, 248, 0.05); }
     td.num { text-align: right; font-variant-numeric: tabular-nums; }
@@ -99,11 +100,13 @@
       display: inline-block; padding: 2px 8px; border-radius: 4px;
       font-size: 0.7rem; font-weight: 500;
       background: rgba(56, 189, 248, 0.15); color: var(--accent);
+      white-space: nowrap;
     }
-    .bar-cell { position: relative; }
+    .bar-cell { position: relative; overflow: hidden; }
     .bar-fill {
       position: absolute; top: 2px; bottom: 2px; left: 0;
       background: rgba(56, 189, 248, 0.12); border-radius: 3px; z-index: 0;
+      pointer-events: none;
     }
     .bar-cell span { position: relative; z-index: 1; }
     .coverage-good { color: var(--green); }
@@ -111,9 +114,12 @@
     .coverage-bad { color: var(--red); }
     .table-container {
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 8px; overflow: auto; max-height: 600px; margin-bottom: 24px;
+      border-radius: 8px; margin-bottom: 24px;
     }
-    .table-container h2 { font-size: 1rem; font-weight: 600; padding: 16px 16px 0; }
+    .table-container h2 { font-size: 1rem; font-weight: 600; padding: 16px 16px 12px; }
+    .table-scroll {
+      overflow: auto; max-height: 520px;
+    }
     .trend-badge {
       display: inline-block; padding: 1px 6px; border-radius: 3px;
       font-size: 0.7rem; font-weight: 600;
@@ -154,9 +160,11 @@
     }
     .modal-stat .ms-label { color: var(--muted); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; }
     .modal-stat .ms-value { font-size: 1.25rem; font-weight: 700; margin-top: 2px; }
-    .modal table { font-size: 0.8125rem; }
+    .modal table { font-size: 0.8125rem; width: 100%; }
     .modal th, .modal td { padding: 8px 10px; }
     .modal .chart-wrapper { height: 200px; margin-bottom: 16px; }
+    .modal #modal-table { overflow: auto; max-height: 300px; }
+    .modal #modal-table th { background: var(--surface); }
   </style>
 </head>
 <body>
@@ -210,21 +218,23 @@
 
       <div class="table-container">
         <h2>Competitor Detail</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Competitor</th>
-              <th>Platform</th>
-              <th style="text-align:right">Properties</th>
-              <th style="text-align:right">Coverage</th>
-              <th style="text-align:right">M/M</th>
-              <th style="text-align:right">All-Time</th>
-              <th>Trend</th>
-            </tr>
-          </thead>
-          <tbody id="detail-table"></tbody>
-          <tfoot id="detail-footer"></tfoot>
-        </table>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Competitor</th>
+                <th>Platform</th>
+                <th style="text-align:right">Properties</th>
+                <th style="text-align:right">Coverage</th>
+                <th style="text-align:right">M/M</th>
+                <th style="text-align:right">All-Time</th>
+                <th>Trend</th>
+              </tr>
+            </thead>
+            <tbody id="detail-table"></tbody>
+            <tfoot id="detail-footer"></tfoot>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -266,21 +276,23 @@
 
       <div class="table-container">
         <h2>All Locations</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Location</th>
-              <th style="text-align:right">Properties</th>
-              <th style="text-align:right">Total BR</th>
-              <th style="text-align:right">Avg BR</th>
-              <th style="text-align:right">M/M</th>
-              <th style="text-align:right">All-Time</th>
-              <th>Trend</th>
-            </tr>
-          </thead>
-          <tbody id="f-detail-table"></tbody>
-          <tfoot id="f-detail-footer"></tfoot>
-        </table>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Location</th>
+                <th style="text-align:right">Properties</th>
+                <th style="text-align:right">Total BR</th>
+                <th style="text-align:right">Avg BR</th>
+                <th style="text-align:right">M/M</th>
+                <th style="text-align:right">All-Time</th>
+                <th>Trend</th>
+              </tr>
+            </thead>
+            <tbody id="f-detail-table"></tbody>
+            <tfoot id="f-detail-footer"></tfoot>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -786,12 +798,13 @@
         if (m.lost.length) {
           html += `<div style="margin-top:12px">
             <div style="font-size:0.75rem;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Lost (${m.lost.length})</div>
+            <div style="overflow:auto;max-height:300px">
             <table><thead><tr>
               <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th><th>Last Seen</th>
             </tr></thead><tbody>`;
           m.lost.forEach(item => {
             html += `<tr>
-              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${item.property_name || '-'}</td>
+              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis">${item.property_name || '-'}</td>
               <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
               <td>${item.city || '-'}</td>
               <td><span class="badge">${item.competitor}</span></td>
@@ -799,26 +812,27 @@
               <td style="color:var(--muted)">${item.date_last_seen || '-'}</td>
             </tr>`;
           });
-          html += '</tbody></table></div>';
+          html += '</tbody></table></div></div>';
         }
 
         // Gained listings detail
         if (m.gained.length) {
           html += `<div style="margin-top:${m.lost.length ? '16' : '12'}px">
             <div style="font-size:0.75rem;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Gained (${m.gained.length})</div>
+            <div style="overflow:auto;max-height:300px">
             <table><thead><tr>
               <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th>
             </tr></thead><tbody>`;
           m.gained.forEach(item => {
             html += `<tr>
-              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${item.property_name || '-'}</td>
+              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis">${item.property_name || '-'}</td>
               <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
               <td>${item.city || '-'}</td>
               <td><span class="badge">${item.competitor}</span></td>
               <td class="num">${item.bedrooms || '-'}</td>
             </tr>`;
           });
-          html += '</tbody></table></div>';
+          html += '</tbody></table></div></div>';
         }
 
         html += '</div>';
