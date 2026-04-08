@@ -127,6 +127,15 @@
     .trend-badge.growing { background: rgba(74, 222, 128, 0.15); color: var(--green); }
     .trend-badge.declining { background: rgba(248, 113, 113, 0.15); color: var(--red); }
     .trend-badge.stable { background: rgba(148, 163, 184, 0.1); color: var(--muted); }
+    .health-badge {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+    }
+    .health-badge.strong { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+    .health-badge.stable { background: rgba(56, 189, 248, 0.15); color: var(--accent); }
+    .health-badge.watch { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+    .health-badge.weak { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+    .share-bar { display: flex; height: 6px; border-radius: 3px; overflow: hidden; gap: 1px; margin-top: 4px; }
     .highlight-row td { background: rgba(56, 189, 248, 0.08); font-weight: 600; }
     #loading { text-align: center; padding: 48px; color: var(--muted); }
     #error { text-align: center; padding: 48px; color: var(--red); display: none; }
@@ -177,6 +186,7 @@
   <div id="content" style="display:none">
     <div class="tabs">
       <div class="tab active" data-tab="competitors">Competitors</div>
+      <div class="tab" data-tab="towns">Market by Town</div>
       <div class="tab" data-tab="franchise">Grand Welcome Locations</div>
       <div class="tab" data-tab="changes">Listing Changes</div>
     </div>
@@ -229,10 +239,56 @@
                 <th style="text-align:right">M/M</th>
                 <th style="text-align:right">All-Time</th>
                 <th>Trend</th>
+                <th>Health</th>
               </tr>
             </thead>
             <tbody id="detail-table"></tbody>
             <tfoot id="detail-footer"></tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MARKET BY TOWN TAB ==================== -->
+    <div class="tab-content" id="tab-towns">
+      <div class="stats">
+        <div class="stat-card">
+          <div class="label">Towns Covered</div>
+          <div class="value" id="t-total-towns">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Properties with Town</div>
+          <div class="value" id="t-total-props">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Most Competitive</div>
+          <div class="value" id="t-most-competitive" style="font-size:1.1rem">-</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Avg Competitors/Town</div>
+          <div class="value" id="t-avg-comps">-</div>
+        </div>
+      </div>
+
+      <div class="chart-container">
+        <h2>Properties by Town</h2>
+        <div class="chart-wrapper tall"><canvas id="town-bar-chart"></canvas></div>
+      </div>
+
+      <div class="table-container">
+        <h2>Town Detail</h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Town</th>
+                <th style="text-align:right">Properties</th>
+                <th style="text-align:right">Competitors</th>
+                <th>Largest</th>
+                <th>Market Share</th>
+              </tr>
+            </thead>
+            <tbody id="town-table"></tbody>
           </table>
         </div>
       </div>
@@ -464,6 +520,7 @@
       document.getElementById('content').style.display = 'block';
       document.getElementById('last-updated').textContent = data.generated;
       renderCompetitors(data);
+      renderTowns(data.towns);
       renderFranchise(data.franchise);
       renderListingChanges(data.listing_changes);
     }
@@ -556,6 +613,7 @@
       const tbody = document.getElementById('detail-table');
       const maxCount = Math.max(...data.current.map(c => c.count));
       const trends = data.trends ? data.trends.entities : {};
+      const health = data.health_scores || {};
       let totalProps = 0, totalAddr = 0;
 
       data.current.forEach(c => {
@@ -565,6 +623,7 @@
         const cls = pct >= 90 ? 'coverage-good' : pct >= 70 ? 'coverage-warn' : 'coverage-bad';
         const barW = maxCount > 0 ? (c.count / maxCount * 100) : 0;
         const t = trends[c.competitor] || {};
+        const h = health[c.competitor] || {};
 
         tbody.innerHTML += `<tr data-entity="${c.competitor}" data-type="competitor" onclick="openDrillDown(this)">
           <td>${c.competitor}</td>
@@ -574,13 +633,75 @@
           <td class="num">${changeHtml(t.mom_change != null ? t.mom_change : t.all_time_change, t.mom_pct != null ? t.mom_pct : t.all_time_pct)}</td>
           <td class="num">${changeHtml(t.all_time_change, t.all_time_pct)}</td>
           <td>${t.trend ? `<span class="trend-badge ${t.trend}">${t.trend}</span>` : ''}</td>
+          <td>${h.rating ? `<span class="health-badge ${h.rating}" title="Score: ${h.score}/100">${h.rating}</span>` : ''}</td>
         </tr>`;
       });
 
       const footerPct = totalProps > 0 ? Math.round((totalAddr / totalProps) * 100) : 0;
       document.getElementById('detail-footer').innerHTML = `<tr style="font-weight:600">
-        <td>Total</td><td></td><td class="num">${totalProps}</td><td class="num">${footerPct}%</td><td></td><td></td><td></td>
+        <td>Total</td><td></td><td class="num">${totalProps}</td><td class="num">${footerPct}%</td><td></td><td></td><td></td><td></td>
       </tr>`;
+    }
+
+    // ==================== MARKET BY TOWN ====================
+    function renderTowns(towns) {
+      if (!towns || !towns.length) {
+        document.getElementById('tab-towns').innerHTML = '<p style="padding:48px;text-align:center;color:var(--muted)">No town data available.</p>';
+        return;
+      }
+
+      const totalProps = towns.reduce((s, t) => s + t.total, 0);
+      const avgComps = (towns.reduce((s, t) => s + t.competitor_count, 0) / towns.length).toFixed(1);
+      const mostComp = [...towns].sort((a, b) => b.competitor_count - a.competitor_count)[0];
+
+      document.getElementById('t-total-towns').textContent = towns.length;
+      document.getElementById('t-total-props').textContent = totalProps.toLocaleString();
+      document.getElementById('t-most-competitive').textContent = `${mostComp.town} (${mostComp.competitor_count})`;
+      document.getElementById('t-avg-comps').textContent = avgComps;
+
+      // Bar chart
+      const ctx = document.getElementById('town-bar-chart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: towns.map(t => t.town),
+          datasets: [{ label: 'Properties', data: towns.map(t => t.total), backgroundColor: towns.map((_, i) => COLORS[i % COLORS.length]), borderRadius: 4 }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
+            y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } }
+          }
+        }
+      });
+
+      // Table
+      const tbody = document.getElementById('town-table');
+      const maxCount = Math.max(...towns.map(t => t.total));
+      towns.forEach(t => {
+        const barW = maxCount > 0 ? (t.total / maxCount * 100) : 0;
+        // Build mini share bar
+        let shareBar = '<div class="share-bar">';
+        t.competitors.forEach((c, i) => {
+          shareBar += `<div style="width:${c.share}%;background:${COLORS[i % COLORS.length]}" title="${c.name}: ${c.count} (${c.share}%)"></div>`;
+        });
+        shareBar += '</div>';
+
+        // Top 3 competitors text
+        const topComps = t.competitors.slice(0, 3).map(c => `${c.name} (${c.count})`).join(', ');
+        const moreCount = t.competitors.length - 3;
+        const compText = topComps + (moreCount > 0 ? ` +${moreCount} more` : '');
+
+        tbody.innerHTML += `<tr>
+          <td style="font-weight:500">${t.town}</td>
+          <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${t.total}</span></td>
+          <td class="num">${t.competitor_count}</td>
+          <td style="font-size:0.75rem">${t.top_competitor} <span style="color:var(--muted)">(${t.top_competitor_count})</span></td>
+          <td style="min-width:180px"><div style="font-size:0.7rem;color:var(--muted)">${compText}</div>${shareBar}</td>
+        </tr>`;
+      });
     }
 
     // ==================== FRANCHISE ====================

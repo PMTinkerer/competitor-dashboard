@@ -1011,6 +1011,1126 @@
       }
     ]
   },
+  "health_scores": {
+    "Garnsey Brothers": {
+      "score": 88,
+      "rating": "strong",
+      "size_score": 97,
+      "trend_score": 71.1,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Vacasa": {
+      "score": 79,
+      "rating": "strong",
+      "size_score": 97,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Maine Seaside Rentals": {
+      "score": 78,
+      "rating": "strong",
+      "size_score": 94,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Ocean Park Realty": {
+      "score": 86,
+      "rating": "strong",
+      "size_score": 93,
+      "trend_score": 70,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Sand Dollar Real Estate": {
+      "score": 78,
+      "rating": "strong",
+      "size_score": 93,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Evolve Vacation Rentals": {
+      "score": 86,
+      "rating": "strong",
+      "size_score": 92,
+      "trend_score": 70,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Salt & Shine Vacation Rentals": {
+      "score": 77,
+      "rating": "strong",
+      "size_score": 89,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "KPort Concierge": {
+      "score": 76,
+      "rating": "strong",
+      "size_score": 87,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Bayley Vacation Rentals": {
+      "score": 76,
+      "rating": "strong",
+      "size_score": 86,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Coastline Vacation Rentals": {
+      "score": 86,
+      "rating": "strong",
+      "size_score": 86,
+      "trend_score": 76.1,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Tamarack Rentals": {
+      "score": 76,
+      "rating": "strong",
+      "size_score": 86,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Anchor Real Estate Rentals": {
+      "score": 84,
+      "rating": "strong",
+      "size_score": 84,
+      "trend_score": 72.1,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Goose Rocks Beach Rentals": {
+      "score": 83,
+      "rating": "strong",
+      "size_score": 84,
+      "trend_score": 70,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Jean Knapp Rentals": {
+      "score": 84,
+      "rating": "strong",
+      "size_score": 84,
+      "trend_score": 72.2,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "KMA Property Group": {
+      "score": 52,
+      "rating": "stable",
+      "size_score": 80,
+      "trend_score": 70,
+      "stability_score": 0,
+      "churn_rate": 100.0,
+      "gross_gained": 40,
+      "gross_lost": 0
+    },
+    "Ogunquit Rental Properties": {
+      "score": 81,
+      "rating": "strong",
+      "size_score": 78,
+      "trend_score": 70,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Seagrass Property Rentals": {
+      "score": 72,
+      "rating": "stable",
+      "size_score": 75,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "KPT Luxury Properties": {
+      "score": 80,
+      "rating": "strong",
+      "size_score": 73,
+      "trend_score": 70,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Coastal Getaways": {
+      "score": 72,
+      "rating": "stable",
+      "size_score": 72,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "TopHost Vacation Rentals": {
+      "score": 80,
+      "rating": "strong",
+      "size_score": 72,
+      "trend_score": 70,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Luxury Maine Rentals": {
+      "score": 79,
+      "rating": "strong",
+      "size_score": 70,
+      "trend_score": 70,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Saco Bay Rentals": {
+      "score": 71,
+      "rating": "stable",
+      "size_score": 70,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Seashore Property Management": {
+      "score": 71,
+      "rating": "stable",
+      "size_score": 70,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Maine Street Property Management": {
+      "score": 70,
+      "rating": "stable",
+      "size_score": 67,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Ocean Dreams Maine": {
+      "score": 70,
+      "rating": "stable",
+      "size_score": 65,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    },
+    "Kennebunk Beach Realty": {
+      "score": 69,
+      "rating": "stable",
+      "size_score": 64,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
+      "gross_lost": 0
+    }
+  },
+  "towns": [
+    {
+      "town": "Kennebunkport",
+      "total": 183,
+      "competitor_count": 10,
+      "top_competitor": "Sand Dollar Real Estate",
+      "top_competitor_count": 70,
+      "competitors": [
+        {
+          "name": "Sand Dollar Real Estate",
+          "count": 70,
+          "share": 38.3
+        },
+        {
+          "name": "Goose Rocks Beach Rentals",
+          "count": 28,
+          "share": 15.3
+        },
+        {
+          "name": "KPort Concierge",
+          "count": 22,
+          "share": 12.0
+        },
+        {
+          "name": "Vacasa",
+          "count": 19,
+          "share": 10.4
+        },
+        {
+          "name": "KPT Luxury Properties",
+          "count": 13,
+          "share": 7.1
+        },
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 12,
+          "share": 6.6
+        },
+        {
+          "name": "Seagrass Property Rentals",
+          "count": 11,
+          "share": 6.0
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 3,
+          "share": 1.6
+        },
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 3,
+          "share": 1.6
+        },
+        {
+          "name": "Kennebunk Beach Realty",
+          "count": 2,
+          "share": 1.1
+        }
+      ]
+    },
+    {
+      "town": "Wells",
+      "total": 177,
+      "competitor_count": 13,
+      "top_competitor": "Garnsey Brothers",
+      "top_competitor_count": 88,
+      "competitors": [
+        {
+          "name": "Garnsey Brothers",
+          "count": 88,
+          "share": 49.7
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 17,
+          "share": 9.6
+        },
+        {
+          "name": "Ocean Dreams Maine",
+          "count": 17,
+          "share": 9.6
+        },
+        {
+          "name": "Salt & Shine Vacation Rentals",
+          "count": 10,
+          "share": 5.6
+        },
+        {
+          "name": "Anchor Real Estate Rentals",
+          "count": 8,
+          "share": 4.5
+        },
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 8,
+          "share": 4.5
+        },
+        {
+          "name": "Vacasa",
+          "count": 8,
+          "share": 4.5
+        },
+        {
+          "name": "Maine Street Property Management",
+          "count": 7,
+          "share": 4.0
+        },
+        {
+          "name": "Jean Knapp Rentals",
+          "count": 6,
+          "share": 3.4
+        },
+        {
+          "name": "KMA Property Group",
+          "count": 5,
+          "share": 2.8
+        },
+        {
+          "name": "Coastal Getaways",
+          "count": 1,
+          "share": 0.6
+        },
+        {
+          "name": "Seagrass Property Rentals",
+          "count": 1,
+          "share": 0.6
+        },
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 0.6
+        }
+      ]
+    },
+    {
+      "town": "Old Orchard Beach",
+      "total": 158,
+      "competitor_count": 6,
+      "top_competitor": "Ocean Park Realty",
+      "top_competitor_count": 72,
+      "competitors": [
+        {
+          "name": "Ocean Park Realty",
+          "count": 72,
+          "share": 45.6
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 26,
+          "share": 16.5
+        },
+        {
+          "name": "Seashore Property Management",
+          "count": 25,
+          "share": 15.8
+        },
+        {
+          "name": "Tamarack Rentals",
+          "count": 25,
+          "share": 15.8
+        },
+        {
+          "name": "Bayley Vacation Rentals",
+          "count": 5,
+          "share": 3.2
+        },
+        {
+          "name": "Vacasa",
+          "count": 5,
+          "share": 3.2
+        }
+      ]
+    },
+    {
+      "town": "Kennebunk",
+      "total": 130,
+      "competitor_count": 12,
+      "top_competitor": "Coastline Vacation Rentals",
+      "top_competitor_count": 23,
+      "competitors": [
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 23,
+          "share": 17.7
+        },
+        {
+          "name": "Goose Rocks Beach Rentals",
+          "count": 19,
+          "share": 14.6
+        },
+        {
+          "name": "Seagrass Property Rentals",
+          "count": 18,
+          "share": 13.8
+        },
+        {
+          "name": "Kennebunk Beach Realty",
+          "count": 17,
+          "share": 13.1
+        },
+        {
+          "name": "KPT Luxury Properties",
+          "count": 16,
+          "share": 12.3
+        },
+        {
+          "name": "KPort Concierge",
+          "count": 16,
+          "share": 12.3
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 6,
+          "share": 4.6
+        },
+        {
+          "name": "KMA Property Group",
+          "count": 5,
+          "share": 3.8
+        },
+        {
+          "name": "Vacasa",
+          "count": 5,
+          "share": 3.8
+        },
+        {
+          "name": "Coastal Getaways",
+          "count": 3,
+          "share": 2.3
+        },
+        {
+          "name": "Bayley Vacation Rentals",
+          "count": 1,
+          "share": 0.8
+        },
+        {
+          "name": "Salt & Shine Vacation Rentals",
+          "count": 1,
+          "share": 0.8
+        }
+      ]
+    },
+    {
+      "town": "York",
+      "total": 122,
+      "competitor_count": 10,
+      "top_competitor": "Salt & Shine Vacation Rentals",
+      "top_competitor_count": 49,
+      "competitors": [
+        {
+          "name": "Salt & Shine Vacation Rentals",
+          "count": 49,
+          "share": 40.2
+        },
+        {
+          "name": "Anchor Real Estate Rentals",
+          "count": 24,
+          "share": 19.7
+        },
+        {
+          "name": "Coastal Getaways",
+          "count": 23,
+          "share": 18.9
+        },
+        {
+          "name": "KMA Property Group",
+          "count": 6,
+          "share": 4.9
+        },
+        {
+          "name": "Maine Street Property Management",
+          "count": 6,
+          "share": 4.9
+        },
+        {
+          "name": "Vacasa",
+          "count": 5,
+          "share": 4.1
+        },
+        {
+          "name": "Jean Knapp Rentals",
+          "count": 3,
+          "share": 2.5
+        },
+        {
+          "name": "Ocean Dreams Maine",
+          "count": 3,
+          "share": 2.5
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 2,
+          "share": 1.6
+        },
+        {
+          "name": "KPort Concierge",
+          "count": 1,
+          "share": 0.8
+        }
+      ]
+    },
+    {
+      "town": "Ogunquit",
+      "total": 117,
+      "competitor_count": 11,
+      "top_competitor": "Jean Knapp Rentals",
+      "top_competitor_count": 38,
+      "competitors": [
+        {
+          "name": "Jean Knapp Rentals",
+          "count": 38,
+          "share": 32.5
+        },
+        {
+          "name": "Ogunquit Rental Properties",
+          "count": 36,
+          "share": 30.8
+        },
+        {
+          "name": "Anchor Real Estate Rentals",
+          "count": 14,
+          "share": 12.0
+        },
+        {
+          "name": "Maine Street Property Management",
+          "count": 9,
+          "share": 7.7
+        },
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 5,
+          "share": 4.3
+        },
+        {
+          "name": "Vacasa",
+          "count": 5,
+          "share": 4.3
+        },
+        {
+          "name": "KMA Property Group",
+          "count": 4,
+          "share": 3.4
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 3,
+          "share": 2.6
+        },
+        {
+          "name": "Coastal Getaways",
+          "count": 1,
+          "share": 0.9
+        },
+        {
+          "name": "Garnsey Brothers",
+          "count": 1,
+          "share": 0.9
+        },
+        {
+          "name": "Salt & Shine Vacation Rentals",
+          "count": 1,
+          "share": 0.9
+        }
+      ]
+    },
+    {
+      "town": "Saco",
+      "total": 75,
+      "competitor_count": 6,
+      "top_competitor": "Tamarack Rentals",
+      "top_competitor_count": 27,
+      "competitors": [
+        {
+          "name": "Tamarack Rentals",
+          "count": 27,
+          "share": 36.0
+        },
+        {
+          "name": "Saco Bay Rentals",
+          "count": 25,
+          "share": 33.3
+        },
+        {
+          "name": "Vacasa",
+          "count": 13,
+          "share": 17.3
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 4,
+          "share": 5.3
+        },
+        {
+          "name": "Bayley Vacation Rentals",
+          "count": 3,
+          "share": 4.0
+        },
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 3,
+          "share": 4.0
+        }
+      ]
+    },
+    {
+      "town": "Biddeford",
+      "total": 71,
+      "competitor_count": 6,
+      "top_competitor": "Maine Seaside Rentals",
+      "top_competitor_count": 52,
+      "competitors": [
+        {
+          "name": "Maine Seaside Rentals",
+          "count": 52,
+          "share": 73.2
+        },
+        {
+          "name": "KPort Concierge",
+          "count": 12,
+          "share": 16.9
+        },
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 3,
+          "share": 4.2
+        },
+        {
+          "name": "Sand Dollar Real Estate",
+          "count": 2,
+          "share": 2.8
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 1,
+          "share": 1.4
+        },
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 1.4
+        }
+      ]
+    },
+    {
+      "town": "Scarborough",
+      "total": 33,
+      "competitor_count": 5,
+      "top_competitor": "Bayley Vacation Rentals",
+      "top_competitor_count": 20,
+      "competitors": [
+        {
+          "name": "Bayley Vacation Rentals",
+          "count": 20,
+          "share": 60.6
+        },
+        {
+          "name": "Vacasa",
+          "count": 9,
+          "share": 27.3
+        },
+        {
+          "name": "KMA Property Group",
+          "count": 2,
+          "share": 6.1
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 1,
+          "share": 3.0
+        },
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 3.0
+        }
+      ]
+    },
+    {
+      "town": "Portland",
+      "total": 26,
+      "competitor_count": 2,
+      "top_competitor": "Luxury Maine Rentals",
+      "top_competitor_count": 25,
+      "competitors": [
+        {
+          "name": "Luxury Maine Rentals",
+          "count": 25,
+          "share": 96.2
+        },
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 3.8
+        }
+      ]
+    },
+    {
+      "town": "Kittery",
+      "total": 20,
+      "competitor_count": 2,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 19,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 19,
+          "share": 95.0
+        },
+        {
+          "name": "Anchor Real Estate Rentals",
+          "count": 1,
+          "share": 5.0
+        }
+      ]
+    },
+    {
+      "town": "Falmouth",
+      "total": 4,
+      "competitor_count": 1,
+      "top_competitor": "TopHost Vacation Rentals",
+      "top_competitor_count": 4,
+      "competitors": [
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 4,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Waterboro",
+      "total": 3,
+      "competitor_count": 2,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 2,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 2,
+          "share": 66.7
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 1,
+          "share": 33.3
+        }
+      ]
+    },
+    {
+      "town": "Lyman",
+      "total": 3,
+      "competitor_count": 1,
+      "top_competitor": "Evolve Vacation Rentals",
+      "top_competitor_count": 3,
+      "competitors": [
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 3,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Arundel",
+      "total": 3,
+      "competitor_count": 3,
+      "top_competitor": "Evolve Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 1,
+          "share": 33.3
+        },
+        {
+          "name": "KPort Concierge",
+          "count": 1,
+          "share": 33.3
+        },
+        {
+          "name": "Seagrass Property Rentals",
+          "count": 1,
+          "share": 33.3
+        }
+      ]
+    },
+    {
+      "town": "Alfred",
+      "total": 3,
+      "competitor_count": 1,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 3,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 3,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Rye",
+      "total": 3,
+      "competitor_count": 1,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 3,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 3,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Newry",
+      "total": 3,
+      "competitor_count": 1,
+      "top_competitor": "TopHost Vacation Rentals",
+      "top_competitor_count": 3,
+      "competitors": [
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 3,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Shapleigh",
+      "total": 2,
+      "competitor_count": 2,
+      "top_competitor": "Coastline Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 1,
+          "share": 50.0
+        },
+        {
+          "name": "KMA Property Group",
+          "count": 1,
+          "share": 50.0
+        }
+      ]
+    },
+    {
+      "town": "Bartlett",
+      "total": 2,
+      "competitor_count": 1,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 2,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 2,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Newfield",
+      "total": 2,
+      "competitor_count": 1,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 2,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 2,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "East Waterboro",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Evolve Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Wildwood Gables",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Acton",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Barnstead",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Jackson",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "KMA Property Group",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "KMA Property Group",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "#3 Biddeford Pool",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Maine Seaside Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Maine Seaside Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Biddeford Biddeford Pool",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Maine Seaside Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Maine Seaside Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Westbrook",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "TopHost Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Greenville",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "TopHost Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Cumberland",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "TopHost Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Naples",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "TopHost Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Harrison",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "TopHost Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "South Portland",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "TopHost Vacation Rentals",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    }
+  ],
   "franchise": {
     "total_locations": 55,
     "active_locations": 55,
