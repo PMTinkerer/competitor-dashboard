@@ -4,7 +4,7 @@
   "total_competitors": 24,
   "current": [
     {
-      "competitor": "Rental Pro / Garnsey Brothers",
+      "competitor": "Garnsey Brothers",
       "platform": "rentalpro_custom",
       "count": 89,
       "with_address": 74,
@@ -283,13 +283,13 @@
       "Bayley Vacation Rentals": 53,
       "Coastal Getaways": 28,
       "Coastline Vacation Rentals": 49,
+      "Garnsey Brothers": 88,
       "Jean Knapp Rentals": 46,
       "KPort Concierge": 54,
       "Kennebunk Beach Realty": 19,
       "Maine Seaside Rentals": 77,
       "Maine Street Property Management": 22,
       "Ocean Dreams Maine": 20,
-      "Rental Pro / Garnsey Brothers": 88,
       "Saco Bay Rentals": 25,
       "Salt & Shine Vacation Rentals": 61,
       "Sand Dollar Real Estate": 72,
@@ -304,6 +304,7 @@
       "Coastal Getaways": 28,
       "Coastline Vacation Rentals": 49,
       "Evolve Vacation Rentals": 69,
+      "Garnsey Brothers": 88,
       "Goose Rocks Beach Rentals": 47,
       "Jean Knapp Rentals": 46,
       "KPT Luxury Properties": 29,
@@ -315,7 +316,6 @@
       "Ocean Dreams Maine": 20,
       "Ocean Park Realty": 63,
       "Ogunquit Rental Properties": 36,
-      "Rental Pro / Garnsey Brothers": 88,
       "Saco Bay Rentals": 25,
       "Salt & Shine Vacation Rentals": 61,
       "Sand Dollar Real Estate": 72,
@@ -330,6 +330,7 @@
       "Coastal Getaways": 28,
       "Coastline Vacation Rentals": 52,
       "Evolve Vacation Rentals": 69,
+      "Garnsey Brothers": 89,
       "Goose Rocks Beach Rentals": 47,
       "Jean Knapp Rentals": 47,
       "KPT Luxury Properties": 29,
@@ -341,7 +342,6 @@
       "Ocean Dreams Maine": 20,
       "Ocean Park Realty": 63,
       "Ogunquit Rental Properties": 36,
-      "Rental Pro / Garnsey Brothers": 89,
       "Saco Bay Rentals": 25,
       "Salt & Shine Vacation Rentals": 61,
       "Sand Dollar Real Estate": 72,
@@ -356,6 +356,7 @@
       "Coastal Getaways": 28,
       "Coastline Vacation Rentals": 52,
       "Evolve Vacation Rentals": 69,
+      "Garnsey Brothers": 89,
       "Goose Rocks Beach Rentals": 47,
       "Jean Knapp Rentals": 47,
       "KPT Luxury Properties": 29,
@@ -367,7 +368,6 @@
       "Ocean Dreams Maine": 20,
       "Ocean Park Realty": 72,
       "Ogunquit Rental Properties": 36,
-      "Rental Pro / Garnsey Brothers": 89,
       "Saco Bay Rentals": 25,
       "Salt & Shine Vacation Rentals": 61,
       "Sand Dollar Real Estate": 72,
@@ -382,6 +382,7 @@
       "Coastal Getaways": 28,
       "Coastline Vacation Rentals": 52,
       "Evolve Vacation Rentals": 69,
+      "Garnsey Brothers": 89,
       "Goose Rocks Beach Rentals": 47,
       "Jean Knapp Rentals": 47,
       "KPT Luxury Properties": 29,
@@ -393,7 +394,6 @@
       "Ocean Dreams Maine": 20,
       "Ocean Park Realty": 72,
       "Ogunquit Rental Properties": 36,
-      "Rental Pro / Garnsey Brothers": 89,
       "Saco Bay Rentals": 25,
       "Salt & Shine Vacation Rentals": 61,
       "Sand Dollar Real Estate": 72,
@@ -459,6 +459,16 @@
         "first": 0,
         "all_time_change": 69,
         "all_time_pct": null,
+        "trend": "stable"
+      },
+      "Garnsey Brothers": {
+        "current": 89,
+        "wow_prev": 89,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 88,
+        "all_time_change": 1,
+        "all_time_pct": 1.1,
         "trend": "stable"
       },
       "Goose Rocks Beach Rentals": {
@@ -569,16 +579,6 @@
         "first": 0,
         "all_time_change": 36,
         "all_time_pct": null,
-        "trend": "stable"
-      },
-      "Rental Pro / Garnsey Brothers": {
-        "current": 89,
-        "wow_prev": 89,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 88,
-        "all_time_change": 1,
-        "all_time_pct": 1.1,
         "trend": "stable"
       },
       "Saco Bay Rentals": {
@@ -711,6 +711,17 @@
         "trend": "stable"
       },
       {
+        "name": "Garnsey Brothers",
+        "current": 89,
+        "wow_prev": 89,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "first": 88,
+        "all_time_change": 1,
+        "all_time_pct": 1.1,
+        "trend": "stable"
+      },
+      {
         "name": "Goose Rocks Beach Rentals",
         "current": 47,
         "wow_prev": 47,
@@ -829,17 +840,6 @@
         "first": 0,
         "all_time_change": 36,
         "all_time_pct": null,
-        "trend": "stable"
-      },
-      {
-        "name": "Rental Pro / Garnsey Brothers",
-        "current": 89,
-        "wow_prev": 89,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "first": 88,
-        "all_time_change": 1,
-        "all_time_pct": 1.1,
         "trend": "stable"
       },
       {
