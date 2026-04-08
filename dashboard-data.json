@@ -2825,6 +2825,14 @@
         "lost": []
       }
     },
+    "by_competitor": {
+      "KMA Property Group": {
+        "2026-04-08": {
+          "gained": 40,
+          "lost": 0
+        }
+      }
+    },
     "total_gained": 40,
     "total_lost": 0
   }

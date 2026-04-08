@@ -124,6 +124,39 @@
     .highlight-row td { background: rgba(56, 189, 248, 0.08); font-weight: 600; }
     #loading { text-align: center; padding: 48px; color: var(--muted); }
     #error { text-align: center; padding: 48px; color: var(--red); display: none; }
+    /* Clickable rows */
+    tr[data-entity] { cursor: pointer; }
+    tr[data-entity]:hover td { background: rgba(56, 189, 248, 0.08); }
+    /* Detail modal */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+      z-index: 100; align-items: center; justify-content: center; padding: 24px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      max-width: 900px; width: 100%; max-height: 85vh; overflow: auto; padding: 24px;
+    }
+    .modal h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; }
+    .modal .modal-subtitle { color: var(--muted); font-size: 0.8rem; margin-bottom: 20px; }
+    .modal-close {
+      float: right; background: none; border: none; color: var(--muted);
+      font-size: 1.5rem; cursor: pointer; padding: 0 4px; line-height: 1;
+    }
+    .modal-close:hover { color: var(--text); }
+    .modal-stats {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px; margin-bottom: 20px;
+    }
+    .modal-stat {
+      background: var(--bg); border-radius: 6px; padding: 10px;
+      text-align: center;
+    }
+    .modal-stat .ms-label { color: var(--muted); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .modal-stat .ms-value { font-size: 1.25rem; font-weight: 700; margin-top: 2px; }
+    .modal table { font-size: 0.8125rem; }
+    .modal th, .modal td { padding: 8px 10px; }
+    .modal .chart-wrapper { height: 200px; margin-bottom: 16px; }
   </style>
 </head>
 <body>
@@ -281,6 +314,17 @@
     </div>
   </div>
 
+  <div class="modal-overlay" id="detail-modal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <h2 id="modal-title">-</h2>
+      <div class="modal-subtitle" id="modal-subtitle"></div>
+      <div class="modal-stats" id="modal-stats"></div>
+      <div class="chart-wrapper" id="modal-chart-wrap"><canvas id="modal-chart"></canvas></div>
+      <div id="modal-table"></div>
+    </div>
+  </div>
+
   <script>
     const COLORS = [
       '#38bdf8','#4ade80','#fbbf24','#f87171','#a78bfa',
@@ -289,6 +333,9 @@
       '#a3e635','#c084fc','#f97316','#14b8a6','#e11d48',
       '#8b5cf6','#10b981','#f59e0b','#ef4444','#6366f1',
     ];
+
+    let DASHBOARD_DATA = null; // stored globally for drill-down access
+    let modalChart = null;
 
     // ===== Helpers =====
     function fmtChange(val, showPct, pct) {
@@ -400,6 +447,7 @@
     }
 
     function render(data) {
+      DASHBOARD_DATA = data;
       document.getElementById('loading').style.display = 'none';
       document.getElementById('content').style.display = 'block';
       document.getElementById('last-updated').textContent = data.generated;
@@ -506,7 +554,7 @@
         const barW = maxCount > 0 ? (c.count / maxCount * 100) : 0;
         const t = trends[c.competitor] || {};
 
-        tbody.innerHTML += `<tr>
+        tbody.innerHTML += `<tr data-entity="${c.competitor}" data-type="competitor" onclick="openDrillDown(this)">
           <td>${c.competitor}</td>
           <td><span class="badge">${c.platform}</span></td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${c.count}</span></td>
@@ -629,7 +677,7 @@
         const isMaine = l.slug === 'maine-southern-coastal';
         const barW = maxCount > 0 ? (l.property_count / maxCount * 100) : 0;
 
-        tbody.innerHTML += `<tr class="${isMaine ? 'highlight-row' : ''}">
+        tbody.innerHTML += `<tr class="${isMaine ? 'highlight-row' : ''}" data-entity="${l.location}" data-type="franchise" onclick="openDrillDown(this)">
           <td>${l.location}${isMaine ? ' <span class="badge" style="background:rgba(56,189,248,0.25)">Our Market</span>' : ''}</td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${l.property_count}</span></td>
           <td class="num">${l.total_bedrooms || '-'}</td>
@@ -828,6 +876,142 @@
         }
       });
     }
+
+    // ==================== DRILL-DOWN MODAL ====================
+    function openDrillDown(row) {
+      const name = row.dataset.entity;
+      const type = row.dataset.type;
+      if (!DASHBOARD_DATA || !name) return;
+
+      const d = DASHBOARD_DATA;
+      const history = type === 'franchise' ? d.franchise.history : d.history;
+      const churnData = d.listing_changes ? d.listing_changes.by_competitor || {} : {};
+      const dates = Object.keys(history).sort();
+
+      // Build week-by-week data
+      const rows = [];
+      let prevCount = null;
+      let totalGained = 0, totalLost = 0;
+
+      dates.forEach(date => {
+        const count = (history[date] || {})[name] || 0;
+        const churn = (churnData[name] || {})[date] || { gained: 0, lost: 0 };
+        const gained = churn.gained;
+        const lost = churn.lost;
+        totalGained += gained;
+        totalLost += lost;
+
+        const netChange = prevCount != null ? count - prevCount : null;
+        rows.push({ date, count, gained, lost, netChange });
+        prevCount = count;
+      });
+
+      const latest = rows[rows.length - 1]?.count || 0;
+      const first = rows[0]?.count || 0;
+      const allTimeNet = latest - first;
+      const grossChurn = totalGained + totalLost;
+      const churnRate = latest > 0 ? Math.round(grossChurn / latest * 100) : 0;
+
+      // Modal header
+      document.getElementById('modal-title').textContent = name;
+      document.getElementById('modal-subtitle').textContent =
+        type === 'franchise' ? 'Grand Welcome Franchise Location' : 'Competitor — Week-by-Week Progression';
+
+      // Stats
+      document.getElementById('modal-stats').innerHTML = `
+        <div class="modal-stat">
+          <div class="ms-label">Current</div>
+          <div class="ms-value">${latest}</div>
+        </div>
+        <div class="modal-stat">
+          <div class="ms-label">Gross Gained</div>
+          <div class="ms-value change-up">${totalGained}</div>
+        </div>
+        <div class="modal-stat">
+          <div class="ms-label">Gross Lost</div>
+          <div class="ms-value change-down">${totalLost}</div>
+        </div>
+        <div class="modal-stat">
+          <div class="ms-label">Net Change</div>
+          <div class="ms-value ${allTimeNet > 0 ? 'change-up' : allTimeNet < 0 ? 'change-down' : 'change-flat'}">${allTimeNet >= 0 ? '+' : ''}${allTimeNet}</div>
+        </div>
+        <div class="modal-stat">
+          <div class="ms-label">Churn Rate</div>
+          <div class="ms-value">${churnRate}%</div>
+        </div>
+      `;
+
+      // Chart
+      if (modalChart) modalChart.destroy();
+      const ctx = document.getElementById('modal-chart').getContext('2d');
+      modalChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: rows.map(r => r.date),
+          datasets: [
+            {
+              type: 'line', label: 'Total', data: rows.map(r => r.count),
+              borderColor: '#38bdf8', borderWidth: 2, pointRadius: 3,
+              tension: 0.3, yAxisID: 'y',
+            },
+            {
+              label: 'Gained', data: rows.map(r => r.gained),
+              backgroundColor: 'rgba(74,222,128,0.6)', borderRadius: 3, yAxisID: 'y1',
+            },
+            {
+              label: 'Lost', data: rows.map(r => -r.lost),
+              backgroundColor: 'rgba(248,113,113,0.6)', borderRadius: 3, yAxisID: 'y1',
+            },
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color: '#94a3b8', font: { size: 10 }, boxWidth: 10 } },
+            tooltip: { callbacks: { label: c => { const v = Math.abs(c.raw); return `${c.dataset.label}: ${v}`; } } }
+          },
+          scales: {
+            x: { grid: { color: 'rgba(51,65,85,0.3)' }, ticks: { color: '#94a3b8', font: { size: 10 } } },
+            y: { position: 'left', grid: { color: 'rgba(51,65,85,0.3)' }, ticks: { color: '#94a3b8' }, title: { display: true, text: 'Total', color: '#94a3b8' } },
+            y1: { position: 'right', grid: { drawOnChartArea: false }, ticks: { color: '#94a3b8', callback: v => Math.abs(v) }, title: { display: true, text: 'Gained / Lost', color: '#94a3b8' } },
+          }
+        }
+      });
+
+      // Table
+      let tableHtml = `<table><thead><tr>
+        <th>Date</th><th style="text-align:right">Total</th>
+        <th style="text-align:right">Gained</th><th style="text-align:right">Lost</th>
+        <th style="text-align:right">Net</th>
+      </tr></thead><tbody>`;
+
+      // Show newest first
+      [...rows].reverse().forEach(r => {
+        const netCls = r.netChange > 0 ? 'change-up' : r.netChange < 0 ? 'change-down' : 'change-flat';
+        const netStr = r.netChange != null ? `<span class="${netCls}">${r.netChange >= 0 ? '+' : ''}${r.netChange}</span>` : '-';
+        const gainedStr = r.gained ? `<span class="change-up">+${r.gained}</span>` : '<span class="change-flat">0</span>';
+        const lostStr = r.lost ? `<span class="change-down">-${r.lost}</span>` : '<span class="change-flat">0</span>';
+        tableHtml += `<tr>
+          <td>${r.date}</td>
+          <td class="num">${r.count}</td>
+          <td class="num">${gainedStr}</td>
+          <td class="num">${lostStr}</td>
+          <td class="num">${netStr}</td>
+        </tr>`;
+      });
+      tableHtml += '</tbody></table>';
+      document.getElementById('modal-table').innerHTML = tableHtml;
+
+      document.getElementById('detail-modal').classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('detail-modal').classList.remove('open');
+    }
+    document.getElementById('detail-modal').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
     load();
   </script>
