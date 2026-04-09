@@ -207,7 +207,7 @@
         "Wells",
         "York"
       ],
-      "is_us": false
+      "is_us": true
     },
     {
       "competitor": "KMA Property Group",
@@ -232,14 +232,6 @@
         "York"
       ],
       "is_us": false
-    },
-    {
-      "competitor": "Grand Welcome (Our Company)",
-      "platform": "grand_welcome",
-      "count": 40,
-      "with_address": 40,
-      "cities": [],
-      "is_us": true
     },
     {
       "competitor": "Ogunquit Rental Properties",
@@ -421,8 +413,7 @@
       "Seagrass Property Rentals": 31,
       "Seashore Property Management": 25,
       "Tamarack Rentals": 52,
-      "Vacasa": 88,
-      "Grand Welcome (Our Company)": 40
+      "Vacasa": 88
     },
     "2026-03-21": {
       "Anchor Real Estate Rentals": 48,
@@ -448,8 +439,7 @@
       "Seagrass Property Rentals": 31,
       "Seashore Property Management": 25,
       "Tamarack Rentals": 52,
-      "Vacasa": 88,
-      "Grand Welcome (Our Company)": 40
+      "Vacasa": 88
     },
     "2026-03-22": {
       "Anchor Real Estate Rentals": 48,
@@ -475,8 +465,7 @@
       "Seagrass Property Rentals": 31,
       "Seashore Property Management": 25,
       "Tamarack Rentals": 52,
-      "Vacasa": 88,
-      "Grand Welcome (Our Company)": 40
+      "Vacasa": 88
     },
     "2026-04-08": {
       "Anchor Real Estate Rentals": 48,
@@ -1212,7 +1201,7 @@
     "Grand Welcome (Our Company)": {
       "score": 74,
       "rating": "stable",
-      "size_score": 80,
+      "size_score": 81,
       "trend_score": 50,
       "stability_score": 100.0,
       "churn_rate": 0.0,
