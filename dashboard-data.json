@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-08",
+  "generated": "2026-04-09",
   "total_properties": 1209,
   "total_competitors": 26,
   "current": [
@@ -11,7 +11,8 @@
       "cities": [
         "Ogunquit",
         "Wells"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Vacasa",
@@ -28,7 +29,8 @@
         "Scarborough",
         "Wells",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Maine Seaside Rentals",
@@ -39,7 +41,8 @@
         "#3 Biddeford Pool",
         "Biddeford",
         "Biddeford Biddeford Pool"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Ocean Park Realty",
@@ -48,7 +51,8 @@
       "with_address": 72,
       "cities": [
         "Old Orchard Beach"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Sand Dollar Real Estate",
@@ -58,7 +62,8 @@
       "cities": [
         "Biddeford",
         "Kennebunkport"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Evolve Vacation Rentals",
@@ -79,7 +84,8 @@
         "Waterboro",
         "Wells",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Salt & Shine Vacation Rentals",
@@ -91,7 +97,8 @@
         "Ogunquit",
         "Wells",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "KPort Concierge",
@@ -104,7 +111,8 @@
         "Kennebunk",
         "Kennebunkport",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Bayley Vacation Rentals",
@@ -116,7 +124,8 @@
         "Old Orchard Beach",
         "Saco",
         "Scarborough"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Coastline Vacation Rentals",
@@ -130,7 +139,8 @@
         "Ogunquit",
         "Shapleigh",
         "Wells"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Tamarack Rentals",
@@ -140,7 +150,8 @@
       "cities": [
         "Old Orchard Beach",
         "Saco"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Anchor Real Estate Rentals",
@@ -152,7 +163,8 @@
         "Ogunquit",
         "Wells",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Goose Rocks Beach Rentals",
@@ -162,7 +174,8 @@
       "cities": [
         "Kennebunk",
         "Kennebunkport"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Jean Knapp Rentals",
@@ -173,7 +186,8 @@
         "Ogunquit",
         "Wells",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "KMA Property Group",
@@ -196,7 +210,16 @@
         "Wells",
         "Wildwood Gables",
         "York"
-      ]
+      ],
+      "is_us": false
+    },
+    {
+      "competitor": "Grand Welcome (Our Company)",
+      "platform": "grand_welcome",
+      "count": 40,
+      "with_address": 40,
+      "cities": [],
+      "is_us": true
     },
     {
       "competitor": "Ogunquit Rental Properties",
@@ -205,7 +228,8 @@
       "with_address": 36,
       "cities": [
         "Ogunquit"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Seagrass Property Rentals",
@@ -217,7 +241,8 @@
         "Kennebunk",
         "Kennebunkport",
         "Wells"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "KPT Luxury Properties",
@@ -227,7 +252,8 @@
       "cities": [
         "Kennebunk",
         "Kennebunkport"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Coastal Getaways",
@@ -239,7 +265,8 @@
         "Ogunquit",
         "Wells",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "TopHost Vacation Rentals",
@@ -261,7 +288,8 @@
         "South Portland",
         "Wells",
         "Westbrook"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Luxury Maine Rentals",
@@ -270,7 +298,8 @@
       "with_address": 25,
       "cities": [
         "Portland"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Saco Bay Rentals",
@@ -279,7 +308,8 @@
       "with_address": 25,
       "cities": [
         "Saco"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Seashore Property Management",
@@ -288,7 +318,8 @@
       "with_address": 25,
       "cities": [
         "Old Orchard Beach"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Maine Street Property Management",
@@ -299,7 +330,8 @@
         "Ogunquit",
         "Wells",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Ocean Dreams Maine",
@@ -309,7 +341,8 @@
       "cities": [
         "Wells",
         "York"
-      ]
+      ],
+      "is_us": false
     },
     {
       "competitor": "Kennebunk Beach Realty",
@@ -319,7 +352,8 @@
       "cities": [
         "Kennebunk",
         "Kennebunkport"
-      ]
+      ],
+      "is_us": false
     }
   ],
   "history": {
@@ -367,7 +401,8 @@
       "Seagrass Property Rentals": 31,
       "Seashore Property Management": 25,
       "Tamarack Rentals": 52,
-      "Vacasa": 88
+      "Vacasa": 88,
+      "Grand Welcome (Our Company)": 40
     },
     "2026-03-21": {
       "Anchor Real Estate Rentals": 48,
@@ -393,7 +428,8 @@
       "Seagrass Property Rentals": 31,
       "Seashore Property Management": 25,
       "Tamarack Rentals": 52,
-      "Vacasa": 88
+      "Vacasa": 88,
+      "Grand Welcome (Our Company)": 40
     },
     "2026-03-22": {
       "Anchor Real Estate Rentals": 48,
@@ -419,7 +455,8 @@
       "Seagrass Property Rentals": 31,
       "Seashore Property Management": 25,
       "Tamarack Rentals": 52,
-      "Vacasa": 88
+      "Vacasa": 88,
+      "Grand Welcome (Our Company)": 40
     },
     "2026-04-08": {
       "Anchor Real Estate Rentals": 48,
@@ -1160,6 +1197,16 @@
       "stability_score": 0,
       "churn_rate": 100.0,
       "gross_gained": 40,
+      "gross_lost": 0
+    },
+    "Grand Welcome (Our Company)": {
+      "score": 74,
+      "rating": "stable",
+      "size_score": 80,
+      "trend_score": 50,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
       "gross_lost": 0
     },
     "Ogunquit Rental Properties": {
