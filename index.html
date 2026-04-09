@@ -237,6 +237,7 @@
           <table>
             <thead>
               <tr>
+                <th style="text-align:right">#</th>
                 <th>Competitor</th>
                 <th>Platform</th>
                 <th style="text-align:right">Properties</th>
@@ -341,6 +342,7 @@
           <table>
             <thead>
               <tr>
+                <th style="text-align:right">#</th>
                 <th>Location</th>
                 <th style="text-align:right">Properties</th>
                 <th style="text-align:right">Total BR</th>
@@ -621,7 +623,7 @@
       const health = data.health_scores || {};
       let totalProps = 0, totalAddr = 0;
 
-      data.current.forEach(c => {
+      data.current.forEach((c, idx) => {
         totalProps += c.count;
         totalAddr += c.with_address;
         const pct = c.count > 0 ? Math.round((c.with_address / c.count) * 100) : 0;
@@ -629,6 +631,7 @@
         const barW = maxCount > 0 ? (c.count / maxCount * 100) : 0;
         const t = trends[c.competitor] || {};
         const h = health[c.competitor] || {};
+        const rank = idx + 1;
 
         const isUs = c.is_us;
         const rowCls = isUs ? 'our-company-row' : '';
@@ -637,6 +640,7 @@
           : c.competitor;
 
         tbody.innerHTML += `<tr class="${rowCls}" data-entity="${c.competitor}" data-type="competitor" onclick="openDrillDown(this)">
+          <td class="num" style="color:var(--muted);font-size:0.75rem">${rank}</td>
           <td>${nameHtml}</td>
           <td><span class="badge">${c.platform}</span></td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%${isUs ? ';background:rgba(56,189,248,0.25)' : ''}"></div><span>${c.count}</span></td>
@@ -650,7 +654,7 @@
 
       const footerPct = totalProps > 0 ? Math.round((totalAddr / totalProps) * 100) : 0;
       document.getElementById('detail-footer').innerHTML = `<tr style="font-weight:600">
-        <td>Total</td><td></td><td class="num">${totalProps}</td><td class="num">${footerPct}%</td><td></td><td></td><td></td><td></td>
+        <td></td><td>Total</td><td></td><td class="num">${totalProps}</td><td class="num">${footerPct}%</td><td></td><td></td><td></td><td></td>
       </tr>`;
     }
 
@@ -814,14 +818,16 @@
       const trends = f.trends ? f.trends.entities : {};
       let totalProps = 0, totalBR = 0;
 
-      f.locations.forEach(l => {
+      f.locations.forEach((l, idx) => {
         totalProps += l.property_count;
         totalBR += l.total_bedrooms || 0;
         const t = trends[l.location] || {};
         const isMaine = l.slug === 'maine-southern-coastal';
         const barW = maxCount > 0 ? (l.property_count / maxCount * 100) : 0;
+        const rank = idx + 1;
 
         tbody.innerHTML += `<tr class="${isMaine ? 'highlight-row' : ''}" data-entity="${l.location}" data-type="franchise" onclick="openDrillDown(this)">
+          <td class="num" style="color:var(--muted);font-size:0.75rem">${rank}</td>
           <td>${l.location}${isMaine ? ' <span class="badge" style="background:rgba(56,189,248,0.25)">Our Market</span>' : ''}</td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${l.property_count}</span></td>
           <td class="num">${l.total_bedrooms || '-'}</td>
@@ -835,6 +841,7 @@
       // Total row with trend data and drill-down
       const totalTrend = (f.trends && f.trends.entities) ? f.trends.entities['Grand Welcome Total'] || {} : {};
       document.getElementById('f-detail-footer').innerHTML = `<tr style="font-weight:600;cursor:pointer" data-entity="Grand Welcome Total" data-type="franchise" onclick="openDrillDown(this)">
+        <td></td>
         <td>Grand Welcome Total (${f.total_locations} locations)</td>
         <td class="num">${totalProps.toLocaleString()}</td>
         <td class="num">${totalBR.toLocaleString()}</td>
