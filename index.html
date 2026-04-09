@@ -138,6 +138,8 @@
     .health-badge.watch { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
     .health-badge.weak { background: rgba(248, 113, 113, 0.15); color: var(--red); }
     .share-bar { display: flex; height: 6px; border-radius: 3px; overflow: hidden; gap: 1px; margin-top: 4px; }
+    .town-arrow { display: inline-block; width: 12px; font-size: 0.6rem; color: var(--muted); transition: transform 0.15s; }
+    .town-detail td { background: var(--bg); border-bottom-color: rgba(51,65,85,0.4); }
     .highlight-row td { background: rgba(56, 189, 248, 0.08); font-weight: 600; }
     .our-company-row td {
       background: rgba(56, 189, 248, 0.1);
@@ -289,10 +291,10 @@
           <table>
             <thead>
               <tr>
+                <th style="text-align:center">#</th>
                 <th>Town</th>
                 <th style="text-align:right">Properties</th>
                 <th style="text-align:right">Competitors</th>
-                <th>Largest</th>
                 <th>Market Share</th>
               </tr>
             </thead>
@@ -697,28 +699,48 @@
       // Table
       const tbody = document.getElementById('town-table');
       const maxCount = Math.max(...towns.map(t => t.total));
-      towns.forEach(t => {
+      towns.forEach((t, idx) => {
         const barW = maxCount > 0 ? (t.total / maxCount * 100) : 0;
-        // Build mini share bar
+        const townId = 'town-' + idx;
+
+        // Share bar
         let shareBar = '<div class="share-bar">';
         t.competitors.forEach((c, i) => {
           shareBar += `<div style="width:${c.share}%;background:${COLORS[i % COLORS.length]}" title="${c.name}: ${c.count} (${c.share}%)"></div>`;
         });
         shareBar += '</div>';
 
-        // Top 3 competitors text
-        const topComps = t.competitors.slice(0, 3).map(c => `${c.name} (${c.count})`).join(', ');
-        const moreCount = t.competitors.length - 3;
-        const compText = topComps + (moreCount > 0 ? ` +${moreCount} more` : '');
-
-        tbody.innerHTML += `<tr>
-          <td style="font-weight:500">${t.town}</td>
+        tbody.innerHTML += `<tr class="town-row" onclick="toggleTown('${townId}')" style="cursor:pointer">
+          <td class="rank-cell">${idx + 1}</td>
+          <td class="name-cell" style="font-weight:500"><span class="town-arrow" id="arrow-${townId}">&#9654;</span> ${t.town}</td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%"></div><span>${t.total}</span></td>
           <td class="num">${t.competitor_count}</td>
-          <td style="font-size:0.75rem">${t.top_competitor} <span style="color:var(--muted)">(${t.top_competitor_count})</span></td>
-          <td style="min-width:180px"><div style="font-size:0.7rem;color:var(--muted)">${compText}</div>${shareBar}</td>
+          <td style="min-width:160px">${shareBar}</td>
         </tr>`;
+
+        // Expandable detail rows (hidden by default)
+        const compMax = t.competitors.length > 0 ? t.competitors[0].count : 1;
+        t.competitors.forEach((c, ci) => {
+          const cBarW = compMax > 0 ? (c.count / compMax * 100) : 0;
+          const isGW = c.name === 'Grand Welcome (Our Company)';
+          const nameCls = isGW ? 'style="color:var(--accent);font-weight:600"' : '';
+          tbody.innerHTML += `<tr class="town-detail town-detail-${townId}" style="display:none">
+            <td class="rank-cell" style="color:var(--border)">${ci + 1}</td>
+            <td class="name-cell" style="padding-left:28px;font-size:0.8125rem" ${nameCls}>${c.name}</td>
+            <td class="num bar-cell"><div class="bar-fill" style="width:${cBarW}%;background:${COLORS[ci % COLORS.length]}20"></div><span>${c.count}</span></td>
+            <td class="num" style="font-size:0.8125rem">${c.share}%</td>
+            <td></td>
+          </tr>`;
+        });
       });
+    }
+
+    function toggleTown(townId) {
+      const rows = document.querySelectorAll('.town-detail-' + townId);
+      const arrow = document.getElementById('arrow-' + townId);
+      const visible = rows.length > 0 && rows[0].style.display !== 'none';
+      rows.forEach(r => r.style.display = visible ? 'none' : '');
+      arrow.innerHTML = visible ? '&#9654;' : '&#9660;';
     }
 
     // ==================== FRANCHISE ====================
