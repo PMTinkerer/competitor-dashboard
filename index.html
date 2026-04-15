@@ -628,7 +628,8 @@
 
     function renderCompTable(data) {
       const tbody = document.getElementById('detail-table');
-      const maxCount = Math.max(...data.current.map(c => c.count));
+      if (!data.current || !data.current.length) return;
+      const maxCount = Math.max(...data.current.map(c => c.count), 0);
       const trends = data.trends ? data.trends.entities : {};
       const health = data.health_scores || {};
       let totalProps = 0, totalAddr = 0;
@@ -704,7 +705,7 @@
 
       // Table
       const tbody = document.getElementById('town-table');
-      const maxCount = Math.max(...towns.map(t => t.total));
+      const maxCount = Math.max(...towns.map(t => t.total), 0);
       towns.forEach((t, idx) => {
         const barW = maxCount > 0 ? (t.total / maxCount * 100) : 0;
         const townId = 'town-' + idx;
@@ -844,7 +845,7 @@
 
     function renderFranchiseTable(f) {
       const tbody = document.getElementById('f-detail-table');
-      const maxCount = Math.max(...f.locations.map(l => l.property_count));
+      const maxCount = Math.max(...f.locations.map(l => l.property_count), 0);
       const trends = f.trends ? f.trends.entities : {};
       let totalProps = 0, totalBR = 0;
 
@@ -899,7 +900,7 @@
 
       // Aggregate by month (YYYY-MM)
       const months = {};
-      Object.entries(lc.dates).forEach(([d, day]) => {
+      Object.entries(lc.dates || {}).forEach(([d, day]) => {
         const month = d.substring(0, 7); // YYYY-MM
         if (!months[month]) months[month] = { gained: [], lost: [], byComp: {} };
         const m = months[month];
@@ -1077,9 +1078,10 @@
       if (!DASHBOARD_DATA || !name) return;
 
       const d = DASHBOARD_DATA;
-      const history = type === 'franchise' ? d.franchise.history : d.history;
+      const franchise = d.franchise || {};
+      const history = type === 'franchise' ? (franchise.history || {}) : (d.history || {});
       const trendMeta = type === 'franchise'
-        ? (d.franchise.trends && d.franchise.trends.entities ? d.franchise.trends.entities[name] : null)
+        ? (franchise.trends && franchise.trends.entities ? franchise.trends.entities[name] : null)
         : (d.trends && d.trends.entities ? d.trends.entities[name] : null);
       const baselineDate = trendMeta && trendMeta.first_date ? trendMeta.first_date : null;
       const churnData = d.listing_changes ? d.listing_changes.by_competitor || {} : {};
