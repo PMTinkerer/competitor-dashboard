@@ -455,7 +455,7 @@
       const hasMonth = compDates.month_ago;
       const changeKey = hasMonth ? 'mom_change' : 'all_time_change';
       const pctKey = hasMonth ? 'mom_pct' : 'all_time_pct';
-      const windowLabel = hasMonth ? 'vs. last month' : `since ${compDates.first}`;
+      const windowLabel = hasMonth ? 'vs. last month' : 'since first tracked';
 
       let html = '';
 
@@ -464,8 +464,8 @@
         <h2><span style="color:var(--green)">&#9650;</span> Growing <span style="font-weight:400;color:var(--muted);font-size:0.75rem">${windowLabel}</span></h2>`;
       if (trends.growing.length) {
         trends.growing.slice(0, 8).forEach(e => {
-          const ch = e[changeKey] || e.all_time_change;
-          const pct = e[pctKey] || e.all_time_pct;
+          const ch = e[changeKey] != null ? e[changeKey] : e.all_time_change;
+          const pct = e[pctKey] != null ? e[pctKey] : e.all_time_pct;
           html += `<div class="mover-item">
             <span class="mover-name">${e.name}</span>
             <div class="mover-stats">
@@ -484,8 +484,8 @@
         <h2><span style="color:var(--red)">&#9660;</span> Declining <span style="font-weight:400;color:var(--muted);font-size:0.75rem">${windowLabel}</span></h2>`;
       if (trends.declining.length) {
         trends.declining.slice(0, 8).forEach(e => {
-          const ch = e[changeKey] || e.all_time_change;
-          const pct = e[pctKey] || e.all_time_pct;
+          const ch = e[changeKey] != null ? e[changeKey] : e.all_time_change;
+          const pct = e[pctKey] != null ? e[pctKey] : e.all_time_pct;
           html += `<div class="mover-item">
             <span class="mover-name">${e.name}</span>
             <div class="mover-stats">
@@ -1067,6 +1067,10 @@
 
       const d = DASHBOARD_DATA;
       const history = type === 'franchise' ? d.franchise.history : d.history;
+      const trendMeta = type === 'franchise'
+        ? (d.franchise.trends && d.franchise.trends.entities ? d.franchise.trends.entities[name] : null)
+        : (d.trends && d.trends.entities ? d.trends.entities[name] : null);
+      const baselineDate = trendMeta && trendMeta.first_date ? trendMeta.first_date : null;
       const churnData = d.listing_changes ? d.listing_changes.by_competitor || {} : {};
       const dates = Object.keys(history).sort();
 
@@ -1088,8 +1092,13 @@
         prevCount = count;
       });
 
-      const latest = rows[rows.length - 1]?.count || 0;
-      const first = rows[0]?.count || 0;
+      const displayRowsRaw = baselineDate ? rows.filter(r => r.date >= baselineDate) : rows;
+      const displayRows = displayRowsRaw.map((r, idx) => ({
+        ...r,
+        netChange: idx === 0 ? null : r.count - displayRowsRaw[idx - 1].count,
+      }));
+      const latest = displayRows[displayRows.length - 1]?.count || 0;
+      const first = displayRows[0]?.count || 0;
       const allTimeNet = latest - first;
       const grossChurn = totalGained + totalLost;
       const churnRate = latest > 0 ? Math.round(grossChurn / latest * 100) : 0;
@@ -1129,19 +1138,19 @@
       modalChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: rows.map(r => r.date),
+          labels: displayRows.map(r => r.date),
           datasets: [
             {
-              type: 'line', label: 'Total', data: rows.map(r => r.count),
+              type: 'line', label: 'Total', data: displayRows.map(r => r.count),
               borderColor: '#38bdf8', borderWidth: 2, pointRadius: 3,
               tension: 0.3, yAxisID: 'y',
             },
             {
-              label: 'Gained', data: rows.map(r => r.gained),
+              label: 'Gained', data: displayRows.map(r => r.gained),
               backgroundColor: 'rgba(74,222,128,0.6)', borderRadius: 3, yAxisID: 'y1',
             },
             {
-              label: 'Lost', data: rows.map(r => -r.lost),
+              label: 'Lost', data: displayRows.map(r => -r.lost),
               backgroundColor: 'rgba(248,113,113,0.6)', borderRadius: 3, yAxisID: 'y1',
             },
           ]
@@ -1168,7 +1177,7 @@
       </tr></thead><tbody>`;
 
       // Show newest first
-      [...rows].reverse().forEach(r => {
+      [...displayRows].reverse().forEach(r => {
         const netCls = r.netChange > 0 ? 'change-up' : r.netChange < 0 ? 'change-down' : 'change-flat';
         const netStr = r.netChange != null ? `<span class="${netCls}">${r.netChange >= 0 ? '+' : ''}${r.netChange}</span>` : '-';
         const gainedStr = r.gained ? `<span class="change-up">+${r.gained}</span>` : '<span class="change-flat">0</span>';
