@@ -439,6 +439,10 @@
       return `<span class="${cls}">${arrow} ${text}</span>`;
     }
 
+    function franchiseEntityLabel(name) {
+      return name === 'Grand Welcome Total' ? 'Total' : name;
+    }
+
     // ===== Movers Panel =====
     function renderMovers(containerId, trends) {
       const container = document.getElementById(containerId);
@@ -466,8 +470,9 @@
         trends.growing.slice(0, 8).forEach(e => {
           const ch = e[changeKey] != null ? e[changeKey] : e.all_time_change;
           const pct = e[pctKey] != null ? e[pctKey] : e.all_time_pct;
+          const displayName = containerId === 'franchise-movers' ? franchiseEntityLabel(e.name) : e.name;
           html += `<div class="mover-item">
-            <span class="mover-name">${e.name}</span>
+            <span class="mover-name">${displayName}</span>
             <div class="mover-stats">
               <span class="mover-count">${e.current} props</span>
               <span class="mover-change change-up">+${ch}${pct != null ? ` (${pct > 0 ? '+' : ''}${pct}%)` : ''}</span>
@@ -486,8 +491,9 @@
         trends.declining.slice(0, 8).forEach(e => {
           const ch = e[changeKey] != null ? e[changeKey] : e.all_time_change;
           const pct = e[pctKey] != null ? e[pctKey] : e.all_time_pct;
+          const displayName = containerId === 'franchise-movers' ? franchiseEntityLabel(e.name) : e.name;
           html += `<div class="mover-item">
-            <span class="mover-name">${e.name}</span>
+            <span class="mover-name">${displayName}</span>
             <div class="mover-stats">
               <span class="mover-count">${e.current} props</span>
               <span class="mover-change change-down">${ch}${pct != null ? ` (${pct}%)` : ''}</span>
@@ -866,7 +872,7 @@
       const totalTrend = (f.trends && f.trends.entities) ? f.trends.entities['Grand Welcome Total'] || {} : {};
       document.getElementById('f-detail-footer').innerHTML = `<tr style="font-weight:600;cursor:pointer" data-entity="Grand Welcome Total" data-type="franchise" onclick="openDrillDown(this)">
         <td></td>
-        <td>Grand Welcome Total (${f.total_locations} locations)</td>
+        <td>Total (${f.total_locations} locations)</td>
         <td class="num">${totalProps.toLocaleString()}</td>
         <td class="num">${totalBR.toLocaleString()}</td>
         <td></td>
@@ -1102,11 +1108,15 @@
       const allTimeNet = latest - first;
       const grossChurn = totalGained + totalLost;
       const churnRate = latest > 0 ? Math.round(grossChurn / latest * 100) : 0;
+      const displayName = type === 'franchise' ? franchiseEntityLabel(name) : name;
+      const isFranchiseTotal = type === 'franchise' && name === 'Grand Welcome Total';
 
       // Modal header
-      document.getElementById('modal-title').textContent = name;
+      document.getElementById('modal-title').textContent = displayName;
       document.getElementById('modal-subtitle').textContent =
-        type === 'franchise' ? 'Grand Welcome Franchise Location' : 'Competitor — Week-by-Week Progression';
+        type === 'franchise'
+          ? (isFranchiseTotal ? 'Grand Welcome Portfolio Total' : 'Grand Welcome Franchise Location')
+          : 'Competitor — Week-by-Week Progression';
 
       // Stats
       document.getElementById('modal-stats').innerHTML = `
