@@ -929,6 +929,11 @@
 
       // Monthly timeline
       const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const renderListingProperty = item => {
+        const label = item.property_name || '-';
+        if (!item.url) return label;
+        return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom;color:var(--text);text-decoration:underline;text-decoration-color:var(--border)">${label}</a>`;
+      };
       let html = '';
       monthKeys.forEach(mk => {
         const m = months[mk];
@@ -973,7 +978,7 @@
             </tr></thead><tbody>`;
           m.lost.forEach(item => {
             html += `<tr>
-              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis">${item.property_name || '-'}</td>
+              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis">${renderListingProperty(item)}</td>
               <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
               <td>${item.city || '-'}</td>
               <td><span class="badge">${item.competitor}</span></td>
@@ -994,7 +999,7 @@
             </tr></thead><tbody>`;
           m.gained.forEach(item => {
             html += `<tr>
-              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis">${item.property_name || '-'}</td>
+              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis">${renderListingProperty(item)}</td>
               <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
               <td>${item.city || '-'}</td>
               <td><span class="badge">${item.competitor}</span></td>

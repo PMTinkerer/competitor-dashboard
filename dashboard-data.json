@@ -1,6 +1,6 @@
 {
   "generated": "2026-04-15",
-  "total_properties": 1271,
+  "total_properties": 1267,
   "total_competitors": 27,
   "current": [
     {
@@ -130,8 +130,8 @@
     {
       "competitor": "Coastline Vacation Rentals",
       "platform": "ownerrez",
-      "count": 53,
-      "with_address": 53,
+      "count": 52,
+      "with_address": 52,
       "cities": [
         "Biddeford",
         "Kennebunk",
@@ -154,12 +154,11 @@
       "is_us": false
     },
     {
-      "competitor": "Anchor Real Estate Rentals",
-      "platform": "lodgify",
-      "count": 51,
+      "competitor": "Jean Knapp Rentals",
+      "platform": "jeanknapp_custom",
+      "count": 50,
       "with_address": 50,
       "cities": [
-        "Kittery",
         "Ogunquit",
         "Wells",
         "York"
@@ -167,11 +166,12 @@
       "is_us": false
     },
     {
-      "competitor": "Jean Knapp Rentals",
-      "platform": "jeanknapp_custom",
-      "count": 50,
-      "with_address": 50,
+      "competitor": "Anchor Real Estate Rentals",
+      "platform": "lodgify",
+      "count": 49,
+      "with_address": 48,
       "cities": [
+        "Kittery",
         "Ogunquit",
         "Wells",
         "York"
@@ -314,22 +314,22 @@
       "is_us": false
     },
     {
-      "competitor": "Seashore Property Management",
-      "platform": "liverez",
-      "count": 26,
-      "with_address": 26,
-      "cities": [
-        "Old Orchard Beach"
-      ],
-      "is_us": false
-    },
-    {
       "competitor": "Luxury Maine Rentals",
       "platform": "liverez",
       "count": 25,
       "with_address": 25,
       "cities": [
         "Portland"
+      ],
+      "is_us": false
+    },
+    {
+      "competitor": "Seashore Property Management",
+      "platform": "liverez",
+      "count": 25,
+      "with_address": 25,
+      "cities": [
+        "Old Orchard Beach"
       ],
       "is_us": false
     },
@@ -1253,14 +1253,14 @@
       "gross_lost": 0
     },
     "Coastline Vacation Rentals": {
-      "score": 70,
+      "score": 57,
       "rating": "stable",
       "size_score": 86,
       "trend_score": 78.2,
-      "stability_score": 43.5,
-      "churn_rate": 11.3,
-      "gross_gained": 1,
-      "gross_lost": 5
+      "stability_score": 0,
+      "churn_rate": 107.7,
+      "gross_gained": 52,
+      "gross_lost": 4
     },
     "Tamarack Rentals": {
       "score": 76,
@@ -1272,16 +1272,6 @@
       "gross_gained": 0,
       "gross_lost": 0
     },
-    "Anchor Real Estate Rentals": {
-      "score": 69,
-      "rating": "stable",
-      "size_score": 85,
-      "trend_score": 78.5,
-      "stability_score": 41.0,
-      "churn_rate": 11.8,
-      "gross_gained": 3,
-      "gross_lost": 3
-    },
     "Jean Knapp Rentals": {
       "score": 78,
       "rating": "strong",
@@ -1291,6 +1281,16 @@
       "churn_rate": 6.0,
       "gross_gained": 3,
       "gross_lost": 0
+    },
+    "Anchor Real Estate Rentals": {
+      "score": 57,
+      "rating": "stable",
+      "size_score": 85,
+      "trend_score": 78.5,
+      "stability_score": 0,
+      "churn_rate": 102.0,
+      "gross_gained": 49,
+      "gross_lost": 1
     },
     "Goose Rocks Beach Rentals": {
       "score": 75,
@@ -1382,16 +1382,6 @@
       "gross_gained": 2,
       "gross_lost": 2
     },
-    "Seashore Property Management": {
-      "score": 58,
-      "rating": "stable",
-      "size_score": 71,
-      "trend_score": 74.0,
-      "stability_score": 23.0,
-      "churn_rate": 15.4,
-      "gross_gained": 1,
-      "gross_lost": 3
-    },
     "Luxury Maine Rentals": {
       "score": 71,
       "rating": "stable",
@@ -1401,6 +1391,16 @@
       "churn_rate": 0.0,
       "gross_gained": 0,
       "gross_lost": 0
+    },
+    "Seashore Property Management": {
+      "score": 51,
+      "rating": "stable",
+      "size_score": 70,
+      "trend_score": 74.0,
+      "stability_score": 0,
+      "churn_rate": 52.0,
+      "gross_gained": 11,
+      "gross_lost": 2
     },
     "Maine Street Property Management": {
       "score": 74,
@@ -1436,7 +1436,7 @@
   "towns": [
     {
       "town": "Wells",
-      "total": 189,
+      "total": 188,
       "competitor_count": 14,
       "top_competitor": "Garnsey Brothers",
       "top_competitor_count": 88,
@@ -1444,7 +1444,7 @@
         {
           "name": "Garnsey Brothers",
           "count": 88,
-          "share": 46.6
+          "share": 46.8
         },
         {
           "name": "Evolve Vacation Rentals",
@@ -1457,14 +1457,14 @@
           "share": 9.0
         },
         {
-          "name": "Anchor Real Estate Rentals",
+          "name": "Salt & Shine Vacation Rentals",
           "count": 10,
           "share": 5.3
         },
         {
-          "name": "Salt & Shine Vacation Rentals",
-          "count": 10,
-          "share": 5.3
+          "name": "Anchor Real Estate Rentals",
+          "count": 9,
+          "share": 4.8
         },
         {
           "name": "Vacasa",
@@ -1474,12 +1474,12 @@
         {
           "name": "Coastline Vacation Rentals",
           "count": 8,
-          "share": 4.2
+          "share": 4.3
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 8,
-          "share": 4.2
+          "share": 4.3
         },
         {
           "name": "Maine Street Property Management",
@@ -1515,7 +1515,7 @@
     },
     {
       "town": "Kennebunkport",
-      "total": 186,
+      "total": 185,
       "competitor_count": 11,
       "top_competitor": "Sand Dollar Real Estate",
       "top_competitor_count": 70,
@@ -1523,7 +1523,7 @@
         {
           "name": "Sand Dollar Real Estate",
           "count": 70,
-          "share": 37.6
+          "share": 37.8
         },
         {
           "name": "Goose Rocks Beach Rentals",
@@ -1533,22 +1533,22 @@
         {
           "name": "KPort Concierge",
           "count": 22,
-          "share": 11.8
+          "share": 11.9
         },
         {
           "name": "Vacasa",
           "count": 19,
-          "share": 10.2
-        },
-        {
-          "name": "Coastline Vacation Rentals",
-          "count": 13,
-          "share": 7.0
+          "share": 10.3
         },
         {
           "name": "KPT Luxury Properties",
           "count": 13,
           "share": 7.0
+        },
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 12,
+          "share": 6.5
         },
         {
           "name": "Seagrass Property Rentals",
@@ -1579,7 +1579,7 @@
     },
     {
       "town": "Old Orchard Beach",
-      "total": 163,
+      "total": 162,
       "competitor_count": 7,
       "top_competitor": "Ocean Park Realty",
       "top_competitor_count": 72,
@@ -1587,7 +1587,7 @@
         {
           "name": "Ocean Park Realty",
           "count": 72,
-          "share": 44.2
+          "share": 44.4
         },
         {
           "name": "Evolve Vacation Rentals",
@@ -1596,13 +1596,13 @@
         },
         {
           "name": "Seashore Property Management",
-          "count": 26,
-          "share": 16.0
+          "count": 25,
+          "share": 15.4
         },
         {
           "name": "Tamarack Rentals",
           "count": 25,
-          "share": 15.3
+          "share": 15.4
         },
         {
           "name": "Bayley Vacation Rentals",
@@ -1623,7 +1623,7 @@
     },
     {
       "town": "York",
-      "total": 136,
+      "total": 135,
       "competitor_count": 11,
       "top_competitor": "Salt & Shine Vacation Rentals",
       "top_competitor_count": 49,
@@ -1631,17 +1631,17 @@
         {
           "name": "Salt & Shine Vacation Rentals",
           "count": 49,
-          "share": 36.0
+          "share": 36.3
         },
         {
           "name": "Anchor Real Estate Rentals",
-          "count": 25,
-          "share": 18.4
+          "count": 24,
+          "share": 17.8
         },
         {
           "name": "Coastal Getaways",
           "count": 23,
-          "share": 16.9
+          "share": 17.0
         },
         {
           "name": "Grand Welcome (Our Company)",
@@ -4291,27 +4291,8 @@
       "2026-04-12": {
         "gained": [
           {
-            "property_name": "Ocean Views & Steps to Long Sands Beach at Leighton Place",
-            "address": "32 Reserve Street",
-            "city": "York",
-            "competitor": "Anchor Real Estate Rentals",
-            "platform": "lodgify",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "The Sandy Feet Retreat in Beach Dreams",
-            "address": "412 Post Rd #241",
-            "city": "Wells",
-            "competitor": "Anchor Real Estate Rentals",
-            "platform": "lodgify",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
             "property_name": "Sunset Sanctuary by Wells Beach",
+            "url": "https://anchorrealestaterentals.com/en/sunset-sanctuary-by-wells-beach",
             "address": "168 Atlantic Ave",
             "city": "Wells",
             "competitor": "Anchor Real Estate Rentals",
@@ -4321,17 +4302,8 @@
             "date_last_seen": "2026-04-12"
           },
           {
-            "property_name": "Resort Retreat: Indoor Pool, Hot Tub, Gym, 1 Mile to Beach!",
-            "address": "272 Mills Road",
-            "city": "Kennebunkport",
-            "competitor": "Coastline Vacation Rentals",
-            "platform": "ownerrez",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
             "property_name": "Cast & Relax! Little Blue Cabin on Wadleigh Pond",
+            "url": "https://evolve.com/vacation-rentals/us/me/lyman/577868",
             "address": "212 Wadleigh Pond Road",
             "city": "Lyman",
             "competitor": "Evolve Vacation Rentals",
@@ -4342,6 +4314,7 @@
           },
           {
             "property_name": "Point East 124  PE124\u00a0\u00a0Route 1",
+            "url": "https://www.rentalprorentals.com/garnsey/ShowProp.cfm?propid=651",
             "address": "1801 Post Road",
             "city": null,
             "competitor": "Garnsey Brothers",
@@ -4352,6 +4325,7 @@
           },
           {
             "property_name": "The Downing House - Updated 4bd Farmhouse!",
+            "url": "https://www.jeanknapp.com/vacation-rentals/rental/11pinehill/",
             "address": "11 Pine Hill South",
             "city": "York",
             "competitor": "Jean Knapp Rentals",
@@ -4362,6 +4336,7 @@
           },
           {
             "property_name": "Iris Cottage-Walk to Short Sands",
+            "url": "https://www.jeanknapp.com/vacation-rentals/rental/15iris-/",
             "address": "15 Iris Ave",
             "city": "York",
             "competitor": "Jean Knapp Rentals",
@@ -4372,6 +4347,7 @@
           },
           {
             "property_name": "Wake Up to the Ogunquit River-Beach Plum Cottage",
+            "url": "https://www.jeanknapp.com/vacation-rentals/rental/14plum/",
             "address": "14 Beach Plum Lane",
             "city": "Ogunquit",
             "competitor": "Jean Knapp Rentals",
@@ -4382,6 +4358,7 @@
           },
           {
             "property_name": "A Wave From It All",
+            "url": "https://kmapropertygroup.com/rentals/a-wave-from-it-all/",
             "address": "66 Rest View Lane",
             "city": "Wells",
             "competitor": "KMA Property Group",
@@ -4392,6 +4369,7 @@
           },
           {
             "property_name": "Luxury Designer Farmhouse",
+            "url": "https://book.kportconcierge.com/en/5328391/luxury-designer-farmhouse",
             "address": "135 Summer Street",
             "city": "Kennebunk",
             "competitor": "KPort Concierge",
@@ -4402,6 +4380,7 @@
           },
           {
             "property_name": "Barefoot Bliss",
+            "url": "https://kennebunkbeachrealty.guestybookings.com/en/properties/6940d815d013860015329862",
             "address": "239 Sea Road",
             "city": "Kennebunk",
             "competitor": "Kennebunk Beach Realty",
@@ -4412,6 +4391,7 @@
           },
           {
             "property_name": "Island View",
+            "url": "https://www.maineseasiderentals.com/rental-listings/21/default/island-view/",
             "address": "201 Hills Beach Rd",
             "city": "Biddeford Pool",
             "competitor": "Maine Seaside Rentals",
@@ -4422,6 +4402,7 @@
           },
           {
             "property_name": "The Cottage",
+            "url": "https://www.maineseasiderentals.com/rental-listings/21/default/the-cottage/",
             "address": "90 Mile Stretch Rd",
             "city": "Biddeford Pool",
             "competitor": "Maine Seaside Rentals",
@@ -4432,6 +4413,7 @@
           },
           {
             "property_name": "Waterfront Estate with Private Pool and Panoramic Ocean Views |Ogunquit",
+            "url": "https://mainestreetpropertymanagement.com/hostaway-listing-details-page/?listingMapId=500768",
             "address": "106 Grasshopper Lane",
             "city": "Ogunquit",
             "competitor": "Maine Street Property Management",
@@ -4442,6 +4424,7 @@
           },
           {
             "property_name": "2-bedroom cottage in Camp Ellis",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=196513",
             "address": "11 Sunset Ave",
             "city": "Saco",
             "competitor": "Saco Bay Rentals",
@@ -4452,6 +4435,7 @@
           },
           {
             "property_name": "4 Bedroom cottage in Kinney Shores!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=196551",
             "address": "11 Sunset Ave",
             "city": "Saco",
             "competitor": "Saco Bay Rentals",
@@ -4461,17 +4445,8 @@
             "date_last_seen": "2026-04-12"
           },
           {
-            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
-            "address": "9 Ocean Park Road",
-            "city": "Old Orchard Beach",
-            "competitor": "Seashore Property Management",
-            "platform": "liverez",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
             "property_name": "Sunset View",
+            "url": "https://www.vacasa.com/unit/95366",
             "address": "252 Ocean Avenue",
             "city": "Wells",
             "competitor": "Vacasa",
@@ -4482,6 +4457,7 @@
           },
           {
             "property_name": "Hills Beach Escape",
+            "url": "https://www.vacasa.com/unit/130203",
             "address": "151 Hills Beach Road",
             "city": "Saco",
             "competitor": "Vacasa",
@@ -4492,6 +4468,7 @@
           },
           {
             "property_name": "Footprints in the Sand",
+            "url": "https://www.vacasa.com/unit/48576",
             "address": "50 Beacon Street",
             "city": "Kittery",
             "competitor": "Vacasa",
@@ -4503,17 +4480,8 @@
         ],
         "lost": [
           {
-            "property_name": "Ocean Views & Steps to Long Sands Beach",
-            "address": "32 Reserve Street",
-            "city": "York",
-            "competitor": "Anchor Real Estate Rentals",
-            "platform": "lodgify",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
             "property_name": "Ocean Views One Row Back from Long Sands Beach",
+            "url": "https://anchorrealestaterentals.com/en/ocean-views-one-row-back-from-long-sands-beach",
             "address": "115 Long Beach Ave",
             "city": "York",
             "competitor": "Anchor Real Estate Rentals",
@@ -4523,47 +4491,8 @@
             "date_last_seen": "2026-03-22"
           },
           {
-            "property_name": "The Salty Nest at Beach Dreams",
-            "address": "412 Post Road, #241",
-            "city": "Wells",
-            "competitor": "Anchor Real Estate Rentals",
-            "platform": "lodgify",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-21",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Family Retreat: Indoor Pool, Hot Tub, Gym, 1 Mile to Beach!",
-            "address": "272 Mills Road",
-            "city": "Kennebunkport",
-            "competitor": "Coastline Vacation Rentals",
-            "platform": "ownerrez",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Coastal Maine Retreat",
-            "address": "145 Western Avenue",
-            "city": "Kennebunk",
-            "competitor": "Coastline Vacation Rentals",
-            "platform": "ownerrez",
-            "bedrooms": 1,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-18"
-          },
-          {
-            "property_name": "Goose Rocks Beach Cottage!",
-            "address": "23 Dyke Road",
-            "city": "Kennebunkport",
-            "competitor": "Coastline Vacation Rentals",
-            "platform": "ownerrez",
-            "bedrooms": 1,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-18"
-          },
-          {
             "property_name": "Steps to Dock Square & Gooch's Beach! Pets Welcome!",
+            "url": "https://www.coastlinevacationrentals.com/steps-to-dock-square-goochs-beach-pets-welcome-orp5b5f951x",
             "address": "32 Western Avenue",
             "city": "Kennebunk",
             "competitor": "Coastline Vacation Rentals",
@@ -4573,17 +4502,8 @@
             "date_last_seen": "2026-03-22"
           },
           {
-            "property_name": "5 bedroom home in Dock Square! 1.8 Acres of Privacy",
-            "address": "9 High Street",
-            "city": "Kennebunkport",
-            "competitor": "Coastline Vacation Rentals",
-            "platform": "ownerrez",
-            "bedrooms": 5,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-18"
-          },
-          {
             "property_name": "Charming Pine Point Cottage - 2 Blocks to Ocean!",
+            "url": "https://evolve.com/vacation-rentals/us/me/scarborough/418157",
             "address": "30 Jones Creek Drive",
             "city": "Scarborough",
             "competitor": "Evolve Vacation Rentals",
@@ -4594,6 +4514,7 @@
           },
           {
             "property_name": "Old Orchard Beach Vacation Rental, Walk to Ocean!",
+            "url": "https://evolve.com/vacation-rentals/us/me/old-orchard-beach/502485",
             "address": "46 Saco Avenue",
             "city": "Old Orchard Beach",
             "competitor": "Evolve Vacation Rentals",
@@ -4604,6 +4525,7 @@
           },
           {
             "property_name": "Sunny Wells Cottage - 1 Mi to Moody Beach!",
+            "url": "https://evolve.com/vacation-rentals/us/me/wells/378004",
             "address": "454 Post Road",
             "city": "Wells",
             "competitor": "Evolve Vacation Rentals",
@@ -4614,6 +4536,7 @@
           },
           {
             "property_name": "Apt. Walking Distance to OOB Pier & Saco Bay!",
+            "url": "https://evolve.com/vacation-rentals/us/me/old-orchard-beach/429837",
             "address": "86 East Grand Avenue",
             "city": "Old Orchard Beach",
             "competitor": "Evolve Vacation Rentals",
@@ -4624,6 +4547,7 @@
           },
           {
             "property_name": "Lighthouse View  LTHSEVU",
+            "url": "https://www.rentalprorentals.com/garnsey/ShowProp.cfm?propid=640",
             "address": null,
             "city": "Wells",
             "competitor": "Garnsey Brothers",
@@ -4634,6 +4558,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327894",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4644,6 +4569,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327851",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4654,6 +4580,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=323021",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4664,6 +4591,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=323044",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4674,6 +4602,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=328151",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4684,6 +4613,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327878",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4694,6 +4624,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327882",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4704,6 +4635,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327885",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4714,6 +4646,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327887",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4724,6 +4657,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327852",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4734,6 +4668,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327862",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4744,6 +4679,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327899",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4754,6 +4690,7 @@
           },
           {
             "property_name": "Property Details",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=323036",
             "address": "34 Oceana Ave",
             "city": "Old Orchard Beach",
             "competitor": "Ocean Park Realty",
@@ -4764,6 +4701,7 @@
           },
           {
             "property_name": "Waterfront 5BR/3 bath in Camp Ellis!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=188140",
             "address": "11 Sunset Ave",
             "city": "Saco",
             "competitor": "Saco Bay Rentals",
@@ -4774,6 +4712,7 @@
           },
           {
             "property_name": "Air conditioned cottage 75 yards from the beach!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=170380",
             "address": "11 Sunset Ave",
             "city": "Saco",
             "competitor": "Saco Bay Rentals",
@@ -4784,16 +4723,7 @@
           },
           {
             "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
-            "address": "9 Ocean Park Road",
-            "city": "Old Orchard Beach",
-            "competitor": "Seashore Property Management",
-            "platform": "liverez",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=166059",
             "address": "9 Ocean Park Road",
             "city": "Old Orchard Beach",
             "competitor": "Seashore Property Management",
@@ -4804,6 +4734,7 @@
           },
           {
             "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=26294",
             "address": "9 Ocean Park Road",
             "city": "Old Orchard Beach",
             "competitor": "Seashore Property Management",
@@ -4814,6 +4745,7 @@
           },
           {
             "property_name": "Sand &amp; Surf at Wells Beach",
+            "url": "https://www.vacasa.com/unit/129419",
             "address": "5 Ox Cart Lane",
             "city": "Wells",
             "competitor": "Vacasa",
@@ -4824,6 +4756,7 @@
           },
           {
             "property_name": "Family Beach Retreat",
+            "url": "https://www.vacasa.com/unit/60561",
             "address": "42 Ocean Avenue",
             "city": "Wells",
             "competitor": "Vacasa",
@@ -4834,6 +4767,7 @@
           },
           {
             "property_name": "Shorelands Resort Cottage 24",
+            "url": "https://www.vacasa.com/unit/34139",
             "address": "26 Wells Road",
             "city": "Kennebunkport",
             "competitor": "Vacasa",
@@ -4844,6 +4778,7 @@
           },
           {
             "property_name": "Sandy Bottoms -Shorelands Resort Cottage 10",
+            "url": "https://www.vacasa.com/unit/34317",
             "address": "26 Wells Road",
             "city": "Kennebunkport",
             "competitor": "Vacasa",
@@ -4854,6 +4789,7 @@
           },
           {
             "property_name": "Coastal Calling",
+            "url": "https://www.vacasa.com/unit/92263",
             "address": "27 Witham Farm Road",
             "city": "Kittery",
             "competitor": "Vacasa",
@@ -4868,6 +4804,7 @@
         "gained": [
           {
             "property_name": "21 Surf KBK",
+            "url": "https://kmapropertygroup.com/rentals/21-surf-kbk/",
             "address": "21 Surf Lane",
             "city": "Kennebunk",
             "competitor": "KMA Property Group",
@@ -4878,6 +4815,7 @@
           },
           {
             "property_name": "AMV \u00b7 Family Friendly Studio",
+            "url": "https://kmapropertygroup.com/rentals/amv-family-friendly-studio-bartlett-nh/",
             "address": "River Run Drive",
             "city": "Bartlett",
             "competitor": "KMA Property Group",
@@ -4888,6 +4826,7 @@
           },
           {
             "property_name": "Beaulieu Ln Cottage",
+            "url": "https://kmapropertygroup.com/rentals/beaulieu-ln-cottage-york-me/",
             "address": "5 Beaulieu Ln",
             "city": "York",
             "competitor": "KMA Property Group",
@@ -4898,6 +4837,7 @@
           },
           {
             "property_name": "Birchlea Loop #5",
+            "url": "https://kmapropertygroup.com/rentals/birchlea-loop-5-bartlett-nh/",
             "address": "5 Birchlea Loop",
             "city": "Bartlett",
             "competitor": "KMA Property Group",
@@ -4908,6 +4848,7 @@
           },
           {
             "property_name": "Camp S'mores",
+            "url": "https://kmapropertygroup.com/rentals/camp-smores-shapleigh-me/",
             "address": "151 Granny Kent Pond",
             "city": "Shapleigh",
             "competitor": "KMA Property Group",
@@ -4918,6 +4859,7 @@
           },
           {
             "property_name": "Cara Mara 309",
+            "url": "https://kmapropertygroup.com/rentals/cara-mara-309-wildwood-crest-nj/",
             "address": "6701 Atlantic Ave",
             "city": "Wildwood Gables",
             "competitor": "KMA Property Group",
@@ -4928,6 +4870,7 @@
           },
           {
             "property_name": "Cornish Cottage ",
+            "url": "https://kmapropertygroup.com/rentals/cornish-cottage/",
             "address": "3 Cornish Avenue",
             "city": "York",
             "competitor": "KMA Property Group",
@@ -4938,6 +4881,7 @@
           },
           {
             "property_name": "District of Maine",
+            "url": "https://kmapropertygroup.com/rentals/district-of-maine-ogunquit-me/",
             "address": "112 Highland Avenue",
             "city": "Ogunquit",
             "competitor": "KMA Property Group",
@@ -4948,6 +4892,7 @@
           },
           {
             "property_name": "Drift Haus on Estes",
+            "url": "https://kmapropertygroup.com/rentals/drift-haus-on-estes-alfred-me/",
             "address": "49 Branch View Terrace",
             "city": "Alfred",
             "competitor": "KMA Property Group",
@@ -4958,6 +4903,7 @@
           },
           {
             "property_name": "Eagle's Landing",
+            "url": "https://kmapropertygroup.com/rentals/eagles-landing-acton-me/",
             "address": "81 Eagle Rd",
             "city": "Acton",
             "competitor": "KMA Property Group",
@@ -4968,6 +4914,7 @@
           },
           {
             "property_name": "Unit A",
+            "url": "https://kmapropertygroup.com/rentals/kennebunk-farmhouse-retreat/unit-a/",
             "address": "14 Hovey Street",
             "city": "Kennebunk",
             "competitor": "KMA Property Group",
@@ -4978,6 +4925,7 @@
           },
           {
             "property_name": "Unit B",
+            "url": "https://kmapropertygroup.com/rentals/kennebunk-farmhouse-retreat/unit-b/",
             "address": "14 Hovey Street",
             "city": "Kennebunk",
             "competitor": "KMA Property Group",
@@ -4988,6 +4936,7 @@
           },
           {
             "property_name": "Whole House",
+            "url": "https://kmapropertygroup.com/rentals/kennebunk-farmhouse-retreat/whole-house/",
             "address": "14 Hovey Street",
             "city": "Kennebunk",
             "competitor": "KMA Property Group",
@@ -4998,6 +4947,7 @@
           },
           {
             "property_name": "Lakefront Retreat",
+            "url": "https://kmapropertygroup.com/rentals/lakefront-retreat-kayak-dock-newfield-me/",
             "address": "176 Onamor Drive",
             "city": "Newfield",
             "competitor": "KMA Property Group",
@@ -5008,6 +4958,7 @@
           },
           {
             "property_name": "Locke Lake Oasis",
+            "url": "https://kmapropertygroup.com/rentals/locke-lake-oasis-barnstead-nh/",
             "address": "18 Belmont Drive",
             "city": "Barnstead",
             "competitor": "KMA Property Group",
@@ -5018,6 +4969,7 @@
           },
           {
             "property_name": "Main Squeeze",
+            "url": "https://kmapropertygroup.com/rentals/main-squeeze-york-me/",
             "address": "83 Main Street",
             "city": "York",
             "competitor": "KMA Property Group",
@@ -5028,6 +4980,7 @@
           },
           {
             "property_name": "Morning View Cottage",
+            "url": "https://kmapropertygroup.com/rentals/morning-view-cottage/",
             "address": "159 Crescent Drive",
             "city": "Waterboro",
             "competitor": "KMA Property Group",
@@ -5038,6 +4991,7 @@
           },
           {
             "property_name": "Nautical Mile 217",
+            "url": "https://kmapropertygroup.com/rentals/nautical-mile-217-wells-me/",
             "address": "1072 Post Road",
             "city": "Wells",
             "competitor": "KMA Property Group",
@@ -5048,6 +5002,7 @@
           },
           {
             "property_name": "Nautical Mile 234",
+            "url": "https://kmapropertygroup.com/rentals/nautical-mile-234-wells-me/",
             "address": "1072 Post Road",
             "city": "Wells",
             "competitor": "KMA Property Group",
@@ -5058,6 +5013,7 @@
           },
           {
             "property_name": "Nautical Mile 239",
+            "url": "https://kmapropertygroup.com/rentals/nautical-mile-239-wells-me/",
             "address": "1072 Post Road",
             "city": "Wells",
             "competitor": "KMA Property Group",
@@ -5068,6 +5024,7 @@
           },
           {
             "property_name": "Ogunquit Place",
+            "url": "https://kmapropertygroup.com/rentals/ogunquit-place/downstairs/",
             "address": "297 Main St",
             "city": "Ogunquit",
             "competitor": "KMA Property Group",
@@ -5078,6 +5035,7 @@
           },
           {
             "property_name": "Ogunquit Place",
+            "url": "https://kmapropertygroup.com/rentals/ogunquit-place/whole-house/",
             "address": "297 Main St",
             "city": "Ogunquit",
             "competitor": "KMA Property Group",
@@ -5088,6 +5046,7 @@
           },
           {
             "property_name": "Rock Haven Cottage",
+            "url": "https://kmapropertygroup.com/rentals/rock-haven-cottage/",
             "address": "114 Onamor Drive",
             "city": "Newfield",
             "competitor": "KMA Property Group",
@@ -5098,6 +5057,7 @@
           },
           {
             "property_name": "Rye by the Beach",
+            "url": "https://kmapropertygroup.com/rentals/rye-by-the-beach-rye-nh/rye-by-the-beach-whole-house/",
             "address": "1300 Ocean Blvd",
             "city": "Rye",
             "competitor": "KMA Property Group",
@@ -5108,6 +5068,7 @@
           },
           {
             "property_name": "Rye by the Beach",
+            "url": "https://kmapropertygroup.com/rentals/rye-by-the-beach/",
             "address": "1300 Ocean Blvd",
             "city": "Rye",
             "competitor": "KMA Property Group",
@@ -5118,6 +5079,7 @@
           },
           {
             "property_name": "Rye by the Beach #3",
+            "url": "https://kmapropertygroup.com/rentals/rye-by-the-beach-rye-nh/rye-by-the-beach-3-rye-nh/",
             "address": "1300 Ocean Blvd",
             "city": "Rye",
             "competitor": "KMA Property Group",
@@ -5128,6 +5090,7 @@
           },
           {
             "property_name": "Sunny Knoll",
+            "url": "https://kmapropertygroup.com/rentals/sunny-knoll-york-me/",
             "address": "22 Freeman Street",
             "city": "York",
             "competitor": "KMA Property Group",
@@ -5138,6 +5101,7 @@
           },
           {
             "property_name": "The Alpine Nest",
+            "url": "https://kmapropertygroup.com/rentals/the-alpine-nest-jackson-nh/",
             "address": "18 Lucas Lane",
             "city": "Jackson",
             "competitor": "KMA Property Group",
@@ -5148,6 +5112,7 @@
           },
           {
             "property_name": "The Beached Whale",
+            "url": "https://kmapropertygroup.com/rentals/the-beached-whale-wells-me/",
             "address": "23 Grenier Lane",
             "city": "Wells",
             "competitor": "KMA Property Group",
@@ -5158,6 +5123,7 @@
           },
           {
             "property_name": "The Hill",
+            "url": "https://kmapropertygroup.com/rentals/the-hill-york-me/",
             "address": "91 Shore Road ",
             "city": "York",
             "competitor": "KMA Property Group",
@@ -5168,6 +5134,7 @@
           },
           {
             "property_name": "The Shore Escape",
+            "url": "https://kmapropertygroup.com/rentals/the-shore-escape/",
             "address": "177 Shore Road Unit #3",
             "city": "Ogunquit",
             "competitor": "KMA Property Group",
@@ -5178,6 +5145,7 @@
           },
           {
             "property_name": "The Timeless Retreat",
+            "url": "https://kmapropertygroup.com/rentals/the-timeless-retreat-me/",
             "address": "11 Hovey Street",
             "city": "Kennebunk",
             "competitor": "KMA Property Group",
@@ -5188,6 +5156,7 @@
           },
           {
             "property_name": "Tidepools Retreat",
+            "url": "https://kmapropertygroup.com/rentals/tidepools-retreat/",
             "address": "236 Long Sands Road",
             "city": "York",
             "competitor": "KMA Property Group",
@@ -5198,6 +5167,7 @@
           },
           {
             "property_name": "Time of Wonder",
+            "url": "https://kmapropertygroup.com/rentals/time-of-wonder/",
             "address": " 63 Shore Road",
             "city": "Alfred",
             "competitor": "KMA Property Group",
@@ -5208,6 +5178,7 @@
           },
           {
             "property_name": "Tree Bear",
+            "url": "https://kmapropertygroup.com/rentals/tree-bear-lake-arrowhead-community/",
             "address": "18 Diamond Dr",
             "city": "Waterboro",
             "competitor": "KMA Property Group",
@@ -5218,6 +5189,7 @@
           },
           {
             "property_name": "Paulee Suites",
+            "url": "https://kmapropertygroup.com/rentals/paulee-suites/left/",
             "address": "182 East Grand Avenue ",
             "city": "Scarborough",
             "competitor": "KMA Property Group",
@@ -5228,6 +5200,7 @@
           },
           {
             "property_name": "Paulee Suites",
+            "url": "https://kmapropertygroup.com/rentals/paulee-suites/unit-b-right/",
             "address": "182 East Grand Avenue ",
             "city": "Scarborough",
             "competitor": "KMA Property Group",
@@ -5238,6 +5211,7 @@
           },
           {
             "property_name": "Wellington Manor 233",
+            "url": "https://kmapropertygroup.com/rentals/wellington-manor-233/",
             "address": "1762 Post Rd Unit 233",
             "city": "Wells",
             "competitor": "KMA Property Group",
@@ -5248,6 +5222,7 @@
           },
           {
             "property_name": "Paulee Suites",
+            "url": "https://kmapropertygroup.com/rentals/paulee-suites/whole-house/",
             "address": "182 East Grand Avenue ",
             "city": null,
             "competitor": "KMA Property Group",
@@ -5258,6 +5233,7 @@
           },
           {
             "property_name": "Willow Creek Homestead",
+            "url": "https://kmapropertygroup.com/rentals/willow-creek-homestead/",
             "address": "5 Roberts Pond Road",
             "city": "Alfred",
             "competitor": "KMA Property Group",
@@ -5268,19 +5244,1290 @@
           }
         ],
         "lost": []
+      },
+      "2026-03-22": {
+        "gained": [],
+        "lost": [
+          {
+            "property_name": "Coastal Maine Retreat",
+            "url": "https://www.coastlinevacationrentals.com/coastal-maine-retreat1-mile-to-beach-orp5b6f270x",
+            "address": "145 Western Avenue",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "Goose Rocks Beach Cottage!",
+            "url": "https://www.coastlinevacationrentals.com/goose-rocks-beach-cottage-orp5b6b13cx",
+            "address": "23 Dyke Road",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "5 bedroom home in Dock Square! 1.8 Acres of Privacy",
+            "url": "https://www.coastlinevacationrentals.com/5-bedroom-home-in-dock-square-18-acres-of-privacy-orp5b6fbc6x",
+            "address": "9 High Street",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          }
+        ]
+      },
+      "2026-03-21": {
+        "gained": [
+          {
+            "property_name": "The Sandy Feet Retreat in Beach Dreams",
+            "url": "https://anchorrealestaterentals.com/en/the-sandy-feet-retreat-in-beach-dreams",
+            "address": "412 Post Rd #241",
+            "city": "Wells",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-21",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Quintessential Goose Rocks Beach Cottage",
+            "url": "https://www.coastlinevacationrentals.com/quintessential-goose-rocks-beach-cottage-steps-to-the-sand-orp5b6b13cx",
+            "address": "23 Dyke Road",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-21",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Charming 5 BR Home in Dock Square on nearly 2 Acres of Privacy",
+            "url": "https://www.coastlinevacationrentals.com/charming-5-br-home-in-dock-square-on-nearly-2-acres-of-privacy-orp5b6fbc6x",
+            "address": "9 High Street",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-21",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Quintessential Coastal Maine Escape",
+            "url": "https://www.coastlinevacationrentals.com/quintessential-coastal-maine-escape1-mile-to-beach-orp5b6f270x",
+            "address": "145 Western Avenue",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-21",
+            "date_last_seen": "2026-04-12"
+          }
+        ],
+        "lost": []
+      },
+      "2026-03-18": {
+        "gained": [
+          {
+            "property_name": "Ocean Views One Row Back from Long Sands Beach",
+            "url": "https://anchorrealestaterentals.com/en/ocean-views-one-row-back-from-long-sands-beach",
+            "address": "115 Long Beach Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Vacation in the Heart of Ogunquit",
+            "url": "https://anchorrealestaterentals.com/en/vacation-in-the-heart-of-ogunquit",
+            "address": "280 Main Street",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Stunning Custom Home w/Hot Tub",
+            "url": "https://anchorrealestaterentals.com/en/stunning-custom-home-whot-tub",
+            "address": "33 Stoneybrook Dr",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Charming Vacation Home",
+            "url": "https://anchorrealestaterentals.com/en/charming-vacation-home",
+            "address": "165 Berwick Road",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Quintessential Maine Cottage",
+            "url": "https://anchorrealestaterentals.com/en/quintessential-maine-cottage",
+            "address": "9 Myrtle Circle",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Beachfront Home on Private Moody Beach",
+            "url": "https://anchorrealestaterentals.com/en/beachfront-home-on-private-moody-beach",
+            "address": "267 Ocean Ave",
+            "city": "Wells",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Bold Ocean Views at Tigh-Na-Mara",
+            "url": "https://anchorrealestaterentals.com/en/bold-ocean-views-at-tigh-na-mara",
+            "address": "32 Lock Lane",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Short Sands Beach Views  - Atlantic View II",
+            "url": "https://anchorrealestaterentals.com/en/short-sands-beach-views---atlantic-view-ii",
+            "address": "11 A Ocean Avenue",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Pop's Cottage at Seapoint Beach",
+            "url": "https://anchorrealestaterentals.com/en/pops-cottage-at-seapoint-beach",
+            "address": "32 Seapoint Rd",
+            "city": "Kittery",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Vitamin Sea #1- Across the Street from Long Sands Beach",
+            "url": "https://anchorrealestaterentals.com/en/vitamin-sea-1--across-the-street-from-long-sands-beach",
+            "address": "93 Long Beach Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Moongate - Coastal Oceanfront Home with Pool",
+            "url": "https://anchorrealestaterentals.com/en/moongate---coastal-oceanfront-home-with-pool",
+            "address": "7 Fairbourne Ln",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Ocean Views just steps  to Long Sands Beach at Rita's Place",
+            "url": "https://anchorrealestaterentals.com/en/ocean-views-just-steps-to-long-sands-beach-at-ritas-place",
+            "address": "32 Reserve St",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Spacious Vacation Home in Ogunquit Village",
+            "url": "https://anchorrealestaterentals.com/en/spacious-vacation-home-in-ogunquit-village",
+            "address": "61 Ledge Road",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Rosehill - York Harbor Beach across the street!",
+            "url": "https://anchorrealestaterentals.com/en/rosehill---york-harbor-beach-across-the-street",
+            "address": "2 Orchard Ln",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "K Seas Dream - An Oceanfront Luxury Home",
+            "url": "https://anchorrealestaterentals.com/en/k-seas-dream---an-oceanfront-luxury-home",
+            "address": "80 Ocean Ave Ext",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to York Harbor Beach",
+            "url": "https://anchorrealestaterentals.com/en/walk-to-york-harbor-beach",
+            "address": "3 Pinefield Ln",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Oceanfront Luxury Vacation Rental in Maine",
+            "url": "https://anchorrealestaterentals.com/en/oceanfront-luxury-vacation-rental-in-maine",
+            "address": "85 Freeman St",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Lovely Home in Ogunquit Village",
+            "url": "https://anchorrealestaterentals.com/en/lovely-home-in-ogunquit-village",
+            "address": "19 Valleybrook Road",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "457 York Street #4",
+            "url": "https://anchorrealestaterentals.com/en/457-york-street-4",
+            "address": "457 York Street #4",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Coastal Chic Sprawling Ranch",
+            "url": "https://anchorrealestaterentals.com/en/coastal-chic-sprawling-ranch",
+            "address": "15 Myrtle Ln",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Beautiful Condo Ideally Located",
+            "url": "https://anchorrealestaterentals.com/en/beautiful-condo-ideally-located",
+            "address": "249 Shore Rd unit 3",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Long Sands Beach Cottage Near Nubble Lighthouse",
+            "url": "https://anchorrealestaterentals.com/en/long-sands-beach-cottage-near-nubble-lighthouse",
+            "address": "57 Long Beach Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Family Retreat with Ocean Views York Beach",
+            "url": "https://anchorrealestaterentals.com/en/family-retreat-with-ocean-views-york-beach",
+            "address": "79 Ocean Ave Ext",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Blueberry Pines Cottage in York Beach, Maine",
+            "url": "https://anchorrealestaterentals.com/en/blueberry-pines-cottage-in-york-beach-maine",
+            "address": "310 Ridge Road",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Shoal's View - Oceanfront & Pool in Beautiful Cape Neddick",
+            "url": "https://anchorrealestaterentals.com/en/shoals-view---oceanfront-pool-in-beautiful-cape-neddick",
+            "address": "73 Agamenticus Avenue",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 7,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Ride the Tide, Moody Beach",
+            "url": "https://anchorrealestaterentals.com/en/ride-the-tide-moody-beach",
+            "address": "101 Ocean Avenue",
+            "city": "Wells",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "The Sand Castle at Short Sands Beach",
+            "url": "https://anchorrealestaterentals.com/en/the-sand-castle-at-short-sands-beach",
+            "address": "49 Ocean Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Ogunquit Village Residence w Pool!",
+            "url": "https://anchorrealestaterentals.com/en/ogunquit-village-residence-w-pool",
+            "address": "23 Brewster Ln",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Charming Modern Cottage",
+            "url": "https://anchorrealestaterentals.com/en/charming-modern-cottage",
+            "address": "247 Berwick Road",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Steps to Long Sands Beach and Family Friendly Fun",
+            "url": "https://anchorrealestaterentals.com/en/steps-to-long-sands-beach-and-family-friendly-fun",
+            "address": "125 Long Beach Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Classic Maine Beach House Between Two Beaches!",
+            "url": "https://anchorrealestaterentals.com/en/classic-maine-beach-house-between-two-beaches",
+            "address": "19 Long Beach Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "The Maine Stay in Ogunquit",
+            "url": "https://anchorrealestaterentals.com/en/the-ogunquit-home",
+            "address": "27 Stearns Road",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Private Beach Access, Ocean Views and Close to Beaches",
+            "url": "https://anchorrealestaterentals.com/en/private-beach-access-ocean-views-and-close-to-beaches",
+            "address": "11 Talpey Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Sweet Beach Dreams",
+            "url": "https://anchorrealestaterentals.com/en/sweet-beach-dreams",
+            "address": "412 Post Rd unit 199",
+            "city": "Wells",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Between the Tides",
+            "url": "https://anchorrealestaterentals.com/en/between-the-tides",
+            "address": "78 Webhannet Dr",
+            "city": "Wells",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Beneath the Moon II - York Beach",
+            "url": "https://anchorrealestaterentals.com/en/beneath-the-moon-ii---york-beach",
+            "address": "201 Long Beach Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Threshwood Place",
+            "url": "https://anchorrealestaterentals.com/en/threshwood-place",
+            "address": "257 Berwick Rd",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Driftwood  Cottage",
+            "url": "https://anchorrealestaterentals.com/en/driftwood-cottage",
+            "address": "832 Ocean Ave",
+            "city": "Wells",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Across the Street from Long Sands Beach, Amazing Ocean Views",
+            "url": "https://anchorrealestaterentals.com/en/across-the-street-from-long-sands-beach-amazing-ocean-views",
+            "address": "93 Long Beach Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Ocean Gem on Crescent Beach",
+            "url": "https://anchorrealestaterentals.com/en/ocean-gem-on-crescent-beach",
+            "address": "22 Gold Ribbon Dr",
+            "city": "Wells",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Beautiful Ogunquit Home",
+            "url": "https://anchorrealestaterentals.com/en/beautiful-ogunquit-home",
+            "address": "16 Rocky Ln",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Spacious Summer Escape, Game Room & Half Court!",
+            "url": "https://anchorrealestaterentals.com/en/spacious-summer-escape-game-room-half-court",
+            "address": "87 Sea Mist Ln",
+            "city": "Wells",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Modern Stage Neck Inn Condo with Harbor Views, Walk to Beach",
+            "url": "https://anchorrealestaterentals.com/en/modern-stage-neck-inn-condo-with-harbor-views-walk-to-beach",
+            "address": "13 Stage Neck Rd",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Coastal Cottage Near Nubble Lighthouse, Beaches",
+            "url": "https://anchorrealestaterentals.com/en/coastal-cottage-near-nubble-lighthouse-beaches",
+            "address": "20 Cycad Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Ogunquit Village Oasis on Scotch Hill",
+            "url": "https://anchorrealestaterentals.com/en/ogunquit-village-oasis-on-scotch-hill",
+            "address": "12 Scotch Hill Trail",
+            "city": "Ogunquit",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Reviews Family Retreat with Ocean Views York Beach",
+            "url": "https://anchorrealestaterentals.com/en/reviews-family-retreat-with-ocean-views-york-beach",
+            "address": null,
+            "city": null,
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": null,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Ocean Views & Steps to Long Sands Beach at Leighton Place",
+            "url": "https://anchorrealestaterentals.com/en/ocean-views-steps-to-long-sands-beach-at-leighton-place",
+            "address": "32 Reserve Street",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Coastal Maine Retreat",
+            "url": "https://www.coastlinevacationrentals.com/coastal-maine-retreat1-mile-to-beach-orp5b6f270x",
+            "address": "145 Western Avenue",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "Goose Rocks Beach Cottage!",
+            "url": "https://www.coastlinevacationrentals.com/goose-rocks-beach-cottage-orp5b6b13cx",
+            "address": "23 Dyke Road",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "5 bedroom home in Dock Square! 1.8 Acres of Privacy",
+            "url": "https://www.coastlinevacationrentals.com/5-bedroom-home-in-dock-square-18-acres-of-privacy-orp5b6fbc6x",
+            "address": "9 High Street",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "Steps to Dock Square & Gooch's Beach! Pets Welcome!",
+            "url": "https://www.coastlinevacationrentals.com/steps-to-dock-square-goochs-beach-pets-welcome-orp5b5f951x",
+            "address": "32 Western Avenue",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Drakes Island! Large Home With Stunning Ocean Views",
+            "url": "https://www.coastlinevacationrentals.com/drakes-island-large-home-with-stunning-ocean-views-orp5b5f946x",
+            "address": "102 Island Beach Road",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Private Ogunquit Escape",
+            "url": "https://www.coastlinevacationrentals.com/private-ogunquit-escape-orp5b5f94fx",
+            "address": "8 minute drive",
+            "city": "Ogunquit",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Goose rocks beach! Dock & River views!",
+            "url": "https://www.coastlinevacationrentals.com/goose-rocks-beach-dock-river-views-orp5b6d42ax",
+            "address": "24 Norwood Lane",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Oceans 5",
+            "url": "https://www.coastlinevacationrentals.com/oceans-5-stunning-beach-house-with-an-inground-pool-orp5b5f959x",
+            "address": "732 Ocean Avenue",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Summer Landing",
+            "url": "https://www.coastlinevacationrentals.com/summer-landing-orp5b674f9x",
+            "address": "113 Summer Street",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to Dock Square!",
+            "url": "https://www.coastlinevacationrentals.com/walk-to-dock-square-freshly-renovated-charmer-orp5b5f94ex",
+            "address": "18 Canterbury Circle",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to Dock Square Kennebunkport!",
+            "url": "https://www.coastlinevacationrentals.com/walk-to-dock-square-kennebunkport-orp5b70ba9x",
+            "address": "4 Briarwood Lane",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Stunning Water Views",
+            "url": "https://www.coastlinevacationrentals.com/stunning-water-views-kayak-sup-more-orp5b6a901x",
+            "address": "Kennebunk Bridle Path",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "6 bedrooms! Hot tub/firepit/deck/Pet Friendly close to beach!",
+            "url": "https://www.coastlinevacationrentals.com/6-bedrooms-hot-tubfirepitdeckpet-friendly-close-to-beach-orp5b718f5x",
+            "address": "117 Sea Road",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Steps to Mother`s Beach!",
+            "url": "https://www.coastlinevacationrentals.com/steps-to-mothers-beach--so-close-you-can-smell-the-ocean-orp5b5f95cx",
+            "address": "15 Valley Avenue",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Oceanfront with BOLD Ocean views! Beach access!",
+            "url": "https://www.coastlinevacationrentals.com/oceanfront-with-bold-ocean-views-beach-access-orp5b71287x",
+            "address": "12 Seaspray Drive",
+            "city": "Biddeford",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Close to Dock Square & Beaches",
+            "url": "https://www.coastlinevacationrentals.com/close-to-dock-square-beaches-firepit-ping-pong-games-orp5b69a1cx",
+            "address": "91 Port Road",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Half a mile to Dock Square!",
+            "url": "https://www.coastlinevacationrentals.com/half-a-mile-to-dock-square-orp5b6790fx",
+            "address": "39 North Street",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Ocean views on Gooch's Beach!",
+            "url": "https://www.coastlinevacationrentals.com/ocean-views-on-goochs-beach-orp5b67c19x",
+            "address": "16 Bayberry Avenue",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Summertime Oasis with Inground Pool!",
+            "url": "https://www.coastlinevacationrentals.com/summertime-oasis-with-inground-pool-orp5b5f94ax",
+            "address": "15 Central Avenue",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to Beach&Town! 4 Bedrooms",
+            "url": "https://www.coastlinevacationrentals.com/walk-to-beachtown-4-bedroomsriverfrontpet-friendlyarcade-orp5b73115x",
+            "address": "41 Fairfield Drive",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Historic Escape! Coastal Farmhouse",
+            "url": "https://www.coastlinevacationrentals.com/historic-escape-coastal-farmhousewalk-to-dock-square-orp5b6b19cx",
+            "address": "142 Port Road",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "3 Min walk to the Beach! 4brm, outdoor shower",
+            "url": "https://www.coastlinevacationrentals.com/3-min-walk-to-the-beach-4brm-outdoor-shower-orp5b73c7cx",
+            "address": "46 Wildwood Avenue",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Ocean Views, Freshly Renovated, Beach Access!",
+            "url": "https://www.coastlinevacationrentals.com/ocean-views-freshly-renovated-beach-access-orp5b6ea31x",
+            "address": "53 Great Hill Road",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "2 min walk to beach! 4Bdrm",
+            "url": "https://www.coastlinevacationrentals.com/2-min-walk-to-beach-4bdrm-fire-pitpatiooutdoor-shower-orp5b7146cx",
+            "address": "12 Surf Lane",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Renovated Fortunes Rocks Beach Oasis!",
+            "url": "https://www.coastlinevacationrentals.com/renovated-fortunes-rocks-beach-oasis-orp5b5f956x",
+            "address": "6 Elizabeth Road",
+            "city": "Biddeford",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Serene A",
+            "url": "https://www.coastlinevacationrentals.com/serene-aframe-cottage-steps-to-moody-beach-orp5b5f947x",
+            "address": "12 Pheasant Lane",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Pet Friendly! Perfectly Located in Kennebunkport!",
+            "url": "https://www.coastlinevacationrentals.com/pet-friendly-perfectly-located-in-kennebunkport-orp5b5f94bx",
+            "address": "8 minute drive",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Sea La Vie",
+            "url": "https://www.coastlinevacationrentals.com/sea-la-vie-outdoor-oasis-w-seasonal-hot-tub-orp5b64e38x",
+            "address": "13 Meadow Lane",
+            "city": "Ogunquit",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Private Lakefront Home w/Sandy Beach!",
+            "url": "https://www.coastlinevacationrentals.com/private-lakefront-home-wsandy-beach-orp5b5f95fx",
+            "address": "607 Shapleigh Corner Road",
+            "city": "Shapleigh",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "5 bedroom w/Ocean Views",
+            "url": "https://www.coastlinevacationrentals.com/5-bedroom-wocean-views-across-from-drakes-island-beach-orp5b6fcf6x",
+            "address": "222 Island Beach Road",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to Gooch's Beach",
+            "url": "https://www.coastlinevacationrentals.com/walk-to-goochs-beachriver-views-orp5b6577ex",
+            "address": "22 Surf Lane",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to Dock Square",
+            "url": "https://www.coastlinevacationrentals.com/walk-to-dock-square1mile-to-beach-orp5b73a64x",
+            "address": "1 Larboard Lane",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Across from beach! Large Deck & Stunning views!",
+            "url": "https://www.coastlinevacationrentals.com/across-from-beach-large-deck-stunning-views-orp5b6c3b9x",
+            "address": "5 Boothby Road",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "SAUNA, Fireplace, Pet friendly",
+            "url": "https://www.coastlinevacationrentals.com/sauna-fireplace-pet-friendlywalk-to-dock-square-orp5b5f6d6x",
+            "address": "25 Canterbury Circle",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Historic Summer's Landing!",
+            "url": "https://www.coastlinevacationrentals.com/historic-summers-landing-orp5b636a8x",
+            "address": "141 Summer Street",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Cozy Cottage Close to Downtown OGT",
+            "url": "https://www.coastlinevacationrentals.com/cozy-cottage-close-to-downtown-ogt-orp5b5f955x",
+            "address": "42 Highland Avenue",
+            "city": "Ogunquit",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to Dock Square & Gooch's Beach!",
+            "url": "https://www.coastlinevacationrentals.com/walk-to-dock-square-goochs-beach-orp5b65fb5x",
+            "address": "4 Wallace Street",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Drakes Island Getaway",
+            "url": "https://www.coastlinevacationrentals.com/drakes-island-getaway-spacious-house-with-tidal-water-views-orp5b5f952x",
+            "address": "330 Drakes Island Road",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Spacious home! Golf course views",
+            "url": "https://www.coastlinevacationrentals.com/spacious-home-golf-course-viewswalk-to-beach-orp5b628a2x",
+            "address": "20 Oak Street",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Steps to Goose Rocks Beach! Kayaks, Beach chairs, & more!",
+            "url": "https://www.coastlinevacationrentals.com/steps-to-goose-rocks-beach-kayaks-beach-chairs-more-orp5b6baccx",
+            "address": "5 Hayward Avenue",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Cozy downtown Ogunquit escape",
+            "url": "https://www.coastlinevacationrentals.com/cozy-downtown-ogunquit-escape-walk-to-everything-orp5b5f949x",
+            "address": "14 Valleybrook Road",
+            "city": "Ogunquit",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Water views! Walk to Beach",
+            "url": "https://www.coastlinevacationrentals.com/water-views-walk-to-beachdeckpet-friendly-orp5b7256cx",
+            "address": "16 Elizabeth Road",
+            "city": "Biddeford",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Luxurious Home By The Beach",
+            "url": "https://www.coastlinevacationrentals.com/luxurious-home-by-the-beach-coastal-home-in-the-heart-of-kpt-orp5b5f957x",
+            "address": "66 South Main Street",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to Wells Harbor Beach w/ A Ping Pong Table!",
+            "url": "https://www.coastlinevacationrentals.com/walk-to-wells-harbor-beach-w-a-ping-pong-table-orp5b5f958x",
+            "address": "6 minute drive",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Custom New Build w/17 Acres of Privacy!",
+            "url": "https://www.coastlinevacationrentals.com/custom-new-build-w17-acres-of-privacy-orp5b60e9ex",
+            "address": "48 Buzzell Road",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Picturesque Home with Harbor Views!",
+            "url": "https://www.coastlinevacationrentals.com/picturesque-home-with-harbor-views-orp5b651fax",
+            "address": "52 Pier Road",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Walk to Downtown OGT!",
+            "url": "https://www.coastlinevacationrentals.com/walk-to-downtown-ogt-orp5b5f94cx",
+            "address": "158 Highland Avenue",
+            "city": "Ogunquit",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Kbunk Beach",
+            "url": "https://www.coastlinevacationrentals.com/kbunk-beachmovie-theaterhot-tubputtinggreenarcadeplayground-orp5b72835x",
+            "address": "7 Sea Garden Circle",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Resort Retreat: Indoor Pool, Hot Tub, Gym, 1 Mile to Beach!",
+            "url": "https://www.coastlinevacationrentals.com/resort-retreat-indoor-pool-hot-tub-gym-1-mile-to-beach-orp5b6b13bx",
+            "address": "272 Mills Road",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=166059",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=26294",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=91391",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=195364",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=180487",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=110764",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=26306",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=179158",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=63407",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=186729",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=36661",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          }
+        ],
+        "lost": []
       }
     },
     "by_competitor": {
       "Anchor Real Estate Rentals": {
         "2026-04-12": {
-          "gained": 3,
-          "lost": 3
-        }
-      },
-      "Coastline Vacation Rentals": {
-        "2026-04-12": {
           "gained": 1,
-          "lost": 5
+          "lost": 1
+        },
+        "2026-03-21": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-03-18": {
+          "gained": 47,
+          "lost": 0
         }
       },
       "Evolve Vacation Rentals": {
@@ -5341,16 +6588,28 @@
           "lost": 2
         }
       },
-      "Seashore Property Management": {
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 3
-        }
-      },
       "Vacasa": {
         "2026-04-12": {
           "gained": 3,
           "lost": 5
+        }
+      },
+      "Coastline Vacation Rentals": {
+        "2026-04-12": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-03-22": {
+          "gained": 0,
+          "lost": 3
+        },
+        "2026-03-21": {
+          "gained": 3,
+          "lost": 0
+        },
+        "2026-03-18": {
+          "gained": 49,
+          "lost": 0
         }
       },
       "Ocean Park Realty": {
@@ -5358,9 +6617,19 @@
           "gained": 0,
           "lost": 13
         }
+      },
+      "Seashore Property Management": {
+        "2026-04-12": {
+          "gained": 0,
+          "lost": 2
+        },
+        "2026-03-18": {
+          "gained": 11,
+          "lost": 0
+        }
       }
     },
-    "total_gained": 61,
-    "total_lost": 36
+    "total_gained": 168,
+    "total_lost": 32
   }
 }
