@@ -1,6 +1,6 @@
 {
   "generated": "2026-04-27",
-  "total_properties": 1254,
+  "total_properties": 1250,
   "total_competitors": 27,
   "current": [
     {
@@ -45,16 +45,6 @@
       "is_us": false
     },
     {
-      "competitor": "Ocean Park Realty",
-      "platform": "oceanpark_custom",
-      "count": 74,
-      "with_address": 58,
-      "cities": [
-        "Old Orchard Beach"
-      ],
-      "is_us": false
-    },
-    {
       "competitor": "Sand Dollar Real Estate",
       "platform": "jeanknapp_custom",
       "count": 72,
@@ -62,6 +52,16 @@
       "cities": [
         "Biddeford",
         "Kennebunkport"
+      ],
+      "is_us": false
+    },
+    {
+      "competitor": "Ocean Park Realty",
+      "platform": "oceanpark_custom",
+      "count": 71,
+      "with_address": 56,
+      "cities": [
+        "Old Orchard Beach"
       ],
       "is_us": false
     },
@@ -165,8 +165,8 @@
     {
       "competitor": "Coastline Vacation Rentals",
       "platform": "ownerrez",
-      "count": 49,
-      "with_address": 49,
+      "count": 48,
+      "with_address": 48,
       "cities": [
         "Biddeford",
         "Kennebunk",
@@ -361,6 +361,7 @@
       "count": 20,
       "with_address": 19,
       "cities": [
+        "Ogunquit",
         "Wells",
         "York"
       ],
@@ -549,6 +550,35 @@
       "TopHost Vacation Rentals": 28,
       "Vacasa": 85,
       "Grand Welcome (Our Company)": 41
+    },
+    "2026-04-27": {
+      "Anchor Real Estate Rentals": 50,
+      "Bayley Vacation Rentals": 53,
+      "Coastal Getaways": 30,
+      "Coastline Vacation Rentals": 48,
+      "Evolve Vacation Rentals": 65,
+      "Garnsey Brothers": 89,
+      "Goose Rocks Beach Rentals": 47,
+      "Jean Knapp Rentals": 50,
+      "KMA Property Group": 41,
+      "KPT Luxury Properties": 0,
+      "KPort Concierge": 55,
+      "Kennebunk Beach Realty": 20,
+      "Luxury Maine Rentals": 25,
+      "Maine Seaside Rentals": 79,
+      "Maine Street Property Management": 23,
+      "Ocean Dreams Maine": 20,
+      "Ocean Park Realty": 71,
+      "Ogunquit Rental Properties": 36,
+      "Saco Bay Rentals": 25,
+      "Salt & Shine Vacation Rentals": 61,
+      "Sand Dollar Real Estate": 72,
+      "Seagrass Property Rentals": 31,
+      "Seashore Property Management": 23,
+      "Tamarack Rentals": 52,
+      "TopHost Vacation Rentals": 28,
+      "Vacasa": 85,
+      "Grand Welcome (Our Company)": 42
     }
   },
   "trends": {
@@ -602,17 +632,17 @@
         "trend": "growing"
       },
       "Coastline Vacation Rentals": {
-        "current": 49,
+        "current": 48,
         "wow_prev": 48,
-        "wow_change": 1,
-        "wow_pct": 2.1,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 52,
-        "mom_change": -3,
-        "mom_pct": -5.8,
+        "mom_change": -4,
+        "mom_pct": -7.7,
         "first_date": "2026-03-18",
         "first": 49,
-        "all_time_change": 0,
-        "all_time_pct": 0.0,
+        "all_time_change": -1,
+        "all_time_pct": -2.0,
         "trend": "declining"
       },
       "Garnsey Brothers": {
@@ -868,18 +898,18 @@
         "trend": "stable"
       },
       "Ocean Park Realty": {
-        "current": 74,
+        "current": 71,
         "wow_prev": 59,
-        "wow_change": 15,
-        "wow_pct": 25.4,
+        "wow_change": 12,
+        "wow_pct": 20.3,
         "mom_prev": 72,
-        "mom_change": 2,
-        "mom_pct": 2.8,
+        "mom_change": -1,
+        "mom_pct": -1.4,
         "first_date": "2026-03-19",
         "first": 63,
-        "all_time_change": 11,
-        "all_time_pct": 17.5,
-        "trend": "growing"
+        "all_time_change": 8,
+        "all_time_pct": 12.7,
+        "trend": "declining"
       },
       "Ogunquit Rental Properties": {
         "current": 36,
@@ -1000,21 +1030,6 @@
         "trend": "growing"
       },
       {
-        "name": "Ocean Park Realty",
-        "current": 74,
-        "wow_prev": 59,
-        "wow_change": 15,
-        "wow_pct": 25.4,
-        "mom_prev": 72,
-        "mom_change": 2,
-        "mom_pct": 2.8,
-        "first_date": "2026-03-19",
-        "first": 63,
-        "all_time_change": 11,
-        "all_time_pct": 17.5,
-        "trend": "growing"
-      },
-      {
         "name": "Grand Welcome (Our Company)",
         "current": 42,
         "wow_prev": 41,
@@ -1092,6 +1107,21 @@
     ],
     "declining": [
       {
+        "name": "Coastline Vacation Rentals",
+        "current": 48,
+        "wow_prev": 48,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "mom_prev": 52,
+        "mom_change": -4,
+        "mom_pct": -7.7,
+        "first_date": "2026-03-18",
+        "first": 49,
+        "all_time_change": -1,
+        "all_time_pct": -2.0,
+        "trend": "declining"
+      },
+      {
         "name": "Evolve Vacation Rentals",
         "current": 65,
         "wow_prev": 66,
@@ -1104,21 +1134,6 @@
         "first": 69,
         "all_time_change": -4,
         "all_time_pct": -5.8,
-        "trend": "declining"
-      },
-      {
-        "name": "Coastline Vacation Rentals",
-        "current": 49,
-        "wow_prev": 48,
-        "wow_change": 1,
-        "wow_pct": 2.1,
-        "mom_prev": 52,
-        "mom_change": -3,
-        "mom_pct": -5.8,
-        "first_date": "2026-03-18",
-        "first": 49,
-        "all_time_change": 0,
-        "all_time_pct": 0.0,
         "trend": "declining"
       },
       {
@@ -1149,6 +1164,21 @@
         "first": 25,
         "all_time_change": -2,
         "all_time_pct": -8.0,
+        "trend": "declining"
+      },
+      {
+        "name": "Ocean Park Realty",
+        "current": 71,
+        "wow_prev": 59,
+        "wow_change": 12,
+        "wow_pct": 20.3,
+        "mom_prev": 72,
+        "mom_change": -1,
+        "mom_pct": -1.4,
+        "first_date": "2026-03-19",
+        "first": 63,
+        "all_time_change": 8,
+        "all_time_pct": 12.7,
         "trend": "declining"
       }
     ],
@@ -1352,43 +1382,33 @@
   },
   "health_scores": {
     "Garnsey Brothers": {
-      "score": 74,
-      "rating": "stable",
+      "score": 76,
+      "rating": "strong",
       "size_score": 97,
       "trend_score": 50,
-      "stability_score": 83.0,
-      "churn_rate": 3.4,
-      "gross_gained": 1,
+      "stability_score": 89.0,
+      "churn_rate": 2.2,
+      "gross_gained": 0,
       "gross_lost": 2
     },
     "Vacasa": {
-      "score": 41,
-      "rating": "watch",
+      "score": 52,
+      "rating": "stable",
       "size_score": 96,
       "trend_score": 26.6,
-      "stability_score": 6.0,
-      "churn_rate": 18.8,
-      "gross_gained": 4,
-      "gross_lost": 12
+      "stability_score": 41.0,
+      "churn_rate": 11.8,
+      "gross_gained": 1,
+      "gross_lost": 9
     },
     "Maine Seaside Rentals": {
-      "score": 84,
+      "score": 88,
       "rating": "strong",
       "size_score": 95,
       "trend_score": 72.6,
-      "stability_score": 87.5,
-      "churn_rate": 2.5,
-      "gross_gained": 2,
-      "gross_lost": 0
-    },
-    "Ocean Park Realty": {
-      "score": 63,
-      "rating": "stable",
-      "size_score": 93,
-      "trend_score": 87.5,
-      "stability_score": 0,
-      "churn_rate": 93.2,
-      "gross_gained": 69,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
       "gross_lost": 0
     },
     "Sand Dollar Real Estate": {
@@ -1401,6 +1421,16 @@
       "gross_gained": 0,
       "gross_lost": 0
     },
+    "Ocean Park Realty": {
+      "score": 35,
+      "rating": "watch",
+      "size_score": 93,
+      "trend_score": 17.3,
+      "stability_score": 0,
+      "churn_rate": 104.2,
+      "gross_gained": 70,
+      "gross_lost": 4
+    },
     "Evolve Vacation Rentals": {
       "score": 44,
       "rating": "watch",
@@ -1408,8 +1438,8 @@
       "trend_score": 24.2,
       "stability_score": 23.0,
       "churn_rate": 15.4,
-      "gross_gained": 1,
-      "gross_lost": 9
+      "gross_gained": 0,
+      "gross_lost": 10
     },
     "Salt & Shine Vacation Rentals": {
       "score": 77,
@@ -1422,13 +1452,13 @@
       "gross_lost": 0
     },
     "KPort Concierge": {
-      "score": 82,
+      "score": 85,
       "rating": "strong",
       "size_score": 87,
       "trend_score": 71.9,
-      "stability_score": 91.0,
-      "churn_rate": 1.8,
-      "gross_gained": 1,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
       "gross_lost": 0
     },
     "Bayley Vacation Rentals": {
@@ -1452,34 +1482,34 @@
       "gross_lost": 0
     },
     "Anchor Real Estate Rentals": {
-      "score": 71,
+      "score": 74,
       "rating": "stable",
       "size_score": 85,
       "trend_score": 76.4,
-      "stability_score": 50.0,
-      "churn_rate": 10.0,
-      "gross_gained": 3,
+      "stability_score": 60.0,
+      "churn_rate": 8.0,
+      "gross_gained": 2,
       "gross_lost": 2
     },
     "Jean Knapp Rentals": {
-      "score": 78,
+      "score": 87,
       "rating": "strong",
       "size_score": 85,
       "trend_score": 78.7,
-      "stability_score": 70.0,
-      "churn_rate": 6.0,
-      "gross_gained": 3,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
       "gross_lost": 0
     },
     "Coastline Vacation Rentals": {
-      "score": 49,
+      "score": 36,
       "rating": "watch",
-      "size_score": 85,
-      "trend_score": 30,
-      "stability_score": 39.0,
-      "churn_rate": 12.2,
+      "size_score": 84,
+      "trend_score": 28.0,
+      "stability_score": 0,
+      "churn_rate": 20.8,
       "gross_gained": 1,
-      "gross_lost": 5
+      "gross_lost": 9
     },
     "Goose Rocks Beach Rentals": {
       "score": 75,
@@ -1502,13 +1532,13 @@
       "gross_lost": 0
     },
     "KMA Property Group": {
-      "score": 53,
-      "rating": "stable",
+      "score": 83,
+      "rating": "strong",
       "size_score": 81,
       "trend_score": 72.5,
-      "stability_score": 0,
-      "churn_rate": 92.7,
-      "gross_gained": 38,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
       "gross_lost": 0
     },
     "Ogunquit Rental Properties": {
@@ -1547,9 +1577,9 @@
       "size_score": 73,
       "trend_score": 50,
       "stability_score": 0,
-      "churn_rate": 100.0,
+      "churn_rate": 200.0,
       "gross_gained": 0,
-      "gross_lost": 29
+      "gross_lost": 58
     },
     "TopHost Vacation Rentals": {
       "score": 72,
@@ -1572,23 +1602,23 @@
       "gross_lost": 0
     },
     "Saco Bay Rentals": {
-      "score": 41,
+      "score": 47,
       "rating": "watch",
       "size_score": 70,
       "trend_score": 50,
-      "stability_score": 0,
-      "churn_rate": 24.0,
-      "gross_gained": 2,
+      "stability_score": 20.0,
+      "churn_rate": 16.0,
+      "gross_gained": 0,
       "gross_lost": 4
     },
     "Maine Street Property Management": {
-      "score": 74,
-      "rating": "stable",
+      "score": 80,
+      "rating": "strong",
       "size_score": 68,
       "trend_score": 74.5,
-      "stability_score": 78.5,
-      "churn_rate": 4.3,
-      "gross_gained": 1,
+      "stability_score": 100.0,
+      "churn_rate": 0.0,
+      "gross_gained": 0,
       "gross_lost": 0
     },
     "Seashore Property Management": {
@@ -1602,30 +1632,94 @@
       "gross_lost": 4
     },
     "Kennebunk Beach Realty": {
-      "score": 57,
+      "score": 50,
       "rating": "stable",
       "size_score": 65,
       "trend_score": 75.3,
-      "stability_score": 25.0,
-      "churn_rate": 15.0,
-      "gross_gained": 2,
-      "gross_lost": 1
+      "stability_score": 0,
+      "churn_rate": 35.0,
+      "gross_gained": 3,
+      "gross_lost": 4
     },
     "Ocean Dreams Maine": {
-      "score": 54,
-      "rating": "stable",
+      "score": 40,
+      "rating": "watch",
       "size_score": 65,
       "trend_score": 50,
-      "stability_score": 50.0,
-      "churn_rate": 10.0,
-      "gross_gained": 1,
-      "gross_lost": 1
+      "stability_score": 0,
+      "churn_rate": 75.0,
+      "gross_gained": 7,
+      "gross_lost": 8
     }
   },
   "towns": [
     {
-      "town": "Wells",
+      "town": "Kennebunkport",
       "total": 182,
+      "competitor_count": 11,
+      "top_competitor": "Sand Dollar Real Estate",
+      "top_competitor_count": 70,
+      "competitors": [
+        {
+          "name": "Sand Dollar Real Estate",
+          "count": 70,
+          "share": 38.5
+        },
+        {
+          "name": "Goose Rocks Beach Rentals",
+          "count": 28,
+          "share": 15.4
+        },
+        {
+          "name": "KPort Concierge",
+          "count": 22,
+          "share": 12.1
+        },
+        {
+          "name": "Vacasa",
+          "count": 17,
+          "share": 9.3
+        },
+        {
+          "name": "KPT Luxury Properties",
+          "count": 13,
+          "share": 7.1
+        },
+        {
+          "name": "Seagrass Property Rentals",
+          "count": 11,
+          "share": 6.0
+        },
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 10,
+          "share": 5.5
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 3,
+          "share": 1.6
+        },
+        {
+          "name": "Kennebunk Beach Realty",
+          "count": 3,
+          "share": 1.6
+        },
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 3,
+          "share": 1.6
+        },
+        {
+          "name": "Grand Welcome (Our Company)",
+          "count": 2,
+          "share": 1.1
+        }
+      ]
+    },
+    {
+      "town": "Wells",
+      "total": 181,
       "competitor_count": 14,
       "top_competitor": "Garnsey Brothers",
       "top_competitor_count": 87,
@@ -1633,17 +1727,17 @@
         {
           "name": "Garnsey Brothers",
           "count": 87,
-          "share": 47.8
+          "share": 48.1
         },
         {
           "name": "Ocean Dreams Maine",
           "count": 17,
-          "share": 9.3
+          "share": 9.4
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 15,
-          "share": 8.2
+          "share": 8.3
         },
         {
           "name": "Salt & Shine Vacation Rentals",
@@ -1653,12 +1747,7 @@
         {
           "name": "Anchor Real Estate Rentals",
           "count": 9,
-          "share": 4.9
-        },
-        {
-          "name": "Coastline Vacation Rentals",
-          "count": 8,
-          "share": 4.4
+          "share": 5.0
         },
         {
           "name": "Grand Welcome (Our Company)",
@@ -1666,9 +1755,14 @@
           "share": 4.4
         },
         {
+          "name": "Coastline Vacation Rentals",
+          "count": 7,
+          "share": 3.9
+        },
+        {
           "name": "Maine Street Property Management",
           "count": 7,
-          "share": 3.8
+          "share": 3.9
         },
         {
           "name": "Jean Knapp Rentals",
@@ -1688,120 +1782,56 @@
         {
           "name": "Coastal Getaways",
           "count": 1,
-          "share": 0.5
+          "share": 0.6
         },
         {
           "name": "Seagrass Property Rentals",
           "count": 1,
-          "share": 0.5
+          "share": 0.6
         },
         {
           "name": "TopHost Vacation Rentals",
           "count": 1,
-          "share": 0.5
-        }
-      ]
-    },
-    {
-      "town": "Kennebunkport",
-      "total": 181,
-      "competitor_count": 11,
-      "top_competitor": "Sand Dollar Real Estate",
-      "top_competitor_count": 70,
-      "competitors": [
-        {
-          "name": "Sand Dollar Real Estate",
-          "count": 70,
-          "share": 38.7
-        },
-        {
-          "name": "Goose Rocks Beach Rentals",
-          "count": 28,
-          "share": 15.5
-        },
-        {
-          "name": "KPort Concierge",
-          "count": 22,
-          "share": 12.2
-        },
-        {
-          "name": "Vacasa",
-          "count": 17,
-          "share": 9.4
-        },
-        {
-          "name": "KPT Luxury Properties",
-          "count": 13,
-          "share": 7.2
-        },
-        {
-          "name": "Seagrass Property Rentals",
-          "count": 11,
-          "share": 6.1
-        },
-        {
-          "name": "Coastline Vacation Rentals",
-          "count": 10,
-          "share": 5.5
-        },
-        {
-          "name": "Evolve Vacation Rentals",
-          "count": 3,
-          "share": 1.7
-        },
-        {
-          "name": "TopHost Vacation Rentals",
-          "count": 3,
-          "share": 1.7
-        },
-        {
-          "name": "Grand Welcome (Our Company)",
-          "count": 2,
-          "share": 1.1
-        },
-        {
-          "name": "Kennebunk Beach Realty",
-          "count": 2,
-          "share": 1.1
+          "share": 0.6
         }
       ]
     },
     {
       "town": "Old Orchard Beach",
-      "total": 160,
+      "total": 157,
       "competitor_count": 7,
       "top_competitor": "Ocean Park Realty",
-      "top_competitor_count": 74,
+      "top_competitor_count": 71,
       "competitors": [
         {
           "name": "Ocean Park Realty",
-          "count": 74,
-          "share": 46.2
+          "count": 71,
+          "share": 45.2
         },
         {
           "name": "Tamarack Rentals",
           "count": 25,
-          "share": 15.6
+          "share": 15.9
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 24,
-          "share": 15.0
+          "share": 15.3
         },
         {
           "name": "Seashore Property Management",
           "count": 23,
-          "share": 14.4
+          "share": 14.6
         },
         {
           "name": "Bayley Vacation Rentals",
           "count": 5,
-          "share": 3.1
+          "share": 3.2
         },
         {
           "name": "Vacasa",
           "count": 5,
-          "share": 3.1
+          "share": 3.2
         },
         {
           "name": "Grand Welcome (Our Company)",
@@ -1812,7 +1842,7 @@
     },
     {
       "town": "York",
-      "total": 138,
+      "total": 137,
       "competitor_count": 11,
       "top_competitor": "Salt & Shine Vacation Rentals",
       "top_competitor_count": 49,
@@ -1820,17 +1850,17 @@
         {
           "name": "Salt & Shine Vacation Rentals",
           "count": 49,
-          "share": 35.5
+          "share": 35.8
         },
         {
           "name": "Anchor Real Estate Rentals",
           "count": 25,
-          "share": 18.1
+          "share": 18.2
         },
         {
           "name": "Coastal Getaways",
           "count": 25,
-          "share": 18.1
+          "share": 18.2
         },
         {
           "name": "Grand Welcome (Our Company)",
@@ -1840,12 +1870,12 @@
         {
           "name": "KMA Property Group",
           "count": 6,
-          "share": 4.3
+          "share": 4.4
         },
         {
           "name": "Maine Street Property Management",
           "count": 6,
-          "share": 4.3
+          "share": 4.4
         },
         {
           "name": "Jean Knapp Rentals",
@@ -1858,14 +1888,14 @@
           "share": 3.6
         },
         {
-          "name": "Ocean Dreams Maine",
-          "count": 3,
-          "share": 2.2
-        },
-        {
           "name": "Evolve Vacation Rentals",
           "count": 2,
-          "share": 1.4
+          "share": 1.5
+        },
+        {
+          "name": "Ocean Dreams Maine",
+          "count": 2,
+          "share": 1.5
         },
         {
           "name": "KPort Concierge",
@@ -1876,7 +1906,7 @@
     },
     {
       "town": "Kennebunk",
-      "total": 133,
+      "total": 132,
       "competitor_count": 13,
       "top_competitor": "Coastline Vacation Rentals",
       "top_competitor_count": 22,
@@ -1884,32 +1914,32 @@
         {
           "name": "Coastline Vacation Rentals",
           "count": 22,
-          "share": 16.5
+          "share": 16.7
         },
         {
           "name": "Goose Rocks Beach Rentals",
           "count": 19,
-          "share": 14.3
-        },
-        {
-          "name": "Kennebunk Beach Realty",
-          "count": 18,
-          "share": 13.5
+          "share": 14.4
         },
         {
           "name": "Seagrass Property Rentals",
           "count": 18,
-          "share": 13.5
+          "share": 13.6
         },
         {
           "name": "KPort Concierge",
           "count": 17,
-          "share": 12.8
+          "share": 12.9
+        },
+        {
+          "name": "Kennebunk Beach Realty",
+          "count": 17,
+          "share": 12.9
         },
         {
           "name": "KPT Luxury Properties",
           "count": 16,
-          "share": 12.0
+          "share": 12.1
         },
         {
           "name": "Evolve Vacation Rentals",
@@ -1950,30 +1980,30 @@
     },
     {
       "town": "Ogunquit",
-      "total": 125,
-      "competitor_count": 12,
+      "total": 126,
+      "competitor_count": 13,
       "top_competitor": "Jean Knapp Rentals",
       "top_competitor_count": 39,
       "competitors": [
         {
           "name": "Jean Knapp Rentals",
           "count": 39,
-          "share": 31.2
+          "share": 31.0
         },
         {
           "name": "Ogunquit Rental Properties",
           "count": 36,
-          "share": 28.8
+          "share": 28.6
         },
         {
           "name": "Anchor Real Estate Rentals",
           "count": 14,
-          "share": 11.2
+          "share": 11.1
         },
         {
           "name": "Maine Street Property Management",
           "count": 10,
-          "share": 8.0
+          "share": 7.9
         },
         {
           "name": "Grand Welcome (Our Company)",
@@ -2007,6 +2037,11 @@
         },
         {
           "name": "Garnsey Brothers",
+          "count": 1,
+          "share": 0.8
+        },
+        {
+          "name": "Ocean Dreams Maine",
           "count": 1,
           "share": 0.8
         },
@@ -2543,14 +2578,14 @@
     "total_locations": 55,
     "active_locations": 55,
     "total_properties": 2189,
-    "total_bedrooms": 5572,
+    "total_bedrooms": 4948,
     "locations": [
       {
         "location": "The Ozarks",
         "slug": "branson-the-ozarks",
         "property_count": 392,
-        "total_bedrooms": 1568,
-        "avg_bedrooms": 4.0
+        "total_bedrooms": 1176,
+        "avg_bedrooms": 3.0
       },
       {
         "location": "Orlando",
@@ -2563,22 +2598,22 @@
         "location": "Mammoth Lakes",
         "slug": "california-mammoth-lakes",
         "property_count": 103,
-        "total_bedrooms": 309,
-        "avg_bedrooms": 3.0
+        "total_bedrooms": null,
+        "avg_bedrooms": null
       },
       {
         "location": "Nashville",
         "slug": "tennessee-nashville",
         "property_count": 102,
-        "total_bedrooms": 219,
-        "avg_bedrooms": 2.1
+        "total_bedrooms": 170,
+        "avg_bedrooms": 1.7
       },
       {
         "location": "Nevada North Lake Tahoe",
         "slug": "california-nevada-north-lake-tahoe",
         "property_count": 85,
-        "total_bedrooms": 340,
-        "avg_bedrooms": 4.0
+        "total_bedrooms": 283,
+        "avg_bedrooms": 3.3
       },
       {
         "location": "Lake Of The Ozarks",
@@ -2605,15 +2640,15 @@
         "location": "Austin",
         "slug": "texas-austin",
         "property_count": 70,
-        "total_bedrooms": 210,
-        "avg_bedrooms": 3.0
+        "total_bedrooms": 315,
+        "avg_bedrooms": 4.5
       },
       {
         "location": "Smoky Mountains",
         "slug": "tennessee-smoky-mountains",
         "property_count": 68,
-        "total_bedrooms": 204,
-        "avg_bedrooms": 3.0
+        "total_bedrooms": 227,
+        "avg_bedrooms": 3.3
       },
       {
         "location": "Big Island",
@@ -2633,22 +2668,22 @@
         "location": "Lake Geneva",
         "slug": "wisconsin-lake-geneva",
         "property_count": 42,
-        "total_bedrooms": 202,
-        "avg_bedrooms": 4.8
+        "total_bedrooms": 180,
+        "avg_bedrooms": 4.3
       },
       {
         "location": "Southern Coastal",
         "slug": "maine-southern-coastal",
         "property_count": 42,
-        "total_bedrooms": 189,
-        "avg_bedrooms": 4.5
+        "total_bedrooms": 210,
+        "avg_bedrooms": 5.0
       },
       {
         "location": "Carolina Hilton Head Island",
         "slug": "south-carolina-hilton-head-island",
         "property_count": 41,
-        "total_bedrooms": 82,
-        "avg_bedrooms": 2.0
+        "total_bedrooms": 109,
+        "avg_bedrooms": 2.7
       },
       {
         "location": "Glacier Country",
@@ -2682,15 +2717,15 @@
         "location": "Monterey Bay Sierra Foothills",
         "slug": "california-monterey-bay-sierra-foothills",
         "property_count": 35,
-        "total_bedrooms": 93,
-        "avg_bedrooms": 2.7
+        "total_bedrooms": 88,
+        "avg_bedrooms": 2.5
       },
       {
         "location": "Broken Bow",
         "slug": "oklahoma-broken-bow",
         "property_count": 34,
-        "total_bedrooms": 102,
-        "avg_bedrooms": 3.0
+        "total_bedrooms": 136,
+        "avg_bedrooms": 4.0
       },
       {
         "location": "Panama City Beach",
@@ -4924,6 +4959,837 @@
   },
   "listing_changes": {
     "dates": {
+      "2026-04-27": {
+        "gained": [
+          {
+            "property_name": "Humpback",
+            "url": "https://kennebunkbeachrealty.guestybookings.com/en/properties/69dff692341a0d00132305e7",
+            "address": "35 Pier Road",
+            "city": "Kennebunkport",
+            "competitor": "Kennebunk Beach Realty",
+            "platform": "guesty",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          },
+          {
+            "property_name": "Finback",
+            "url": "https://kennebunkbeachrealty.guestybookings.com/en/properties/69dff0451e54820013171b04",
+            "address": "35 Pier Road",
+            "city": "Kennebunkport",
+            "competitor": "Kennebunk Beach Realty",
+            "platform": "guesty",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          },
+          {
+            "property_name": "Crescent Breeze at the Beach",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/69a9d34647bb6a00148f9ccb",
+            "address": "301 Webhannet Drive",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 4,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          },
+          {
+            "property_name": "Below Deck",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/680dab1fd69d97001398be62",
+            "address": "5 Walker Street",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          },
+          {
+            "property_name": "Heart of Ogunquit",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/680d98fac88f9500124ef138",
+            "address": "271 Main Street",
+            "city": "Ogunquit",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 4,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          },
+          {
+            "property_name": "Summer Escape",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/680d94bb7d2155000f2a2f18",
+            "address": "24 Queens Way",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 4,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          },
+          {
+            "property_name": "Seagull's View",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/67659c2fcd7a830013e8d4c8",
+            "address": "76 Post Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          },
+          {
+            "property_name": "Serendipity",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/67646cc612ba8300114de333",
+            "address": "1139 Post Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          },
+          {
+            "property_name": "[propertytype]                                    [propertytitle]                    [community]                         [priceormininc] [priceincrateTypewdmsim]",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=[propertyid]",
+            "address": null,
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-04-27"
+          }
+        ],
+        "lost": [
+          {
+            "property_name": "Ocean Views One Row Back from Long Sands Beach",
+            "url": "https://anchorrealestaterentals.com/en/ocean-views-one-row-back-from-long-sands-beach",
+            "address": "115 Long Beach Ave",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Summertime Oasis with Inground Pool!",
+            "url": "https://www.coastlinevacationrentals.com/summertime-oasis-with-inground-pool-orp5b5f94ax",
+            "address": "15 Central Avenue",
+            "city": "Wells",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Coastal Maine Retreat",
+            "url": "https://www.coastlinevacationrentals.com/coastal-maine-retreat1-mile-to-beach-orp5b6f270x",
+            "address": "145 Western Avenue",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "Goose Rocks Beach Cottage!",
+            "url": "https://www.coastlinevacationrentals.com/goose-rocks-beach-cottage-orp5b6b13cx",
+            "address": "23 Dyke Road",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "5 bedroom home in Dock Square! 1.8 Acres of Privacy",
+            "url": "https://www.coastlinevacationrentals.com/5-bedroom-home-in-dock-square-18-acres-of-privacy-orp5b6fbc6x",
+            "address": "9 High Street",
+            "city": "Kennebunkport",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "Water views! Walk to Beach",
+            "url": "https://www.coastlinevacationrentals.com/water-views-walk-to-beachdeckpet-friendly-orp5b7256cx",
+            "address": "16 Elizabeth Road",
+            "city": "Biddeford",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "1 Mi to Drakes Island Beach: Cottage w/ Deck!",
+            "url": "https://evolve.com/vacation-rentals/us/me/wells/524102",
+            "address": "25 Drakes Island Road",
+            "city": "Wells",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Charming Pine Point Cottage - 2 Blocks to Ocean!",
+            "url": "https://evolve.com/vacation-rentals/us/me/scarborough/418157",
+            "address": "30 Jones Creek Drive",
+            "city": "Scarborough",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Old Orchard Beach Vacation Rental, Walk to Ocean!",
+            "url": "https://evolve.com/vacation-rentals/us/me/old-orchard-beach/502485",
+            "address": "46 Saco Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Sunny Wells Cottage - 1 Mi to Moody Beach!",
+            "url": "https://evolve.com/vacation-rentals/us/me/wells/378004",
+            "address": "454 Post Road",
+            "city": "Wells",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Apt. Walking Distance to OOB Pier & Saco Bay!",
+            "url": "https://evolve.com/vacation-rentals/us/me/old-orchard-beach/429837",
+            "address": "86 East Grand Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Lighthouse View  LTHSEVU",
+            "url": "https://www.rentalprorentals.com/garnsey/ShowProp.cfm?propid=640",
+            "address": null,
+            "city": "Wells",
+            "competitor": "Garnsey Brothers",
+            "platform": "rentalpro_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-18"
+          },
+          {
+            "property_name": "Sweeping Ocean Views",
+            "url": "https://www.kptluxuryproperties.com/properties/sweeping-ocean-views/",
+            "address": "200 Ocean Avenue",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Nautilus Beach House",
+            "url": "https://www.kptluxuryproperties.com/properties/nautilus-beach-house/",
+            "address": "Parsons Beach Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Ocean Pointe",
+            "url": "https://www.kptluxuryproperties.com/properties/ocean-pointe/",
+            "address": "64 Joshua Curtis Lane",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Point Of View",
+            "url": "https://www.kptluxuryproperties.com/properties/point-of-view/",
+            "address": "228 Ocean Avenue",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "River Cottage",
+            "url": "https://www.kptluxuryproperties.com/properties/river-cottage/",
+            "address": "25 Ocean Avenue",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Cove House",
+            "url": "https://www.kptluxuryproperties.com/properties/cove-house/",
+            "address": "19 Lords Point Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Sweet Breeze",
+            "url": "https://www.kptluxuryproperties.com/properties/sweet-breeze/",
+            "address": "1 Woodland Avenue",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Wildflower Retreat",
+            "url": "https://www.kptluxuryproperties.com/properties/wildflower-retreat/",
+            "address": "5 Dwight Lane",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Beach Walk",
+            "url": "https://www.kptluxuryproperties.com/properties/beach-walk/",
+            "address": "23 Beach Avenue",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "40 Ocean",
+            "url": "https://www.kptluxuryproperties.com/properties/40-ocean/",
+            "address": "38 Ocean Avenue",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Great Hill",
+            "url": "https://www.kptluxuryproperties.com/properties/great-hill/",
+            "address": "56 Great Hill Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Captains Cottage",
+            "url": "https://www.kptluxuryproperties.com/properties/captains-cottage/",
+            "address": "4 Langsford Road",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Rose Cottage",
+            "url": "https://www.kptluxuryproperties.com/properties/rose-cottage/",
+            "address": "30 Langsford Road",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Sea Road",
+            "url": "https://www.kptluxuryproperties.com/properties/sea-road/",
+            "address": "237 Sea Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Paddy Cove",
+            "url": "https://www.kptluxuryproperties.com/properties/paddy-cove/",
+            "address": "9 Wood Road",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Stars And Stripes",
+            "url": "https://www.kptluxuryproperties.com/properties/stars-and-stripes/",
+            "address": "15 Langsford Road",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "10 Lords Point",
+            "url": "https://www.kptluxuryproperties.com/properties/10-lords-point/",
+            "address": "10 Lords Point Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "9 Lords Point",
+            "url": "https://www.kptluxuryproperties.com/properties/9-lords-point/",
+            "address": "9 Lords Point Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Tidal View",
+            "url": "https://www.kptluxuryproperties.com/properties/tidal-view/",
+            "address": "19 Boothby Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Lords Point House",
+            "url": "https://www.kptluxuryproperties.com/properties/lords-point-house/",
+            "address": "7 Lords Point Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Lonesome Pine",
+            "url": "https://www.kptluxuryproperties.com/properties/lonesome-pine/",
+            "address": "7 Haverhill Avenue",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Harbor View",
+            "url": "https://www.kptluxuryproperties.com/properties/harbor-view/",
+            "address": "51 Langsford Road",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Green Monster",
+            "url": "https://www.kptluxuryproperties.com/properties/green-monster/",
+            "address": "282 Beach Avenue",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Colonel's Quarters",
+            "url": "https://www.kptluxuryproperties.com/properties/colonel-s-quarters/",
+            "address": "110 Old Port Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Starboard",
+            "url": "https://www.kptluxuryproperties.com/properties/starboard/",
+            "address": "2 Starboard Lane",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Mother`s Beach House",
+            "url": "https://www.kptluxuryproperties.com/properties/mother-s-beach-house/",
+            "address": "8 Lords Point Road",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Mystic Landing",
+            "url": "https://www.kptluxuryproperties.com/properties/mystic-landing/",
+            "address": "24 Rivers Edge Drive",
+            "city": "Kennebunk",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Dock Square House",
+            "url": "https://www.kptluxuryproperties.com/properties/dock-square-house/",
+            "address": "19 Maine Street",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Cottage On Main",
+            "url": "https://www.kptluxuryproperties.com/properties/cottage-on-main/",
+            "address": "154 Main Street",
+            "city": "Kennebunkport",
+            "competitor": "KPT Luxury Properties",
+            "platform": "seagrass_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-03-19"
+          },
+          {
+            "property_name": "Bufflehead Bluff - Privacy & Waterviews",
+            "url": "https://kennebunkbeachrealty.guestybookings.com/en/properties/6926205703b4b50013746e85",
+            "address": "24 Bufflehead Lane",
+            "city": "Kennebunkport",
+            "competitor": "Kennebunk Beach Realty",
+            "platform": "guesty",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Walkin' on Sunshine",
+            "url": "https://kennebunkbeachrealty.guestybookings.com/en/properties/6930babbbd94ef003b9867c7",
+            "address": "226 Western Avenue",
+            "city": "Kennebunk",
+            "competitor": "Kennebunk Beach Realty",
+            "platform": "guesty",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "One Mile From Kennebunk Beaches",
+            "url": "https://kennebunkbeachrealty.guestybookings.com/en/properties/69403cfeca942f0032bf27de",
+            "address": "10 Christopher Road",
+            "city": "Kennebunk",
+            "competitor": "Kennebunk Beach Realty",
+            "platform": "guesty",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Family Tides",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/672a74bf2b037100c9c18b1a",
+            "address": "57 Garrison Avenue",
+            "city": "York",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Adventure Awaits",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/672a74dc8bde3f00b9681ded",
+            "address": "1139 Post Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Ogunquit River Outlook",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/672a756b8bde3f00b968220d",
+            "address": "45 Post Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Captain's Quarters",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/672a75718e4a2700be2c722b",
+            "address": "207 Riverbend Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Barefoot in Maine",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/672a7578ac89fd00ba044fad",
+            "address": "10 Barefoot Cottage Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Dancing Belle",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/672a757dbfbf010011f2e900",
+            "address": "1139 Post Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "The Salty Maple",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/6744a3c30cbcd50044b2d236",
+            "address": "76 Post Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "35 Ancona                    Ocean Park                         $2200 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=391960",
+            "address": null,
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "35 Randall Avenue                    Ocean Park                         $2350 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=393535",
+            "address": "35 Randall Ave",
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "178A West Grand Ave.                    Ocean Park                         $1500 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327865",
+            "address": null,
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "14 Weymouth Ave. \"Seamor\"                    Ocean Park                         N/A",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327858",
+            "address": "14 Weymouth Ave",
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-04-26"
+          },
+          {
+            "property_name": "Waterfront 5BR/3 bath in Camp Ellis!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=188140",
+            "address": "11 Sunset Ave",
+            "city": "Saco",
+            "competitor": "Saco Bay Rentals",
+            "platform": "liverez",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Air conditioned cottage 75 yards from the beach!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=170380",
+            "address": "11 Sunset Ave",
+            "city": "Saco",
+            "competitor": "Saco Bay Rentals",
+            "platform": "liverez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=166059",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
+            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=26294",
+            "address": "9 Ocean Park Road",
+            "city": "Old Orchard Beach",
+            "competitor": "Seashore Property Management",
+            "platform": "liverez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Sand &amp; Surf at Wells Beach",
+            "url": "https://www.vacasa.com/unit/129419",
+            "address": "5 Ox Cart Lane",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Family Beach Retreat",
+            "url": "https://www.vacasa.com/unit/60561",
+            "address": "42 Ocean Avenue",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "204 at the Shore",
+            "url": "https://www.vacasa.com/unit/96898",
+            "address": "Barefoot Cottage Road",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Shorelands Resort Cottage 24",
+            "url": "https://www.vacasa.com/unit/34139",
+            "address": "26 Wells Road",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Sandy Bottoms -Shorelands Resort Cottage 10",
+            "url": "https://www.vacasa.com/unit/34317",
+            "address": "26 Wells Road",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          },
+          {
+            "property_name": "Cumberland Casa - B",
+            "url": "https://www.vacasa.com/unit/105290",
+            "address": "439 Cumberland Avenue",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-04-12"
+          },
+          {
+            "property_name": "Coastal Calling",
+            "url": "https://www.vacasa.com/unit/92263",
+            "address": "27 Witham Farm Road",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-03-22"
+          }
+        ]
+      },
       "2026-04-26": {
         "gained": [
           {
@@ -6302,855 +7168,119 @@
             "bedrooms": 6,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "204 at the Shore",
-            "url": "https://www.vacasa.com/unit/96898",
-            "address": "Barefoot Cottage Road",
-            "city": "Wells",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Shorelands Resort Cottage 24",
-            "url": "https://www.vacasa.com/unit/34139",
-            "address": "26 Wells Road",
-            "city": "Kennebunkport",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Sandy Bottoms -Shorelands Resort Cottage 10",
-            "url": "https://www.vacasa.com/unit/34317",
-            "address": "26 Wells Road",
-            "city": "Kennebunkport",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Cumberland Casa - B",
-            "url": "https://www.vacasa.com/unit/105290",
-            "address": "439 Cumberland Avenue",
-            "city": "Scarborough",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 1,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Coastal Calling",
-            "url": "https://www.vacasa.com/unit/92263",
-            "address": "27 Witham Farm Road",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 4,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
           }
         ]
-      },
-      "2026-04-12": {
-        "gained": [
-          {
-            "property_name": "Sunset Sanctuary by Wells Beach",
-            "url": "https://anchorrealestaterentals.com/en/sunset-sanctuary-by-wells-beach",
-            "address": "168 Atlantic Ave",
-            "city": "Wells",
-            "competitor": "Anchor Real Estate Rentals",
-            "platform": "lodgify",
-            "bedrooms": 4,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Cast & Relax! Little Blue Cabin on Wadleigh Pond",
-            "url": "https://evolve.com/vacation-rentals/us/me/lyman/577868",
-            "address": "212 Wadleigh Pond Road",
-            "city": "Lyman",
-            "competitor": "Evolve Vacation Rentals",
-            "platform": "evolve",
-            "bedrooms": 1,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Point East 124  PE124\u00a0\u00a0Route 1",
-            "url": "https://www.rentalprorentals.com/garnsey/ShowProp.cfm?propid=651",
-            "address": "1801 Post Road",
-            "city": null,
-            "competitor": "Garnsey Brothers",
-            "platform": "rentalpro_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "The Downing House - Updated 4bd Farmhouse!",
-            "url": "https://www.jeanknapp.com/vacation-rentals/rental/11pinehill/",
-            "address": "11 Pine Hill South",
-            "city": "York",
-            "competitor": "Jean Knapp Rentals",
-            "platform": "jeanknapp_custom",
-            "bedrooms": 4,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Iris Cottage-Walk to Short Sands",
-            "url": "https://www.jeanknapp.com/vacation-rentals/rental/15iris-/",
-            "address": "15 Iris Ave",
-            "city": "York",
-            "competitor": "Jean Knapp Rentals",
-            "platform": "jeanknapp_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Wake Up to the Ogunquit River-Beach Plum Cottage",
-            "url": "https://www.jeanknapp.com/vacation-rentals/rental/14plum/",
-            "address": "14 Beach Plum Lane",
-            "city": "Ogunquit",
-            "competitor": "Jean Knapp Rentals",
-            "platform": "jeanknapp_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "A Wave From It All",
-            "url": "https://kmapropertygroup.com/rentals/a-wave-from-it-all/",
-            "address": "66 Rest View Lane",
-            "city": "Wells",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": null,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Luxury Designer Farmhouse",
-            "url": "https://book.kportconcierge.com/en/5328391/luxury-designer-farmhouse",
-            "address": "135 Summer Street",
-            "city": "Kennebunk",
-            "competitor": "KPort Concierge",
-            "platform": "lodgify",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Barefoot Bliss",
-            "url": "https://kennebunkbeachrealty.guestybookings.com/en/properties/6940d815d013860015329862",
-            "address": "239 Sea Road",
-            "city": "Kennebunk",
-            "competitor": "Kennebunk Beach Realty",
-            "platform": "guesty",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Island View",
-            "url": "https://www.maineseasiderentals.com/rental-listings/21/default/island-view/",
-            "address": "201 Hills Beach Rd",
-            "city": "Biddeford Pool",
-            "competitor": "Maine Seaside Rentals",
-            "platform": "maineseaside_custom",
-            "bedrooms": null,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "The Cottage",
-            "url": "https://www.maineseasiderentals.com/rental-listings/21/default/the-cottage/",
-            "address": "90 Mile Stretch Rd",
-            "city": "Biddeford Pool",
-            "competitor": "Maine Seaside Rentals",
-            "platform": "maineseaside_custom",
-            "bedrooms": null,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Waterfront Estate with Private Pool and Panoramic Ocean Views |Ogunquit",
-            "url": "https://mainestreetpropertymanagement.com/hostaway-listing-details-page/?listingMapId=500768",
-            "address": "106 Grasshopper Lane",
-            "city": "Ogunquit",
-            "competitor": "Maine Street Property Management",
-            "platform": "hostaway",
-            "bedrooms": 5,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "2-bedroom cottage in Camp Ellis",
-            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=196513",
-            "address": "11 Sunset Ave",
-            "city": "Saco",
-            "competitor": "Saco Bay Rentals",
-            "platform": "liverez",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "4 Bedroom cottage in Kinney Shores!",
-            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=196551",
-            "address": "11 Sunset Ave",
-            "city": "Saco",
-            "competitor": "Saco Bay Rentals",
-            "platform": "liverez",
-            "bedrooms": 4,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Sunset View",
-            "url": "https://www.vacasa.com/unit/95366",
-            "address": "252 Ocean Avenue",
-            "city": "Wells",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 5,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Hills Beach Escape",
-            "url": "https://www.vacasa.com/unit/130203",
-            "address": "151 Hills Beach Road",
-            "city": "Saco",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          },
-          {
-            "property_name": "Footprints in the Sand",
-            "url": "https://www.vacasa.com/unit/48576",
-            "address": "50 Beacon Street",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 4,
-            "date_first_seen": "2026-04-12",
-            "date_last_seen": "2026-04-12"
-          }
-        ],
-        "lost": [
-          {
-            "property_name": "Ocean Views One Row Back from Long Sands Beach",
-            "url": "https://anchorrealestaterentals.com/en/ocean-views-one-row-back-from-long-sands-beach",
-            "address": "115 Long Beach Ave",
-            "city": "York",
-            "competitor": "Anchor Real Estate Rentals",
-            "platform": "lodgify",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Steps to Dock Square & Gooch's Beach! Pets Welcome!",
-            "url": "https://www.coastlinevacationrentals.com/steps-to-dock-square-goochs-beach-pets-welcome-orp5b5f951x",
-            "address": "32 Western Avenue",
-            "city": "Kennebunk",
-            "competitor": "Coastline Vacation Rentals",
-            "platform": "ownerrez",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Charming Pine Point Cottage - 2 Blocks to Ocean!",
-            "url": "https://evolve.com/vacation-rentals/us/me/scarborough/418157",
-            "address": "30 Jones Creek Drive",
-            "city": "Scarborough",
-            "competitor": "Evolve Vacation Rentals",
-            "platform": "evolve",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-19",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Old Orchard Beach Vacation Rental, Walk to Ocean!",
-            "url": "https://evolve.com/vacation-rentals/us/me/old-orchard-beach/502485",
-            "address": "46 Saco Avenue",
-            "city": "Old Orchard Beach",
-            "competitor": "Evolve Vacation Rentals",
-            "platform": "evolve",
-            "bedrooms": 1,
-            "date_first_seen": "2026-03-19",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Sunny Wells Cottage - 1 Mi to Moody Beach!",
-            "url": "https://evolve.com/vacation-rentals/us/me/wells/378004",
-            "address": "454 Post Road",
-            "city": "Wells",
-            "competitor": "Evolve Vacation Rentals",
-            "platform": "evolve",
-            "bedrooms": 1,
-            "date_first_seen": "2026-03-19",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Apt. Walking Distance to OOB Pier & Saco Bay!",
-            "url": "https://evolve.com/vacation-rentals/us/me/old-orchard-beach/429837",
-            "address": "86 East Grand Avenue",
-            "city": "Old Orchard Beach",
-            "competitor": "Evolve Vacation Rentals",
-            "platform": "evolve",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-19",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Lighthouse View  LTHSEVU",
-            "url": "https://www.rentalprorentals.com/garnsey/ShowProp.cfm?propid=640",
-            "address": null,
-            "city": "Wells",
-            "competitor": "Garnsey Brothers",
-            "platform": "rentalpro_custom",
-            "bedrooms": 5,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-18"
-          },
-          {
-            "property_name": "Waterfront 5BR/3 bath in Camp Ellis!",
-            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=188140",
-            "address": "11 Sunset Ave",
-            "city": "Saco",
-            "competitor": "Saco Bay Rentals",
-            "platform": "liverez",
-            "bedrooms": 5,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Air conditioned cottage 75 yards from the beach!",
-            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=170380",
-            "address": "11 Sunset Ave",
-            "city": "Saco",
-            "competitor": "Saco Bay Rentals",
-            "platform": "liverez",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
-            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=166059",
-            "address": "9 Ocean Park Road",
-            "city": "Old Orchard Beach",
-            "competitor": "Seashore Property Management",
-            "platform": "liverez",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Specializing in Coastal Maine Vacation Rental Properties",
-            "url": "https://www.seashorepropertymanagement.com/vacation-rental-home.asp?PageDataID=26294",
-            "address": "9 Ocean Park Road",
-            "city": "Old Orchard Beach",
-            "competitor": "Seashore Property Management",
-            "platform": "liverez",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Sand &amp; Surf at Wells Beach",
-            "url": "https://www.vacasa.com/unit/129419",
-            "address": "5 Ox Cart Lane",
-            "city": "Wells",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Family Beach Retreat",
-            "url": "https://www.vacasa.com/unit/60561",
-            "address": "42 Ocean Avenue",
-            "city": "Wells",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 6,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Shorelands Resort Cottage 24",
-            "url": "https://www.vacasa.com/unit/34139",
-            "address": "26 Wells Road",
-            "city": "Kennebunkport",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Sandy Bottoms -Shorelands Resort Cottage 10",
-            "url": "https://www.vacasa.com/unit/34317",
-            "address": "26 Wells Road",
-            "city": "Kennebunkport",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          },
-          {
-            "property_name": "Coastal Calling",
-            "url": "https://www.vacasa.com/unit/92263",
-            "address": "27 Witham Farm Road",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 4,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-03-22"
-          }
-        ]
-      },
-      "2026-04-08": {
-        "gained": [
-          {
-            "property_name": "21 Surf KBK",
-            "url": "https://kmapropertygroup.com/rentals/21-surf-kbk/",
-            "address": "21 Surf Lane",
-            "city": "Kennebunk",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": null,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "AMV \u00b7 Family Friendly Studio",
-            "url": "https://kmapropertygroup.com/rentals/amv-family-friendly-studio-bartlett-nh/",
-            "address": "River Run Drive",
-            "city": "Bartlett",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": null,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Beaulieu Ln Cottage",
-            "url": "https://kmapropertygroup.com/rentals/beaulieu-ln-cottage-york-me/",
-            "address": "5 Beaulieu Ln",
-            "city": "York",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Birchlea Loop #5",
-            "url": "https://kmapropertygroup.com/rentals/birchlea-loop-5-bartlett-nh/",
-            "address": "5 Birchlea Loop",
-            "city": "Bartlett",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Camp S'mores",
-            "url": "https://kmapropertygroup.com/rentals/camp-smores-shapleigh-me/",
-            "address": "151 Granny Kent Pond",
-            "city": "Shapleigh",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 1,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Cara Mara 309",
-            "url": "https://kmapropertygroup.com/rentals/cara-mara-309-wildwood-crest-nj/",
-            "address": "6701 Atlantic Ave",
-            "city": "Wildwood Gables",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 1,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Cornish Cottage ",
-            "url": "https://kmapropertygroup.com/rentals/cornish-cottage/",
-            "address": "3 Cornish Avenue",
-            "city": "York",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": null,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "District of Maine",
-            "url": "https://kmapropertygroup.com/rentals/district-of-maine-ogunquit-me/",
-            "address": "112 Highland Avenue",
-            "city": "Ogunquit",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Drift Haus on Estes",
-            "url": "https://kmapropertygroup.com/rentals/drift-haus-on-estes-alfred-me/",
-            "address": "49 Branch View Terrace",
-            "city": "Alfred",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 5,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Eagle's Landing",
-            "url": "https://kmapropertygroup.com/rentals/eagles-landing-acton-me/",
-            "address": "81 Eagle Rd",
-            "city": "Acton",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Unit A",
-            "url": "https://kmapropertygroup.com/rentals/kennebunk-farmhouse-retreat/unit-a/",
-            "address": "14 Hovey Street",
-            "city": "Kennebunk",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 1,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Unit B",
-            "url": "https://kmapropertygroup.com/rentals/kennebunk-farmhouse-retreat/unit-b/",
-            "address": "14 Hovey Street",
-            "city": "Kennebunk",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Whole House",
-            "url": "https://kmapropertygroup.com/rentals/kennebunk-farmhouse-retreat/whole-house/",
-            "address": "14 Hovey Street",
-            "city": "Kennebunk",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Lakefront Retreat",
-            "url": "https://kmapropertygroup.com/rentals/lakefront-retreat-kayak-dock-newfield-me/",
-            "address": "176 Onamor Drive",
-            "city": "Newfield",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Locke Lake Oasis",
-            "url": "https://kmapropertygroup.com/rentals/locke-lake-oasis-barnstead-nh/",
-            "address": "18 Belmont Drive",
-            "city": "Barnstead",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Main Squeeze",
-            "url": "https://kmapropertygroup.com/rentals/main-squeeze-york-me/",
-            "address": "83 Main Street",
-            "city": "York",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Morning View Cottage",
-            "url": "https://kmapropertygroup.com/rentals/morning-view-cottage/",
-            "address": "159 Crescent Drive",
-            "city": "Waterboro",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Nautical Mile 217",
-            "url": "https://kmapropertygroup.com/rentals/nautical-mile-217-wells-me/",
-            "address": "1072 Post Road",
-            "city": "Wells",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 1,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Nautical Mile 234",
-            "url": "https://kmapropertygroup.com/rentals/nautical-mile-234-wells-me/",
-            "address": "1072 Post Road",
-            "city": "Wells",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 1,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Nautical Mile 239",
-            "url": "https://kmapropertygroup.com/rentals/nautical-mile-239-wells-me/",
-            "address": "1072 Post Road",
-            "city": "Wells",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 1,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Ogunquit Place",
-            "url": "https://kmapropertygroup.com/rentals/ogunquit-place/downstairs/",
-            "address": "297 Main St",
-            "city": "Ogunquit",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Ogunquit Place",
-            "url": "https://kmapropertygroup.com/rentals/ogunquit-place/whole-house/",
-            "address": "297 Main St",
-            "city": "Ogunquit",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 5,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Rock Haven Cottage",
-            "url": "https://kmapropertygroup.com/rentals/rock-haven-cottage/",
-            "address": "114 Onamor Drive",
-            "city": "Newfield",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Rye by the Beach",
-            "url": "https://kmapropertygroup.com/rentals/rye-by-the-beach-rye-nh/rye-by-the-beach-whole-house/",
-            "address": "1300 Ocean Blvd",
-            "city": "Rye",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Rye by the Beach",
-            "url": "https://kmapropertygroup.com/rentals/rye-by-the-beach/",
-            "address": "1300 Ocean Blvd",
-            "city": "Rye",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 1,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Rye by the Beach #3",
-            "url": "https://kmapropertygroup.com/rentals/rye-by-the-beach-rye-nh/rye-by-the-beach-3-rye-nh/",
-            "address": "1300 Ocean Blvd",
-            "city": "Rye",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Sunny Knoll",
-            "url": "https://kmapropertygroup.com/rentals/sunny-knoll-york-me/",
-            "address": "22 Freeman Street",
-            "city": "York",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 4,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "The Alpine Nest",
-            "url": "https://kmapropertygroup.com/rentals/the-alpine-nest-jackson-nh/",
-            "address": "18 Lucas Lane",
-            "city": "Jackson",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "The Beached Whale",
-            "url": "https://kmapropertygroup.com/rentals/the-beached-whale-wells-me/",
-            "address": "23 Grenier Lane",
-            "city": "Wells",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "The Hill",
-            "url": "https://kmapropertygroup.com/rentals/the-hill-york-me/",
-            "address": "91 Shore Road ",
-            "city": "York",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 5,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "The Shore Escape",
-            "url": "https://kmapropertygroup.com/rentals/the-shore-escape/",
-            "address": "177 Shore Road Unit #3",
-            "city": "Ogunquit",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "The Timeless Retreat",
-            "url": "https://kmapropertygroup.com/rentals/the-timeless-retreat-me/",
-            "address": "11 Hovey Street",
-            "city": "Kennebunk",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Tidepools Retreat",
-            "url": "https://kmapropertygroup.com/rentals/tidepools-retreat/",
-            "address": "236 Long Sands Road",
-            "city": "York",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 5,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Time of Wonder",
-            "url": "https://kmapropertygroup.com/rentals/time-of-wonder/",
-            "address": " 63 Shore Road",
-            "city": "Alfred",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 2,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Tree Bear",
-            "url": "https://kmapropertygroup.com/rentals/tree-bear-lake-arrowhead-community/",
-            "address": "18 Diamond Dr",
-            "city": "Waterboro",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 4,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Paulee Suites",
-            "url": "https://kmapropertygroup.com/rentals/paulee-suites/left/",
-            "address": "182 East Grand Avenue ",
-            "city": "Scarborough",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          },
-          {
-            "property_name": "Paulee Suites",
-            "url": "https://kmapropertygroup.com/rentals/paulee-suites/unit-b-right/",
-            "address": "182 East Grand Avenue ",
-            "city": "Scarborough",
-            "competitor": "KMA Property Group",
-            "platform": "kma_custom",
-            "bedrooms": 3,
-            "date_first_seen": "2026-04-08",
-            "date_last_seen": "2026-04-08"
-          }
-        ],
-        "lost": []
       }
     },
     "by_competitor": {
+      "Kennebunk Beach Realty": {
+        "2026-04-27": {
+          "gained": 2,
+          "lost": 3
+        },
+        "2026-04-26": {
+          "gained": 1,
+          "lost": 1
+        }
+      },
+      "Ocean Dreams Maine": {
+        "2026-04-27": {
+          "gained": 6,
+          "lost": 7
+        },
+        "2026-04-26": {
+          "gained": 1,
+          "lost": 1
+        }
+      },
+      "Ocean Park Realty": {
+        "2026-04-27": {
+          "gained": 1,
+          "lost": 4
+        },
+        "2026-04-26": {
+          "gained": 69,
+          "lost": 0
+        }
+      },
       "Anchor Real Estate Rentals": {
+        "2026-04-27": {
+          "gained": 0,
+          "lost": 1
+        },
         "2026-04-26": {
           "gained": 2,
           "lost": 1
+        }
+      },
+      "Coastline Vacation Rentals": {
+        "2026-04-27": {
+          "gained": 0,
+          "lost": 5
         },
-        "2026-04-12": {
+        "2026-04-26": {
           "gained": 1,
+          "lost": 4
+        }
+      },
+      "Evolve Vacation Rentals": {
+        "2026-04-27": {
+          "gained": 0,
+          "lost": 5
+        },
+        "2026-04-26": {
+          "gained": 0,
+          "lost": 5
+        }
+      },
+      "Garnsey Brothers": {
+        "2026-04-27": {
+          "gained": 0,
           "lost": 1
+        },
+        "2026-04-26": {
+          "gained": 0,
+          "lost": 1
+        }
+      },
+      "KPT Luxury Properties": {
+        "2026-04-27": {
+          "gained": 0,
+          "lost": 29
+        },
+        "2026-04-26": {
+          "gained": 0,
+          "lost": 29
+        }
+      },
+      "Saco Bay Rentals": {
+        "2026-04-27": {
+          "gained": 0,
+          "lost": 2
+        },
+        "2026-04-26": {
+          "gained": 0,
+          "lost": 2
+        }
+      },
+      "Seashore Property Management": {
+        "2026-04-27": {
+          "gained": 0,
+          "lost": 2
+        },
+        "2026-04-26": {
+          "gained": 0,
+          "lost": 2
+        }
+      },
+      "Vacasa": {
+        "2026-04-27": {
+          "gained": 0,
+          "lost": 7
+        },
+        "2026-04-26": {
+          "gained": 1,
+          "lost": 2
         }
       },
       "Coastal Getaways": {
@@ -7158,131 +7288,9 @@
           "gained": 2,
           "lost": 0
         }
-      },
-      "Coastline Vacation Rentals": {
-        "2026-04-26": {
-          "gained": 1,
-          "lost": 4
-        },
-        "2026-04-12": {
-          "gained": 0,
-          "lost": 1
-        }
-      },
-      "Kennebunk Beach Realty": {
-        "2026-04-26": {
-          "gained": 1,
-          "lost": 1
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
-      "Ocean Dreams Maine": {
-        "2026-04-26": {
-          "gained": 1,
-          "lost": 1
-        }
-      },
-      "Ocean Park Realty": {
-        "2026-04-26": {
-          "gained": 69,
-          "lost": 0
-        }
-      },
-      "Vacasa": {
-        "2026-04-26": {
-          "gained": 1,
-          "lost": 7
-        },
-        "2026-04-12": {
-          "gained": 3,
-          "lost": 5
-        }
-      },
-      "Evolve Vacation Rentals": {
-        "2026-04-26": {
-          "gained": 0,
-          "lost": 5
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 4
-        }
-      },
-      "Garnsey Brothers": {
-        "2026-04-26": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 1
-        }
-      },
-      "KPT Luxury Properties": {
-        "2026-04-26": {
-          "gained": 0,
-          "lost": 29
-        }
-      },
-      "Saco Bay Rentals": {
-        "2026-04-26": {
-          "gained": 0,
-          "lost": 2
-        },
-        "2026-04-12": {
-          "gained": 2,
-          "lost": 2
-        }
-      },
-      "Seashore Property Management": {
-        "2026-04-26": {
-          "gained": 0,
-          "lost": 2
-        },
-        "2026-04-12": {
-          "gained": 0,
-          "lost": 2
-        }
-      },
-      "Jean Knapp Rentals": {
-        "2026-04-12": {
-          "gained": 3,
-          "lost": 0
-        }
-      },
-      "KMA Property Group": {
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 0
-        },
-        "2026-04-08": {
-          "gained": 37,
-          "lost": 0
-        }
-      },
-      "KPort Concierge": {
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
-      "Maine Seaside Rentals": {
-        "2026-04-12": {
-          "gained": 2,
-          "lost": 0
-        }
-      },
-      "Maine Street Property Management": {
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 0
-        }
       }
     },
-    "total_gained": 131,
-    "total_lost": 69
+    "total_gained": 86,
+    "total_lost": 114
   }
 }
