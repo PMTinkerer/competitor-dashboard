@@ -569,7 +569,7 @@
                 <th style="text-align:right" data-sort="gained" data-sort-type="num" data-sort-default="desc">Gained<span class="sort-arrow">▾</span></th>
                 <th style="text-align:right" data-sort="lost" data-sort-type="num" data-sort-default="desc">Lost<span class="sort-arrow">▾</span></th>
                 <th style="text-align:right" data-sort="net" data-sort-type="num" data-sort-default="desc">Net<span class="sort-arrow">▾</span></th>
-                <th style="text-align:right" data-sort="churn" data-sort-type="num" data-sort-default="desc">Churn rate<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="churn" data-sort-type="num" data-sort-default="desc" title="Paired turnover: 2 × min(gained, lost) / current. Pure growth or pure decline reads as 0 — only true cycling-in-and-out shows as high churn.">Churn rate<span class="sort-arrow">▾</span></th>
               </tr>
             </thead>
             <tbody id="lc-competitor-body"></tbody>
@@ -1430,9 +1430,15 @@
       const currentByName = {};
       (DASHBOARD_DATA.current || []).forEach(c => { currentByName[c.competitor] = c.count || 0; });
       const rows = Object.entries(byComp).map(([name, c]) => {
-        const total = c.gained + c.lost;
         const baseline = currentByName[name] || 0;
-        const churn = baseline > 0 ? Math.round((total / baseline) * 100 * 10) / 10 : 0;
+        // Churn = paired in/out activity. A company that gained 10 and lost
+        // 10 is churning their inventory; one that gained 41 and lost 0 is
+        // growing, not churning. So we count the *matched* movement —
+        // 2 × min(gained, lost) — relative to current portfolio size.
+        const paired = Math.min(c.gained, c.lost);
+        const churn = baseline > 0
+          ? Math.round((2 * paired / baseline) * 100 * 10) / 10
+          : 0;
         return { name, gained: c.gained, lost: c.lost, net: c.gained - c.lost, churn };
       });
       const accessors = {
