@@ -7083,9 +7083,9 @@
             "bedrooms": 6,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 255,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 256,
@@ -7098,9 +7098,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 256,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 257,
@@ -7113,9 +7113,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 257,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 258,
@@ -7128,9 +7128,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 258,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 259,
@@ -7143,9 +7143,9 @@
             "bedrooms": 2,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 259,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 260,
@@ -7158,9 +7158,9 @@
             "bedrooms": 6,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 260,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 261,
@@ -7173,9 +7173,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 261,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 262,
@@ -7188,9 +7188,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 262,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 263,
@@ -7203,9 +7203,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 263,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 264,
@@ -7218,9 +7218,9 @@
             "bedrooms": 6,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 264,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 265,
@@ -7233,9 +7233,9 @@
             "bedrooms": 4,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 265,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 266,
@@ -7248,9 +7248,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 266,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 267,
@@ -7263,9 +7263,9 @@
             "bedrooms": 2,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 267,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 268,
@@ -7278,9 +7278,9 @@
             "bedrooms": 4,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 268,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 269,
@@ -7293,9 +7293,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 269,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 270,
@@ -7308,9 +7308,9 @@
             "bedrooms": 2,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 270,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 271,
@@ -7323,9 +7323,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 271,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 272,
@@ -7338,9 +7338,9 @@
             "bedrooms": 4,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 272,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 273,
@@ -7353,9 +7353,9 @@
             "bedrooms": 4,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 273,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 274,
@@ -7368,9 +7368,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 274,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 275,
@@ -7383,9 +7383,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 275,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 276,
@@ -7398,9 +7398,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 276,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 277,
@@ -7413,9 +7413,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 277,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 278,
@@ -7428,9 +7428,9 @@
             "bedrooms": 2,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 278,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 279,
@@ -7443,9 +7443,9 @@
             "bedrooms": 4,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 279,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 280,
@@ -7458,9 +7458,9 @@
             "bedrooms": 4,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 280,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 281,
@@ -7473,9 +7473,9 @@
             "bedrooms": 6,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 281,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 282,
@@ -7488,9 +7488,9 @@
             "bedrooms": 6,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 282,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 283,
@@ -7503,9 +7503,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-19",
             "date_last_seen": "2026-03-19",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 283,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 236,
@@ -7518,9 +7518,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-12",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 236,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 237,
@@ -7989,9 +7989,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-03-22",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 155,
+            "flagged_at": "2026-04-28T14:45:41Z",
+            "is_rename": true
           },
           {
             "id": 59,
@@ -10754,7 +10754,7 @@
         },
         "2026-04-26": {
           "gained": 1,
-          "lost": 1
+          "lost": 0
         },
         "2026-04-12": {
           "gained": 1,
@@ -10825,12 +10825,6 @@
           "lost": 4
         }
       },
-      "KPT Luxury Properties": {
-        "2026-04-26": {
-          "gained": 0,
-          "lost": 29
-        }
-      },
       "Garnsey Brothers": {
         "2026-04-12": {
           "gained": 1,
@@ -10877,16 +10871,6 @@
           "lost": 1
         }
       },
-      "Coastline Vacation Rentals": {
-        "2026-04-12": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-03-18": {
-          "gained": 49,
-          "lost": 0
-        }
-      },
       "Seashore Property Management": {
         "2026-04-12": {
           "gained": 0,
@@ -10896,12 +10880,18 @@
           "gained": 25,
           "lost": 0
         }
+      },
+      "Coastline Vacation Rentals": {
+        "2026-03-18": {
+          "gained": 49,
+          "lost": 0
+        }
       }
     },
     "by_competitor_summary": {
       "Kennebunk Beach Realty": {
         "gained": 4,
-        "lost": 4
+        "lost": 3
       },
       "Ocean Dreams Maine": {
         "gained": 6,
@@ -10926,10 +10916,6 @@
       "Evolve Vacation Rentals": {
         "gained": 1,
         "lost": 5
-      },
-      "KPT Luxury Properties": {
-        "gained": 0,
-        "lost": 29
       },
       "Garnsey Brothers": {
         "gained": 1,
@@ -10959,17 +10945,17 @@
         "gained": 1,
         "lost": 1
       },
-      "Coastline Vacation Rentals": {
-        "gained": 49,
-        "lost": 1
-      },
       "Seashore Property Management": {
         "gained": 25,
         "lost": 2
+      },
+      "Coastline Vacation Rentals": {
+        "gained": 49,
+        "lost": 0
       }
     },
     "total_gained": 260,
-    "total_lost": 59,
-    "total_renamed_hidden": 57
+    "total_lost": 28,
+    "total_renamed_hidden": 88
   }
 }

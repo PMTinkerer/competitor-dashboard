@@ -1565,18 +1565,24 @@
       const pairs = [];
       events.forEach(e => {
         if (!e.is_rename || seen.has(e.id)) return;
+        // Self-referenced rows are phantom lost events (transient scrape
+        // miss; the property came back on a later scrape).
+        if (e.superseded_by_id === e.id) {
+          seen.add(e.id);
+          pairs.push({ kind: 'phantom', lost: e });
+          return;
+        }
         const partner = e.superseded_by_id != null ? byId[e.superseded_by_id] : null;
-        if (partner) {
+        if (partner && partner.change_type !== e.change_type) {
           seen.add(e.id);
           seen.add(partner.id);
           const lost = e.change_type === 'lost' ? e : partner;
           const gained = e.change_type === 'gained' ? e : partner;
-          pairs.push({ lost, gained });
-        } else if (e.change_type === 'lost' && e.superseded_by_id != null && byId[e.superseded_by_id] && byId[e.superseded_by_id].change_type === 'lost') {
-          // Duplicate lost event flagged against an earlier lost event (no
-          // partner of opposite type)
+          pairs.push({ kind: 'rename', lost, gained });
+        } else if (e.change_type === 'lost' && partner && partner.change_type === 'lost') {
+          // Duplicate lost event flagged against an earlier lost event
           seen.add(e.id);
-          pairs.push({ lost: e, gained: null, original: byId[e.superseded_by_id] });
+          pairs.push({ kind: 'duplicate', lost: e, original: partner });
         }
       });
       const body = document.getElementById('lc-audit-body');
@@ -1584,21 +1590,31 @@
         body.innerHTML = '<p style="color:var(--muted);padding:24px 0">No flagged renames in the data.</p>';
       } else {
         body.innerHTML = pairs.map(p => {
-          if (p.gained) {
+          if (p.kind === 'rename') {
             const cmd = `python3 main.py --unflag-pair ${p.gained.id} ${p.lost.id}`;
             return `<div class="lc-audit-row">
               <div>
-                <div class="lc-audit-meta">${p.lost.competitor} · ${p.lost.address || 'no address'} · ${p.lost.city || ''} · ${p.lost.bedrooms || '?'} BR · paired ${p.lost.change_date} ↔ ${p.gained.change_date}</div>
+                <div class="lc-audit-meta"><span class="lc-rename-badge">↻ rename</span> ${p.lost.competitor} · ${p.lost.address || 'no address'} · ${p.lost.city || ''} · ${p.lost.bedrooms || '?'} BR · paired ${p.lost.change_date} ↔ ${p.gained.change_date}</div>
                 <div class="lc-audit-urls"><span class="old">old:</span> ${p.lost.url || '-'}</div>
                 <div class="lc-audit-urls"><span class="new">new:</span> ${p.gained.url || '-'}</div>
               </div>
               <button class="csv-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(cmd)});this.textContent='Copied'">Copy &quot;undo&quot; command</button>
             </div>`;
-          } else {
+          } else if (p.kind === 'duplicate') {
             const cmd = `python3 main.py --unflag-pair ${p.original.id} ${p.lost.id}`;
             return `<div class="lc-audit-row">
               <div>
-                <div class="lc-audit-meta">${p.lost.competitor} · ${p.lost.url} · duplicate lost event on ${p.lost.change_date} (original ${p.original.change_date})</div>
+                <div class="lc-audit-meta"><span class="lc-rename-badge">duplicate</span> ${p.lost.competitor} · ${p.lost.url} · duplicate lost event on ${p.lost.change_date} (original ${p.original.change_date})</div>
+              </div>
+              <button class="csv-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(cmd)});this.textContent='Copied'">Copy &quot;undo&quot; command</button>
+            </div>`;
+          } else {
+            // Phantom lost — transient scrape miss; property came back
+            const cmd = `python3 main.py --unflag-pair ${p.lost.id} ${p.lost.id}`;
+            return `<div class="lc-audit-row">
+              <div>
+                <div class="lc-audit-meta"><span class="lc-rename-badge">phantom miss</span> ${p.lost.competitor} · ${p.lost.address || 'no address'} · ${p.lost.city || ''} · transient scrape miss on ${p.lost.change_date}; property is currently present</div>
+                <div class="lc-audit-urls">${p.lost.url || '-'}</div>
               </div>
               <button class="csv-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(cmd)});this.textContent='Copied'">Copy &quot;undo&quot; command</button>
             </div>`;
