@@ -159,6 +159,73 @@
     }
     th[data-sort].sorted-asc .sort-arrow,
     th[data-sort].sorted-desc .sort-arrow { opacity: 1; color: var(--accent); }
+    .lc-controls {
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+      padding: 12px 24px; background: var(--surface);
+      border: 1px solid var(--border); border-radius: 8px;
+      margin-bottom: 24px;
+    }
+    .lc-range-toggle { display: inline-flex; background: rgba(15,23,42,0.6); border: 1px solid var(--border); border-radius: 6px; padding: 2px; }
+    .lc-range-toggle .metric-btn { padding: 5px 12px; font-size: 0.8125rem; font-weight: 500; color: var(--muted); background: transparent; border: 0; border-radius: 4px; cursor: pointer; font-family: inherit; }
+    .lc-range-toggle .metric-btn:hover { color: var(--text); }
+    .lc-range-toggle .metric-btn.active { background: rgba(56,189,248,0.15); color: var(--accent); box-shadow: inset 0 0 0 1px rgba(56,189,248,0.4); }
+    .lc-rename-toggle {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.8125rem; color: var(--muted); cursor: pointer;
+      user-select: none;
+    }
+    .lc-rename-toggle input { accent-color: var(--accent); cursor: pointer; }
+    .lc-rename-toggle:hover { color: var(--text); }
+    .lc-renames-card .lc-renames-value { color: var(--accent); }
+    .lc-renames-card:hover { border-color: var(--accent); }
+    .lc-chart-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 900px) { .lc-chart-row { grid-template-columns: 1fr; } }
+    .lc-chart-row .chart-container { margin-bottom: 0; padding: 16px; }
+    .lc-churn-bar {
+      display: inline-block; height: 8px; border-radius: 2px;
+      vertical-align: middle; margin-right: 6px;
+      background: rgba(56,189,248,0.4);
+    }
+    .lc-churn-bar.warn { background: rgba(251,191,36,0.5); }
+    .lc-churn-bar.high { background: rgba(248,113,113,0.55); }
+    .lc-rename-badge {
+      display: inline-block; padding: 1px 6px; border-radius: 3px;
+      background: rgba(148,163,184,0.18); color: var(--muted);
+      font-size: 0.7rem; margin-left: 4px;
+    }
+    .lc-audit-row {
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0; display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px; align-items: start;
+    }
+    .lc-audit-row:last-child { border-bottom: 0; }
+    .lc-audit-meta {
+      font-size: 0.75rem; color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .lc-audit-urls {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.75rem; word-break: break-all;
+    }
+    .lc-audit-urls .old { color: var(--muted); }
+    .lc-audit-urls .new { color: var(--text); }
+    .lc-timeline-day {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 6px; margin-bottom: 8px;
+    }
+    .lc-timeline-day-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 16px; cursor: pointer; font-weight: 500;
+    }
+    .lc-timeline-day-header:hover { background: rgba(56,189,248,0.04); }
+    .lc-timeline-day-body {
+      padding: 0 16px 16px;
+      border-top: 1px solid var(--border);
+    }
     .table-scroll {
       overflow: auto; max-height: 520px;
     }
@@ -442,35 +509,84 @@
 
     <!-- ==================== LISTING CHANGES TAB ==================== -->
     <div class="tab-content" id="tab-changes">
+      <div class="lc-controls">
+        <div class="lc-range-toggle">
+          <button class="metric-btn active" data-range="30">Last 30 days</button>
+          <button class="metric-btn" data-range="90">Last 90 days</button>
+          <button class="metric-btn" data-range="all">All time</button>
+        </div>
+        <label class="lc-rename-toggle">
+          <input type="checkbox" id="lc-show-renamed" />
+          Show renamed listings
+        </label>
+        <div class="csv-actions">
+          <button class="csv-btn" onclick="downloadListingChangesCSV()">Download Listing Changes CSV</button>
+        </div>
+      </div>
+
       <div class="stats">
         <div class="stat-card">
-          <div class="label">Total Gained (All Time)</div>
+          <div class="label">Gross Gained</div>
           <div class="value change-up" id="lc-total-gained">-</div>
+          <div class="detail" id="lc-total-gained-detail"></div>
         </div>
         <div class="stat-card">
-          <div class="label">Total Lost (All Time)</div>
+          <div class="label">Gross Lost</div>
           <div class="value change-down" id="lc-total-lost">-</div>
+          <div class="detail" id="lc-total-lost-detail"></div>
         </div>
         <div class="stat-card">
-          <div class="label">Net Change (All Time)</div>
+          <div class="label">Net Change</div>
           <div class="value" id="lc-net">-</div>
         </div>
-        <div class="stat-card">
-          <div class="label">Months Tracked</div>
-          <div class="value" id="lc-months">-</div>
+        <div class="stat-card lc-renames-card" id="lc-renames-card" title="Click to view audit log of detected URL renames" style="cursor:pointer">
+          <div class="label">Hidden Renames</div>
+          <div class="value lc-renames-value" id="lc-total-renamed">-</div>
+          <div class="detail">click to audit</div>
         </div>
       </div>
 
-      <div class="chart-container">
-        <h2>Month-over-Month Changes</h2>
-        <div class="chart-wrapper"><canvas id="lc-mom-chart"></canvas></div>
+      <div class="lc-chart-row">
+        <div class="chart-container">
+          <h2>Month-over-Month Changes</h2>
+          <div class="chart-wrapper"><canvas id="lc-mom-chart"></canvas></div>
+        </div>
+        <div class="chart-container">
+          <h2>Top Gainers / Top Losers</h2>
+          <div class="chart-wrapper"><canvas id="lc-top-chart"></canvas></div>
+        </div>
       </div>
 
-      <div class="csv-actions" style="padding:8px 24px">
-        <button class="csv-btn" onclick="downloadListingChangesCSV()">Download Listing Changes CSV</button>
+      <div class="table-container">
+        <div class="table-header">
+          <h2>Per-Competitor Breakdown</h2>
+        </div>
+        <div class="table-scroll">
+          <table id="lc-competitor-table">
+            <thead>
+              <tr>
+                <th data-sort="competitor" data-sort-type="text">Competitor<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="gained" data-sort-type="num" data-sort-default="desc">Gained<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="lost" data-sort-type="num" data-sort-default="desc">Lost<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="net" data-sort-type="num" data-sort-default="desc">Net<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="churn" data-sort-type="num" data-sort-default="desc">Churn rate<span class="sort-arrow">▾</span></th>
+              </tr>
+            </thead>
+            <tbody id="lc-competitor-body"></tbody>
+          </table>
+        </div>
       </div>
 
       <div id="lc-timeline"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="lc-audit-modal">
+    <div class="modal" style="max-width:900px">
+      <button class="modal-close" onclick="closeLcAuditModal()">&times;</button>
+      <h2>Hidden Renames Audit Log</h2>
+      <div class="modal-subtitle">Pairs the detector flagged as URL renames (silently merged so they don't pollute gained/lost). Click <b>Copy "undo" command</b> to put a CLI invocation onto the clipboard.</div>
+      <div id="lc-audit-body"></div>
     </div>
   </div>
 
@@ -1172,192 +1288,324 @@
     }
 
     // ==================== LISTING CHANGES ====================
+    // Listing Changes tab state
+    const LC_STATE = { rangeDays: 30, showRenamed: false };
+    const LC_COMP_TABLE_SORT = { key: 'gained', dir: 'desc' };
+    let lcMomChart = null;
+    let lcTopChart = null;
+
+    function lcDateFloor() {
+      if (LC_STATE.rangeDays === 'all') return null;
+      const today = new Date(DASHBOARD_DATA.generated || Date.now());
+      const floor = new Date(today);
+      floor.setDate(floor.getDate() - LC_STATE.rangeDays);
+      return floor.toISOString().slice(0, 10);
+    }
+
+    function lcVisibleEvents(lc) {
+      const floor = lcDateFloor();
+      const events = [];
+      Object.entries(lc.dates || {}).forEach(([d, day]) => {
+        if (floor && d < floor) return;
+        (day.gained || []).forEach(it => events.push({ ...it, change_date: d, change_type: 'gained' }));
+        (day.lost || []).forEach(it => events.push({ ...it, change_date: d, change_type: 'lost' }));
+      });
+      return events;
+    }
+
     function renderListingChanges(lc) {
-      if (!lc || (!lc.total_gained && !lc.total_lost)) {
-        document.getElementById('lc-total-gained').textContent = '0';
-        document.getElementById('lc-total-lost').textContent = '0';
-        document.getElementById('lc-net').textContent = '0';
-        document.getElementById('lc-months').textContent = '0';
+      if (!lc || (!lc.total_gained && !lc.total_lost && !lc.total_renamed_hidden)) {
+        ['lc-total-gained','lc-total-lost','lc-net','lc-total-renamed'].forEach(id => {
+          document.getElementById(id).textContent = '0';
+        });
         document.getElementById('lc-timeline').innerHTML = `
           <div class="chart-container">
-            <h2>Monthly Change Log</h2>
-            <p style="color:var(--muted);padding:24px 0">No listing changes recorded yet. Changes will appear after the next weekly scrape detects gained or lost properties.</p>
+            <h2>Change Log</h2>
+            <p style="color:var(--muted);padding:24px 0">No listing changes recorded yet.</p>
           </div>`;
         return;
       }
 
-      // Aggregate by month (YYYY-MM)
-      const months = {};
-      Object.entries(lc.dates || {}).forEach(([d, day]) => {
-        const month = d.substring(0, 7); // YYYY-MM
-        if (!months[month]) months[month] = { gained: [], lost: [], byComp: {} };
-        const m = months[month];
-        (day.gained || []).forEach(item => {
-          m.gained.push(item);
-          const c = m.byComp[item.competitor] || (m.byComp[item.competitor] = { gained: 0, lost: 0 });
-          c.gained++;
-        });
-        (day.lost || []).forEach(item => {
-          m.lost.push(item);
-          const c = m.byComp[item.competitor] || (m.byComp[item.competitor] = { gained: 0, lost: 0 });
-          c.lost++;
-        });
-      });
+      const events = lcVisibleEvents(lc);
+      const visible = LC_STATE.showRenamed ? events : events.filter(e => !e.is_rename);
+      const real = events.filter(e => !e.is_rename);
+      const renamedInWindow = events.filter(e => e.is_rename).length;
 
-      const monthKeys = Object.keys(months).sort().reverse();
-      const net = lc.total_gained - lc.total_lost;
-      document.getElementById('lc-total-gained').textContent = lc.total_gained;
-      document.getElementById('lc-total-lost').textContent = lc.total_lost;
+      const totalGained = real.filter(e => e.change_type === 'gained').length;
+      const totalLost = real.filter(e => e.change_type === 'lost').length;
+      const net = totalGained - totalLost;
+      document.getElementById('lc-total-gained').textContent = totalGained;
+      document.getElementById('lc-total-lost').textContent = totalLost;
       const netEl = document.getElementById('lc-net');
       netEl.textContent = (net >= 0 ? '+' : '') + net;
       netEl.className = 'value ' + (net > 0 ? 'change-up' : net < 0 ? 'change-down' : 'change-flat');
-      document.getElementById('lc-months').textContent = monthKeys.length;
+      document.getElementById('lc-total-renamed').textContent = renamedInWindow;
+      const rangeLabel = LC_STATE.rangeDays === 'all' ? 'all time' : `last ${LC_STATE.rangeDays} days`;
+      document.getElementById('lc-total-gained-detail').textContent = rangeLabel;
+      document.getElementById('lc-total-lost-detail').textContent = rangeLabel;
 
-      // M/M bar chart
-      renderMoMChart(monthKeys.slice().reverse(), months);
-
-      // Monthly timeline
-      const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-      const renderListingProperty = item => {
-        const label = item.property_name || '-';
-        if (!item.url) return label;
-        return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom;color:var(--text);text-decoration:underline;text-decoration-color:var(--border)">${label}</a>`;
-      };
-      let html = '';
-      monthKeys.forEach(mk => {
-        const m = months[mk];
-        const [y, mo] = mk.split('-');
-        const label = monthNames[parseInt(mo) - 1] + ' ' + y;
-        const mNet = m.gained.length - m.lost.length;
-
-        html += `<div class="chart-container" style="margin-bottom:16px">
-          <h2 style="display:flex;justify-content:space-between;align-items:center">
-            ${label}
-            <span style="font-size:0.8rem;font-weight:400">
-              <span class="change-up">+${m.gained.length}</span>
-              &nbsp;/&nbsp;
-              <span class="change-down">-${m.lost.length}</span>
-              &nbsp;=&nbsp;
-              <span class="${mNet > 0 ? 'change-up' : mNet < 0 ? 'change-down' : 'change-flat'}">${mNet >= 0 ? '+' : ''}${mNet} net</span>
-            </span>
-          </h2>`;
-
-        // Per-competitor summary bar
-        const compEntries = Object.entries(m.byComp).sort((a, b) => (b[1].gained - b[1].lost) - (a[1].gained - a[1].lost));
-        if (compEntries.length) {
-          html += `<div style="margin:12px 0;display:flex;flex-wrap:wrap;gap:8px">`;
-          compEntries.forEach(([comp, counts]) => {
-            const cNet = counts.gained - counts.lost;
-            const cls = cNet > 0 ? 'change-up' : cNet < 0 ? 'change-down' : 'change-flat';
-            html += `<span style="background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:0.75rem">
-              ${comp}: <span class="${cls}">${cNet >= 0 ? '+' : ''}${cNet}</span>
-              <span style="color:var(--muted)">(+${counts.gained}/-${counts.lost})</span>
-            </span>`;
-          });
-          html += '</div>';
-        }
-
-        // Lost listings detail
-        if (m.lost.length) {
-          html += `<div style="margin-top:12px">
-            <div style="font-size:0.75rem;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Lost (${m.lost.length})</div>
-            <div style="overflow:auto;max-height:300px">
-            <table><thead><tr>
-              <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th><th>Last Seen</th>
-            </tr></thead><tbody>`;
-          m.lost.forEach(item => {
-            html += `<tr>
-              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis">${renderListingProperty(item)}</td>
-              <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
-              <td>${item.city || '-'}</td>
-              <td><span class="badge">${item.competitor}</span></td>
-              <td class="num">${item.bedrooms || '-'}</td>
-              <td style="color:var(--muted)">${item.date_last_seen || '-'}</td>
-            </tr>`;
-          });
-          html += '</tbody></table></div></div>';
-        }
-
-        // Gained listings detail
-        if (m.gained.length) {
-          html += `<div style="margin-top:${m.lost.length ? '16' : '12'}px">
-            <div style="font-size:0.75rem;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:8px;letter-spacing:0.05em">Gained (${m.gained.length})</div>
-            <div style="overflow:auto;max-height:300px">
-            <table><thead><tr>
-              <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th>
-            </tr></thead><tbody>`;
-          m.gained.forEach(item => {
-            html += `<tr>
-              <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis">${renderListingProperty(item)}</td>
-              <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
-              <td>${item.city || '-'}</td>
-              <td><span class="badge">${item.competitor}</span></td>
-              <td class="num">${item.bedrooms || '-'}</td>
-            </tr>`;
-          });
-          html += '</tbody></table></div></div>';
-        }
-
-        html += '</div>';
+      // Aggregate per competitor (real events only) for the table + top chart
+      const byComp = {};
+      real.forEach(e => {
+        const c = byComp[e.competitor] || (byComp[e.competitor] = { gained: 0, lost: 0 });
+        if (e.change_type === 'gained') c.gained++; else c.lost++;
       });
 
-      document.getElementById('lc-timeline').innerHTML = html;
+      // Aggregate per month for the M/M chart
+      const months = {};
+      real.forEach(e => {
+        const m = e.change_date.substring(0, 7);
+        if (!months[m]) months[m] = { gained: 0, lost: 0 };
+        if (e.change_type === 'gained') months[m].gained++; else months[m].lost++;
+      });
+      const monthKeys = Object.keys(months).sort();
+      renderLcMomChart(monthKeys, months);
+      renderLcTopChart(byComp);
+      renderLcCompetitorTable(byComp);
+      renderLcTimeline(visible);
     }
 
-    function renderMoMChart(monthKeys, months) {
+    function renderLcMomChart(monthKeys, months) {
       const ctx = document.getElementById('lc-mom-chart').getContext('2d');
       const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
       const labels = monthKeys.map(mk => {
         const [y, mo] = mk.split('-');
         return monthNames[parseInt(mo) - 1] + ' ' + y;
       });
-
-      new Chart(ctx, {
+      if (lcMomChart) lcMomChart.destroy();
+      lcMomChart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels,
           datasets: [
-            {
-              label: 'Gained',
-              data: monthKeys.map(mk => months[mk].gained.length),
-              backgroundColor: 'rgba(74, 222, 128, 0.7)',
-              borderRadius: 4,
-            },
-            {
-              label: 'Lost',
-              data: monthKeys.map(mk => -months[mk].lost.length),
-              backgroundColor: 'rgba(248, 113, 113, 0.7)',
-              borderRadius: 4,
-            }
-          ]
+            { label: 'Gained', data: monthKeys.map(mk => months[mk].gained), backgroundColor: 'rgba(74,222,128,0.7)', borderRadius: 4 },
+            { label: 'Lost',   data: monthKeys.map(mk => -months[mk].lost), backgroundColor: 'rgba(248,113,113,0.7)', borderRadius: 4 },
+          ],
         },
         options: {
           responsive: true, maintainAspectRatio: false,
           plugins: {
             legend: { labels: { color: '#94a3b8', font: { size: 11 } } },
-            tooltip: {
-              callbacks: {
-                label: ctx => {
-                  const v = Math.abs(ctx.raw);
-                  return `${ctx.dataset.label}: ${v}`;
-                }
-              }
-            }
+            tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${Math.abs(ctx.raw)}` } },
           },
           scales: {
             x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
-            y: {
-              grid: { color: 'rgba(51,65,85,0.5)' },
-              ticks: {
-                color: '#94a3b8',
-                callback: v => Math.abs(v),
-              },
-              title: { display: true, text: 'Listings', color: '#94a3b8' }
-            }
-          }
-        }
+            y: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8', callback: v => Math.abs(v) }, title: { display: true, text: 'Listings', color: '#94a3b8' } },
+          },
+        },
       });
     }
+
+    function renderLcTopChart(byComp) {
+      const ctx = document.getElementById('lc-top-chart').getContext('2d');
+      const ranked = Object.entries(byComp)
+        .map(([name, c]) => ({ name, gained: c.gained, lost: c.lost, churn: c.gained + c.lost }))
+        .sort((a, b) => b.churn - a.churn)
+        .slice(0, 10);
+      if (lcTopChart) lcTopChart.destroy();
+      lcTopChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ranked.map(r => r.name),
+          datasets: [
+            { label: 'Gained', data: ranked.map(r => r.gained), backgroundColor: 'rgba(74,222,128,0.7)', borderRadius: 4 },
+            { label: 'Lost',   data: ranked.map(r => -r.lost), backgroundColor: 'rgba(248,113,113,0.7)', borderRadius: 4 },
+          ],
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+          plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 } } }, tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${Math.abs(ctx.raw)}` } } },
+          scales: {
+            x: { stacked: true, grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8', callback: v => Math.abs(v) } },
+            y: { stacked: true, grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } },
+          },
+        },
+      });
+    }
+
+    function renderLcCompetitorTable(byComp) {
+      const tbody = document.getElementById('lc-competitor-body');
+      tbody.innerHTML = '';
+      // Get current property counts for churn rate denominator
+      const currentByName = {};
+      (DASHBOARD_DATA.current || []).forEach(c => { currentByName[c.competitor] = c.count || 0; });
+      const rows = Object.entries(byComp).map(([name, c]) => {
+        const total = c.gained + c.lost;
+        const baseline = currentByName[name] || 0;
+        const churn = baseline > 0 ? Math.round((total / baseline) * 100 * 10) / 10 : 0;
+        return { name, gained: c.gained, lost: c.lost, net: c.gained - c.lost, churn };
+      });
+      const accessors = {
+        competitor: r => r.name.toLowerCase(),
+        gained: r => r.gained,
+        lost: r => r.lost,
+        net: r => r.net,
+        churn: r => r.churn,
+      };
+      const acc = accessors[LC_COMP_TABLE_SORT.key] || accessors.gained;
+      rows.sort((a, b) => {
+        const va = acc(a), vb = acc(b);
+        if (va < vb) return LC_COMP_TABLE_SORT.dir === 'asc' ? -1 : 1;
+        if (va > vb) return LC_COMP_TABLE_SORT.dir === 'asc' ? 1 : -1;
+        return 0;
+      });
+      const maxChurn = Math.max(1, ...rows.map(r => r.churn));
+      rows.forEach(r => {
+        const churnCls = r.churn >= 80 ? 'high' : r.churn >= 50 ? 'warn' : '';
+        const churnW = (r.churn / maxChurn) * 100;
+        const netCls = r.net > 0 ? 'change-up' : r.net < 0 ? 'change-down' : 'change-flat';
+        tbody.innerHTML += `<tr>
+          <td class="name-cell">${r.name}</td>
+          <td class="num"><span class="change-up">+${r.gained}</span></td>
+          <td class="num"><span class="change-down">−${r.lost}</span></td>
+          <td class="num"><span class="${netCls}">${r.net >= 0 ? '+' : ''}${r.net}</span></td>
+          <td class="num">
+            <span class="lc-churn-bar ${churnCls}" style="width:${churnW}px"></span>
+            ${r.churn.toFixed(1)}%
+          </td>
+        </tr>`;
+      });
+      if (!rows.length) {
+        tbody.innerHTML = '<tr><td colspan="5" style="color:var(--muted);padding:24px;text-align:center">No real changes in this window. Try expanding the date range or showing renamed listings.</td></tr>';
+      }
+    }
+
+    function renderLcTimeline(events) {
+      const byDate = {};
+      events.forEach(e => {
+        if (!byDate[e.change_date]) byDate[e.change_date] = { gained: [], lost: [] };
+        byDate[e.change_date][e.change_type].push(e);
+      });
+      const dates = Object.keys(byDate).sort().reverse();
+      let html = '';
+      dates.forEach((d, i) => {
+        const day = byDate[d];
+        const realGained = day.gained.filter(e => !e.is_rename).length;
+        const realLost = day.lost.filter(e => !e.is_rename).length;
+        const renamed = day.gained.filter(e => e.is_rename).length + day.lost.filter(e => e.is_rename).length;
+        const net = realGained - realLost;
+        const netCls = net > 0 ? 'change-up' : net < 0 ? 'change-down' : 'change-flat';
+        const expanded = i === 0 ? 'open' : '';
+        html += `<div class="lc-timeline-day" data-date="${d}">
+          <div class="lc-timeline-day-header" onclick="toggleLcDay('${d}')">
+            <span>${d}</span>
+            <span style="font-size:0.8rem;font-weight:400">
+              <span class="change-up">+${realGained}</span>
+              &nbsp;·&nbsp;
+              <span class="change-down">−${realLost}</span>
+              &nbsp;·&nbsp;
+              <span class="${netCls}">${net >= 0 ? '+' : ''}${net} net</span>
+              ${renamed ? `<span class="lc-rename-badge">${renamed} rename${renamed > 1 ? 's' : ''} hidden</span>` : ''}
+            </span>
+          </div>
+          <div class="lc-timeline-day-body" id="lc-day-body-${d}" style="display:${expanded ? 'block' : 'none'}">
+            ${renderLcDayBody(day)}
+          </div>
+        </div>`;
+      });
+      if (!dates.length) {
+        html = '<div class="chart-container"><p style="color:var(--muted);padding:24px 0">No events in this window.</p></div>';
+      }
+      document.getElementById('lc-timeline').innerHTML = html;
+    }
+
+    function renderLcDayBody(day) {
+      const renderProp = item => {
+        const label = item.property_name || '-';
+        const renameBadge = item.is_rename ? '<span class="lc-rename-badge">↻ renamed</span>' : '';
+        if (!item.url) return label + renameBadge;
+        return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" style="color:var(--text);text-decoration:underline;text-decoration-color:var(--border)">${label}</a>${renameBadge}`;
+      };
+      const section = (title, items, headerCls) => {
+        if (!items.length) return '';
+        let s = `<div style="margin-top:12px">
+          <div style="font-size:0.75rem;text-transform:uppercase;color:${headerCls};font-weight:600;margin-bottom:8px;letter-spacing:0.05em">${title} (${items.length})</div>
+          <table><thead><tr>
+            <th>Property</th><th>Address</th><th>Town</th><th>Competitor</th><th style="text-align:right">BR</th>
+          </tr></thead><tbody>`;
+        items.forEach(item => {
+          const rowStyle = item.is_rename ? 'opacity:0.55' : '';
+          s += `<tr style="${rowStyle}">
+            <td>${renderProp(item)}</td>
+            <td>${item.address || '<span style="color:var(--muted)">No address</span>'}</td>
+            <td>${item.city || '-'}</td>
+            <td><span class="badge">${item.competitor}</span></td>
+            <td class="num">${item.bedrooms || '-'}</td>
+          </tr>`;
+        });
+        s += '</tbody></table></div>';
+        return s;
+      };
+      return section('Gained', day.gained, 'var(--green)') + section('Lost', day.lost, 'var(--red)');
+    }
+
+    function toggleLcDay(d) {
+      const el = document.getElementById('lc-day-body-' + d);
+      if (el) el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function openLcAuditModal() {
+      const lc = DASHBOARD_DATA && DASHBOARD_DATA.listing_changes;
+      if (!lc) return;
+      const events = [];
+      Object.entries(lc.dates || {}).forEach(([d, day]) => {
+        (day.gained || []).forEach(it => events.push({ ...it, change_date: d, change_type: 'gained' }));
+        (day.lost || []).forEach(it => events.push({ ...it, change_date: d, change_type: 'lost' }));
+      });
+      // Pair flagged events by superseded_by_id
+      const byId = {};
+      events.forEach(e => { if (e.id != null) byId[e.id] = e; });
+      const seen = new Set();
+      const pairs = [];
+      events.forEach(e => {
+        if (!e.is_rename || seen.has(e.id)) return;
+        const partner = e.superseded_by_id != null ? byId[e.superseded_by_id] : null;
+        if (partner) {
+          seen.add(e.id);
+          seen.add(partner.id);
+          const lost = e.change_type === 'lost' ? e : partner;
+          const gained = e.change_type === 'gained' ? e : partner;
+          pairs.push({ lost, gained });
+        } else if (e.change_type === 'lost' && e.superseded_by_id != null && byId[e.superseded_by_id] && byId[e.superseded_by_id].change_type === 'lost') {
+          // Duplicate lost event flagged against an earlier lost event (no
+          // partner of opposite type)
+          seen.add(e.id);
+          pairs.push({ lost: e, gained: null, original: byId[e.superseded_by_id] });
+        }
+      });
+      const body = document.getElementById('lc-audit-body');
+      if (!pairs.length) {
+        body.innerHTML = '<p style="color:var(--muted);padding:24px 0">No flagged renames in the data.</p>';
+      } else {
+        body.innerHTML = pairs.map(p => {
+          if (p.gained) {
+            const cmd = `python3 main.py --unflag-pair ${p.gained.id} ${p.lost.id}`;
+            return `<div class="lc-audit-row">
+              <div>
+                <div class="lc-audit-meta">${p.lost.competitor} · ${p.lost.address || 'no address'} · ${p.lost.city || ''} · ${p.lost.bedrooms || '?'} BR · paired ${p.lost.change_date} ↔ ${p.gained.change_date}</div>
+                <div class="lc-audit-urls"><span class="old">old:</span> ${p.lost.url || '-'}</div>
+                <div class="lc-audit-urls"><span class="new">new:</span> ${p.gained.url || '-'}</div>
+              </div>
+              <button class="csv-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(cmd)});this.textContent='Copied'">Copy &quot;undo&quot; command</button>
+            </div>`;
+          } else {
+            const cmd = `python3 main.py --unflag-pair ${p.original.id} ${p.lost.id}`;
+            return `<div class="lc-audit-row">
+              <div>
+                <div class="lc-audit-meta">${p.lost.competitor} · ${p.lost.url} · duplicate lost event on ${p.lost.change_date} (original ${p.original.change_date})</div>
+              </div>
+              <button class="csv-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(cmd)});this.textContent='Copied'">Copy &quot;undo&quot; command</button>
+            </div>`;
+          }
+        }).join('');
+      }
+      document.getElementById('lc-audit-modal').classList.add('open');
+    }
+
+    function closeLcAuditModal() {
+      document.getElementById('lc-audit-modal').classList.remove('open');
+    }
+
 
     // ==================== DRILL-DOWN MODAL ====================
     function openDrillDown(row) {
@@ -1540,6 +1788,28 @@
     });
     bindSortable('franchise-detail-table', FRANCHISE_TABLE_SORT, () => {
       if (DASHBOARD_DATA) renderFranchiseTable(DASHBOARD_DATA.franchise);
+    });
+    bindSortable('lc-competitor-table', LC_COMP_TABLE_SORT, () => {
+      if (DASHBOARD_DATA) renderListingChanges(DASHBOARD_DATA.listing_changes);
+    });
+
+    // Listing Changes controls
+    document.querySelectorAll('.lc-range-toggle .metric-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.lc-range-toggle .metric-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const r = btn.getAttribute('data-range');
+        LC_STATE.rangeDays = r === 'all' ? 'all' : parseInt(r, 10);
+        if (DASHBOARD_DATA) renderListingChanges(DASHBOARD_DATA.listing_changes);
+      });
+    });
+    document.getElementById('lc-show-renamed').addEventListener('change', e => {
+      LC_STATE.showRenamed = e.target.checked;
+      if (DASHBOARD_DATA) renderListingChanges(DASHBOARD_DATA.listing_changes);
+    });
+    document.getElementById('lc-renames-card').addEventListener('click', openLcAuditModal);
+    document.getElementById('lc-audit-modal').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeLcAuditModal();
     });
 
     // Metric toggle buttons (Listings / Total BR / Avg BR)
