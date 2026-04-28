@@ -82,6 +82,25 @@
       border-radius: 8px; padding: 20px; margin-bottom: 24px;
     }
     .chart-container h2 { font-size: 1rem; font-weight: 600; margin-bottom: 16px; }
+    .chart-header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; flex-wrap: wrap; margin-bottom: 16px;
+    }
+    .chart-header h2 { margin-bottom: 0; }
+    .metric-toggle {
+      display: inline-flex; background: rgba(15,23,42,0.6);
+      border: 1px solid var(--border); border-radius: 6px; padding: 2px;
+    }
+    .metric-btn {
+      padding: 5px 12px; font-size: 0.8125rem; font-weight: 500;
+      color: var(--muted); background: transparent; border: 0;
+      border-radius: 4px; cursor: pointer; font-family: inherit;
+    }
+    .metric-btn:hover { color: var(--text); }
+    .metric-btn.active {
+      background: rgba(56,189,248,0.15); color: var(--accent);
+      box-shadow: inset 0 0 0 1px rgba(56,189,248,0.4);
+    }
     .chart-wrapper { position: relative; height: 350px; }
     .chart-wrapper.tall { height: 600px; }
 
@@ -119,6 +138,27 @@
       border-radius: 8px; margin-bottom: 24px;
     }
     .table-container h2 { font-size: 1rem; font-weight: 600; padding: 16px 16px 12px; }
+    .table-header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding-right: 12px; flex-wrap: wrap;
+    }
+    .table-header h2 { padding-right: 0; }
+    .csv-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .csv-btn {
+      display: inline-block; padding: 6px 12px; font-size: 0.8125rem;
+      font-weight: 500; color: var(--accent); background: rgba(56,189,248,0.08);
+      border: 1px solid rgba(56,189,248,0.3); border-radius: 4px;
+      cursor: pointer; text-decoration: none; font-family: inherit;
+    }
+    .csv-btn:hover { background: rgba(56,189,248,0.18); border-color: var(--accent); }
+    th[data-sort] { cursor: pointer; user-select: none; }
+    th[data-sort]:hover { color: var(--accent); }
+    th[data-sort] .sort-arrow {
+      display: inline-block; margin-left: 4px; opacity: 0.35;
+      font-size: 0.7em; transition: opacity 0.1s;
+    }
+    th[data-sort].sorted-asc .sort-arrow,
+    th[data-sort].sorted-desc .sort-arrow { opacity: 1; color: var(--accent); }
     .table-scroll {
       overflow: auto; max-height: 520px;
     }
@@ -209,6 +249,11 @@
           <div class="detail" id="total-props-change"></div>
         </div>
         <div class="stat-card">
+          <div class="label">Total Bedrooms</div>
+          <div class="value" id="total-bedrooms">-</div>
+          <div class="detail" id="total-bedrooms-detail"></div>
+        </div>
+        <div class="stat-card">
           <div class="label">Competitors Tracked</div>
           <div class="value" id="total-comps">-</div>
         </div>
@@ -231,25 +276,40 @@
       </div>
 
       <div class="chart-container">
-        <h2>Properties by Competitor</h2>
+        <div class="chart-header">
+          <h2 id="comp-bar-title">Properties by Competitor</h2>
+          <div class="metric-toggle" data-target="comp-bar">
+            <button class="metric-btn active" data-metric="count">Listings</button>
+            <button class="metric-btn" data-metric="total_bedrooms">Total BR</button>
+            <button class="metric-btn" data-metric="avg_bedrooms">Avg BR</button>
+          </div>
+        </div>
         <div class="chart-wrapper"><canvas id="bar-chart"></canvas></div>
       </div>
 
       <div class="table-container">
-        <h2>Competitor Detail</h2>
+        <div class="table-header">
+          <h2>Competitor Detail</h2>
+          <div class="csv-actions">
+            <button class="csv-btn" onclick="downloadCompetitorsCSV()">Download Competitors CSV</button>
+            <a class="csv-btn" href="properties.csv" download>Download All Addresses CSV</a>
+          </div>
+        </div>
         <div class="table-scroll">
-          <table>
+          <table id="competitor-detail-table">
             <thead>
               <tr>
                 <th style="text-align:right">#</th>
-                <th>Competitor</th>
-                <th>Platform</th>
-                <th style="text-align:right">Properties</th>
-                <th style="text-align:right">Coverage</th>
-                <th style="text-align:right">M/M</th>
-                <th style="text-align:right">All-Time</th>
-                <th>Trend</th>
-                <th>Health</th>
+                <th data-sort="name" data-sort-type="text">Competitor<span class="sort-arrow">▾</span></th>
+                <th data-sort="platform" data-sort-type="text">Platform<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="count" data-sort-type="num" data-sort-default="desc">Properties<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="total_bedrooms" data-sort-type="num" data-sort-default="desc">Bedrooms<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="avg_bedrooms" data-sort-type="num" data-sort-default="desc">Avg BR<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="coverage" data-sort-type="num" data-sort-default="desc">Coverage<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="mom" data-sort-type="num" data-sort-default="desc">M/M<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="all_time" data-sort-type="num" data-sort-default="desc">All-Time<span class="sort-arrow">▾</span></th>
+                <th data-sort="trend" data-sort-type="text">Trend<span class="sort-arrow">▾</span></th>
+                <th data-sort="health" data-sort-type="num" data-sort-default="desc">Health<span class="sort-arrow">▾</span></th>
               </tr>
             </thead>
             <tbody id="detail-table"></tbody>
@@ -286,15 +346,20 @@
       </div>
 
       <div class="table-container">
-        <h2>Town Detail</h2>
+        <div class="table-header">
+          <h2>Town Detail</h2>
+          <div class="csv-actions">
+            <button class="csv-btn" onclick="downloadTownsCSV()">Download Towns CSV</button>
+          </div>
+        </div>
         <div class="table-scroll">
-          <table>
+          <table id="town-detail-table">
             <thead>
               <tr>
                 <th style="text-align:center">#</th>
-                <th>Town</th>
-                <th style="text-align:right">Properties</th>
-                <th style="text-align:right">Competitors</th>
+                <th data-sort="town" data-sort-type="text">Town<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="total" data-sort-type="num" data-sort-default="desc">Properties<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="competitor_count" data-sort-type="num" data-sort-default="desc">Competitors<span class="sort-arrow">▾</span></th>
                 <th>Market Share</th>
               </tr>
             </thead>
@@ -336,24 +401,36 @@
       </div>
 
       <div class="chart-container">
-        <h2>Top 20 Locations by Properties</h2>
+        <div class="chart-header">
+          <h2 id="franchise-bar-title">Top 20 Locations by Properties</h2>
+          <div class="metric-toggle" data-target="franchise-bar">
+            <button class="metric-btn active" data-metric="count">Listings</button>
+            <button class="metric-btn" data-metric="total_bedrooms">Total BR</button>
+            <button class="metric-btn" data-metric="avg_bedrooms">Avg BR</button>
+          </div>
+        </div>
         <div class="chart-wrapper tall"><canvas id="f-bar-chart"></canvas></div>
       </div>
 
       <div class="table-container">
-        <h2>All Locations</h2>
+        <div class="table-header">
+          <h2>All Locations</h2>
+          <div class="csv-actions">
+            <button class="csv-btn" onclick="downloadFranchiseCSV()">Download Franchise CSV</button>
+          </div>
+        </div>
         <div class="table-scroll">
-          <table>
+          <table id="franchise-detail-table">
             <thead>
               <tr>
                 <th style="text-align:right">#</th>
-                <th>Location</th>
-                <th style="text-align:right">Properties</th>
-                <th style="text-align:right">Total BR</th>
-                <th style="text-align:right">Avg BR</th>
-                <th style="text-align:right">M/M</th>
-                <th style="text-align:right">All-Time</th>
-                <th>Trend</th>
+                <th data-sort="location" data-sort-type="text">Location<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="property_count" data-sort-type="num" data-sort-default="desc">Properties<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="total_bedrooms" data-sort-type="num" data-sort-default="desc">Total BR<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="avg_bedrooms" data-sort-type="num" data-sort-default="desc">Avg BR<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="mom" data-sort-type="num" data-sort-default="desc">M/M<span class="sort-arrow">▾</span></th>
+                <th style="text-align:right" data-sort="all_time" data-sort-type="num" data-sort-default="desc">All-Time<span class="sort-arrow">▾</span></th>
+                <th data-sort="trend" data-sort-type="text">Trend<span class="sort-arrow">▾</span></th>
               </tr>
             </thead>
             <tbody id="f-detail-table"></tbody>
@@ -387,6 +464,10 @@
       <div class="chart-container">
         <h2>Month-over-Month Changes</h2>
         <div class="chart-wrapper"><canvas id="lc-mom-chart"></canvas></div>
+      </div>
+
+      <div class="csv-actions" style="padding:8px 24px">
+        <button class="csv-btn" onclick="downloadListingChangesCSV()">Download Listing Changes CSV</button>
       </div>
 
       <div id="lc-timeline"></div>
@@ -546,9 +627,22 @@
     function renderCompetitors(data) {
       const totalAddr = data.current.reduce((s, c) => s + c.with_address, 0);
       const addrPct = data.total_properties > 0 ? Math.round((totalAddr / data.total_properties) * 100) : 0;
+      const totalBR = data.current.reduce((s, c) => s + (c.estimated_total_bedrooms || c.total_bedrooms || 0), 0);
+      const observedBR = data.current.reduce((s, c) => s + (c.with_bedrooms || 0), 0);
+      const observedPct = data.total_properties > 0
+        ? Math.round((observedBR / data.total_properties) * 100)
+        : 0;
       document.getElementById('total-props').textContent = data.total_properties.toLocaleString();
       document.getElementById('total-comps').textContent = data.total_competitors;
       document.getElementById('address-rate').textContent = addrPct + '%';
+      const bedroomEl = document.getElementById('total-bedrooms');
+      if (bedroomEl) bedroomEl.textContent = totalBR.toLocaleString();
+      const bedroomDetailEl = document.getElementById('total-bedrooms-detail');
+      if (bedroomDetailEl) {
+        bedroomDetailEl.textContent = observedPct >= 100
+          ? 'across all listings'
+          : `${observedPct}% directly observed`;
+      }
 
       const dates = Object.keys(data.history).sort();
       document.getElementById('snapshot-count').textContent = dates.length;
@@ -577,23 +671,72 @@
       renderCompTable(data);
     }
 
+    const COMP_METRICS = {
+      count: { label: 'Listings', titleSuffix: 'by Listings', accessor: c => c.count || 0 },
+      total_bedrooms: {
+        label: 'Total Bedrooms',
+        titleSuffix: 'by Total Bedrooms',
+        accessor: c => c.estimated_total_bedrooms || c.total_bedrooms || 0,
+      },
+      avg_bedrooms: {
+        label: 'Avg Bedrooms / Listing',
+        titleSuffix: 'by Avg Bedrooms',
+        accessor: c => {
+          if (c.avg_bedrooms != null) return Number(c.avg_bedrooms);
+          if (c.with_bedrooms > 0) return c.total_bedrooms / c.with_bedrooms;
+          return 0;
+        },
+      },
+    };
+    let compBarChart = null;
+    let compBarMetric = 'count';
+
     function renderCompBar(data) {
       const ctx = document.getElementById('bar-chart').getContext('2d');
-      const sorted = [...data.current].sort((a, b) => b.count - a.count);
-      new Chart(ctx, {
+      const meta = COMP_METRICS[compBarMetric];
+      const sorted = [...data.current]
+        .map(c => ({ ...c, _val: meta.accessor(c) }))
+        .sort((a, b) => b._val - a._val);
+      const titleEl = document.getElementById('comp-bar-title');
+      if (titleEl) titleEl.textContent = `Competitors ${meta.titleSuffix}`;
+      const isAvg = compBarMetric === 'avg_bedrooms';
+      if (compBarChart) compBarChart.destroy();
+      compBarChart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: sorted.map(c => c.competitor),
-          datasets: [{ label: 'Properties', data: sorted.map(c => c.count), backgroundColor: sorted.map((c, i) => c.is_us ? '#38bdf8' : COLORS[i % COLORS.length]), borderWidth: sorted.map(c => c.is_us ? 2 : 0), borderColor: sorted.map(c => c.is_us ? '#7dd3fc' : 'transparent'), borderRadius: 4 }]
+          datasets: [{
+            label: meta.label,
+            data: sorted.map(c => c._val),
+            backgroundColor: sorted.map((c, i) => c.is_us ? '#38bdf8' : COLORS[i % COLORS.length]),
+            borderWidth: sorted.map(c => c.is_us ? 2 : 0),
+            borderColor: sorted.map(c => c.is_us ? '#7dd3fc' : 'transparent'),
+            borderRadius: 4,
+          }],
         },
         options: {
           responsive: true, maintainAspectRatio: false, indexAxis: 'y',
-          plugins: { legend: { display: false } },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => isAvg
+                  ? `${ctx.parsed.x.toFixed(1)} BR / listing`
+                  : `${ctx.parsed.x.toLocaleString()} ${meta.label.toLowerCase()}`,
+              },
+            },
+          },
           scales: {
-            x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
-            y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } }
-          }
-        }
+            x: {
+              grid: { color: 'rgba(51,65,85,0.5)' },
+              ticks: {
+                color: '#94a3b8',
+                callback: (v) => isAvg ? Number(v).toFixed(1) : Number(v).toLocaleString(),
+              },
+            },
+            y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } },
+          },
+        },
       });
     }
 
@@ -626,20 +769,63 @@
       });
     }
 
+    const COMP_TABLE_SORT = { key: null, dir: null };
+    const COMP_SORT_ACCESSORS = {
+      name: (c, ctx) => (c.competitor || '').toLowerCase(),
+      platform: (c) => (c.platform || '').toLowerCase(),
+      count: (c) => c.count || 0,
+      total_bedrooms: (c) => c.estimated_total_bedrooms || c.total_bedrooms || 0,
+      avg_bedrooms: (c) => {
+        if (c.avg_bedrooms != null) return Number(c.avg_bedrooms);
+        if (c.with_bedrooms > 0) return c.total_bedrooms / c.with_bedrooms;
+        return 0;
+      },
+      coverage: (c) => c.count > 0 ? c.with_address / c.count : 0,
+      mom: (c, ctx) => {
+        const t = ctx.trends[c.competitor] || {};
+        return t.mom_change != null ? t.mom_change : (t.all_time_change || 0);
+      },
+      all_time: (c, ctx) => (ctx.trends[c.competitor] || {}).all_time_change || 0,
+      trend: (c, ctx) => ((ctx.trends[c.competitor] || {}).trend || '').toLowerCase(),
+      health: (c, ctx) => (ctx.health[c.competitor] || {}).score || 0,
+    };
+
     function renderCompTable(data) {
       const tbody = document.getElementById('detail-table');
+      const footer = document.getElementById('detail-footer');
+      tbody.innerHTML = '';
+      footer.innerHTML = '';
       if (!data.current || !data.current.length) return;
       const maxCount = Math.max(...data.current.map(c => c.count), 0);
+      const maxBR = Math.max(...data.current.map(c => c.estimated_total_bedrooms || c.total_bedrooms || 0), 0);
       const trends = data.trends ? data.trends.entities : {};
       const health = data.health_scores || {};
-      let totalProps = 0, totalAddr = 0;
+      const ctx = { trends, health };
+      // Apply current sort if set; otherwise the source array is already
+      // ranked by listing count from the export step.
+      let rows = data.current;
+      if (COMP_TABLE_SORT.key && COMP_SORT_ACCESSORS[COMP_TABLE_SORT.key]) {
+        const acc = COMP_SORT_ACCESSORS[COMP_TABLE_SORT.key];
+        rows = [...rows].sort((a, b) => {
+          const va = acc(a, ctx), vb = acc(b, ctx);
+          if (va < vb) return COMP_TABLE_SORT.dir === 'asc' ? -1 : 1;
+          if (va > vb) return COMP_TABLE_SORT.dir === 'asc' ? 1 : -1;
+          return 0;
+        });
+      }
+      let totalProps = 0, totalAddr = 0, totalBR = 0;
 
-      data.current.forEach((c, idx) => {
+      rows.forEach((c, idx) => {
         totalProps += c.count;
         totalAddr += c.with_address;
+        const beds = c.estimated_total_bedrooms || c.total_bedrooms || 0;
+        const observed = c.total_bedrooms || 0;
+        const isEstimated = beds !== observed && c.with_bedrooms < c.count;
+        totalBR += beds;
         const pct = c.count > 0 ? Math.round((c.with_address / c.count) * 100) : 0;
         const cls = pct >= 90 ? 'coverage-good' : pct >= 70 ? 'coverage-warn' : 'coverage-bad';
         const barW = maxCount > 0 ? (c.count / maxCount * 100) : 0;
+        const brBarW = maxBR > 0 ? (beds / maxBR * 100) : 0;
         const t = trends[c.competitor] || {};
         const h = health[c.competitor] || {};
         const rank = idx + 1;
@@ -649,12 +835,23 @@
         const nameHtml = isUs
           ? `<span style="color:var(--accent);font-weight:700">${c.competitor}</span>`
           : c.competitor;
+        const avgBR = c.avg_bedrooms != null
+          ? c.avg_bedrooms.toFixed(1)
+          : (c.with_bedrooms > 0 ? (c.total_bedrooms / c.with_bedrooms).toFixed(1) : '—');
+        const brLabel = beds > 0
+          ? (isEstimated ? `${beds.toLocaleString()}<span style="opacity:0.55">*</span>` : beds.toLocaleString())
+          : '—';
+        const brTitle = isEstimated
+          ? `Estimated from ${c.with_bedrooms} of ${c.count} listings with bedroom data`
+          : '';
 
         tbody.innerHTML += `<tr class="${rowCls}" data-entity="${c.competitor}" data-type="competitor" onclick="openDrillDown(this)">
           <td class="rank-cell">${rank}</td>
           <td class="name-cell">${nameHtml}</td>
           <td><span class="badge">${c.platform}</span></td>
           <td class="num bar-cell"><div class="bar-fill" style="width:${barW}%${isUs ? ';background:rgba(56,189,248,0.25)' : ''}"></div><span>${c.count}</span></td>
+          <td class="num bar-cell" title="${brTitle}"><div class="bar-fill" style="width:${brBarW}%${isUs ? ';background:rgba(56,189,248,0.25)' : ''}"></div><span>${brLabel}</span></td>
+          <td class="num">${avgBR}</td>
           <td class="num"><span class="coverage ${cls}">${pct}%</span></td>
           <td class="num">${changeHtml(t.mom_change != null ? t.mom_change : t.all_time_change, t.mom_pct != null ? t.mom_pct : t.all_time_pct)}</td>
           <td class="num">${changeHtml(t.all_time_change, t.all_time_pct)}</td>
@@ -664,8 +861,13 @@
       });
 
       const footerPct = totalProps > 0 ? Math.round((totalAddr / totalProps) * 100) : 0;
-      document.getElementById('detail-footer').innerHTML = `<tr style="font-weight:600">
-        <td></td><td>Total</td><td></td><td class="num">${totalProps}</td><td class="num">${footerPct}%</td><td></td><td></td><td></td><td></td>
+      footer.innerHTML = `<tr style="font-weight:600">
+        <td></td><td>Total</td><td></td>
+        <td class="num">${totalProps}</td>
+        <td class="num">${totalBR.toLocaleString()}</td>
+        <td></td>
+        <td class="num">${footerPct}%</td>
+        <td></td><td></td><td></td><td></td>
       </tr>`;
     }
 
@@ -703,10 +905,31 @@
         }
       });
 
-      // Table
+      renderTownTable(towns);
+    }
+
+    const TOWN_TABLE_SORT = { key: null, dir: null };
+    const TOWN_SORT_ACCESSORS = {
+      town: (t) => (t.town || '').toLowerCase(),
+      total: (t) => t.total || 0,
+      competitor_count: (t) => t.competitor_count || 0,
+    };
+
+    function renderTownTable(towns) {
       const tbody = document.getElementById('town-table');
+      tbody.innerHTML = '';
+      let rows = towns;
+      if (TOWN_TABLE_SORT.key && TOWN_SORT_ACCESSORS[TOWN_TABLE_SORT.key]) {
+        const acc = TOWN_SORT_ACCESSORS[TOWN_TABLE_SORT.key];
+        rows = [...rows].sort((a, b) => {
+          const va = acc(a), vb = acc(b);
+          if (va < vb) return TOWN_TABLE_SORT.dir === 'asc' ? -1 : 1;
+          if (va > vb) return TOWN_TABLE_SORT.dir === 'asc' ? 1 : -1;
+          return 0;
+        });
+      }
       const maxCount = Math.max(...towns.map(t => t.total), 0);
-      towns.forEach((t, idx) => {
+      rows.forEach((t, idx) => {
         const barW = maxCount > 0 ? (t.total / maxCount * 100) : 0;
         const townId = 'town-' + idx;
 
@@ -791,23 +1014,60 @@
       renderFranchiseTable(f);
     }
 
+    const FRANCHISE_METRICS = {
+      count: { label: 'Listings', titleSuffix: 'by Listings', accessor: l => l.property_count || 0 },
+      total_bedrooms: { label: 'Total Bedrooms', titleSuffix: 'by Total Bedrooms', accessor: l => l.total_bedrooms || 0 },
+      avg_bedrooms: { label: 'Avg Bedrooms / Listing', titleSuffix: 'by Avg Bedrooms', accessor: l => l.avg_bedrooms || 0 },
+    };
+    let franchiseBarChart = null;
+    let franchiseBarMetric = 'count';
+
     function renderFranchiseBar(f) {
       const ctx = document.getElementById('f-bar-chart').getContext('2d');
-      const top20 = f.locations.slice(0, 20);
-      new Chart(ctx, {
+      const meta = FRANCHISE_METRICS[franchiseBarMetric];
+      const ranked = f.locations
+        .map(l => ({ ...l, _val: meta.accessor(l) }))
+        .filter(l => l._val > 0)
+        .sort((a, b) => b._val - a._val)
+        .slice(0, 20);
+      const titleEl = document.getElementById('franchise-bar-title');
+      if (titleEl) titleEl.textContent = `Top 20 Locations ${meta.titleSuffix}`;
+      const isAvg = franchiseBarMetric === 'avg_bedrooms';
+      if (franchiseBarChart) franchiseBarChart.destroy();
+      franchiseBarChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: top20.map(l => l.location),
-          datasets: [{ label: 'Properties', data: top20.map(l => l.property_count), backgroundColor: top20.map(l => l.slug === 'maine-southern-coastal' ? '#38bdf8' : 'rgba(148,163,184,0.4)'), borderRadius: 4 }]
+          labels: ranked.map(l => l.location),
+          datasets: [{
+            label: meta.label,
+            data: ranked.map(l => l._val),
+            backgroundColor: ranked.map(l => l.slug === 'maine-southern-coastal' ? '#38bdf8' : 'rgba(148,163,184,0.4)'),
+            borderRadius: 4,
+          }],
         },
         options: {
           responsive: true, maintainAspectRatio: false, indexAxis: 'y',
-          plugins: { legend: { display: false } },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => isAvg
+                  ? `${ctx.parsed.x.toFixed(1)} BR / listing`
+                  : `${ctx.parsed.x.toLocaleString()} ${meta.label.toLowerCase()}`,
+              },
+            },
+          },
           scales: {
-            x: { grid: { color: 'rgba(51,65,85,0.5)' }, ticks: { color: '#94a3b8' } },
-            y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } }
-          }
-        }
+            x: {
+              grid: { color: 'rgba(51,65,85,0.5)' },
+              ticks: {
+                color: '#94a3b8',
+                callback: (v) => isAvg ? Number(v).toFixed(1) : Number(v).toLocaleString(),
+              },
+            },
+            y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } },
+          },
+        },
       });
     }
 
@@ -843,13 +1103,41 @@
       });
     }
 
+    const FRANCHISE_TABLE_SORT = { key: null, dir: null };
+    const FRANCHISE_SORT_ACCESSORS = {
+      location: (l) => (l.location || '').toLowerCase(),
+      property_count: (l) => l.property_count || 0,
+      total_bedrooms: (l) => l.total_bedrooms || 0,
+      avg_bedrooms: (l) => l.avg_bedrooms || 0,
+      mom: (l, ctx) => {
+        const t = ctx.trends[l.location] || {};
+        return t.mom_change != null ? t.mom_change : (t.all_time_change || 0);
+      },
+      all_time: (l, ctx) => (ctx.trends[l.location] || {}).all_time_change || 0,
+      trend: (l, ctx) => ((ctx.trends[l.location] || {}).trend || '').toLowerCase(),
+    };
+
     function renderFranchiseTable(f) {
       const tbody = document.getElementById('f-detail-table');
+      const footer = document.getElementById('f-detail-footer');
+      tbody.innerHTML = '';
+      footer.innerHTML = '';
       const maxCount = Math.max(...f.locations.map(l => l.property_count), 0);
       const trends = f.trends ? f.trends.entities : {};
+      const ctx = { trends };
+      let rows = f.locations;
+      if (FRANCHISE_TABLE_SORT.key && FRANCHISE_SORT_ACCESSORS[FRANCHISE_TABLE_SORT.key]) {
+        const acc = FRANCHISE_SORT_ACCESSORS[FRANCHISE_TABLE_SORT.key];
+        rows = [...rows].sort((a, b) => {
+          const va = acc(a, ctx), vb = acc(b, ctx);
+          if (va < vb) return FRANCHISE_TABLE_SORT.dir === 'asc' ? -1 : 1;
+          if (va > vb) return FRANCHISE_TABLE_SORT.dir === 'asc' ? 1 : -1;
+          return 0;
+        });
+      }
       let totalProps = 0, totalBR = 0;
 
-      f.locations.forEach((l, idx) => {
+      rows.forEach((l, idx) => {
         totalProps += l.property_count;
         totalBR += l.total_bedrooms || 0;
         const t = trends[l.location] || {};
@@ -871,7 +1159,7 @@
 
       // Total row with trend data and drill-down
       const totalTrend = (f.trends && f.trends.entities) ? f.trends.entities['Grand Welcome Total'] || {} : {};
-      document.getElementById('f-detail-footer').innerHTML = `<tr style="font-weight:600;cursor:pointer" data-entity="Grand Welcome Total" data-type="franchise" onclick="openDrillDown(this)">
+      footer.innerHTML = `<tr style="font-weight:600;cursor:pointer" data-entity="Grand Welcome Total" data-type="franchise" onclick="openDrillDown(this)">
         <td></td>
         <td>Total (${f.total_locations} locations)</td>
         <td class="num">${totalProps.toLocaleString()}</td>
@@ -1220,6 +1508,166 @@
       if (e.target === e.currentTarget) closeModal();
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    // Sortable table headers
+    function bindSortable(tableId, sortState, rerenderFn) {
+      const table = document.getElementById(tableId);
+      if (!table) return;
+      const headers = table.querySelectorAll('th[data-sort]');
+      headers.forEach(th => {
+        th.addEventListener('click', () => {
+          const key = th.getAttribute('data-sort');
+          const def = th.getAttribute('data-sort-default') || 'asc';
+          if (sortState.key === key) {
+            sortState.dir = sortState.dir === 'asc' ? 'desc' : 'asc';
+          } else {
+            sortState.key = key;
+            sortState.dir = def;
+          }
+          headers.forEach(h => h.classList.remove('sorted-asc', 'sorted-desc'));
+          th.classList.add(sortState.dir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+          const arrow = th.querySelector('.sort-arrow');
+          if (arrow) arrow.textContent = sortState.dir === 'asc' ? '▴' : '▾';
+          rerenderFn();
+        });
+      });
+    }
+    bindSortable('competitor-detail-table', COMP_TABLE_SORT, () => {
+      if (DASHBOARD_DATA) renderCompTable(DASHBOARD_DATA);
+    });
+    bindSortable('town-detail-table', TOWN_TABLE_SORT, () => {
+      if (DASHBOARD_DATA) renderTownTable(DASHBOARD_DATA.towns);
+    });
+    bindSortable('franchise-detail-table', FRANCHISE_TABLE_SORT, () => {
+      if (DASHBOARD_DATA) renderFranchiseTable(DASHBOARD_DATA.franchise);
+    });
+
+    // Metric toggle buttons (Listings / Total BR / Avg BR)
+    document.querySelectorAll('.metric-toggle').forEach(group => {
+      const target = group.getAttribute('data-target');
+      group.querySelectorAll('.metric-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (!DASHBOARD_DATA) return;
+          group.querySelectorAll('.metric-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const metric = btn.getAttribute('data-metric');
+          if (target === 'comp-bar') {
+            compBarMetric = metric;
+            renderCompBar(DASHBOARD_DATA);
+          } else if (target === 'franchise-bar') {
+            franchiseBarMetric = metric;
+            renderFranchiseBar(DASHBOARD_DATA.franchise);
+          }
+        });
+      });
+    });
+
+    // ==================== CSV EXPORT ====================
+    function csvEscape(val) {
+      if (val === null || val === undefined) return '';
+      const s = String(val);
+      if (/[",\n\r]/.test(s)) return '"' + s.replace(/"/g, '""') + '"';
+      return s;
+    }
+    function rowsToCsv(headers, rows) {
+      const lines = [headers.map(csvEscape).join(',')];
+      rows.forEach(r => lines.push(r.map(csvEscape).join(',')));
+      return lines.join('\n');
+    }
+    function downloadCsv(filename, csv) {
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = filename;
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+    function todayStamp() {
+      const d = (DASHBOARD_DATA && DASHBOARD_DATA.generated) || new Date().toISOString().slice(0, 10);
+      return d;
+    }
+    function downloadCompetitorsCSV() {
+      const data = DASHBOARD_DATA;
+      if (!data || !data.current) return;
+      const trends = (data.trends && data.trends.entities) || {};
+      const headers = ['rank','competitor','platform','properties','total_bedrooms','observed_bedrooms','listings_with_br','avg_bedrooms','address_coverage_pct','mom_change','mom_pct','all_time_change','all_time_pct','trend','health_rating','health_score','is_us'];
+      const rows = data.current.map((c, idx) => {
+        const t = trends[c.competitor] || {};
+        const h = (data.health_scores && data.health_scores[c.competitor]) || {};
+        const beds = c.estimated_total_bedrooms || c.total_bedrooms || 0;
+        const pct = c.count > 0 ? Math.round((c.with_address / c.count) * 100) : 0;
+        return [
+          idx + 1, c.competitor, c.platform, c.count,
+          beds, c.total_bedrooms || 0, c.with_bedrooms || 0,
+          c.avg_bedrooms != null ? c.avg_bedrooms : '',
+          pct,
+          t.mom_change != null ? t.mom_change : '',
+          t.mom_pct != null ? t.mom_pct : '',
+          t.all_time_change != null ? t.all_time_change : '',
+          t.all_time_pct != null ? t.all_time_pct : '',
+          t.trend || '', h.rating || '', h.score != null ? h.score : '',
+          c.is_us ? 'true' : 'false',
+        ];
+      });
+      downloadCsv(`competitors_${todayStamp()}.csv`, rowsToCsv(headers, rows));
+    }
+    function downloadTownsCSV() {
+      const data = DASHBOARD_DATA;
+      if (!data || !data.towns) return;
+      const headers = ['town','total_properties','competitor_count','competitor','count','share_pct'];
+      const rows = [];
+      data.towns.forEach(t => {
+        if (!t.competitors || !t.competitors.length) {
+          rows.push([t.town, t.total, t.competitor_count, '', '', '']);
+        } else {
+          t.competitors.forEach(c => rows.push([t.town, t.total, t.competitor_count, c.name, c.count, c.share]));
+        }
+      });
+      downloadCsv(`towns_${todayStamp()}.csv`, rowsToCsv(headers, rows));
+    }
+    function downloadFranchiseCSV() {
+      const data = DASHBOARD_DATA;
+      const f = data && data.franchise;
+      if (!f || !f.locations) return;
+      const trends = (f.trends && f.trends.entities) || {};
+      const headers = ['rank','location','slug','property_count','total_bedrooms','avg_bedrooms','mom_change','mom_pct','all_time_change','all_time_pct','trend'];
+      const rows = f.locations.map((l, idx) => {
+        const t = trends[l.location] || {};
+        return [
+          idx + 1, l.location, l.slug, l.property_count,
+          l.total_bedrooms != null ? l.total_bedrooms : '',
+          l.avg_bedrooms != null ? l.avg_bedrooms : '',
+          t.mom_change != null ? t.mom_change : '',
+          t.mom_pct != null ? t.mom_pct : '',
+          t.all_time_change != null ? t.all_time_change : '',
+          t.all_time_pct != null ? t.all_time_pct : '',
+          t.trend || '',
+        ];
+      });
+      downloadCsv(`franchise_${todayStamp()}.csv`, rowsToCsv(headers, rows));
+    }
+    function downloadListingChangesCSV() {
+      const data = DASHBOARD_DATA;
+      const lc = data && data.listing_changes;
+      if (!lc || !lc.dates) return;
+      const headers = ['change_date','change_type','competitor','platform','property_name','address','city','bedrooms','date_first_seen','date_last_seen','url'];
+      const rows = [];
+      Object.keys(lc.dates).sort().reverse().forEach(d => {
+        const day = lc.dates[d];
+        ['gained','lost'].forEach(kind => {
+          (day[kind] || []).forEach(item => {
+            rows.push([
+              d, kind, item.competitor, item.platform || '',
+              item.property_name || '', item.address || '', item.city || '',
+              item.bedrooms != null ? item.bedrooms : '',
+              item.date_first_seen || '', item.date_last_seen || '',
+              item.url || '',
+            ]);
+          });
+        });
+      });
+      downloadCsv(`listing_changes_${todayStamp()}.csv`, rowsToCsv(headers, rows));
+    }
 
     load();
   </script>
