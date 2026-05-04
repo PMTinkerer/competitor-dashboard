@@ -1,6 +1,6 @@
 {
   "generated": "2026-05-04",
-  "total_properties": 1237,
+  "total_properties": 1252,
   "total_competitors": 27,
   "current": [
     {
@@ -15,6 +15,28 @@
       "cities": [
         "Ogunquit",
         "Wells"
+      ],
+      "is_us": false
+    },
+    {
+      "competitor": "Vacasa",
+      "platform": "vacasa",
+      "count": 83,
+      "with_address": 82,
+      "with_bedrooms": 83,
+      "total_bedrooms": 281,
+      "estimated_total_bedrooms": 281,
+      "avg_bedrooms": 3.4,
+      "cities": [
+        "Kennebunk",
+        "Kennebunkport",
+        "Kittery",
+        "Ogunquit",
+        "Old Orchard Beach",
+        "Saco",
+        "Scarborough",
+        "Wells",
+        "York"
       ],
       "is_us": false
     },
@@ -60,27 +82,6 @@
       "cities": [
         "Biddeford",
         "Kennebunkport"
-      ],
-      "is_us": false
-    },
-    {
-      "competitor": "Vacasa",
-      "platform": "vacasa",
-      "count": 68,
-      "with_address": 67,
-      "with_bedrooms": 68,
-      "total_bedrooms": 227,
-      "estimated_total_bedrooms": 227,
-      "avg_bedrooms": 3.3,
-      "cities": [
-        "Kennebunk",
-        "Kennebunkport",
-        "Ogunquit",
-        "Old Orchard Beach",
-        "Saco",
-        "Scarborough",
-        "Wells",
-        "York"
       ],
       "is_us": false
     },
@@ -711,7 +712,7 @@
       "Seashore Property Management": 23,
       "Tamarack Rentals": 53,
       "TopHost Vacation Rentals": 28,
-      "Vacasa": 68,
+      "Vacasa": 83,
       "Grand Welcome (Our Company)": 42
     }
   },
@@ -962,17 +963,17 @@
         "trend": "growing"
       },
       "Vacasa": {
-        "current": 68,
+        "current": 83,
         "wow_prev": 86,
-        "wow_change": -18,
-        "wow_pct": -20.9,
+        "wow_change": -3,
+        "wow_pct": -3.5,
         "mom_prev": 88,
-        "mom_change": -20,
-        "mom_pct": -22.7,
+        "mom_change": -5,
+        "mom_pct": -5.7,
         "first_date": "2026-03-18",
         "first": 88,
-        "all_time_change": -20,
-        "all_time_pct": -22.7,
+        "all_time_change": -5,
+        "all_time_pct": -5.7,
         "trend": "declining"
       },
       "Evolve Vacation Rentals": {
@@ -1272,17 +1273,17 @@
     "declining": [
       {
         "name": "Vacasa",
-        "current": 68,
+        "current": 83,
         "wow_prev": 86,
-        "wow_change": -18,
-        "wow_pct": -20.9,
+        "wow_change": -3,
+        "wow_pct": -3.5,
         "mom_prev": 88,
-        "mom_change": -20,
-        "mom_pct": -22.7,
+        "mom_change": -5,
+        "mom_pct": -5.7,
         "first_date": "2026-03-18",
         "first": 88,
-        "all_time_change": -20,
-        "all_time_pct": -22.7,
+        "all_time_change": -5,
+        "all_time_pct": -5.7,
         "trend": "declining"
       },
       {
@@ -1525,6 +1526,16 @@
       "gross_gained": 1,
       "gross_lost": 3
     },
+    "Vacasa": {
+      "score": 39,
+      "rating": "watch",
+      "size_score": 96,
+      "trend_score": 24.3,
+      "stability_score": 0,
+      "churn_rate": 36.1,
+      "gross_gained": 6,
+      "gross_lost": 24
+    },
     "Maine Seaside Rentals": {
       "score": 84,
       "rating": "strong",
@@ -1554,16 +1565,6 @@
       "churn_rate": 0.0,
       "gross_gained": 0,
       "gross_lost": 0
-    },
-    "Vacasa": {
-      "score": 31,
-      "rating": "watch",
-      "size_score": 92,
-      "trend_score": 7.300000000000001,
-      "stability_score": 0,
-      "churn_rate": 66.2,
-      "gross_gained": 6,
-      "gross_lost": 39
     },
     "Evolve Vacation Rentals": {
       "score": 36,
@@ -2323,6 +2324,30 @@
       ]
     },
     {
+      "town": "Kittery",
+      "total": 17,
+      "competitor_count": 3,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 15,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 15,
+          "share": 88.2
+        },
+        {
+          "name": "Anchor Real Estate Rentals",
+          "count": 1,
+          "share": 5.9
+        },
+        {
+          "name": "Grand Welcome (Our Company)",
+          "count": 1,
+          "share": 5.9
+        }
+      ]
+    },
+    {
       "town": "Lyman",
       "total": 4,
       "competitor_count": 1,
@@ -2437,25 +2462,6 @@
           "name": "TopHost Vacation Rentals",
           "count": 3,
           "share": 100.0
-        }
-      ]
-    },
-    {
-      "town": "Kittery",
-      "total": 2,
-      "competitor_count": 2,
-      "top_competitor": "Anchor Real Estate Rentals",
-      "top_competitor_count": 1,
-      "competitors": [
-        {
-          "name": "Anchor Real Estate Rentals",
-          "count": 1,
-          "share": 50.0
-        },
-        {
-          "name": "Grand Welcome (Our Company)",
-          "count": 1,
-          "share": 50.0
         }
       ]
     },
@@ -5194,7 +5200,7 @@
             "is_rename": false
           },
           {
-            "id": 510,
+            "id": 517,
             "property_name": "Sea Shell",
             "url": "https://www.vacasa.com/unit/130290",
             "address": "51 Long Beach Avenue",
@@ -5209,7 +5215,7 @@
             "is_rename": false
           },
           {
-            "id": 511,
+            "id": 518,
             "property_name": "Sandcastle Dreams",
             "url": "https://www.vacasa.com/unit/130009",
             "address": "121 Portland Avenue",
@@ -5316,7 +5322,7 @@
             "is_rename": false
           },
           {
-            "id": 483,
+            "id": 512,
             "property_name": "Four Ensuite The Heart of the West End #3 &amp; #4",
             "url": "https://www.vacasa.com/unit/96900",
             "address": "56 Pine Street",
@@ -5331,52 +5337,7 @@
             "is_rename": false
           },
           {
-            "id": 484,
-            "property_name": "Spruce Creek Grove",
-            "url": "https://www.vacasa.com/unit/61466",
-            "address": "16 Phelps Street",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 485,
-            "property_name": "The Lodge at Seapoint Beach",
-            "url": "https://www.vacasa.com/unit/44959",
-            "address": "6 Thaxter Lane",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 4,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 486,
-            "property_name": "Wiggly Bridge Landing",
-            "url": "https://www.vacasa.com/unit/125782",
-            "address": "341 York Street",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 487,
+            "id": 513,
             "property_name": "Wallis Sands Beach Serenity",
             "url": "https://www.vacasa.com/unit/27514",
             "address": "80 Parsons Road",
@@ -5386,12 +5347,12 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 513,
+            "flagged_at": "2026-05-04T23:42:53Z",
+            "is_rename": true
           },
           {
-            "id": 488,
+            "id": 514,
             "property_name": "Shang-Rye-La",
             "url": "https://www.vacasa.com/unit/74943",
             "address": "Ocean Boulevard",
@@ -5401,12 +5362,12 @@
             "bedrooms": 6,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 514,
+            "flagged_at": "2026-05-04T23:42:53Z",
+            "is_rename": true
           },
           {
-            "id": 489,
+            "id": 515,
             "property_name": "Luxury Rye Beach Escape",
             "url": "https://www.vacasa.com/unit/104646",
             "address": "1593 Ocean Boulevard",
@@ -5416,192 +5377,12 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 515,
+            "flagged_at": "2026-05-04T23:42:53Z",
+            "is_rename": true
           },
           {
-            "id": 490,
-            "property_name": "York Starfish Haven",
-            "url": "https://www.vacasa.com/unit/4709",
-            "address": "140 Airport Drive",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 5,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 491,
-            "property_name": "Gull&#x27;s Getaway",
-            "url": "https://www.vacasa.com/unit/115388",
-            "address": "303 Long Beach Avenue",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 492,
-            "property_name": "Meet Me At Sea",
-            "url": "https://www.vacasa.com/unit/26959",
-            "address": "1 Cappy's Lane",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 6,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 493,
-            "property_name": "Little Cottage",
-            "url": "https://www.vacasa.com/unit/43441",
-            "address": "15 Moody Lane",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 494,
-            "property_name": "Big Cottage",
-            "url": "https://www.vacasa.com/unit/43442",
-            "address": "15 Moody Lane",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 495,
-            "property_name": "The Willow Cove",
-            "url": "https://www.vacasa.com/unit/126082",
-            "address": "600 Shore Road",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 6,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 496,
-            "property_name": "Seafoam Dreams",
-            "url": "https://www.vacasa.com/unit/115390",
-            "address": "303 Long Beach Avenue",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 3,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 497,
-            "property_name": "Otis Cottages",
-            "url": "https://www.vacasa.com/unit/43476",
-            "address": "15 Moody Lane",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 5,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 498,
-            "property_name": "Seaglass Cottage",
-            "url": "https://www.vacasa.com/unit/115391",
-            "address": "303 Long Beach Avenue",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 4,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 499,
-            "property_name": "Sea La Vie",
-            "url": "https://www.vacasa.com/unit/26715",
-            "address": "1 Cappy's Lane",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 4,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 500,
-            "property_name": "Sea Rose",
-            "url": "https://www.vacasa.com/unit/10464",
-            "address": "1 Cappy's Lane",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 1,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 501,
-            "property_name": "Shimmering Seaview",
-            "url": "https://www.vacasa.com/unit/115389",
-            "address": "303 Long Beach Avenue",
-            "city": "Kittery",
-            "competitor": "Vacasa",
-            "platform": "vacasa",
-            "bedrooms": 2,
-            "date_first_seen": "2026-03-18",
-            "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
-          },
-          {
-            "id": 504,
+            "id": 516,
             "property_name": "Footprints in the Sand",
             "url": "https://www.vacasa.com/unit/48576",
             "address": "50 Beacon Street",
@@ -11326,7 +11107,7 @@
       "Vacasa": {
         "2026-05-04": {
           "gained": 2,
-          "lost": 20
+          "lost": 2
         },
         "2026-04-26": {
           "gained": 1,
@@ -11483,7 +11264,7 @@
       },
       "Vacasa": {
         "gained": 6,
-        "lost": 26
+        "lost": 8
       },
       "Evolve Vacation Rentals": {
         "gained": 1,
@@ -11539,7 +11320,7 @@
       }
     },
     "total_gained": 265,
-    "total_lost": 50,
-    "total_renamed_hidden": 92
+    "total_lost": 32,
+    "total_renamed_hidden": 95
   }
 }
