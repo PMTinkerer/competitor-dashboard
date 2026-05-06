@@ -868,7 +868,10 @@
         data: dates.map(d => Object.values(data.history[d] || {}).reduce((s, v) => s + v, 0)),
       }];
       topComps.forEach((comp, i) => {
-        datasets.push({ label: comp, borderColor: COLORS[i % COLORS.length], borderWidth: 1.5, pointRadius: 3, tension: 0.3, data: dates.map(d => (data.history[d] || {})[comp] || 0) });
+        datasets.push({ label: comp, borderColor: COLORS[i % COLORS.length], borderWidth: 1.5, pointRadius: 3, tension: 0.3, data: dates.map(d => {
+          const point = (data.history[d] || {})[comp];
+          return point == null ? null : point;
+        }) });
       });
       new Chart(ctx, {
         type: 'line', data: { labels: dates, datasets },
@@ -1202,7 +1205,10 @@
       }];
       topLocs.forEach((loc, i) => {
         const isMaine = loc === maineName;
-        datasets.push({ label: loc, borderColor: isMaine ? '#38bdf8' : COLORS[(i+1) % COLORS.length], borderWidth: isMaine ? 2.5 : 1.5, borderDash: isMaine ? [] : [4, 2], pointRadius: 3, tension: 0.3, data: dates.map(d => (f.history[d] || {})[loc] || 0) });
+        datasets.push({ label: loc, borderColor: isMaine ? '#38bdf8' : COLORS[(i+1) % COLORS.length], borderWidth: isMaine ? 2.5 : 1.5, borderDash: isMaine ? [] : [4, 2], pointRadius: 3, tension: 0.3, data: dates.map(d => {
+          const point = (f.history[d] || {})[loc];
+          return point == null ? null : point;
+        }) });
       });
       new Chart(ctx, {
         type: 'line', data: { labels: dates, datasets },
@@ -1648,15 +1654,14 @@
       // Build week-by-week data
       const rows = [];
       let prevCount = null;
-      let totalGained = 0, totalLost = 0;
 
       dates.forEach(date => {
-        const count = (history[date] || {})[name] || 0;
+        const dayHistory = history[date] || {};
+        if (!(name in dayHistory)) return;
+        const count = dayHistory[name] || 0;
         const churn = (churnData[name] || {})[date] || { gained: 0, lost: 0 };
         const gained = churn.gained;
         const lost = churn.lost;
-        totalGained += gained;
-        totalLost += lost;
 
         const netChange = prevCount != null ? count - prevCount : null;
         rows.push({ date, count, gained, lost, netChange });
@@ -1668,6 +1673,8 @@
         ...r,
         netChange: idx === 0 ? null : r.count - displayRowsRaw[idx - 1].count,
       }));
+      const totalGained = displayRows.reduce((sum, row) => sum + row.gained, 0);
+      const totalLost = displayRows.reduce((sum, row) => sum + row.lost, 0);
       const latest = displayRows[displayRows.length - 1]?.count || 0;
       const first = displayRows[0]?.count || 0;
       const allTimeNet = latest - first;
