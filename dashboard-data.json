@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-06",
-  "total_properties": 1252,
+  "generated": "2026-05-15",
+  "total_properties": 1255,
   "total_competitors": 27,
   "current": [
     {
@@ -24,8 +24,8 @@
       "count": 83,
       "with_address": 82,
       "with_bedrooms": 83,
-      "total_bedrooms": 281,
-      "estimated_total_bedrooms": 281,
+      "total_bedrooms": 279,
+      "estimated_total_bedrooms": 279,
       "avg_bedrooms": 3.4,
       "cities": [
         "Kennebunk",
@@ -43,30 +43,16 @@
     {
       "competitor": "Maine Seaside Rentals",
       "platform": "maineseaside_custom",
-      "count": 79,
-      "with_address": 60,
+      "count": 78,
+      "with_address": 59,
       "with_bedrooms": 23,
       "total_bedrooms": 73,
-      "estimated_total_bedrooms": 251,
+      "estimated_total_bedrooms": 248,
       "avg_bedrooms": 3.2,
       "cities": [
         "#3 Biddeford Pool",
         "Biddeford",
         "Biddeford Biddeford Pool"
-      ],
-      "is_us": false
-    },
-    {
-      "competitor": "Ocean Park Realty",
-      "platform": "oceanpark_custom",
-      "count": 73,
-      "with_address": 56,
-      "with_bedrooms": 51,
-      "total_bedrooms": 162,
-      "estimated_total_bedrooms": 232,
-      "avg_bedrooms": 3.2,
-      "cities": [
-        "Old Orchard Beach"
       ],
       "is_us": false
     },
@@ -86,13 +72,27 @@
       "is_us": false
     },
     {
+      "competitor": "Ocean Park Realty",
+      "platform": "oceanpark_custom",
+      "count": 70,
+      "with_address": 55,
+      "with_bedrooms": 50,
+      "total_bedrooms": 158,
+      "estimated_total_bedrooms": 221,
+      "avg_bedrooms": 3.2,
+      "cities": [
+        "Old Orchard Beach"
+      ],
+      "is_us": false
+    },
+    {
       "competitor": "Evolve Vacation Rentals",
       "platform": "evolve",
       "count": 64,
       "with_address": 64,
-      "with_bedrooms": 49,
-      "total_bedrooms": 135,
-      "estimated_total_bedrooms": 176,
+      "with_bedrooms": 48,
+      "total_bedrooms": 133,
+      "estimated_total_bedrooms": 177,
       "avg_bedrooms": 2.8,
       "cities": [
         "Arundel",
@@ -116,9 +116,9 @@
       "count": 61,
       "with_address": 61,
       "with_bedrooms": 61,
-      "total_bedrooms": 192,
-      "estimated_total_bedrooms": 192,
-      "avg_bedrooms": 3.1,
+      "total_bedrooms": 194,
+      "estimated_total_bedrooms": 194,
+      "avg_bedrooms": 3.2,
       "cities": [
         "Kennebunk",
         "Ogunquit",
@@ -148,11 +148,11 @@
     {
       "competitor": "Bayley Vacation Rentals",
       "platform": "bayley_custom",
-      "count": 53,
-      "with_address": 53,
-      "with_bedrooms": 53,
-      "total_bedrooms": 176,
-      "estimated_total_bedrooms": 176,
+      "count": 54,
+      "with_address": 54,
+      "with_bedrooms": 54,
+      "total_bedrooms": 179,
+      "estimated_total_bedrooms": 179,
       "avg_bedrooms": 3.3,
       "cities": [
         "Kennebunk",
@@ -163,28 +163,13 @@
       "is_us": false
     },
     {
-      "competitor": "Tamarack Rentals",
-      "platform": "hostfully",
-      "count": 53,
-      "with_address": 53,
-      "with_bedrooms": 52,
-      "total_bedrooms": 156,
-      "estimated_total_bedrooms": 159,
-      "avg_bedrooms": 3.0,
-      "cities": [
-        "Old Orchard Beach",
-        "Saco"
-      ],
-      "is_us": false
-    },
-    {
       "competitor": "Jean Knapp Rentals",
       "platform": "jeanknapp_custom",
-      "count": 51,
-      "with_address": 51,
-      "with_bedrooms": 51,
-      "total_bedrooms": 144,
-      "estimated_total_bedrooms": 144,
+      "count": 54,
+      "with_address": 54,
+      "with_bedrooms": 54,
+      "total_bedrooms": 151,
+      "estimated_total_bedrooms": 151,
       "avg_bedrooms": 2.8,
       "cities": [
         "Ogunquit",
@@ -194,13 +179,28 @@
       "is_us": false
     },
     {
+      "competitor": "Tamarack Rentals",
+      "platform": "hostfully",
+      "count": 52,
+      "with_address": 52,
+      "with_bedrooms": 51,
+      "total_bedrooms": 155,
+      "estimated_total_bedrooms": 158,
+      "avg_bedrooms": 3.0,
+      "cities": [
+        "Old Orchard Beach",
+        "Saco"
+      ],
+      "is_us": false
+    },
+    {
       "competitor": "Anchor Real Estate Rentals",
       "platform": "lodgify",
-      "count": 50,
-      "with_address": 49,
-      "with_bedrooms": 49,
-      "total_bedrooms": 183,
-      "estimated_total_bedrooms": 187,
+      "count": 51,
+      "with_address": 50,
+      "with_bedrooms": 50,
+      "total_bedrooms": 187,
+      "estimated_total_bedrooms": 191,
       "avg_bedrooms": 3.7,
       "cities": [
         "Kittery",
@@ -213,11 +213,11 @@
     {
       "competitor": "Coastline Vacation Rentals",
       "platform": "ownerrez",
-      "count": 49,
-      "with_address": 49,
+      "count": 50,
+      "with_address": 50,
       "with_bedrooms": 49,
       "total_bedrooms": 158,
-      "estimated_total_bedrooms": 158,
+      "estimated_total_bedrooms": 161,
       "avg_bedrooms": 3.2,
       "cities": [
         "Biddeford",
@@ -273,10 +273,10 @@
       "platform": "kma_custom",
       "count": 41,
       "with_address": 41,
-      "with_bedrooms": 37,
-      "total_bedrooms": 99,
-      "estimated_total_bedrooms": 110,
-      "avg_bedrooms": 2.7,
+      "with_bedrooms": 38,
+      "total_bedrooms": 100,
+      "estimated_total_bedrooms": 108,
+      "avg_bedrooms": 2.6,
       "cities": [
         "Acton",
         "Alfred",
@@ -311,6 +311,23 @@
       "is_us": false
     },
     {
+      "competitor": "Coastal Getaways",
+      "platform": "hostfully",
+      "count": 31,
+      "with_address": 31,
+      "with_bedrooms": 25,
+      "total_bedrooms": 76,
+      "estimated_total_bedrooms": 94,
+      "avg_bedrooms": 3.0,
+      "cities": [
+        "Kennebunk",
+        "Ogunquit",
+        "Wells",
+        "York"
+      ],
+      "is_us": false
+    },
+    {
       "competitor": "Seagrass Property Rentals",
       "platform": "seagrass_custom",
       "count": 31,
@@ -324,23 +341,6 @@
         "Kennebunk",
         "Kennebunkport",
         "Wells"
-      ],
-      "is_us": false
-    },
-    {
-      "competitor": "Coastal Getaways",
-      "platform": "hostfully",
-      "count": 30,
-      "with_address": 30,
-      "with_bedrooms": 24,
-      "total_bedrooms": 74,
-      "estimated_total_bedrooms": 92,
-      "avg_bedrooms": 3.1,
-      "cities": [
-        "Kennebunk",
-        "Ogunquit",
-        "Wells",
-        "York"
       ],
       "is_us": false
     },
@@ -406,9 +406,9 @@
       "count": 25,
       "with_address": 25,
       "with_bedrooms": 25,
-      "total_bedrooms": 75,
-      "estimated_total_bedrooms": 75,
-      "avg_bedrooms": 3.0,
+      "total_bedrooms": 73,
+      "estimated_total_bedrooms": 73,
+      "avg_bedrooms": 2.9,
       "cities": [
         "Saco"
       ],
@@ -417,12 +417,12 @@
     {
       "competitor": "Maine Street Property Management",
       "platform": "hostaway",
-      "count": 23,
-      "with_address": 23,
-      "with_bedrooms": 23,
-      "total_bedrooms": 102,
-      "estimated_total_bedrooms": 102,
-      "avg_bedrooms": 4.4,
+      "count": 24,
+      "with_address": 24,
+      "with_bedrooms": 24,
+      "total_bedrooms": 112,
+      "estimated_total_bedrooms": 112,
+      "avg_bedrooms": 4.7,
       "cities": [
         "Ogunquit",
         "Wells",
@@ -465,9 +465,9 @@
       "count": 20,
       "with_address": 19,
       "with_bedrooms": 20,
-      "total_bedrooms": 48,
-      "estimated_total_bedrooms": 48,
-      "avg_bedrooms": 2.4,
+      "total_bedrooms": 49,
+      "estimated_total_bedrooms": 49,
+      "avg_bedrooms": 2.5,
       "cities": [
         "Ogunquit",
         "Wells",
@@ -709,70 +709,97 @@
       "TopHost Vacation Rentals": 28,
       "Vacasa": 83,
       "Grand Welcome (Our Company)": 42
+    },
+    "2026-05-15": {
+      "Anchor Real Estate Rentals": 51,
+      "Bayley Vacation Rentals": 54,
+      "Coastal Getaways": 31,
+      "Coastline Vacation Rentals": 50,
+      "Evolve Vacation Rentals": 64,
+      "Garnsey Brothers": 89,
+      "Goose Rocks Beach Rentals": 47,
+      "Jean Knapp Rentals": 54,
+      "KMA Property Group": 41,
+      "KPort Concierge": 55,
+      "Kennebunk Beach Realty": 20,
+      "Maine Seaside Rentals": 78,
+      "Maine Street Property Management": 24,
+      "Ocean Dreams Maine": 20,
+      "Ocean Park Realty": 70,
+      "Ogunquit Rental Properties": 36,
+      "Saco Bay Rentals": 25,
+      "Salt & Shine Vacation Rentals": 61,
+      "Sand Dollar Real Estate": 72,
+      "Seagrass Property Rentals": 31,
+      "Seashore Property Management": 23,
+      "Tamarack Rentals": 52,
+      "TopHost Vacation Rentals": 28,
+      "Vacasa": 83,
+      "Grand Welcome (Our Company)": 42
     }
   },
   "trends": {
-    "latest_date": "2026-05-04",
+    "latest_date": "2026-05-15",
     "comparison_dates": {
-      "week_ago": "2026-04-13",
-      "month_ago": "2026-03-22",
+      "week_ago": "2026-05-04",
+      "month_ago": "2026-04-08",
       "first": "2026-03-18"
     },
     "entities": {
       "Anchor Real Estate Rentals": {
-        "current": 50,
-        "wow_prev": 48,
-        "wow_change": 2,
-        "wow_pct": 4.2,
+        "current": 51,
+        "wow_prev": 50,
+        "wow_change": 1,
+        "wow_pct": 2.0,
         "mom_prev": 48,
-        "mom_change": 2,
-        "mom_pct": 4.2,
+        "mom_change": 3,
+        "mom_pct": 6.2,
         "first_date": "2026-03-18",
         "first": 47,
-        "all_time_change": 3,
-        "all_time_pct": 6.4,
+        "all_time_change": 4,
+        "all_time_pct": 8.5,
         "trend": "growing"
       },
       "Bayley Vacation Rentals": {
-        "current": 53,
+        "current": 54,
         "wow_prev": 53,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_change": 1,
+        "wow_pct": 1.9,
         "mom_prev": 53,
-        "mom_change": 0,
-        "mom_pct": 0.0,
+        "mom_change": 1,
+        "mom_pct": 1.9,
         "first_date": "2026-03-18",
         "first": 53,
-        "all_time_change": 0,
-        "all_time_pct": 0.0,
-        "trend": "stable"
+        "all_time_change": 1,
+        "all_time_pct": 1.9,
+        "trend": "growing"
       },
       "Coastal Getaways": {
-        "current": 30,
-        "wow_prev": 28,
-        "wow_change": 2,
-        "wow_pct": 7.1,
+        "current": 31,
+        "wow_prev": 30,
+        "wow_change": 1,
+        "wow_pct": 3.3,
         "mom_prev": 28,
-        "mom_change": 2,
-        "mom_pct": 7.1,
+        "mom_change": 3,
+        "mom_pct": 10.7,
         "first_date": "2026-03-18",
         "first": 28,
-        "all_time_change": 2,
-        "all_time_pct": 7.1,
+        "all_time_change": 3,
+        "all_time_pct": 10.7,
         "trend": "growing"
       },
       "Coastline Vacation Rentals": {
-        "current": 49,
-        "wow_prev": 48,
+        "current": 50,
+        "wow_prev": 49,
         "wow_change": 1,
-        "wow_pct": 2.1,
+        "wow_pct": 2.0,
         "mom_prev": 52,
-        "mom_change": -3,
-        "mom_pct": -5.8,
+        "mom_change": -2,
+        "mom_pct": -3.8,
         "first_date": "2026-03-18",
         "first": 49,
-        "all_time_change": 0,
-        "all_time_pct": 0.0,
+        "all_time_change": 1,
+        "all_time_pct": 2.0,
         "trend": "declining"
       },
       "Garnsey Brothers": {
@@ -790,17 +817,17 @@
         "trend": "stable"
       },
       "Jean Knapp Rentals": {
-        "current": 51,
-        "wow_prev": 50,
-        "wow_change": 1,
-        "wow_pct": 2.0,
+        "current": 54,
+        "wow_prev": 51,
+        "wow_change": 3,
+        "wow_pct": 5.9,
         "mom_prev": 47,
-        "mom_change": 4,
-        "mom_pct": 8.5,
+        "mom_change": 7,
+        "mom_pct": 14.9,
         "first_date": "2026-03-18",
         "first": 46,
-        "all_time_change": 5,
-        "all_time_pct": 10.9,
+        "all_time_change": 8,
+        "all_time_pct": 17.4,
         "trend": "growing"
       },
       "KPort Concierge": {
@@ -832,31 +859,31 @@
         "trend": "growing"
       },
       "Maine Seaside Rentals": {
-        "current": 79,
+        "current": 78,
         "wow_prev": 79,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_change": -1,
+        "wow_pct": -1.3,
         "mom_prev": 77,
-        "mom_change": 2,
-        "mom_pct": 2.6,
+        "mom_change": 1,
+        "mom_pct": 1.3,
         "first_date": "2026-03-18",
         "first": 77,
-        "all_time_change": 2,
-        "all_time_pct": 2.6,
+        "all_time_change": 1,
+        "all_time_pct": 1.3,
         "trend": "growing"
       },
       "Maine Street Property Management": {
-        "current": 23,
+        "current": 24,
         "wow_prev": 23,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_change": 1,
+        "wow_pct": 4.3,
         "mom_prev": 22,
-        "mom_change": 1,
-        "mom_pct": 4.5,
+        "mom_change": 2,
+        "mom_pct": 9.1,
         "first_date": "2026-03-18",
         "first": 22,
-        "all_time_change": 1,
-        "all_time_pct": 4.5,
+        "all_time_change": 2,
+        "all_time_pct": 9.1,
         "trend": "growing"
       },
       "Ocean Dreams Maine": {
@@ -944,24 +971,24 @@
         "trend": "declining"
       },
       "Tamarack Rentals": {
-        "current": 53,
-        "wow_prev": 52,
-        "wow_change": 1,
-        "wow_pct": 1.9,
+        "current": 52,
+        "wow_prev": 53,
+        "wow_change": -1,
+        "wow_pct": -1.9,
         "mom_prev": 52,
-        "mom_change": 1,
-        "mom_pct": 1.9,
+        "mom_change": 0,
+        "mom_pct": 0.0,
         "first_date": "2026-03-18",
         "first": 52,
-        "all_time_change": 1,
-        "all_time_pct": 1.9,
-        "trend": "growing"
+        "all_time_change": 0,
+        "all_time_pct": 0.0,
+        "trend": "stable"
       },
       "Vacasa": {
         "current": 83,
-        "wow_prev": 86,
-        "wow_change": -3,
-        "wow_pct": -3.5,
+        "wow_prev": 83,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 88,
         "mom_change": -5,
         "mom_pct": -5.7,
@@ -973,9 +1000,9 @@
       },
       "Evolve Vacation Rentals": {
         "current": 64,
-        "wow_prev": 66,
-        "wow_change": -2,
-        "wow_pct": -3.0,
+        "wow_prev": 64,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 69,
         "mom_change": -5,
         "mom_pct": -7.2,
@@ -1060,9 +1087,9 @@
         "wow_prev": 41,
         "wow_change": 0,
         "wow_pct": 0.0,
-        "mom_prev": null,
-        "mom_change": null,
-        "mom_pct": null,
+        "mom_prev": 40,
+        "mom_change": 1,
+        "mom_pct": 2.5,
         "first_date": "2026-04-08",
         "first": 40,
         "all_time_change": 1,
@@ -1074,9 +1101,9 @@
         "wow_prev": 28,
         "wow_change": 0,
         "wow_pct": 0.0,
-        "mom_prev": null,
-        "mom_change": null,
-        "mom_pct": null,
+        "mom_prev": 28,
+        "mom_change": 0,
+        "mom_pct": 0.0,
         "first_date": "2026-04-08",
         "first": 28,
         "all_time_change": 0,
@@ -1084,79 +1111,79 @@
         "trend": "stable"
       },
       "Ocean Park Realty": {
-        "current": 73,
-        "wow_prev": null,
-        "wow_change": null,
-        "wow_pct": null,
+        "current": 70,
+        "wow_prev": 73,
+        "wow_change": -3,
+        "wow_pct": -4.1,
         "mom_prev": null,
         "mom_change": null,
         "mom_pct": null,
         "first_date": "2026-04-26",
         "first": 74,
-        "all_time_change": -1,
-        "all_time_pct": -1.4,
+        "all_time_change": -4,
+        "all_time_pct": -5.4,
         "trend": "declining"
       }
     },
     "growing": [
       {
         "name": "Jean Knapp Rentals",
-        "current": 51,
-        "wow_prev": 50,
-        "wow_change": 1,
-        "wow_pct": 2.0,
+        "current": 54,
+        "wow_prev": 51,
+        "wow_change": 3,
+        "wow_pct": 5.9,
         "mom_prev": 47,
-        "mom_change": 4,
-        "mom_pct": 8.5,
+        "mom_change": 7,
+        "mom_pct": 14.9,
         "first_date": "2026-03-18",
         "first": 46,
-        "all_time_change": 5,
-        "all_time_pct": 10.9,
+        "all_time_change": 8,
+        "all_time_pct": 17.4,
         "trend": "growing"
       },
       {
         "name": "Anchor Real Estate Rentals",
-        "current": 50,
-        "wow_prev": 48,
-        "wow_change": 2,
-        "wow_pct": 4.2,
+        "current": 51,
+        "wow_prev": 50,
+        "wow_change": 1,
+        "wow_pct": 2.0,
         "mom_prev": 48,
-        "mom_change": 2,
-        "mom_pct": 4.2,
+        "mom_change": 3,
+        "mom_pct": 6.2,
         "first_date": "2026-03-18",
         "first": 47,
-        "all_time_change": 3,
-        "all_time_pct": 6.4,
+        "all_time_change": 4,
+        "all_time_pct": 8.5,
         "trend": "growing"
       },
       {
         "name": "Coastal Getaways",
-        "current": 30,
-        "wow_prev": 28,
-        "wow_change": 2,
-        "wow_pct": 7.1,
+        "current": 31,
+        "wow_prev": 30,
+        "wow_change": 1,
+        "wow_pct": 3.3,
         "mom_prev": 28,
-        "mom_change": 2,
-        "mom_pct": 7.1,
+        "mom_change": 3,
+        "mom_pct": 10.7,
         "first_date": "2026-03-18",
         "first": 28,
-        "all_time_change": 2,
-        "all_time_pct": 7.1,
+        "all_time_change": 3,
+        "all_time_pct": 10.7,
         "trend": "growing"
       },
       {
-        "name": "Maine Seaside Rentals",
-        "current": 79,
-        "wow_prev": 79,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 77,
+        "name": "Maine Street Property Management",
+        "current": 24,
+        "wow_prev": 23,
+        "wow_change": 1,
+        "wow_pct": 4.3,
+        "mom_prev": 22,
         "mom_change": 2,
-        "mom_pct": 2.6,
+        "mom_pct": 9.1,
         "first_date": "2026-03-18",
-        "first": 77,
+        "first": 22,
         "all_time_change": 2,
-        "all_time_pct": 2.6,
+        "all_time_pct": 9.1,
         "trend": "growing"
       },
       {
@@ -1172,6 +1199,21 @@
         "first": 40,
         "all_time_change": 2,
         "all_time_pct": 5.0,
+        "trend": "growing"
+      },
+      {
+        "name": "Bayley Vacation Rentals",
+        "current": 54,
+        "wow_prev": 53,
+        "wow_change": 1,
+        "wow_pct": 1.9,
+        "mom_prev": 53,
+        "mom_change": 1,
+        "mom_pct": 1.9,
+        "first_date": "2026-03-18",
+        "first": 53,
+        "all_time_change": 1,
+        "all_time_pct": 1.9,
         "trend": "growing"
       },
       {
@@ -1205,33 +1247,18 @@
         "trend": "growing"
       },
       {
-        "name": "Maine Street Property Management",
-        "current": 23,
-        "wow_prev": 23,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 22,
+        "name": "Maine Seaside Rentals",
+        "current": 78,
+        "wow_prev": 79,
+        "wow_change": -1,
+        "wow_pct": -1.3,
+        "mom_prev": 77,
         "mom_change": 1,
-        "mom_pct": 4.5,
+        "mom_pct": 1.3,
         "first_date": "2026-03-18",
-        "first": 22,
+        "first": 77,
         "all_time_change": 1,
-        "all_time_pct": 4.5,
-        "trend": "growing"
-      },
-      {
-        "name": "Tamarack Rentals",
-        "current": 53,
-        "wow_prev": 52,
-        "wow_change": 1,
-        "wow_pct": 1.9,
-        "mom_prev": 52,
-        "mom_change": 1,
-        "mom_pct": 1.9,
-        "first_date": "2026-03-18",
-        "first": 52,
-        "all_time_change": 1,
-        "all_time_pct": 1.9,
+        "all_time_pct": 1.3,
         "trend": "growing"
       },
       {
@@ -1240,9 +1267,9 @@
         "wow_prev": 41,
         "wow_change": 0,
         "wow_pct": 0.0,
-        "mom_prev": null,
-        "mom_change": null,
-        "mom_pct": null,
+        "mom_prev": 40,
+        "mom_change": 1,
+        "mom_pct": 2.5,
         "first_date": "2026-04-08",
         "first": 40,
         "all_time_change": 1,
@@ -1254,9 +1281,9 @@
       {
         "name": "Vacasa",
         "current": 83,
-        "wow_prev": 86,
-        "wow_change": -3,
-        "wow_pct": -3.5,
+        "wow_prev": 83,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 88,
         "mom_change": -5,
         "mom_pct": -5.7,
@@ -1269,9 +1296,9 @@
       {
         "name": "Evolve Vacation Rentals",
         "current": 64,
-        "wow_prev": 66,
-        "wow_change": -2,
-        "wow_pct": -3.0,
+        "wow_prev": 64,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 69,
         "mom_change": -5,
         "mom_pct": -7.2,
@@ -1282,18 +1309,33 @@
         "trend": "declining"
       },
       {
+        "name": "Ocean Park Realty",
+        "current": 70,
+        "wow_prev": 73,
+        "wow_change": -3,
+        "wow_pct": -4.1,
+        "mom_prev": null,
+        "mom_change": null,
+        "mom_pct": null,
+        "first_date": "2026-04-26",
+        "first": 74,
+        "all_time_change": -4,
+        "all_time_pct": -5.4,
+        "trend": "declining"
+      },
+      {
         "name": "Coastline Vacation Rentals",
-        "current": 49,
-        "wow_prev": 48,
+        "current": 50,
+        "wow_prev": 49,
         "wow_change": 1,
-        "wow_pct": 2.1,
+        "wow_pct": 2.0,
         "mom_prev": 52,
-        "mom_change": -3,
-        "mom_pct": -5.8,
+        "mom_change": -2,
+        "mom_pct": -3.8,
         "first_date": "2026-03-18",
         "first": 49,
-        "all_time_change": 0,
-        "all_time_pct": 0.0,
+        "all_time_change": 1,
+        "all_time_pct": 2.0,
         "trend": "declining"
       },
       {
@@ -1310,39 +1352,9 @@
         "all_time_change": -2,
         "all_time_pct": -8.0,
         "trend": "declining"
-      },
-      {
-        "name": "Ocean Park Realty",
-        "current": 73,
-        "wow_prev": null,
-        "wow_change": null,
-        "wow_pct": null,
-        "mom_prev": null,
-        "mom_change": null,
-        "mom_pct": null,
-        "first_date": "2026-04-26",
-        "first": 74,
-        "all_time_change": -1,
-        "all_time_pct": -1.4,
-        "trend": "declining"
       }
     ],
     "stable": [
-      {
-        "name": "Bayley Vacation Rentals",
-        "current": 53,
-        "wow_prev": 53,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 53,
-        "mom_change": 0,
-        "mom_pct": 0.0,
-        "first_date": "2026-03-18",
-        "first": 53,
-        "all_time_change": 0,
-        "all_time_pct": 0.0,
-        "trend": "stable"
-      },
       {
         "name": "Garnsey Brothers",
         "current": 89,
@@ -1434,6 +1446,21 @@
         "trend": "stable"
       },
       {
+        "name": "Tamarack Rentals",
+        "current": 52,
+        "wow_prev": 53,
+        "wow_change": -1,
+        "wow_pct": -1.9,
+        "mom_prev": 52,
+        "mom_change": 0,
+        "mom_pct": 0.0,
+        "first_date": "2026-03-18",
+        "first": 52,
+        "all_time_change": 0,
+        "all_time_pct": 0.0,
+        "trend": "stable"
+      },
+      {
         "name": "Goose Rocks Beach Rentals",
         "current": 47,
         "wow_prev": 47,
@@ -1499,9 +1526,9 @@
         "wow_prev": 28,
         "wow_change": 0,
         "wow_pct": 0.0,
-        "mom_prev": null,
-        "mom_change": null,
-        "mom_pct": null,
+        "mom_prev": 28,
+        "mom_change": 0,
+        "mom_pct": 0.0,
         "first_date": "2026-04-08",
         "first": 28,
         "all_time_change": 0,
@@ -1532,24 +1559,14 @@
       "gross_lost": 8
     },
     "Maine Seaside Rentals": {
-      "score": 84,
+      "score": 81,
       "rating": "strong",
       "size_score": 95,
-      "trend_score": 72.6,
-      "stability_score": 87.5,
-      "churn_rate": 2.5,
+      "trend_score": 71.3,
+      "stability_score": 81.0,
+      "churn_rate": 3.8,
       "gross_gained": 2,
-      "gross_lost": 0
-    },
-    "Ocean Park Realty": {
-      "score": 63,
-      "rating": "stable",
-      "size_score": 93,
-      "trend_score": 28.6,
-      "stability_score": 79.5,
-      "churn_rate": 4.1,
-      "gross_gained": 1,
-      "gross_lost": 2
+      "gross_lost": 1
     },
     "Sand Dollar Real Estate": {
       "score": 78,
@@ -1561,15 +1578,25 @@
       "gross_gained": 0,
       "gross_lost": 0
     },
-    "Evolve Vacation Rentals": {
-      "score": 50,
+    "Ocean Park Realty": {
+      "score": 55,
       "rating": "stable",
+      "size_score": 92,
+      "trend_score": 24.6,
+      "stability_score": 57.0,
+      "churn_rate": 8.6,
+      "gross_gained": 1,
+      "gross_lost": 5
+    },
+    "Evolve Vacation Rentals": {
+      "score": 45,
+      "rating": "watch",
       "size_score": 90,
       "trend_score": 22.8,
-      "stability_score": 45.5,
-      "churn_rate": 10.9,
-      "gross_gained": 1,
-      "gross_lost": 6
+      "stability_score": 29.5,
+      "churn_rate": 14.1,
+      "gross_gained": 2,
+      "gross_lost": 7
     },
     "Salt & Shine Vacation Rentals": {
       "score": 77,
@@ -1592,19 +1619,9 @@
       "gross_lost": 1
     },
     "Bayley Vacation Rentals": {
-      "score": 76,
-      "rating": "strong",
-      "size_score": 86,
-      "trend_score": 50,
-      "stability_score": 100.0,
-      "churn_rate": 0.0,
-      "gross_gained": 0,
-      "gross_lost": 0
-    },
-    "Tamarack Rentals": {
       "score": 82,
       "rating": "strong",
-      "size_score": 86,
+      "size_score": 87,
       "trend_score": 71.9,
       "stability_score": 90.5,
       "churn_rate": 1.9,
@@ -1612,33 +1629,43 @@
       "gross_lost": 0
     },
     "Jean Knapp Rentals": {
-      "score": 76,
-      "rating": "strong",
-      "size_score": 85,
-      "trend_score": 80.9,
-      "stability_score": 61.0,
-      "churn_rate": 7.8,
-      "gross_gained": 4,
+      "score": 72,
+      "rating": "stable",
+      "size_score": 87,
+      "trend_score": 87.4,
+      "stability_score": 35.0,
+      "churn_rate": 13.0,
+      "gross_gained": 7,
       "gross_lost": 0
     },
+    "Tamarack Rentals": {
+      "score": 70,
+      "rating": "stable",
+      "size_score": 86,
+      "trend_score": 50,
+      "stability_score": 81.0,
+      "churn_rate": 3.8,
+      "gross_gained": 1,
+      "gross_lost": 1
+    },
     "Anchor Real Estate Rentals": {
-      "score": 71,
+      "score": 69,
       "rating": "stable",
       "size_score": 85,
-      "trend_score": 76.4,
-      "stability_score": 50.0,
-      "churn_rate": 10.0,
-      "gross_gained": 4,
+      "trend_score": 78.5,
+      "stability_score": 41.0,
+      "churn_rate": 11.8,
+      "gross_gained": 5,
       "gross_lost": 1
     },
     "Coastline Vacation Rentals": {
-      "score": 68,
+      "score": 64,
       "rating": "stable",
       "size_score": 85,
-      "trend_score": 30,
-      "stability_score": 100.0,
-      "churn_rate": 0.0,
-      "gross_gained": 0,
+      "trend_score": 28.0,
+      "stability_score": 90.0,
+      "churn_rate": 2.0,
+      "gross_gained": 1,
       "gross_lost": 0
     },
     "Goose Rocks Beach Rentals": {
@@ -1681,6 +1708,16 @@
       "gross_gained": 0,
       "gross_lost": 0
     },
+    "Coastal Getaways": {
+      "score": 70,
+      "rating": "stable",
+      "size_score": 75,
+      "trend_score": 80.7,
+      "stability_score": 51.5,
+      "churn_rate": 9.7,
+      "gross_gained": 3,
+      "gross_lost": 0
+    },
     "Seagrass Property Rentals": {
       "score": 72,
       "rating": "stable",
@@ -1689,16 +1726,6 @@
       "stability_score": 100.0,
       "churn_rate": 0.0,
       "gross_gained": 0,
-      "gross_lost": 0
-    },
-    "Coastal Getaways": {
-      "score": 73,
-      "rating": "stable",
-      "size_score": 74,
-      "trend_score": 77.1,
-      "stability_score": 66.5,
-      "churn_rate": 6.7,
-      "gross_gained": 2,
       "gross_lost": 0
     },
     "KPT Luxury Properties": {
@@ -1732,23 +1759,23 @@
       "gross_lost": 0
     },
     "Saco Bay Rentals": {
-      "score": 53,
-      "rating": "stable",
+      "score": 41,
+      "rating": "watch",
       "size_score": 70,
       "trend_score": 50,
-      "stability_score": 40.0,
-      "churn_rate": 12.0,
-      "gross_gained": 1,
-      "gross_lost": 2
+      "stability_score": 0,
+      "churn_rate": 20.0,
+      "gross_gained": 2,
+      "gross_lost": 3
     },
     "Maine Street Property Management": {
-      "score": 74,
+      "score": 70,
       "rating": "stable",
-      "size_score": 68,
-      "trend_score": 74.5,
-      "stability_score": 78.5,
-      "churn_rate": 4.3,
-      "gross_gained": 1,
+      "size_score": 69,
+      "trend_score": 79.1,
+      "stability_score": 58.5,
+      "churn_rate": 8.3,
+      "gross_gained": 2,
       "gross_lost": 0
     },
     "Seashore Property Management": {
@@ -1777,15 +1804,15 @@
       "size_score": 65,
       "trend_score": 50,
       "stability_score": 0,
-      "churn_rate": 60.0,
-      "gross_gained": 6,
-      "gross_lost": 6
+      "churn_rate": 70.0,
+      "gross_gained": 7,
+      "gross_lost": 7
     }
   },
   "towns": [
     {
       "town": "Wells",
-      "total": 183,
+      "total": 186,
       "competitor_count": 14,
       "top_competitor": "Garnsey Brothers",
       "top_competitor_count": 87,
@@ -1793,37 +1820,42 @@
         {
           "name": "Garnsey Brothers",
           "count": 87,
-          "share": 47.5
+          "share": 46.8
         },
         {
           "name": "Ocean Dreams Maine",
           "count": 17,
-          "share": 9.3
+          "share": 9.1
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 15,
-          "share": 8.2
+          "share": 8.1
         },
         {
           "name": "Salt & Shine Vacation Rentals",
           "count": 10,
-          "share": 5.5
+          "share": 5.4
         },
         {
           "name": "Anchor Real Estate Rentals",
           "count": 9,
-          "share": 4.9
+          "share": 4.8
         },
         {
           "name": "Coastline Vacation Rentals",
           "count": 8,
-          "share": 4.4
+          "share": 4.3
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 8,
-          "share": 4.4
+          "share": 4.3
+        },
+        {
+          "name": "Jean Knapp Rentals",
+          "count": 8,
+          "share": 4.3
         },
         {
           "name": "Maine Street Property Management",
@@ -1836,19 +1868,14 @@
           "share": 3.8
         },
         {
-          "name": "Jean Knapp Rentals",
-          "count": 6,
-          "share": 3.3
-        },
-        {
           "name": "KMA Property Group",
           "count": 6,
-          "share": 3.3
+          "share": 3.2
         },
         {
           "name": "Coastal Getaways",
-          "count": 1,
-          "share": 0.5
+          "count": 2,
+          "share": 1.1
         },
         {
           "name": "Seagrass Property Rentals",
@@ -1928,40 +1955,40 @@
     },
     {
       "town": "Old Orchard Beach",
-      "total": 160,
+      "total": 159,
       "competitor_count": 7,
       "top_competitor": "Ocean Park Realty",
-      "top_competitor_count": 73,
+      "top_competitor_count": 70,
       "competitors": [
         {
           "name": "Ocean Park Realty",
-          "count": 73,
-          "share": 45.6
+          "count": 70,
+          "share": 44.0
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 25,
+          "share": 15.7
         },
         {
           "name": "Tamarack Rentals",
           "count": 25,
-          "share": 15.6
-        },
-        {
-          "name": "Evolve Vacation Rentals",
-          "count": 24,
-          "share": 15.0
+          "share": 15.7
         },
         {
           "name": "Seashore Property Management",
           "count": 23,
-          "share": 14.4
+          "share": 14.5
+        },
+        {
+          "name": "Bayley Vacation Rentals",
+          "count": 6,
+          "share": 3.8
         },
         {
           "name": "Vacasa",
           "count": 6,
           "share": 3.8
-        },
-        {
-          "name": "Bayley Vacation Rentals",
-          "count": 5,
-          "share": 3.1
         },
         {
           "name": "Grand Welcome (Our Company)",
@@ -1972,7 +1999,7 @@
     },
     {
       "town": "York",
-      "total": 138,
+      "total": 139,
       "competitor_count": 11,
       "top_competitor": "Salt & Shine Vacation Rentals",
       "top_competitor_count": 49,
@@ -1980,22 +2007,22 @@
         {
           "name": "Salt & Shine Vacation Rentals",
           "count": 49,
-          "share": 35.5
+          "share": 35.3
         },
         {
           "name": "Anchor Real Estate Rentals",
-          "count": 25,
-          "share": 18.1
+          "count": 26,
+          "share": 18.7
         },
         {
           "name": "Coastal Getaways",
           "count": 25,
-          "share": 18.1
+          "share": 18.0
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 11,
-          "share": 8.0
+          "share": 7.9
         },
         {
           "name": "KMA Property Group",
@@ -2036,40 +2063,40 @@
     },
     {
       "town": "Kennebunk",
-      "total": 132,
+      "total": 133,
       "competitor_count": 13,
       "top_competitor": "Coastline Vacation Rentals",
-      "top_competitor_count": 22,
+      "top_competitor_count": 23,
       "competitors": [
         {
           "name": "Coastline Vacation Rentals",
-          "count": 22,
-          "share": 16.7
+          "count": 23,
+          "share": 17.3
         },
         {
           "name": "Goose Rocks Beach Rentals",
           "count": 19,
-          "share": 14.4
+          "share": 14.3
         },
         {
           "name": "Seagrass Property Rentals",
           "count": 18,
-          "share": 13.6
+          "share": 13.5
         },
         {
           "name": "KPort Concierge",
           "count": 17,
-          "share": 12.9
+          "share": 12.8
         },
         {
           "name": "Kennebunk Beach Realty",
           "count": 17,
-          "share": 12.9
+          "share": 12.8
         },
         {
           "name": "KPT Luxury Properties",
           "count": 16,
-          "share": 12.1
+          "share": 12.0
         },
         {
           "name": "Evolve Vacation Rentals",
@@ -2110,30 +2137,30 @@
     },
     {
       "town": "Ogunquit",
-      "total": 127,
+      "total": 129,
       "competitor_count": 13,
       "top_competitor": "Jean Knapp Rentals",
-      "top_competitor_count": 40,
+      "top_competitor_count": 41,
       "competitors": [
         {
           "name": "Jean Knapp Rentals",
-          "count": 40,
-          "share": 31.5
+          "count": 41,
+          "share": 31.8
         },
         {
           "name": "Ogunquit Rental Properties",
           "count": 36,
-          "share": 28.3
+          "share": 27.9
         },
         {
           "name": "Anchor Real Estate Rentals",
           "count": 14,
-          "share": 11.0
+          "share": 10.9
         },
         {
           "name": "Maine Street Property Management",
-          "count": 10,
-          "share": 7.9
+          "count": 11,
+          "share": 8.5
         },
         {
           "name": "Grand Welcome (Our Company)",
@@ -2158,7 +2185,7 @@
         {
           "name": "Evolve Vacation Rentals",
           "count": 3,
-          "share": 2.4
+          "share": 2.3
         },
         {
           "name": "Coastal Getaways",
@@ -2184,64 +2211,64 @@
     },
     {
       "town": "Saco",
-      "total": 79,
+      "total": 77,
       "competitor_count": 7,
       "top_competitor": "Tamarack Rentals",
-      "top_competitor_count": 28,
+      "top_competitor_count": 27,
       "competitors": [
         {
           "name": "Tamarack Rentals",
-          "count": 28,
-          "share": 35.4
+          "count": 27,
+          "share": 35.1
         },
         {
           "name": "Saco Bay Rentals",
           "count": 25,
-          "share": 31.6
+          "share": 32.5
         },
         {
           "name": "Vacasa",
           "count": 14,
-          "share": 17.7
+          "share": 18.2
         },
         {
           "name": "Bayley Vacation Rentals",
           "count": 3,
-          "share": 3.8
-        },
-        {
-          "name": "Evolve Vacation Rentals",
-          "count": 3,
-          "share": 3.8
+          "share": 3.9
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 3,
-          "share": 3.8
+          "share": 3.9
         },
         {
           "name": "TopHost Vacation Rentals",
           "count": 3,
-          "share": 3.8
+          "share": 3.9
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 2,
+          "share": 2.6
         }
       ]
     },
     {
       "town": "Biddeford",
-      "total": 74,
+      "total": 73,
       "competitor_count": 6,
       "top_competitor": "Maine Seaside Rentals",
-      "top_competitor_count": 55,
+      "top_competitor_count": 54,
       "competitors": [
         {
           "name": "Maine Seaside Rentals",
-          "count": 55,
-          "share": 74.3
+          "count": 54,
+          "share": 74.0
         },
         {
           "name": "KPort Concierge",
           "count": 12,
-          "share": 16.2
+          "share": 16.4
         },
         {
           "name": "Coastline Vacation Rentals",
@@ -5147,6 +5174,357 @@
   },
   "listing_changes": {
     "dates": {
+      "2026-05-15": {
+        "gained": [
+          {
+            "id": 532,
+            "property_name": "Ideal Vacation Home in the Heart of York Harbor",
+            "url": "https://anchorrealestaterentals.com/en/ideal-vacation-home-in-the-heart-of-york-harbor",
+            "address": "7 Orchard Lane",
+            "city": "York",
+            "competitor": "Anchor Real Estate Rentals",
+            "platform": "lodgify",
+            "bedrooms": 4,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 540,
+            "property_name": "Dream House",
+            "url": "https://bayleyvacationrentals.com/property/dream-house/",
+            "address": "6 Myrtle Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Bayley Vacation Rentals",
+            "platform": "bayley_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 538,
+            "property_name": "Little Blue",
+            "url": "https://book.hostfully.com/coastal-getaways/property-details/f0ae88ca-77c7-4618-856d-64169c79a80d/Little%20Blue",
+            "address": "49 Chickadee Lane",
+            "city": "Wells",
+            "competitor": "Coastal Getaways",
+            "platform": "hostfully",
+            "bedrooms": 2,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 530,
+            "property_name": "31 Fairway Dr Kennebunk",
+            "url": "https://www.coastlinevacationrentals.com/31-fairway-dr-kennebunk-orp5b7637bx",
+            "address": "31 Fairway Dr",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": null,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 531,
+            "property_name": "Coastal Charm Steps from Kennebunk Beach & Tidal Marsh Views",
+            "url": "https://www.coastlinevacationrentals.com/coastal-charm-steps-from-kennebunk-beach-tidal-marsh-views-orp5b6c3b9x",
+            "address": "5 Boothby Road",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": 519,
+            "flagged_at": "2026-05-15T13:41:19Z",
+            "is_rename": true
+          },
+          {
+            "id": 541,
+            "property_name": "Steps to Sand! Oceanfront Gem in Old Orchard Beach",
+            "url": "https://evolve.com/vacation-rentals/us/me/old-orchard-beach/570423",
+            "address": "1 Walnut Street",
+            "city": "Old Orchard Beach",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": null,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 534,
+            "property_name": "2 Bedroom Oasis, Ogunquit ",
+            "url": "https://www.jeanknapp.com/vacation-rentals/rental/10israel/",
+            "address": "10 Israel Head Road",
+            "city": "Ogunquit",
+            "competitor": "Jean Knapp Rentals",
+            "platform": "jeanknapp_custom",
+            "bedrooms": 2,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 535,
+            "property_name": "Queens Way Retreat",
+            "url": "https://www.jeanknapp.com/vacation-rentals/rental/queensway/",
+            "address": "32 Queens Way",
+            "city": "Wells",
+            "competitor": "Jean Knapp Rentals",
+            "platform": "jeanknapp_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 536,
+            "property_name": "Sandy Heart: Holiday House M18 ",
+            "url": "https://www.jeanknapp.com/vacation-rentals/rental/holidayhouse/",
+            "address": "76 Post Road",
+            "city": "Wells",
+            "competitor": "Jean Knapp Rentals",
+            "platform": "jeanknapp_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 537,
+            "property_name": "The Estate at Pine Hill",
+            "url": "https://mainestreetpropertymanagement.com/hostaway-listing-details-page/?listingMapId=525622",
+            "address": "84 Pine Hill Rd N",
+            "city": "Ogunquit",
+            "competitor": "Maine Street Property Management",
+            "platform": "hostaway",
+            "bedrooms": 10,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 533,
+            "property_name": "Just Beachy  New Rental",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/6a0202215c3a420011470f4f",
+            "address": "35 Barefoot Cottage Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 2,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 539,
+            "property_name": "2BR condo is a 5-minute walk to Old Orchard Pier and amusements!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=188136",
+            "address": "11 Sunset Ave",
+            "city": "Saco",
+            "competitor": "Saco Bay Rentals",
+            "platform": "liverez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-15",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          }
+        ],
+        "lost": [
+          {
+            "id": 519,
+            "property_name": "Across from beach! Large Deck & Stunning views!",
+            "url": "https://www.coastlinevacationrentals.com/across-from-beach-large-deck-stunning-views-orp5b6c3b9x",
+            "address": "5 Boothby Road",
+            "city": "Kennebunk",
+            "competitor": "Coastline Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": 531,
+            "flagged_at": "2026-05-15T13:41:19Z",
+            "is_rename": true
+          },
+          {
+            "id": 523,
+            "property_name": "Coastal Retreat w/ Large Yard < 1 Mi to Dtwn Saco!",
+            "url": "https://evolve.com/vacation-rentals/us/me/saco/545712",
+            "address": "109 King Street",
+            "city": "Saco",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-19",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 522,
+            "property_name": "Annex Apartment",
+            "url": "https://www.maineseasiderentals.com/rental-listings/21/default/annex-apartment/",
+            "address": "5 Evans Rd.",
+            "city": "Biddeford Pool",
+            "competitor": "Maine Seaside Rentals",
+            "platform": "maineseaside_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 520,
+            "property_name": "Summer Breeze",
+            "url": "https://oceandreamsmaine.guestybookings.com/en/properties/672a7583ec93ca00b017200a",
+            "address": "76 Post Road",
+            "city": "Wells",
+            "competitor": "Ocean Dreams Maine",
+            "platform": "guesty",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 525,
+            "property_name": "42 Mass                    Ocean Park                         $1600 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=391233",
+            "address": null,
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 526,
+            "property_name": "35 Ancona                    Ocean Park                         $2200 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=391960",
+            "address": null,
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 527,
+            "property_name": "35 Randall Avenue                    Ocean Park                         $2350 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=393535",
+            "address": "35 Randall Ave",
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 528,
+            "property_name": "8 Casco Ave.                    Ocean Park                         $2950 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327894",
+            "address": "8 Casco Ave",
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 4,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 529,
+            "property_name": "10 Clover St.                    Ocean Park                         $1650 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327851",
+            "address": "10 Clover St",
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 524,
+            "property_name": "4 Bedroom cottage in Kinney Shores!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=196551",
+            "address": "11 Sunset Ave",
+            "city": "Saco",
+            "competitor": "Saco Bay Rentals",
+            "platform": "liverez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-04-12",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 521,
+            "property_name": "Kraines #2",
+            "url": "https://book.hostfully.com/tamarack-rentals/property-details/727a923e-7c9b-48eb-85e8-fa8961f58e93/Kraines%20#2",
+            "address": "219 Seaside Ave. #2",
+            "city": "Saco",
+            "competitor": "Tamarack Rentals",
+            "platform": "hostfully",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-04",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          }
+        ]
+      },
       "2026-05-04": {
         "gained": [
           {
@@ -5267,9 +5645,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 505,
+            "flagged_at": "2026-05-15T13:41:19Z",
+            "is_rename": true
           },
           {
             "id": 506,
@@ -5282,9 +5660,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-04-27",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 506,
+            "flagged_at": "2026-05-15T13:41:19Z",
+            "is_rename": true
           },
           {
             "id": 482,
@@ -7613,7 +7991,69 @@
       }
     },
     "by_competitor": {
+      "Anchor Real Estate Rentals": {
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-04-26": {
+          "gained": 2,
+          "lost": 0
+        },
+        "2026-04-12": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-03-21": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "Bayley Vacation Rentals": {
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "Coastal Getaways": {
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-04-26": {
+          "gained": 2,
+          "lost": 0
+        }
+      },
+      "Coastline Vacation Rentals": {
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "Evolve Vacation Rentals": {
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-05-04": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-04-26": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-04-12": {
+          "gained": 1,
+          "lost": 4
+        }
+      },
       "Jean Knapp Rentals": {
+        "2026-05-15": {
+          "gained": 3,
+          "lost": 0
+        },
         "2026-05-04": {
           "gained": 1,
           "lost": 0
@@ -7623,18 +8063,80 @@
           "lost": 0
         }
       },
-      "KPort Concierge": {
-        "2026-05-04": {
+      "Maine Street Property Management": {
+        "2026-05-15": {
           "gained": 1,
-          "lost": 1
+          "lost": 0
         },
         "2026-04-12": {
           "gained": 1,
           "lost": 0
         }
       },
-      "Tamarack Rentals": {
+      "Ocean Dreams Maine": {
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-04-27": {
+          "gained": 5,
+          "lost": 5
+        },
+        "2026-04-26": {
+          "gained": 1,
+          "lost": 1
+        }
+      },
+      "Saco Bay Rentals": {
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 1
+        },
         "2026-05-04": {
+          "gained": 0,
+          "lost": 2
+        },
+        "2026-04-12": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "Maine Seaside Rentals": {
+        "2026-05-15": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-04-12": {
+          "gained": 2,
+          "lost": 0
+        }
+      },
+      "Ocean Park Realty": {
+        "2026-05-15": {
+          "gained": 0,
+          "lost": 5
+        },
+        "2026-04-27": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "Tamarack Rentals": {
+        "2026-05-15": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-05-04": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "KPort Concierge": {
+        "2026-05-04": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-04-12": {
           "gained": 1,
           "lost": 0
         }
@@ -7651,40 +8153,6 @@
         "2026-04-12": {
           "gained": 3,
           "lost": 4
-        }
-      },
-      "Evolve Vacation Rentals": {
-        "2026-05-04": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-04-26": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 4
-        }
-      },
-      "Ocean Park Realty": {
-        "2026-05-04": {
-          "gained": 0,
-          "lost": 2
-        },
-        "2026-04-27": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
-      "Saco Bay Rentals": {
-        "2026-05-04": {
-          "gained": 0,
-          "lost": 2
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 0
         }
       },
       "Kennebunk Beach Realty": {
@@ -7701,36 +8169,6 @@
           "lost": 0
         }
       },
-      "Ocean Dreams Maine": {
-        "2026-04-27": {
-          "gained": 5,
-          "lost": 5
-        },
-        "2026-04-26": {
-          "gained": 1,
-          "lost": 1
-        }
-      },
-      "Anchor Real Estate Rentals": {
-        "2026-04-26": {
-          "gained": 2,
-          "lost": 0
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 1
-        },
-        "2026-03-21": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
-      "Coastal Getaways": {
-        "2026-04-26": {
-          "gained": 2,
-          "lost": 0
-        }
-      },
       "Garnsey Brothers": {
         "2026-04-12": {
           "gained": 1,
@@ -7738,18 +8176,6 @@
         }
       },
       "KMA Property Group": {
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
-      "Maine Seaside Rentals": {
-        "2026-04-12": {
-          "gained": 2,
-          "lost": 0
-        }
-      },
-      "Maine Street Property Management": {
         "2026-04-12": {
           "gained": 1,
           "lost": 0
@@ -7763,49 +8189,65 @@
       }
     },
     "by_competitor_summary": {
-      "Jean Knapp Rentals": {
-        "gained": 4,
+      "Anchor Real Estate Rentals": {
+        "gained": 5,
+        "lost": 1
+      },
+      "Bayley Vacation Rentals": {
+        "gained": 1,
         "lost": 0
+      },
+      "Coastal Getaways": {
+        "gained": 3,
+        "lost": 0
+      },
+      "Coastline Vacation Rentals": {
+        "gained": 1,
+        "lost": 0
+      },
+      "Evolve Vacation Rentals": {
+        "gained": 2,
+        "lost": 7
+      },
+      "Jean Knapp Rentals": {
+        "gained": 7,
+        "lost": 0
+      },
+      "Maine Street Property Management": {
+        "gained": 2,
+        "lost": 0
+      },
+      "Ocean Dreams Maine": {
+        "gained": 7,
+        "lost": 7
+      },
+      "Saco Bay Rentals": {
+        "gained": 2,
+        "lost": 3
+      },
+      "Maine Seaside Rentals": {
+        "gained": 2,
+        "lost": 1
+      },
+      "Ocean Park Realty": {
+        "gained": 1,
+        "lost": 5
+      },
+      "Tamarack Rentals": {
+        "gained": 1,
+        "lost": 1
       },
       "KPort Concierge": {
         "gained": 2,
         "lost": 1
       },
-      "Tamarack Rentals": {
-        "gained": 1,
-        "lost": 0
-      },
       "Vacasa": {
         "gained": 6,
         "lost": 8
       },
-      "Evolve Vacation Rentals": {
-        "gained": 1,
-        "lost": 6
-      },
-      "Ocean Park Realty": {
-        "gained": 1,
-        "lost": 2
-      },
-      "Saco Bay Rentals": {
-        "gained": 1,
-        "lost": 2
-      },
       "Kennebunk Beach Realty": {
         "gained": 4,
         "lost": 3
-      },
-      "Ocean Dreams Maine": {
-        "gained": 6,
-        "lost": 6
-      },
-      "Anchor Real Estate Rentals": {
-        "gained": 4,
-        "lost": 1
-      },
-      "Coastal Getaways": {
-        "gained": 2,
-        "lost": 0
       },
       "Garnsey Brothers": {
         "gained": 1,
@@ -7815,21 +8257,13 @@
         "gained": 1,
         "lost": 0
       },
-      "Maine Seaside Rentals": {
-        "gained": 2,
-        "lost": 0
-      },
-      "Maine Street Property Management": {
-        "gained": 1,
-        "lost": 0
-      },
       "Seashore Property Management": {
         "gained": 0,
         "lost": 2
       }
     },
-    "total_gained": 37,
-    "total_lost": 32,
-    "total_renamed_hidden": 93
+    "total_gained": 48,
+    "total_lost": 40,
+    "total_renamed_hidden": 97
   }
 }
