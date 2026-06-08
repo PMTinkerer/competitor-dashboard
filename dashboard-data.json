@@ -1,8 +1,41 @@
 {
-  "generated": "2026-05-31",
-  "total_properties": 1263,
+  "generated": "2026-06-07",
+  "total_properties": 1294,
   "total_competitors": 27,
   "current": [
+    {
+      "competitor": "Vacasa",
+      "platform": "vacasa",
+      "count": 108,
+      "with_address": 108,
+      "with_bedrooms": 108,
+      "total_bedrooms": 326,
+      "estimated_total_bedrooms": 326,
+      "avg_bedrooms": 3.0,
+      "cities": [
+        "Arundel",
+        "Augusta",
+        "Biddeford",
+        "Boothbay Harbor",
+        "Fayette",
+        "Kennebunk",
+        "Kennebunkport",
+        "Kittery",
+        "Leeds",
+        "Oakland",
+        "Ogunquit",
+        "Old Orchard Beach",
+        "Portland",
+        "Saco",
+        "Scarborough",
+        "Spruce Head",
+        "Standish",
+        "Trevett",
+        "Wells",
+        "York"
+      ],
+      "is_us": false
+    },
     {
       "competitor": "Garnsey Brothers",
       "platform": "rentalpro_custom",
@@ -15,31 +48,6 @@
       "cities": [
         "Ogunquit",
         "Wells"
-      ],
-      "is_us": false
-    },
-    {
-      "competitor": "Vacasa",
-      "platform": "vacasa",
-      "count": 87,
-      "with_address": 86,
-      "with_bedrooms": 87,
-      "total_bedrooms": 287,
-      "estimated_total_bedrooms": 287,
-      "avg_bedrooms": 3.3,
-      "cities": [
-        "Kennebunk",
-        "Kennebunkport",
-        "Kittery",
-        "Lincolnville",
-        "Ogunquit",
-        "Old Orchard Beach",
-        "Raymond",
-        "Saco",
-        "Scarborough",
-        "Wells",
-        "Wiscasset",
-        "York"
       ],
       "is_us": false
     },
@@ -60,6 +68,20 @@
       "is_us": false
     },
     {
+      "competitor": "Ocean Park Realty",
+      "platform": "oceanpark_custom",
+      "count": 75,
+      "with_address": 59,
+      "with_bedrooms": 53,
+      "total_bedrooms": 167,
+      "estimated_total_bedrooms": 236,
+      "avg_bedrooms": 3.2,
+      "cities": [
+        "Old Orchard Beach"
+      ],
+      "is_us": false
+    },
+    {
       "competitor": "Sand Dollar Real Estate",
       "platform": "jeanknapp_custom",
       "count": 72,
@@ -75,28 +97,14 @@
       "is_us": false
     },
     {
-      "competitor": "Ocean Park Realty",
-      "platform": "oceanpark_custom",
-      "count": 66,
-      "with_address": 50,
-      "with_bedrooms": 45,
-      "total_bedrooms": 138,
-      "estimated_total_bedrooms": 202,
-      "avg_bedrooms": 3.1,
-      "cities": [
-        "Old Orchard Beach"
-      ],
-      "is_us": false
-    },
-    {
       "competitor": "Evolve Vacation Rentals",
       "platform": "evolve",
       "count": 65,
       "with_address": 65,
       "with_bedrooms": 47,
-      "total_bedrooms": 133,
-      "estimated_total_bedrooms": 184,
-      "avg_bedrooms": 2.8,
+      "total_bedrooms": 134,
+      "estimated_total_bedrooms": 185,
+      "avg_bedrooms": 2.9,
       "cities": [
         "Arundel",
         "Biddeford",
@@ -250,11 +258,11 @@
     {
       "competitor": "Grand Welcome (Our Company)",
       "platform": "grand_welcome",
-      "count": 45,
+      "count": 46,
       "with_address": 0,
-      "with_bedrooms": 44,
-      "total_bedrooms": 169,
-      "estimated_total_bedrooms": 169,
+      "with_bedrooms": 45,
+      "total_bedrooms": 176,
+      "estimated_total_bedrooms": 176,
       "avg_bedrooms": 3.8,
       "cities": [
         "Arundel",
@@ -410,9 +418,9 @@
       "count": 25,
       "with_address": 25,
       "with_bedrooms": 25,
-      "total_bedrooms": 73,
-      "estimated_total_bedrooms": 73,
-      "avg_bedrooms": 2.9,
+      "total_bedrooms": 74,
+      "estimated_total_bedrooms": 74,
+      "avg_bedrooms": 3.0,
       "cities": [
         "Saco"
       ],
@@ -846,13 +854,40 @@
       "TopHost Vacation Rentals": 28,
       "Vacasa": 87,
       "Grand Welcome (Our Company)": 45
+    },
+    "2026-06-07": {
+      "Anchor Real Estate Rentals": 52,
+      "Bayley Vacation Rentals": 54,
+      "Coastal Getaways": 30,
+      "Coastline Vacation Rentals": 50,
+      "Evolve Vacation Rentals": 65,
+      "Garnsey Brothers": 89,
+      "Goose Rocks Beach Rentals": 47,
+      "Jean Knapp Rentals": 54,
+      "KMA Property Group": 42,
+      "KPort Concierge": 56,
+      "Kennebunk Beach Realty": 20,
+      "Maine Seaside Rentals": 79,
+      "Maine Street Property Management": 24,
+      "Ocean Dreams Maine": 20,
+      "Ocean Park Realty": 75,
+      "Ogunquit Rental Properties": 36,
+      "Saco Bay Rentals": 25,
+      "Salt & Shine Vacation Rentals": 61,
+      "Sand Dollar Real Estate": 72,
+      "Seagrass Property Rentals": 31,
+      "Seashore Property Management": 24,
+      "Tamarack Rentals": 52,
+      "TopHost Vacation Rentals": 28,
+      "Vacasa": 108,
+      "Grand Welcome (Our Company)": 46
     }
   },
   "trends": {
-    "latest_date": "2026-05-31",
+    "latest_date": "2026-06-07",
     "comparison_dates": {
-      "week_ago": "2026-05-17",
-      "month_ago": "2026-04-26",
+      "week_ago": "2026-05-24",
+      "month_ago": "2026-04-27",
       "first": "2026-03-18"
     },
     "entities": {
@@ -900,9 +935,9 @@
       },
       "Coastline Vacation Rentals": {
         "current": 50,
-        "wow_prev": 49,
-        "wow_change": 1,
-        "wow_pct": 2.0,
+        "wow_prev": 48,
+        "wow_change": 2,
+        "wow_pct": 4.2,
         "mom_prev": 49,
         "mom_change": 1,
         "mom_pct": 2.0,
@@ -1068,9 +1103,9 @@
       },
       "Seashore Property Management": {
         "current": 24,
-        "wow_prev": 23,
-        "wow_change": 1,
-        "wow_pct": 4.3,
+        "wow_prev": 24,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 23,
         "mom_change": 1,
         "mom_pct": 4.3,
@@ -1095,24 +1130,24 @@
         "trend": "stable"
       },
       "Vacasa": {
-        "current": 87,
-        "wow_prev": 83,
-        "wow_change": 4,
-        "wow_pct": 4.8,
+        "current": 108,
+        "wow_prev": 82,
+        "wow_change": 26,
+        "wow_pct": 31.7,
         "mom_prev": 85,
-        "mom_change": 2,
-        "mom_pct": 2.4,
+        "mom_change": 23,
+        "mom_pct": 27.1,
         "first_date": "2026-03-18",
         "first": 88,
-        "all_time_change": -1,
-        "all_time_pct": -1.1,
+        "all_time_change": 20,
+        "all_time_pct": 22.7,
         "trend": "growing"
       },
       "Evolve Vacation Rentals": {
         "current": 65,
-        "wow_prev": 64,
-        "wow_change": 1,
-        "wow_pct": 1.6,
+        "wow_prev": 68,
+        "wow_change": -3,
+        "wow_pct": -4.4,
         "mom_prev": 65,
         "mom_change": 0,
         "mom_pct": 0.0,
@@ -1179,24 +1214,24 @@
         "trend": "stable"
       },
       "Grand Welcome (Our Company)": {
-        "current": 45,
+        "current": 46,
         "wow_prev": 45,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 41,
+        "wow_change": 1,
+        "wow_pct": 2.2,
+        "mom_prev": 42,
         "mom_change": 4,
-        "mom_pct": 9.8,
+        "mom_pct": 9.5,
         "first_date": "2026-03-19",
         "first": 40,
-        "all_time_change": 5,
-        "all_time_pct": 12.5,
+        "all_time_change": 6,
+        "all_time_pct": 15.0,
         "trend": "growing"
       },
       "KMA Property Group": {
         "current": 42,
-        "wow_prev": 41,
-        "wow_change": 1,
-        "wow_pct": 2.4,
+        "wow_prev": 42,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 41,
         "mom_change": 1,
         "mom_pct": 2.4,
@@ -1221,21 +1256,36 @@
         "trend": "stable"
       },
       "Ocean Park Realty": {
-        "current": 66,
+        "current": 75,
         "wow_prev": 74,
-        "wow_change": -8,
-        "wow_pct": -10.8,
-        "mom_prev": 74,
-        "mom_change": -8,
-        "mom_pct": -10.8,
+        "wow_change": 1,
+        "wow_pct": 1.4,
+        "mom_prev": 71,
+        "mom_change": 4,
+        "mom_pct": 5.6,
         "first_date": "2026-04-26",
         "first": 74,
-        "all_time_change": -8,
-        "all_time_pct": -10.8,
-        "trend": "declining"
+        "all_time_change": 1,
+        "all_time_pct": 1.4,
+        "trend": "growing"
       }
     },
     "growing": [
+      {
+        "name": "Vacasa",
+        "current": 108,
+        "wow_prev": 82,
+        "wow_change": 26,
+        "wow_pct": 31.7,
+        "mom_prev": 85,
+        "mom_change": 23,
+        "mom_pct": 27.1,
+        "first_date": "2026-03-18",
+        "first": 88,
+        "all_time_change": 20,
+        "all_time_pct": 22.7,
+        "trend": "growing"
+      },
       {
         "name": "Jean Knapp Rentals",
         "current": 54,
@@ -1253,17 +1303,32 @@
       },
       {
         "name": "Grand Welcome (Our Company)",
-        "current": 45,
+        "current": 46,
         "wow_prev": 45,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 41,
+        "wow_change": 1,
+        "wow_pct": 2.2,
+        "mom_prev": 42,
         "mom_change": 4,
-        "mom_pct": 9.8,
+        "mom_pct": 9.5,
         "first_date": "2026-03-19",
         "first": 40,
-        "all_time_change": 5,
-        "all_time_pct": 12.5,
+        "all_time_change": 6,
+        "all_time_pct": 15.0,
+        "trend": "growing"
+      },
+      {
+        "name": "Ocean Park Realty",
+        "current": 75,
+        "wow_prev": 74,
+        "wow_change": 1,
+        "wow_pct": 1.4,
+        "mom_prev": 71,
+        "mom_change": 4,
+        "mom_pct": 5.6,
+        "first_date": "2026-04-26",
+        "first": 74,
+        "all_time_change": 1,
+        "all_time_pct": 1.4,
         "trend": "growing"
       },
       {
@@ -1279,21 +1344,6 @@
         "first": 47,
         "all_time_change": 5,
         "all_time_pct": 10.6,
-        "trend": "growing"
-      },
-      {
-        "name": "Vacasa",
-        "current": 87,
-        "wow_prev": 83,
-        "wow_change": 4,
-        "wow_pct": 4.8,
-        "mom_prev": 85,
-        "mom_change": 2,
-        "mom_pct": 2.4,
-        "first_date": "2026-03-18",
-        "first": 88,
-        "all_time_change": -1,
-        "all_time_pct": -1.1,
         "trend": "growing"
       },
       {
@@ -1314,9 +1364,9 @@
       {
         "name": "Coastline Vacation Rentals",
         "current": 50,
-        "wow_prev": 49,
-        "wow_change": 1,
-        "wow_pct": 2.0,
+        "wow_prev": 48,
+        "wow_change": 2,
+        "wow_pct": 4.2,
         "mom_prev": 49,
         "mom_change": 1,
         "mom_pct": 2.0,
@@ -1359,9 +1409,9 @@
       {
         "name": "Seashore Property Management",
         "current": 24,
-        "wow_prev": 23,
-        "wow_change": 1,
-        "wow_pct": 4.3,
+        "wow_prev": 24,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 23,
         "mom_change": 1,
         "mom_pct": 4.3,
@@ -1374,9 +1424,9 @@
       {
         "name": "KMA Property Group",
         "current": 42,
-        "wow_prev": 41,
-        "wow_change": 1,
-        "wow_pct": 2.4,
+        "wow_prev": 42,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 41,
         "mom_change": 1,
         "mom_pct": 2.4,
@@ -1387,23 +1437,7 @@
         "trend": "growing"
       }
     ],
-    "declining": [
-      {
-        "name": "Ocean Park Realty",
-        "current": 66,
-        "wow_prev": 74,
-        "wow_change": -8,
-        "wow_pct": -10.8,
-        "mom_prev": 74,
-        "mom_change": -8,
-        "mom_pct": -10.8,
-        "first_date": "2026-04-26",
-        "first": 74,
-        "all_time_change": -8,
-        "all_time_pct": -10.8,
-        "trend": "declining"
-      }
-    ],
+    "declining": [],
     "stable": [
       {
         "name": "Coastal Getaways",
@@ -1558,9 +1592,9 @@
       {
         "name": "Evolve Vacation Rentals",
         "current": 65,
-        "wow_prev": 64,
-        "wow_change": 1,
-        "wow_pct": 1.6,
+        "wow_prev": 68,
+        "wow_change": -3,
+        "wow_pct": -4.4,
         "mom_prev": 65,
         "mom_change": 0,
         "mom_pct": 0.0,
@@ -1648,6 +1682,16 @@
     ]
   },
   "health_scores": {
+    "Vacasa": {
+      "score": 67,
+      "rating": "stable",
+      "size_score": 100,
+      "trend_score": 92.7,
+      "stability_score": 0,
+      "churn_rate": 145.4,
+      "gross_gained": 90,
+      "gross_lost": 67
+    },
     "Garnsey Brothers": {
       "score": 76,
       "rating": "strong",
@@ -1657,16 +1701,6 @@
       "churn_rate": 2.2,
       "gross_gained": 1,
       "gross_lost": 1
-    },
-    "Vacasa": {
-      "score": 58,
-      "rating": "stable",
-      "size_score": 97,
-      "trend_score": 71.1,
-      "stability_score": 0,
-      "churn_rate": 23.0,
-      "gross_gained": 11,
-      "gross_lost": 9
     },
     "Maine Seaside Rentals": {
       "score": 75,
@@ -1678,6 +1712,16 @@
       "gross_gained": 2,
       "gross_lost": 0
     },
+    "Ocean Park Realty": {
+      "score": 81,
+      "rating": "strong",
+      "size_score": 94,
+      "trend_score": 71.4,
+      "stability_score": 80.0,
+      "churn_rate": 4.0,
+      "gross_gained": 2,
+      "gross_lost": 1
+    },
     "Sand Dollar Real Estate": {
       "score": 78,
       "rating": "strong",
@@ -1688,25 +1732,15 @@
       "gross_gained": 0,
       "gross_lost": 0
     },
-    "Ocean Park Realty": {
-      "score": 38,
-      "rating": "watch",
-      "size_score": 91,
-      "trend_score": 19.2,
-      "stability_score": 9.0,
-      "churn_rate": 18.2,
-      "gross_gained": 2,
-      "gross_lost": 10
-    },
     "Evolve Vacation Rentals": {
       "score": 47,
       "rating": "watch",
       "size_score": 91,
       "trend_score": 50,
       "stability_score": 0,
-      "churn_rate": 24.6,
-      "gross_gained": 6,
-      "gross_lost": 10
+      "churn_rate": 27.7,
+      "gross_gained": 7,
+      "gross_lost": 11
     },
     "Salt & Shine Vacation Rentals": {
       "score": 77,
@@ -1789,10 +1823,10 @@
       "gross_lost": 0
     },
     "Grand Welcome (Our Company)": {
-      "score": 88,
+      "score": 89,
       "rating": "strong",
       "size_score": 83,
-      "trend_score": 82.5,
+      "trend_score": 85.0,
       "stability_score": 100.0,
       "churn_rate": 0.0,
       "gross_gained": 0,
@@ -1874,9 +1908,9 @@
       "size_score": 70,
       "trend_score": 50,
       "stability_score": 0,
-      "churn_rate": 20.0,
-      "gross_gained": 2,
-      "gross_lost": 3
+      "churn_rate": 28.0,
+      "gross_gained": 3,
+      "gross_lost": 4
     },
     "Maine Street Property Management": {
       "score": 70,
@@ -1922,7 +1956,7 @@
   "towns": [
     {
       "town": "Wells",
-      "total": 185,
+      "total": 189,
       "competitor_count": 14,
       "top_competitor": "Garnsey Brothers",
       "top_competitor_count": 87,
@@ -1930,55 +1964,55 @@
         {
           "name": "Garnsey Brothers",
           "count": 87,
-          "share": 47.0
+          "share": 46.0
         },
         {
           "name": "Ocean Dreams Maine",
           "count": 17,
-          "share": 9.2
+          "share": 9.0
         },
         {
           "name": "Evolve Vacation Rentals",
-          "count": 15,
-          "share": 8.1
+          "count": 16,
+          "share": 8.5
         },
         {
           "name": "Salt & Shine Vacation Rentals",
           "count": 10,
-          "share": 5.4
+          "share": 5.3
         },
         {
           "name": "Anchor Real Estate Rentals",
           "count": 9,
-          "share": 4.9
+          "share": 4.8
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 9,
-          "share": 4.9
+          "share": 4.8
+        },
+        {
+          "name": "Vacasa",
+          "count": 9,
+          "share": 4.8
         },
         {
           "name": "Coastline Vacation Rentals",
           "count": 8,
-          "share": 4.3
+          "share": 4.2
         },
         {
           "name": "Jean Knapp Rentals",
           "count": 8,
-          "share": 4.3
+          "share": 4.2
         },
         {
           "name": "Maine Street Property Management",
           "count": 7,
-          "share": 3.8
+          "share": 3.7
         },
         {
           "name": "KMA Property Group",
-          "count": 6,
-          "share": 3.2
-        },
-        {
-          "name": "Vacasa",
           "count": 6,
           "share": 3.2
         },
@@ -2001,7 +2035,7 @@
     },
     {
       "town": "Kennebunkport",
-      "total": 183,
+      "total": 176,
       "competitor_count": 11,
       "top_competitor": "Sand Dollar Real Estate",
       "top_competitor_count": 70,
@@ -2009,107 +2043,107 @@
         {
           "name": "Sand Dollar Real Estate",
           "count": 70,
-          "share": 38.3
+          "share": 39.8
         },
         {
           "name": "Goose Rocks Beach Rentals",
           "count": 28,
-          "share": 15.3
+          "share": 15.9
         },
         {
           "name": "KPort Concierge",
           "count": 22,
-          "share": 12.0
-        },
-        {
-          "name": "Vacasa",
-          "count": 16,
-          "share": 8.7
+          "share": 12.5
         },
         {
           "name": "KPT Luxury Properties",
           "count": 13,
-          "share": 7.1
+          "share": 7.4
         },
         {
           "name": "Seagrass Property Rentals",
           "count": 11,
-          "share": 6.0
+          "share": 6.2
         },
         {
           "name": "Coastline Vacation Rentals",
           "count": 10,
-          "share": 5.5
+          "share": 5.7
+        },
+        {
+          "name": "Vacasa",
+          "count": 9,
+          "share": 5.1
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 4,
-          "share": 2.2
+          "share": 2.3
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 3,
-          "share": 1.6
+          "share": 1.7
         },
         {
           "name": "Kennebunk Beach Realty",
           "count": 3,
-          "share": 1.6
+          "share": 1.7
         },
         {
           "name": "TopHost Vacation Rentals",
           "count": 3,
-          "share": 1.6
+          "share": 1.7
         }
       ]
     },
     {
       "town": "Old Orchard Beach",
-      "total": 155,
+      "total": 174,
       "competitor_count": 7,
       "top_competitor": "Ocean Park Realty",
-      "top_competitor_count": 66,
+      "top_competitor_count": 75,
       "competitors": [
         {
           "name": "Ocean Park Realty",
-          "count": 66,
-          "share": 42.6
+          "count": 75,
+          "share": 43.1
         },
         {
           "name": "Tamarack Rentals",
           "count": 25,
-          "share": 16.1
+          "share": 14.4
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 24,
-          "share": 15.5
+          "share": 13.8
         },
         {
           "name": "Seashore Property Management",
           "count": 24,
-          "share": 15.5
+          "share": 13.8
+        },
+        {
+          "name": "Vacasa",
+          "count": 16,
+          "share": 9.2
         },
         {
           "name": "Bayley Vacation Rentals",
           "count": 6,
-          "share": 3.9
-        },
-        {
-          "name": "Vacasa",
-          "count": 6,
-          "share": 3.9
+          "share": 3.4
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 4,
-          "share": 2.6
+          "share": 2.3
         }
       ]
     },
     {
       "town": "York",
-      "total": 144,
+      "total": 159,
       "competitor_count": 11,
       "top_competitor": "Salt & Shine Vacation Rentals",
       "top_competitor_count": 49,
@@ -2117,63 +2151,63 @@
         {
           "name": "Salt & Shine Vacation Rentals",
           "count": 49,
-          "share": 34.0
+          "share": 30.8
         },
         {
           "name": "Anchor Real Estate Rentals",
           "count": 27,
-          "share": 18.8
+          "share": 17.0
         },
         {
           "name": "Coastal Getaways",
           "count": 25,
-          "share": 17.4
+          "share": 15.7
+        },
+        {
+          "name": "Vacasa",
+          "count": 23,
+          "share": 14.5
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 11,
-          "share": 7.6
-        },
-        {
-          "name": "Vacasa",
-          "count": 8,
-          "share": 5.6
+          "share": 6.9
         },
         {
           "name": "KMA Property Group",
           "count": 6,
-          "share": 4.2
+          "share": 3.8
         },
         {
           "name": "Maine Street Property Management",
           "count": 6,
-          "share": 4.2
+          "share": 3.8
         },
         {
           "name": "Jean Knapp Rentals",
           "count": 5,
-          "share": 3.5
+          "share": 3.1
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 4,
-          "share": 2.8
+          "share": 2.5
         },
         {
           "name": "Ocean Dreams Maine",
           "count": 2,
-          "share": 1.4
+          "share": 1.3
         },
         {
           "name": "KPort Concierge",
           "count": 1,
-          "share": 0.7
+          "share": 0.6
         }
       ]
     },
     {
       "town": "Kennebunk",
-      "total": 133,
+      "total": 143,
       "competitor_count": 13,
       "top_competitor": "Coastline Vacation Rentals",
       "top_competitor_count": 23,
@@ -2181,67 +2215,67 @@
         {
           "name": "Coastline Vacation Rentals",
           "count": 23,
-          "share": 17.3
+          "share": 16.1
         },
         {
           "name": "Goose Rocks Beach Rentals",
           "count": 19,
-          "share": 14.3
+          "share": 13.3
         },
         {
           "name": "Seagrass Property Rentals",
           "count": 18,
-          "share": 13.5
+          "share": 12.6
         },
         {
           "name": "KPort Concierge",
           "count": 17,
-          "share": 12.8
+          "share": 11.9
         },
         {
           "name": "Kennebunk Beach Realty",
           "count": 17,
-          "share": 12.8
+          "share": 11.9
         },
         {
           "name": "KPT Luxury Properties",
           "count": 16,
-          "share": 12.0
+          "share": 11.2
+        },
+        {
+          "name": "Vacasa",
+          "count": 14,
+          "share": 9.8
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 6,
-          "share": 4.5
+          "share": 4.2
         },
         {
           "name": "KMA Property Group",
           "count": 5,
-          "share": 3.8
-        },
-        {
-          "name": "Vacasa",
-          "count": 5,
-          "share": 3.8
+          "share": 3.5
         },
         {
           "name": "Coastal Getaways",
           "count": 3,
-          "share": 2.3
+          "share": 2.1
         },
         {
           "name": "Grand Welcome (Our Company)",
-          "count": 2,
-          "share": 1.5
+          "count": 3,
+          "share": 2.1
         },
         {
           "name": "Bayley Vacation Rentals",
           "count": 1,
-          "share": 0.8
+          "share": 0.7
         },
         {
           "name": "Salt & Shine Vacation Rentals",
           "count": 1,
-          "share": 0.8
+          "share": 0.7
         }
       ]
     },
@@ -2320,8 +2354,52 @@
       ]
     },
     {
+      "town": "Biddeford",
+      "total": 79,
+      "competitor_count": 7,
+      "top_competitor": "Maine Seaside Rentals",
+      "top_competitor_count": 55,
+      "competitors": [
+        {
+          "name": "Maine Seaside Rentals",
+          "count": 55,
+          "share": 69.6
+        },
+        {
+          "name": "KPort Concierge",
+          "count": 13,
+          "share": 16.5
+        },
+        {
+          "name": "Vacasa",
+          "count": 4,
+          "share": 5.1
+        },
+        {
+          "name": "Coastline Vacation Rentals",
+          "count": 3,
+          "share": 3.8
+        },
+        {
+          "name": "Sand Dollar Real Estate",
+          "count": 2,
+          "share": 2.5
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 1,
+          "share": 1.3
+        },
+        {
+          "name": "TopHost Vacation Rentals",
+          "count": 1,
+          "share": 1.3
+        }
+      ]
+    },
+    {
       "town": "Saco",
-      "total": 77,
+      "total": 65,
       "competitor_count": 7,
       "top_competitor": "Tamarack Rentals",
       "top_competitor_count": 27,
@@ -2329,82 +2407,67 @@
         {
           "name": "Tamarack Rentals",
           "count": 27,
-          "share": 35.1
+          "share": 41.5
         },
         {
           "name": "Saco Bay Rentals",
           "count": 25,
-          "share": 32.5
-        },
-        {
-          "name": "Vacasa",
-          "count": 14,
-          "share": 18.2
+          "share": 38.5
         },
         {
           "name": "Bayley Vacation Rentals",
           "count": 3,
-          "share": 3.9
+          "share": 4.6
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 3,
-          "share": 3.9
+          "share": 4.6
         },
         {
           "name": "TopHost Vacation Rentals",
           "count": 3,
-          "share": 3.9
+          "share": 4.6
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 2,
-          "share": 2.6
+          "share": 3.1
+        },
+        {
+          "name": "Vacasa",
+          "count": 2,
+          "share": 3.1
         }
       ]
     },
     {
-      "town": "Biddeford",
-      "total": 75,
-      "competitor_count": 6,
-      "top_competitor": "Maine Seaside Rentals",
-      "top_competitor_count": 55,
+      "town": "Portland",
+      "total": 36,
+      "competitor_count": 3,
+      "top_competitor": "Luxury Maine Rentals",
+      "top_competitor_count": 25,
       "competitors": [
         {
-          "name": "Maine Seaside Rentals",
-          "count": 55,
-          "share": 73.3
+          "name": "Luxury Maine Rentals",
+          "count": 25,
+          "share": 69.4
         },
         {
-          "name": "KPort Concierge",
-          "count": 13,
-          "share": 17.3
-        },
-        {
-          "name": "Coastline Vacation Rentals",
-          "count": 3,
-          "share": 4.0
-        },
-        {
-          "name": "Sand Dollar Real Estate",
-          "count": 2,
-          "share": 2.7
-        },
-        {
-          "name": "Evolve Vacation Rentals",
-          "count": 1,
-          "share": 1.3
+          "name": "Vacasa",
+          "count": 10,
+          "share": 27.8
         },
         {
           "name": "TopHost Vacation Rentals",
           "count": 1,
-          "share": 1.3
+          "share": 2.8
         }
       ]
     },
     {
       "town": "Scarborough",
-      "total": 33,
+      "total": 26,
       "competitor_count": 5,
       "top_competitor": "Bayley Vacation Rentals",
       "top_competitor_count": 20,
@@ -2412,113 +2475,85 @@
         {
           "name": "Bayley Vacation Rentals",
           "count": 20,
-          "share": 60.6
-        },
-        {
-          "name": "Vacasa",
-          "count": 8,
-          "share": 24.2
+          "share": 76.9
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 2,
-          "share": 6.1
+          "share": 7.7
         },
         {
           "name": "KMA Property Group",
           "count": 2,
-          "share": 6.1
+          "share": 7.7
         },
         {
           "name": "TopHost Vacation Rentals",
           "count": 1,
-          "share": 3.0
-        }
-      ]
-    },
-    {
-      "town": "Portland",
-      "total": 26,
-      "competitor_count": 2,
-      "top_competitor": "Luxury Maine Rentals",
-      "top_competitor_count": 25,
-      "competitors": [
-        {
-          "name": "Luxury Maine Rentals",
-          "count": 25,
-          "share": 96.2
+          "share": 3.8
         },
         {
-          "name": "TopHost Vacation Rentals",
+          "name": "Vacasa",
           "count": 1,
           "share": 3.8
         }
       ]
     },
     {
-      "town": "Kittery",
-      "total": 17,
-      "competitor_count": 3,
+      "town": "Arundel",
+      "total": 7,
+      "competitor_count": 5,
       "top_competitor": "Vacasa",
-      "top_competitor_count": 15,
+      "top_competitor_count": 3,
       "competitors": [
         {
           "name": "Vacasa",
-          "count": 15,
-          "share": 88.2
+          "count": 3,
+          "share": 42.9
         },
         {
-          "name": "Anchor Real Estate Rentals",
+          "name": "Evolve Vacation Rentals",
           "count": 1,
-          "share": 5.9
+          "share": 14.3
         },
         {
           "name": "Grand Welcome (Our Company)",
           "count": 1,
-          "share": 5.9
-        }
-      ]
-    },
-    {
-      "town": "Lyman",
-      "total": 4,
-      "competitor_count": 1,
-      "top_competitor": "Evolve Vacation Rentals",
-      "top_competitor_count": 4,
-      "competitors": [
-        {
-          "name": "Evolve Vacation Rentals",
-          "count": 4,
-          "share": 100.0
-        }
-      ]
-    },
-    {
-      "town": "Arundel",
-      "total": 4,
-      "competitor_count": 4,
-      "top_competitor": "Evolve Vacation Rentals",
-      "top_competitor_count": 1,
-      "competitors": [
-        {
-          "name": "Evolve Vacation Rentals",
-          "count": 1,
-          "share": 25.0
-        },
-        {
-          "name": "Grand Welcome (Our Company)",
-          "count": 1,
-          "share": 25.0
+          "share": 14.3
         },
         {
           "name": "KPort Concierge",
           "count": 1,
-          "share": 25.0
+          "share": 14.3
         },
         {
           "name": "Seagrass Property Rentals",
           "count": 1,
-          "share": 25.0
+          "share": 14.3
+        }
+      ]
+    },
+    {
+      "town": "Kittery",
+      "total": 6,
+      "competitor_count": 3,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 4,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 4,
+          "share": 66.7
+        },
+        {
+          "name": "Anchor Real Estate Rentals",
+          "count": 1,
+          "share": 16.7
+        },
+        {
+          "name": "Grand Welcome (Our Company)",
+          "count": 1,
+          "share": 16.7
         }
       ]
     },
@@ -2552,6 +2587,20 @@
           "name": "Evolve Vacation Rentals",
           "count": 1,
           "share": 33.3
+        }
+      ]
+    },
+    {
+      "town": "Lyman",
+      "total": 3,
+      "competitor_count": 1,
+      "top_competitor": "Evolve Vacation Rentals",
+      "top_competitor_count": 3,
+      "competitors": [
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 3,
+          "share": 100.0
         }
       ]
     },
@@ -2639,20 +2688,6 @@
       "competitors": [
         {
           "name": "KMA Property Group",
-          "count": 2,
-          "share": 100.0
-        }
-      ]
-    },
-    {
-      "town": "Wiscasset",
-      "total": 2,
-      "competitor_count": 1,
-      "top_competitor": "Vacasa",
-      "top_competitor_count": 2,
-      "competitors": [
-        {
-          "name": "Vacasa",
           "count": 2,
           "share": 100.0
         }
@@ -2869,7 +2904,7 @@
       ]
     },
     {
-      "town": "Raymond",
+      "town": "Boothbay Harbor",
       "total": 1,
       "competitor_count": 1,
       "top_competitor": "Vacasa",
@@ -2883,7 +2918,91 @@
       ]
     },
     {
-      "town": "Lincolnville",
+      "town": "Spruce Head",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Trevett",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Leeds",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Fayette",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Oakland",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Augusta",
+      "total": 1,
+      "competitor_count": 1,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 1,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 1,
+          "share": 100.0
+        }
+      ]
+    },
+    {
+      "town": "Standish",
       "total": 1,
       "competitor_count": 1,
       "top_competitor": "Vacasa",
@@ -2900,15 +3019,15 @@
   "franchise": {
     "total_locations": 55,
     "active_locations": 55,
-    "total_properties": 2242,
-    "total_bedrooms": 6320,
+    "total_properties": 2263,
+    "total_bedrooms": 5980,
     "locations": [
       {
         "location": "The Ozarks",
         "slug": "branson-the-ozarks",
-        "property_count": 403,
-        "total_bedrooms": 1142,
-        "avg_bedrooms": 2.8
+        "property_count": 407,
+        "total_bedrooms": 950,
+        "avg_bedrooms": 2.3
       },
       {
         "location": "Orlando",
@@ -2921,57 +3040,57 @@
         "location": "Mammoth Lakes",
         "slug": "california-mammoth-lakes",
         "property_count": 103,
-        "total_bedrooms": 172,
-        "avg_bedrooms": 1.7
+        "total_bedrooms": 189,
+        "avg_bedrooms": 1.8
       },
       {
         "location": "Nashville",
         "slug": "tennessee-nashville",
         "property_count": 101,
-        "total_bedrooms": 261,
-        "avg_bedrooms": 2.6
+        "total_bedrooms": 278,
+        "avg_bedrooms": 2.8
       },
       {
         "location": "Lake Of The Ozarks",
         "slug": "missouri-lake-of-the-ozarks",
-        "property_count": 88,
-        "total_bedrooms": 271,
-        "avg_bedrooms": 3.1
+        "property_count": 90,
+        "total_bedrooms": 232,
+        "avg_bedrooms": 2.6
       },
       {
         "location": "Nevada North Lake Tahoe",
         "slug": "california-nevada-north-lake-tahoe",
         "property_count": 87,
-        "total_bedrooms": 294,
-        "avg_bedrooms": 3.4
+        "total_bedrooms": 241,
+        "avg_bedrooms": 2.8
       },
       {
         "location": "South Lake Tahoe",
         "slug": "california-south-lake-tahoe",
-        "property_count": 76,
-        "total_bedrooms": 241,
-        "avg_bedrooms": 3.2
+        "property_count": 77,
+        "total_bedrooms": 237,
+        "avg_bedrooms": 3.1
       },
       {
         "location": "Hawaii",
         "slug": "hawaii",
         "property_count": 73,
-        "total_bedrooms": 170,
-        "avg_bedrooms": 2.3
+        "total_bedrooms": 122,
+        "avg_bedrooms": 1.7
       },
       {
         "location": "Austin",
         "slug": "texas-austin",
-        "property_count": 67,
-        "total_bedrooms": 223,
-        "avg_bedrooms": 3.3
+        "property_count": 69,
+        "total_bedrooms": 172,
+        "avg_bedrooms": 2.5
       },
       {
         "location": "Smoky Mountains",
         "slug": "tennessee-smoky-mountains",
         "property_count": 62,
-        "total_bedrooms": 191,
-        "avg_bedrooms": 3.1
+        "total_bedrooms": 243,
+        "avg_bedrooms": 3.9
       },
       {
         "location": "Big Island",
@@ -2984,57 +3103,64 @@
         "location": "Sea Ranch",
         "slug": "california-sea-ranch",
         "property_count": 50,
-        "total_bedrooms": 129,
-        "avg_bedrooms": 2.6
+        "total_bedrooms": 125,
+        "avg_bedrooms": 2.5
       },
       {
         "location": "Southern Coastal",
         "slug": "maine-southern-coastal",
-        "property_count": 45,
-        "total_bedrooms": 169,
+        "property_count": 46,
+        "total_bedrooms": 176,
         "avg_bedrooms": 3.8
       },
       {
         "location": "Lake Geneva",
         "slug": "wisconsin-lake-geneva",
         "property_count": 43,
-        "total_bedrooms": 183,
-        "avg_bedrooms": 4.2
+        "total_bedrooms": 115,
+        "avg_bedrooms": 2.7
       },
       {
         "location": "Carolina Hilton Head Island",
         "slug": "south-carolina-hilton-head-island",
         "property_count": 42,
-        "total_bedrooms": 94,
-        "avg_bedrooms": 2.2
+        "total_bedrooms": 102,
+        "avg_bedrooms": 2.4
       },
       {
         "location": "Glacier Country",
         "slug": "montana-glacier-country",
         "property_count": 42,
-        "total_bedrooms": 130,
-        "avg_bedrooms": 3.1
+        "total_bedrooms": 102,
+        "avg_bedrooms": 2.4
       },
       {
         "location": "Palm Springs",
         "slug": "california-palm-springs",
         "property_count": 39,
-        "total_bedrooms": 124,
-        "avg_bedrooms": 3.2
+        "total_bedrooms": 114,
+        "avg_bedrooms": 2.9
       },
       {
         "location": "Southern",
         "slug": "utah-southern",
         "property_count": 39,
-        "total_bedrooms": 117,
-        "avg_bedrooms": 3.0
+        "total_bedrooms": 107,
+        "avg_bedrooms": 2.8
       },
       {
         "location": "Bend Central Oregon",
         "slug": "oregon-bend-central-oregon",
-        "property_count": 35,
-        "total_bedrooms": 88,
-        "avg_bedrooms": 2.5
+        "property_count": 38,
+        "total_bedrooms": 104,
+        "avg_bedrooms": 2.8
+      },
+      {
+        "location": "Panama City Beach",
+        "slug": "florida-panama-city-beach",
+        "property_count": 37,
+        "total_bedrooms": 74,
+        "avg_bedrooms": 2.0
       },
       {
         "location": "Monterey Bay Sierra Foothills",
@@ -3044,151 +3170,144 @@
         "avg_bedrooms": 3.0
       },
       {
-        "location": "Panama City Beach",
-        "slug": "florida-panama-city-beach",
+        "location": "Palm Beach",
+        "slug": "florida-palm-beach",
         "property_count": 35,
-        "total_bedrooms": 70,
-        "avg_bedrooms": 2.0
+        "total_bedrooms": 111,
+        "avg_bedrooms": 3.2
       },
       {
         "location": "Broken Bow",
         "slug": "oklahoma-broken-bow",
         "property_count": 34,
-        "total_bedrooms": 76,
-        "avg_bedrooms": 2.2
-      },
-      {
-        "location": "Palm Beach",
-        "slug": "florida-palm-beach",
-        "property_count": 32,
-        "total_bedrooms": 75,
-        "avg_bedrooms": 2.3
+        "total_bedrooms": 105,
+        "avg_bedrooms": 3.1
       },
       {
         "location": "Breckenridge",
         "slug": "colorado-breckenridge",
         "property_count": 29,
-        "total_bedrooms": 85,
-        "avg_bedrooms": 2.9
+        "total_bedrooms": 72,
+        "avg_bedrooms": 2.5
       },
       {
         "location": "Galveston",
         "slug": "texas-galveston",
-        "property_count": 26,
-        "total_bedrooms": 61,
-        "avg_bedrooms": 2.3
+        "property_count": 27,
+        "total_bedrooms": 58,
+        "avg_bedrooms": 2.2
       },
       {
         "location": "Port Aransas North Padre Island",
         "slug": "texas-port-aransas-north-padre-island",
         "property_count": 25,
-        "total_bedrooms": 67,
-        "avg_bedrooms": 2.7
+        "total_bedrooms": 85,
+        "avg_bedrooms": 3.4
       },
       {
         "location": "Gulf Shores",
         "slug": "alabama-gulf-shores",
         "property_count": 24,
-        "total_bedrooms": 84,
-        "avg_bedrooms": 3.5
+        "total_bedrooms": 86,
+        "avg_bedrooms": 3.6
       },
       {
         "location": "Long Beach",
         "slug": "california-long-beach",
         "property_count": 24,
-        "total_bedrooms": 58,
-        "avg_bedrooms": 2.4
+        "total_bedrooms": 64,
+        "avg_bedrooms": 2.7
       },
       {
         "location": "New Braunfels",
         "slug": "texas-new-braunfels",
         "property_count": 24,
-        "total_bedrooms": 58,
-        "avg_bedrooms": 2.4
+        "total_bedrooms": 56,
+        "avg_bedrooms": 2.3
       },
       {
-        "location": "Hill Country",
-        "slug": "texas-hill-country",
-        "property_count": 23,
-        "total_bedrooms": 82,
-        "avg_bedrooms": 3.6
+        "location": "St Augustine",
+        "slug": "florida-st-augustine",
+        "property_count": 24,
+        "total_bedrooms": 60,
+        "avg_bedrooms": 2.5
+      },
+      {
+        "location": "White Mountains",
+        "slug": "seacoast-white-mountains",
+        "property_count": 24,
+        "total_bedrooms": 41,
+        "avg_bedrooms": 1.7
       },
       {
         "location": "Hollywood Sunny Isles",
         "slug": "florida-hollywood-sunny-isles",
         "property_count": 23,
-        "total_bedrooms": 36,
-        "avg_bedrooms": 1.6
-      },
-      {
-        "location": "St Augustine",
-        "slug": "florida-st-augustine",
-        "property_count": 23,
-        "total_bedrooms": 63,
-        "avg_bedrooms": 2.8
-      },
-      {
-        "location": "White Mountains",
-        "slug": "seacoast-white-mountains",
-        "property_count": 23,
-        "total_bedrooms": 26,
-        "avg_bedrooms": 1.1
+        "total_bedrooms": 34,
+        "avg_bedrooms": 1.5
       },
       {
         "location": "Destin And Miramar Beach",
         "slug": "florida-destin-and-miramar-beach",
         "property_count": 22,
-        "total_bedrooms": 44,
-        "avg_bedrooms": 2.0
+        "total_bedrooms": 38,
+        "avg_bedrooms": 1.8
+      },
+      {
+        "location": "Hill Country",
+        "slug": "texas-hill-country",
+        "property_count": 22,
+        "total_bedrooms": 57,
+        "avg_bedrooms": 2.6
       },
       {
         "location": "North Georgia Mountains",
         "slug": "georgia-north-georgia-mountains",
         "property_count": 21,
-        "total_bedrooms": 66,
+        "total_bedrooms": 68,
         "avg_bedrooms": 3.2
       },
       {
         "location": "Beaches",
         "slug": "delaware-beaches",
         "property_count": 19,
-        "total_bedrooms": 62,
+        "total_bedrooms": 60,
         "avg_bedrooms": 3.2
       },
       {
         "location": "Park City",
         "slug": "utah-park-city",
         "property_count": 19,
-        "total_bedrooms": 40,
-        "avg_bedrooms": 2.1
+        "total_bedrooms": 49,
+        "avg_bedrooms": 2.6
       },
       {
         "location": "Big Bear Lake Arrowhead",
         "slug": "california-big-bear-lake-arrowhead",
         "property_count": 18,
-        "total_bedrooms": 54,
-        "avg_bedrooms": 3.0
+        "total_bedrooms": 51,
+        "avg_bedrooms": 2.8
       },
       {
         "location": "Orange Beach",
         "slug": "alabama-orange-beach",
         "property_count": 18,
-        "total_bedrooms": 57,
-        "avg_bedrooms": 3.2
+        "total_bedrooms": 48,
+        "avg_bedrooms": 2.7
       },
       {
         "location": "Franklin",
         "slug": "tennessee-franklin",
         "property_count": 15,
-        "total_bedrooms": 48,
-        "avg_bedrooms": 3.2
+        "total_bedrooms": 45,
+        "avg_bedrooms": 3.0
       },
       {
         "location": "Oahu",
         "slug": "hawaii-oahu",
         "property_count": 14,
-        "total_bedrooms": 30,
-        "avg_bedrooms": 2.2
+        "total_bedrooms": 32,
+        "avg_bedrooms": 2.3
       },
       {
         "location": "Newport Beach",
@@ -3215,15 +3334,15 @@
         "location": "Santa Barbara",
         "slug": "california-santa-barbara",
         "property_count": 11,
-        "total_bedrooms": 31,
-        "avg_bedrooms": 2.8
+        "total_bedrooms": 28,
+        "avg_bedrooms": 2.5
       },
       {
         "location": "North Atlanta",
         "slug": "georgia-north-atlanta",
-        "property_count": 8,
-        "total_bedrooms": 18,
-        "avg_bedrooms": 2.2
+        "property_count": 9,
+        "total_bedrooms": 19,
+        "avg_bedrooms": 2.1
       },
       {
         "location": "Cape Cod Falmouth Mashpee",
@@ -3869,28 +3988,86 @@
         "White Mountains": 23,
         "Winter Park And Grand County": 3,
         "Grand Welcome Total": 2242
+      },
+      "2026-06-07": {
+        "Austin": 69,
+        "Beaches": 19,
+        "Bend Central Oregon": 38,
+        "Big Bear Lake Arrowhead": 18,
+        "Big Island": 59,
+        "Breckenridge": 29,
+        "Broken Bow": 34,
+        "Cape Cod Falmouth Mashpee": 7,
+        "Carolina Hilton Head Island": 42,
+        "Carolina Lake Norman": 5,
+        "Destin And Miramar Beach": 22,
+        "Franklin": 15,
+        "Galveston": 27,
+        "Glacier Country": 42,
+        "Gulf Shores": 24,
+        "Hawaii": 73,
+        "Hill Country": 22,
+        "Hollywood Sunny Isles": 23,
+        "Houston": 1,
+        "Lake Geneva": 43,
+        "Lake Of The Ozarks": 90,
+        "Long Beach": 24,
+        "Mammoth Lakes": 103,
+        "Mesa": 2,
+        "Miami": 11,
+        "Monterey Bay Sierra Foothills": 35,
+        "Nashville": 101,
+        "Nevada North Lake Tahoe": 87,
+        "New Braunfels": 24,
+        "Newport Beach": 12,
+        "North Atlanta": 9,
+        "North Georgia Mountains": 21,
+        "Oahu": 14,
+        "Oceanside Carlsbad Encinitas": 12,
+        "Orange Beach": 18,
+        "Orlando": 173,
+        "Palm Beach": 35,
+        "Palm Springs": 39,
+        "Panama City Beach": 37,
+        "Park City": 19,
+        "Port Aransas North Padre Island": 25,
+        "San Antonio": 2,
+        "Santa Barbara": 11,
+        "Scottsdale": 7,
+        "Sea Ranch": 50,
+        "Smoky Mountains": 62,
+        "South Lake Tahoe": 77,
+        "Southern": 39,
+        "Southern Coastal": 46,
+        "Space Coast": 1,
+        "St Augustine": 24,
+        "The Ozarks": 407,
+        "Vail Valley": 7,
+        "White Mountains": 24,
+        "Winter Park And Grand County": 3,
+        "Grand Welcome Total": 2263
       }
     },
     "trends": {
-      "latest_date": "2026-05-31",
+      "latest_date": "2026-06-07",
       "comparison_dates": {
-        "week_ago": "2026-05-17",
-        "month_ago": "2026-04-13",
+        "week_ago": "2026-05-24",
+        "month_ago": "2026-04-27",
         "first": "2026-03-19"
       },
       "entities": {
         "Austin": {
-          "current": 67,
-          "wow_prev": 70,
-          "wow_change": -3,
-          "wow_pct": -4.3,
-          "mom_prev": 71,
-          "mom_change": -4,
-          "mom_pct": -5.6,
+          "current": 69,
+          "wow_prev": 67,
+          "wow_change": 2,
+          "wow_pct": 3.0,
+          "mom_prev": 70,
+          "mom_change": -1,
+          "mom_pct": -1.4,
           "first_date": "2026-03-19",
           "first": 71,
-          "all_time_change": -4,
-          "all_time_pct": -5.6,
+          "all_time_change": -2,
+          "all_time_pct": -2.8,
           "trend": "declining"
         },
         "Beaches": {
@@ -3908,46 +4085,46 @@
           "trend": "declining"
         },
         "Bend Central Oregon": {
-          "current": 35,
+          "current": 38,
           "wow_prev": 35,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 36,
-          "mom_change": -1,
-          "mom_pct": -2.8,
+          "wow_change": 3,
+          "wow_pct": 8.6,
+          "mom_prev": 35,
+          "mom_change": 3,
+          "mom_pct": 8.6,
           "first_date": "2026-03-19",
           "first": 36,
-          "all_time_change": -1,
-          "all_time_pct": -2.8,
-          "trend": "declining"
+          "all_time_change": 2,
+          "all_time_pct": 5.6,
+          "trend": "growing"
         },
         "Big Bear Lake Arrowhead": {
           "current": 18,
           "wow_prev": 18,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 20,
-          "mom_change": -2,
-          "mom_pct": -10.0,
+          "mom_prev": 17,
+          "mom_change": 1,
+          "mom_pct": 5.9,
           "first_date": "2026-03-19",
           "first": 20,
           "all_time_change": -2,
           "all_time_pct": -10.0,
-          "trend": "declining"
+          "trend": "growing"
         },
         "Big Island": {
           "current": 59,
           "wow_prev": 59,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 58,
-          "mom_change": 1,
-          "mom_pct": 1.7,
+          "mom_prev": 59,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 58,
           "all_time_change": 1,
           "all_time_pct": 1.7,
-          "trend": "growing"
+          "trend": "stable"
         },
         "Branson": {
           "current": 389,
@@ -3982,14 +4159,14 @@
           "wow_prev": 36,
           "wow_change": -2,
           "wow_pct": -5.6,
-          "mom_prev": 32,
-          "mom_change": 2,
-          "mom_pct": 6.2,
+          "mom_prev": 34,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 32,
           "all_time_change": 2,
           "all_time_pct": 6.2,
-          "trend": "growing"
+          "trend": "stable"
         },
         "Cape Cod Falmouth Mashpee": {
           "current": 7,
@@ -4010,14 +4187,14 @@
           "wow_prev": 42,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 42,
-          "mom_change": 0,
-          "mom_pct": 0.0,
+          "mom_prev": 41,
+          "mom_change": 1,
+          "mom_pct": 2.4,
           "first_date": "2026-03-19",
           "first": 41,
           "all_time_change": 1,
           "all_time_pct": 2.4,
-          "trend": "stable"
+          "trend": "growing"
         },
         "Carolina Lake Norman": {
           "current": 5,
@@ -4062,17 +4239,17 @@
           "trend": "stable"
         },
         "Galveston": {
-          "current": 26,
+          "current": 27,
           "wow_prev": 26,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 21,
-          "mom_change": 5,
-          "mom_pct": 23.8,
+          "wow_change": 1,
+          "wow_pct": 3.8,
+          "mom_prev": 23,
+          "mom_change": 4,
+          "mom_pct": 17.4,
           "first_date": "2026-03-19",
           "first": 20,
-          "all_time_change": 6,
-          "all_time_pct": 30.0,
+          "all_time_change": 7,
+          "all_time_pct": 35.0,
           "trend": "growing"
         },
         "Glacier Country": {
@@ -4080,9 +4257,9 @@
           "wow_prev": 41,
           "wow_change": 1,
           "wow_pct": 2.4,
-          "mom_prev": 37,
-          "mom_change": 5,
-          "mom_pct": 13.5,
+          "mom_prev": 41,
+          "mom_change": 1,
+          "mom_pct": 2.4,
           "first_date": "2026-03-19",
           "first": 36,
           "all_time_change": 6,
@@ -4108,34 +4285,34 @@
           "wow_prev": 73,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 73,
-          "mom_change": 0,
-          "mom_pct": 0.0,
+          "mom_prev": 75,
+          "mom_change": -2,
+          "mom_pct": -2.7,
           "first_date": "2026-03-19",
           "first": 73,
           "all_time_change": 0,
           "all_time_pct": 0.0,
-          "trend": "stable"
+          "trend": "declining"
         },
         "Hill Country": {
+          "current": 22,
+          "wow_prev": 23,
+          "wow_change": -1,
+          "wow_pct": -4.3,
+          "mom_prev": 23,
+          "mom_change": -1,
+          "mom_pct": -4.3,
+          "first_date": "2026-03-19",
+          "first": 23,
+          "all_time_change": -1,
+          "all_time_pct": -4.3,
+          "trend": "declining"
+        },
+        "Hollywood Sunny Isles": {
           "current": 23,
           "wow_prev": 23,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 23,
-          "mom_change": 0,
-          "mom_pct": 0.0,
-          "first_date": "2026-03-19",
-          "first": 23,
-          "all_time_change": 0,
-          "all_time_pct": 0.0,
-          "trend": "stable"
-        },
-        "Hollywood Sunny Isles": {
-          "current": 23,
-          "wow_prev": 22,
-          "wow_change": 1,
-          "wow_pct": 4.5,
           "mom_prev": 21,
           "mom_change": 2,
           "mom_pct": 9.5,
@@ -4161,37 +4338,37 @@
         },
         "Lake Geneva": {
           "current": 43,
-          "wow_prev": 42,
-          "wow_change": 1,
-          "wow_pct": 2.4,
-          "mom_prev": 45,
-          "mom_change": -2,
-          "mom_pct": -4.4,
+          "wow_prev": 43,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 42,
+          "mom_change": 1,
+          "mom_pct": 2.4,
           "first_date": "2026-03-19",
           "first": 44,
           "all_time_change": -1,
           "all_time_pct": -2.3,
-          "trend": "declining"
+          "trend": "growing"
         },
         "Lake Of The Ozarks": {
-          "current": 88,
-          "wow_prev": 82,
-          "wow_change": 6,
-          "wow_pct": 7.3,
-          "mom_prev": 75,
+          "current": 90,
+          "wow_prev": 86,
+          "wow_change": 4,
+          "wow_pct": 4.7,
+          "mom_prev": 77,
           "mom_change": 13,
-          "mom_pct": 17.3,
+          "mom_pct": 16.9,
           "first_date": "2026-03-19",
           "first": 65,
-          "all_time_change": 23,
-          "all_time_pct": 35.4,
+          "all_time_change": 25,
+          "all_time_pct": 38.5,
           "trend": "growing"
         },
         "Long Beach": {
           "current": 24,
-          "wow_prev": 22,
-          "wow_change": 2,
-          "wow_pct": 9.1,
+          "wow_prev": 24,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 22,
           "mom_change": 2,
           "mom_pct": 9.1,
@@ -4203,9 +4380,9 @@
         },
         "Mammoth Lakes": {
           "current": 103,
-          "wow_prev": 104,
-          "wow_change": -1,
-          "wow_pct": -1.0,
+          "wow_prev": 103,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 103,
           "mom_change": 0,
           "mom_pct": 0.0,
@@ -4231,9 +4408,9 @@
         },
         "Miami": {
           "current": 11,
-          "wow_prev": 10,
-          "wow_change": 1,
-          "wow_pct": 10.0,
+          "wow_prev": 11,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 9,
           "mom_change": 2,
           "mom_pct": 22.2,
@@ -4245,17 +4422,17 @@
         },
         "Monterey Bay Sierra Foothills": {
           "current": 35,
-          "wow_prev": 36,
-          "wow_change": -1,
-          "wow_pct": -2.8,
-          "mom_prev": 37,
-          "mom_change": -2,
-          "mom_pct": -5.4,
+          "wow_prev": 35,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 35,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 35,
           "all_time_change": 0,
           "all_time_pct": 0.0,
-          "trend": "declining"
+          "trend": "stable"
         },
         "Nashville": {
           "current": 101,
@@ -4276,14 +4453,14 @@
           "wow_prev": 87,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 87,
-          "mom_change": 0,
-          "mom_pct": 0.0,
+          "mom_prev": 85,
+          "mom_change": 2,
+          "mom_pct": 2.4,
           "first_date": "2026-03-19",
           "first": 87,
           "all_time_change": 0,
           "all_time_pct": 0.0,
-          "trend": "stable"
+          "trend": "growing"
         },
         "New Braunfels": {
           "current": 24,
@@ -4314,27 +4491,27 @@
           "trend": "stable"
         },
         "North Atlanta": {
-          "current": 8,
+          "current": 9,
           "wow_prev": 8,
-          "wow_change": 0,
-          "wow_pct": 0.0,
+          "wow_change": 1,
+          "wow_pct": 12.5,
           "mom_prev": 8,
-          "mom_change": 0,
-          "mom_pct": 0.0,
+          "mom_change": 1,
+          "mom_pct": 12.5,
           "first_date": "2026-03-19",
           "first": 8,
-          "all_time_change": 0,
-          "all_time_pct": 0.0,
-          "trend": "stable"
+          "all_time_change": 1,
+          "all_time_pct": 12.5,
+          "trend": "growing"
         },
         "North Georgia Mountains": {
           "current": 21,
-          "wow_prev": 20,
-          "wow_change": 1,
-          "wow_pct": 5.0,
-          "mom_prev": 18,
-          "mom_change": 3,
-          "mom_pct": 16.7,
+          "wow_prev": 21,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 19,
+          "mom_change": 2,
+          "mom_pct": 10.5,
           "first_date": "2026-03-19",
           "first": 17,
           "all_time_change": 4,
@@ -4346,9 +4523,9 @@
           "wow_prev": 14,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 15,
-          "mom_change": -1,
-          "mom_pct": -6.7,
+          "mom_prev": 16,
+          "mom_change": -2,
+          "mom_pct": -12.5,
           "first_date": "2026-03-19",
           "first": 15,
           "all_time_change": -1,
@@ -4371,9 +4548,9 @@
         },
         "Orange Beach": {
           "current": 18,
-          "wow_prev": 16,
-          "wow_change": 2,
-          "wow_pct": 12.5,
+          "wow_prev": 17,
+          "wow_change": 1,
+          "wow_pct": 5.9,
           "mom_prev": 15,
           "mom_change": 3,
           "mom_pct": 20.0,
@@ -4385,12 +4562,12 @@
         },
         "Orlando": {
           "current": 173,
-          "wow_prev": 172,
-          "wow_change": 1,
-          "wow_pct": 0.6,
-          "mom_prev": 168,
-          "mom_change": 5,
-          "mom_pct": 3.0,
+          "wow_prev": 173,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 171,
+          "mom_change": 2,
+          "mom_pct": 1.2,
           "first_date": "2026-03-19",
           "first": 163,
           "all_time_change": 10,
@@ -4398,17 +4575,17 @@
           "trend": "growing"
         },
         "Palm Beach": {
-          "current": 32,
+          "current": 35,
           "wow_prev": 35,
-          "wow_change": -3,
-          "wow_pct": -8.6,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 31,
-          "mom_change": 1,
-          "mom_pct": 3.2,
+          "mom_change": 4,
+          "mom_pct": 12.9,
           "first_date": "2026-03-19",
           "first": 29,
-          "all_time_change": 3,
-          "all_time_pct": 10.3,
+          "all_time_change": 6,
+          "all_time_pct": 20.7,
           "trend": "growing"
         },
         "Palm Springs": {
@@ -4426,17 +4603,17 @@
           "trend": "growing"
         },
         "Panama City Beach": {
-          "current": 35,
-          "wow_prev": 34,
-          "wow_change": 1,
-          "wow_pct": 2.9,
+          "current": 37,
+          "wow_prev": 35,
+          "wow_change": 2,
+          "wow_pct": 5.7,
           "mom_prev": 33,
-          "mom_change": 2,
-          "mom_pct": 6.1,
+          "mom_change": 4,
+          "mom_pct": 12.1,
           "first_date": "2026-03-19",
           "first": 33,
-          "all_time_change": 2,
-          "all_time_pct": 6.1,
+          "all_time_change": 4,
+          "all_time_pct": 12.1,
           "trend": "growing"
         },
         "Park City": {
@@ -4514,9 +4691,9 @@
           "wow_prev": 50,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 49,
-          "mom_change": 1,
-          "mom_pct": 2.0,
+          "mom_prev": 48,
+          "mom_change": 2,
+          "mom_pct": 4.2,
           "first_date": "2026-03-19",
           "first": 48,
           "all_time_change": 2,
@@ -4525,9 +4702,9 @@
         },
         "Smoky Mountains": {
           "current": 62,
-          "wow_prev": 69,
-          "wow_change": -7,
-          "wow_pct": -10.1,
+          "wow_prev": 62,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 68,
           "mom_change": -6,
           "mom_pct": -8.8,
@@ -4538,17 +4715,17 @@
           "trend": "declining"
         },
         "South Lake Tahoe": {
-          "current": 76,
+          "current": 77,
           "wow_prev": 76,
-          "wow_change": 0,
-          "wow_pct": 0.0,
+          "wow_change": 1,
+          "wow_pct": 1.3,
           "mom_prev": 74,
-          "mom_change": 2,
-          "mom_pct": 2.7,
+          "mom_change": 3,
+          "mom_pct": 4.1,
           "first_date": "2026-03-19",
           "first": 73,
-          "all_time_change": 3,
-          "all_time_pct": 4.1,
+          "all_time_change": 4,
+          "all_time_pct": 5.5,
           "trend": "growing"
         },
         "Southern": {
@@ -4566,17 +4743,17 @@
           "trend": "growing"
         },
         "Southern Coastal": {
-          "current": 45,
+          "current": 46,
           "wow_prev": 45,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 41,
+          "wow_change": 1,
+          "wow_pct": 2.2,
+          "mom_prev": 42,
           "mom_change": 4,
-          "mom_pct": 9.8,
+          "mom_pct": 9.5,
           "first_date": "2026-03-19",
           "first": 40,
-          "all_time_change": 5,
-          "all_time_pct": 12.5,
+          "all_time_change": 6,
+          "all_time_pct": 15.0,
           "trend": "growing"
         },
         "Space Coast": {
@@ -4594,17 +4771,17 @@
           "trend": "stable"
         },
         "St Augustine": {
-          "current": 23,
+          "current": 24,
           "wow_prev": 21,
-          "wow_change": 2,
-          "wow_pct": 9.5,
+          "wow_change": 3,
+          "wow_pct": 14.3,
           "mom_prev": 21,
-          "mom_change": 2,
-          "mom_pct": 9.5,
+          "mom_change": 3,
+          "mom_pct": 14.3,
           "first_date": "2026-03-19",
           "first": 20,
-          "all_time_change": 3,
-          "all_time_pct": 15.0,
+          "all_time_change": 4,
+          "all_time_pct": 20.0,
           "trend": "growing"
         },
         "Vail Valley": {
@@ -4622,24 +4799,24 @@
           "trend": "stable"
         },
         "White Mountains": {
-          "current": 23,
-          "wow_prev": 22,
+          "current": 24,
+          "wow_prev": 23,
           "wow_change": 1,
-          "wow_pct": 4.5,
-          "mom_prev": 11,
-          "mom_change": 12,
-          "mom_pct": 109.1,
+          "wow_pct": 4.3,
+          "mom_prev": 18,
+          "mom_change": 6,
+          "mom_pct": 33.3,
           "first_date": "2026-03-19",
           "first": 8,
-          "all_time_change": 15,
-          "all_time_pct": 187.5,
+          "all_time_change": 16,
+          "all_time_pct": 200.0,
           "trend": "growing"
         },
         "Winter Park And Grand County": {
           "current": 3,
-          "wow_prev": 2,
-          "wow_change": 1,
-          "wow_pct": 50.0,
+          "wow_prev": 3,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 2,
           "mom_change": 1,
           "mom_pct": 50.0,
@@ -4650,17 +4827,17 @@
           "trend": "growing"
         },
         "Grand Welcome Total": {
-          "current": 2242,
-          "wow_prev": 2237,
-          "wow_change": 5,
-          "wow_pct": 0.2,
-          "mom_prev": 2178,
-          "mom_change": 64,
-          "mom_pct": 2.9,
+          "current": 2263,
+          "wow_prev": 2240,
+          "wow_change": 23,
+          "wow_pct": 1.0,
+          "mom_prev": 2189,
+          "mom_change": 74,
+          "mom_pct": 3.4,
           "first_date": "2026-03-19",
           "first": 2127,
-          "all_time_change": 115,
-          "all_time_pct": 5.4,
+          "all_time_change": 136,
+          "all_time_pct": 6.4,
           "trend": "growing"
         },
         "Oceanside Carlsbad Encinitas": {
@@ -4678,139 +4855,154 @@
           "trend": "stable"
         },
         "The Ozarks": {
-          "current": 403,
+          "current": 407,
           "wow_prev": 401,
-          "wow_change": 2,
-          "wow_pct": 0.5,
-          "mom_prev": 393,
-          "mom_change": 10,
-          "mom_pct": 2.5,
+          "wow_change": 6,
+          "wow_pct": 1.5,
+          "mom_prev": 392,
+          "mom_change": 15,
+          "mom_pct": 3.8,
           "first_date": "2026-04-13",
           "first": 393,
-          "all_time_change": 10,
-          "all_time_pct": 2.5,
+          "all_time_change": 14,
+          "all_time_pct": 3.6,
           "trend": "growing"
         }
       },
       "growing": [
         {
           "name": "Grand Welcome Total",
-          "current": 2242,
-          "wow_prev": 2237,
-          "wow_change": 5,
-          "wow_pct": 0.2,
-          "mom_prev": 2178,
-          "mom_change": 64,
-          "mom_pct": 2.9,
+          "current": 2263,
+          "wow_prev": 2240,
+          "wow_change": 23,
+          "wow_pct": 1.0,
+          "mom_prev": 2189,
+          "mom_change": 74,
+          "mom_pct": 3.4,
           "first_date": "2026-03-19",
           "first": 2127,
-          "all_time_change": 115,
-          "all_time_pct": 5.4,
-          "trend": "growing"
-        },
-        {
-          "name": "Lake Of The Ozarks",
-          "current": 88,
-          "wow_prev": 82,
-          "wow_change": 6,
-          "wow_pct": 7.3,
-          "mom_prev": 75,
-          "mom_change": 13,
-          "mom_pct": 17.3,
-          "first_date": "2026-03-19",
-          "first": 65,
-          "all_time_change": 23,
-          "all_time_pct": 35.4,
-          "trend": "growing"
-        },
-        {
-          "name": "White Mountains",
-          "current": 23,
-          "wow_prev": 22,
-          "wow_change": 1,
-          "wow_pct": 4.5,
-          "mom_prev": 11,
-          "mom_change": 12,
-          "mom_pct": 109.1,
-          "first_date": "2026-03-19",
-          "first": 8,
-          "all_time_change": 15,
-          "all_time_pct": 187.5,
+          "all_time_change": 136,
+          "all_time_pct": 6.4,
           "trend": "growing"
         },
         {
           "name": "The Ozarks",
-          "current": 403,
+          "current": 407,
           "wow_prev": 401,
-          "wow_change": 2,
-          "wow_pct": 0.5,
-          "mom_prev": 393,
-          "mom_change": 10,
-          "mom_pct": 2.5,
+          "wow_change": 6,
+          "wow_pct": 1.5,
+          "mom_prev": 392,
+          "mom_change": 15,
+          "mom_pct": 3.8,
           "first_date": "2026-04-13",
           "first": 393,
-          "all_time_change": 10,
-          "all_time_pct": 2.5,
+          "all_time_change": 14,
+          "all_time_pct": 3.6,
+          "trend": "growing"
+        },
+        {
+          "name": "Lake Of The Ozarks",
+          "current": 90,
+          "wow_prev": 86,
+          "wow_change": 4,
+          "wow_pct": 4.7,
+          "mom_prev": 77,
+          "mom_change": 13,
+          "mom_pct": 16.9,
+          "first_date": "2026-03-19",
+          "first": 65,
+          "all_time_change": 25,
+          "all_time_pct": 38.5,
+          "trend": "growing"
+        },
+        {
+          "name": "White Mountains",
+          "current": 24,
+          "wow_prev": 23,
+          "wow_change": 1,
+          "wow_pct": 4.3,
+          "mom_prev": 18,
+          "mom_change": 6,
+          "mom_pct": 33.3,
+          "first_date": "2026-03-19",
+          "first": 8,
+          "all_time_change": 16,
+          "all_time_pct": 200.0,
           "trend": "growing"
         },
         {
           "name": "Galveston",
-          "current": 26,
+          "current": 27,
           "wow_prev": 26,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 21,
-          "mom_change": 5,
-          "mom_pct": 23.8,
+          "wow_change": 1,
+          "wow_pct": 3.8,
+          "mom_prev": 23,
+          "mom_change": 4,
+          "mom_pct": 17.4,
           "first_date": "2026-03-19",
           "first": 20,
-          "all_time_change": 6,
-          "all_time_pct": 30.0,
+          "all_time_change": 7,
+          "all_time_pct": 35.0,
           "trend": "growing"
         },
         {
-          "name": "Glacier Country",
-          "current": 42,
-          "wow_prev": 41,
-          "wow_change": 1,
-          "wow_pct": 2.4,
-          "mom_prev": 37,
-          "mom_change": 5,
-          "mom_pct": 13.5,
+          "name": "Palm Beach",
+          "current": 35,
+          "wow_prev": 35,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 31,
+          "mom_change": 4,
+          "mom_pct": 12.9,
           "first_date": "2026-03-19",
-          "first": 36,
+          "first": 29,
           "all_time_change": 6,
-          "all_time_pct": 16.7,
+          "all_time_pct": 20.7,
           "trend": "growing"
         },
         {
-          "name": "Orlando",
-          "current": 173,
-          "wow_prev": 172,
-          "wow_change": 1,
-          "wow_pct": 0.6,
-          "mom_prev": 168,
-          "mom_change": 5,
-          "mom_pct": 3.0,
+          "name": "Panama City Beach",
+          "current": 37,
+          "wow_prev": 35,
+          "wow_change": 2,
+          "wow_pct": 5.7,
+          "mom_prev": 33,
+          "mom_change": 4,
+          "mom_pct": 12.1,
           "first_date": "2026-03-19",
-          "first": 163,
-          "all_time_change": 10,
-          "all_time_pct": 6.1,
+          "first": 33,
+          "all_time_change": 4,
+          "all_time_pct": 12.1,
           "trend": "growing"
         },
         {
           "name": "Southern Coastal",
-          "current": 45,
+          "current": 46,
           "wow_prev": 45,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 41,
+          "wow_change": 1,
+          "wow_pct": 2.2,
+          "mom_prev": 42,
           "mom_change": 4,
-          "mom_pct": 9.8,
+          "mom_pct": 9.5,
           "first_date": "2026-03-19",
           "first": 40,
-          "all_time_change": 5,
-          "all_time_pct": 12.5,
+          "all_time_change": 6,
+          "all_time_pct": 15.0,
+          "trend": "growing"
+        },
+        {
+          "name": "Bend Central Oregon",
+          "current": 38,
+          "wow_prev": 35,
+          "wow_change": 3,
+          "wow_pct": 8.6,
+          "mom_prev": 35,
+          "mom_change": 3,
+          "mom_pct": 8.6,
+          "first_date": "2026-03-19",
+          "first": 36,
+          "all_time_change": 2,
+          "all_time_pct": 5.6,
           "trend": "growing"
         },
         {
@@ -4844,26 +5036,11 @@
           "trend": "growing"
         },
         {
-          "name": "North Georgia Mountains",
-          "current": 21,
-          "wow_prev": 20,
-          "wow_change": 1,
-          "wow_pct": 5.0,
-          "mom_prev": 18,
-          "mom_change": 3,
-          "mom_pct": 16.7,
-          "first_date": "2026-03-19",
-          "first": 17,
-          "all_time_change": 4,
-          "all_time_pct": 23.5,
-          "trend": "growing"
-        },
-        {
           "name": "Orange Beach",
           "current": 18,
-          "wow_prev": 16,
-          "wow_change": 2,
-          "wow_pct": 12.5,
+          "wow_prev": 17,
+          "wow_change": 1,
+          "wow_pct": 5.9,
           "mom_prev": 15,
           "mom_change": 3,
           "mom_pct": 20.0,
@@ -4874,26 +5051,41 @@
           "trend": "growing"
         },
         {
-          "name": "Broken Bow",
-          "current": 34,
-          "wow_prev": 36,
-          "wow_change": -2,
-          "wow_pct": -5.6,
-          "mom_prev": 32,
-          "mom_change": 2,
-          "mom_pct": 6.2,
+          "name": "South Lake Tahoe",
+          "current": 77,
+          "wow_prev": 76,
+          "wow_change": 1,
+          "wow_pct": 1.3,
+          "mom_prev": 74,
+          "mom_change": 3,
+          "mom_pct": 4.1,
           "first_date": "2026-03-19",
-          "first": 32,
-          "all_time_change": 2,
-          "all_time_pct": 6.2,
+          "first": 73,
+          "all_time_change": 4,
+          "all_time_pct": 5.5,
+          "trend": "growing"
+        },
+        {
+          "name": "St Augustine",
+          "current": 24,
+          "wow_prev": 21,
+          "wow_change": 3,
+          "wow_pct": 14.3,
+          "mom_prev": 21,
+          "mom_change": 3,
+          "mom_pct": 14.3,
+          "first_date": "2026-03-19",
+          "first": 20,
+          "all_time_change": 4,
+          "all_time_pct": 20.0,
           "trend": "growing"
         },
         {
           "name": "Hollywood Sunny Isles",
           "current": 23,
-          "wow_prev": 22,
-          "wow_change": 1,
-          "wow_pct": 4.5,
+          "wow_prev": 23,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 21,
           "mom_change": 2,
           "mom_pct": 9.5,
@@ -4906,9 +5098,9 @@
         {
           "name": "Long Beach",
           "current": 24,
-          "wow_prev": 22,
-          "wow_change": 2,
-          "wow_pct": 9.1,
+          "wow_prev": 24,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 22,
           "mom_change": 2,
           "mom_pct": 9.1,
@@ -4921,9 +5113,9 @@
         {
           "name": "Miami",
           "current": 11,
-          "wow_prev": 10,
-          "wow_change": 1,
-          "wow_pct": 10.0,
+          "wow_prev": 11,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 9,
           "mom_change": 2,
           "mom_pct": 22.2,
@@ -4934,63 +5126,93 @@
           "trend": "growing"
         },
         {
-          "name": "Panama City Beach",
-          "current": 35,
-          "wow_prev": 34,
-          "wow_change": 1,
-          "wow_pct": 2.9,
-          "mom_prev": 33,
+          "name": "Nevada North Lake Tahoe",
+          "current": 87,
+          "wow_prev": 87,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 85,
           "mom_change": 2,
-          "mom_pct": 6.1,
+          "mom_pct": 2.4,
           "first_date": "2026-03-19",
-          "first": 33,
-          "all_time_change": 2,
+          "first": 87,
+          "all_time_change": 0,
+          "all_time_pct": 0.0,
+          "trend": "growing"
+        },
+        {
+          "name": "North Georgia Mountains",
+          "current": 21,
+          "wow_prev": 21,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 19,
+          "mom_change": 2,
+          "mom_pct": 10.5,
+          "first_date": "2026-03-19",
+          "first": 17,
+          "all_time_change": 4,
+          "all_time_pct": 23.5,
+          "trend": "growing"
+        },
+        {
+          "name": "Orlando",
+          "current": 173,
+          "wow_prev": 173,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 171,
+          "mom_change": 2,
+          "mom_pct": 1.2,
+          "first_date": "2026-03-19",
+          "first": 163,
+          "all_time_change": 10,
           "all_time_pct": 6.1,
           "trend": "growing"
         },
         {
-          "name": "South Lake Tahoe",
-          "current": 76,
-          "wow_prev": 76,
+          "name": "Sea Ranch",
+          "current": 50,
+          "wow_prev": 50,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 74,
+          "mom_prev": 48,
           "mom_change": 2,
-          "mom_pct": 2.7,
+          "mom_pct": 4.2,
           "first_date": "2026-03-19",
-          "first": 73,
-          "all_time_change": 3,
-          "all_time_pct": 4.1,
+          "first": 48,
+          "all_time_change": 2,
+          "all_time_pct": 4.2,
           "trend": "growing"
         },
         {
-          "name": "St Augustine",
-          "current": 23,
-          "wow_prev": 21,
-          "wow_change": 2,
-          "wow_pct": 9.5,
-          "mom_prev": 21,
-          "mom_change": 2,
-          "mom_pct": 9.5,
+          "name": "Big Bear Lake Arrowhead",
+          "current": 18,
+          "wow_prev": 18,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 17,
+          "mom_change": 1,
+          "mom_pct": 5.9,
           "first_date": "2026-03-19",
           "first": 20,
-          "all_time_change": 3,
-          "all_time_pct": 15.0,
+          "all_time_change": -2,
+          "all_time_pct": -10.0,
           "trend": "growing"
         },
         {
-          "name": "Big Island",
-          "current": 59,
-          "wow_prev": 59,
+          "name": "Carolina Hilton Head Island",
+          "current": 42,
+          "wow_prev": 42,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 58,
+          "mom_prev": 41,
           "mom_change": 1,
-          "mom_pct": 1.7,
+          "mom_pct": 2.4,
           "first_date": "2026-03-19",
-          "first": 58,
+          "first": 41,
           "all_time_change": 1,
-          "all_time_pct": 1.7,
+          "all_time_pct": 2.4,
           "trend": "growing"
         },
         {
@@ -5009,18 +5231,48 @@
           "trend": "growing"
         },
         {
-          "name": "Palm Beach",
-          "current": 32,
-          "wow_prev": 35,
-          "wow_change": -3,
-          "wow_pct": -8.6,
-          "mom_prev": 31,
+          "name": "Glacier Country",
+          "current": 42,
+          "wow_prev": 41,
+          "wow_change": 1,
+          "wow_pct": 2.4,
+          "mom_prev": 41,
           "mom_change": 1,
-          "mom_pct": 3.2,
+          "mom_pct": 2.4,
           "first_date": "2026-03-19",
-          "first": 29,
-          "all_time_change": 3,
-          "all_time_pct": 10.3,
+          "first": 36,
+          "all_time_change": 6,
+          "all_time_pct": 16.7,
+          "trend": "growing"
+        },
+        {
+          "name": "Lake Geneva",
+          "current": 43,
+          "wow_prev": 43,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 42,
+          "mom_change": 1,
+          "mom_pct": 2.4,
+          "first_date": "2026-03-19",
+          "first": 44,
+          "all_time_change": -1,
+          "all_time_pct": -2.3,
+          "trend": "growing"
+        },
+        {
+          "name": "North Atlanta",
+          "current": 9,
+          "wow_prev": 8,
+          "wow_change": 1,
+          "wow_pct": 12.5,
+          "mom_prev": 8,
+          "mom_change": 1,
+          "mom_pct": 12.5,
+          "first_date": "2026-03-19",
+          "first": 8,
+          "all_time_change": 1,
+          "all_time_pct": 12.5,
           "trend": "growing"
         },
         {
@@ -5054,21 +5306,6 @@
           "trend": "growing"
         },
         {
-          "name": "Sea Ranch",
-          "current": 50,
-          "wow_prev": 50,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 49,
-          "mom_change": 1,
-          "mom_pct": 2.0,
-          "first_date": "2026-03-19",
-          "first": 48,
-          "all_time_change": 2,
-          "all_time_pct": 4.2,
-          "trend": "growing"
-        },
-        {
           "name": "Southern",
           "current": 39,
           "wow_prev": 39,
@@ -5086,9 +5323,9 @@
         {
           "name": "Winter Park And Grand County",
           "current": 3,
-          "wow_prev": 2,
-          "wow_change": 1,
-          "wow_pct": 50.0,
+          "wow_prev": 3,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 2,
           "mom_change": 1,
           "mom_pct": 50.0,
@@ -5103,9 +5340,9 @@
         {
           "name": "Smoky Mountains",
           "current": 62,
-          "wow_prev": 69,
-          "wow_change": -7,
-          "wow_pct": -10.1,
+          "wow_prev": 62,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 68,
           "mom_change": -6,
           "mom_pct": -8.8,
@@ -5116,63 +5353,48 @@
           "trend": "declining"
         },
         {
-          "name": "Austin",
-          "current": 67,
-          "wow_prev": 70,
-          "wow_change": -3,
-          "wow_pct": -4.3,
-          "mom_prev": 71,
-          "mom_change": -4,
-          "mom_pct": -5.6,
-          "first_date": "2026-03-19",
-          "first": 71,
-          "all_time_change": -4,
-          "all_time_pct": -5.6,
-          "trend": "declining"
-        },
-        {
-          "name": "Big Bear Lake Arrowhead",
-          "current": 18,
-          "wow_prev": 18,
+          "name": "Hawaii",
+          "current": 73,
+          "wow_prev": 73,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 20,
+          "mom_prev": 75,
           "mom_change": -2,
-          "mom_pct": -10.0,
+          "mom_pct": -2.7,
           "first_date": "2026-03-19",
-          "first": 20,
-          "all_time_change": -2,
-          "all_time_pct": -10.0,
-          "trend": "declining"
-        },
-        {
-          "name": "Lake Geneva",
-          "current": 43,
-          "wow_prev": 42,
-          "wow_change": 1,
-          "wow_pct": 2.4,
-          "mom_prev": 45,
-          "mom_change": -2,
-          "mom_pct": -4.4,
-          "first_date": "2026-03-19",
-          "first": 44,
-          "all_time_change": -1,
-          "all_time_pct": -2.3,
-          "trend": "declining"
-        },
-        {
-          "name": "Monterey Bay Sierra Foothills",
-          "current": 35,
-          "wow_prev": 36,
-          "wow_change": -1,
-          "wow_pct": -2.8,
-          "mom_prev": 37,
-          "mom_change": -2,
-          "mom_pct": -5.4,
-          "first_date": "2026-03-19",
-          "first": 35,
+          "first": 73,
           "all_time_change": 0,
           "all_time_pct": 0.0,
+          "trend": "declining"
+        },
+        {
+          "name": "Oahu",
+          "current": 14,
+          "wow_prev": 14,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 16,
+          "mom_change": -2,
+          "mom_pct": -12.5,
+          "first_date": "2026-03-19",
+          "first": 15,
+          "all_time_change": -1,
+          "all_time_pct": -6.7,
+          "trend": "declining"
+        },
+        {
+          "name": "Austin",
+          "current": 69,
+          "wow_prev": 67,
+          "wow_change": 2,
+          "wow_pct": 3.0,
+          "mom_prev": 70,
+          "mom_change": -1,
+          "mom_pct": -1.4,
+          "first_date": "2026-03-19",
+          "first": 71,
+          "all_time_change": -2,
+          "all_time_pct": -2.8,
           "trend": "declining"
         },
         {
@@ -5191,18 +5413,18 @@
           "trend": "declining"
         },
         {
-          "name": "Bend Central Oregon",
-          "current": 35,
-          "wow_prev": 35,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 36,
+          "name": "Hill Country",
+          "current": 22,
+          "wow_prev": 23,
+          "wow_change": -1,
+          "wow_pct": -4.3,
+          "mom_prev": 23,
           "mom_change": -1,
-          "mom_pct": -2.8,
+          "mom_pct": -4.3,
           "first_date": "2026-03-19",
-          "first": 36,
+          "first": 23,
           "all_time_change": -1,
-          "all_time_pct": -2.8,
+          "all_time_pct": -4.3,
           "trend": "declining"
         },
         {
@@ -5234,24 +5456,24 @@
           "all_time_change": 0,
           "all_time_pct": 0.0,
           "trend": "declining"
-        },
-        {
-          "name": "Oahu",
-          "current": 14,
-          "wow_prev": 14,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 15,
-          "mom_change": -1,
-          "mom_pct": -6.7,
-          "first_date": "2026-03-19",
-          "first": 15,
-          "all_time_change": -1,
-          "all_time_pct": -6.7,
-          "trend": "declining"
         }
       ],
       "stable": [
+        {
+          "name": "Big Island",
+          "current": 59,
+          "wow_prev": 59,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 59,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 58,
+          "all_time_change": 1,
+          "all_time_pct": 1.7,
+          "trend": "stable"
+        },
         {
           "name": "Breckenridge",
           "current": 29,
@@ -5268,6 +5490,21 @@
           "trend": "stable"
         },
         {
+          "name": "Broken Bow",
+          "current": 34,
+          "wow_prev": 36,
+          "wow_change": -2,
+          "wow_pct": -5.6,
+          "mom_prev": 34,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 32,
+          "all_time_change": 2,
+          "all_time_pct": 6.2,
+          "trend": "stable"
+        },
+        {
           "name": "Cape Cod Falmouth Mashpee",
           "current": 7,
           "wow_prev": 7,
@@ -5280,21 +5517,6 @@
           "first": 7,
           "all_time_change": 0,
           "all_time_pct": 0.0,
-          "trend": "stable"
-        },
-        {
-          "name": "Carolina Hilton Head Island",
-          "current": 42,
-          "wow_prev": 42,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 42,
-          "mom_change": 0,
-          "mom_pct": 0.0,
-          "first_date": "2026-03-19",
-          "first": 41,
-          "all_time_change": 1,
-          "all_time_pct": 2.4,
           "trend": "stable"
         },
         {
@@ -5343,41 +5565,11 @@
           "trend": "stable"
         },
         {
-          "name": "Hawaii",
-          "current": 73,
-          "wow_prev": 73,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 73,
-          "mom_change": 0,
-          "mom_pct": 0.0,
-          "first_date": "2026-03-19",
-          "first": 73,
-          "all_time_change": 0,
-          "all_time_pct": 0.0,
-          "trend": "stable"
-        },
-        {
-          "name": "Hill Country",
-          "current": 23,
-          "wow_prev": 23,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 23,
-          "mom_change": 0,
-          "mom_pct": 0.0,
-          "first_date": "2026-03-19",
-          "first": 23,
-          "all_time_change": 0,
-          "all_time_pct": 0.0,
-          "trend": "stable"
-        },
-        {
           "name": "Mammoth Lakes",
           "current": 103,
-          "wow_prev": 104,
-          "wow_change": -1,
-          "wow_pct": -1.0,
+          "wow_prev": 103,
+          "wow_change": 0,
+          "wow_pct": 0.0,
           "mom_prev": 103,
           "mom_change": 0,
           "mom_pct": 0.0,
@@ -5403,16 +5595,16 @@
           "trend": "stable"
         },
         {
-          "name": "Nevada North Lake Tahoe",
-          "current": 87,
-          "wow_prev": 87,
+          "name": "Monterey Bay Sierra Foothills",
+          "current": 35,
+          "wow_prev": 35,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 87,
+          "mom_prev": 35,
           "mom_change": 0,
           "mom_pct": 0.0,
           "first_date": "2026-03-19",
-          "first": 87,
+          "first": 35,
           "all_time_change": 0,
           "all_time_pct": 0.0,
           "trend": "stable"
@@ -5428,21 +5620,6 @@
           "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 12,
-          "all_time_change": 0,
-          "all_time_pct": 0.0,
-          "trend": "stable"
-        },
-        {
-          "name": "North Atlanta",
-          "current": 8,
-          "wow_prev": 8,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 8,
-          "mom_change": 0,
-          "mom_pct": 0.0,
-          "first_date": "2026-03-19",
-          "first": 8,
           "all_time_change": 0,
           "all_time_pct": 0.0,
           "trend": "stable"
@@ -5572,6 +5749,2187 @@
   },
   "listing_changes": {
     "dates": {
+      "2026-06-07": {
+        "gained": [
+          {
+            "id": 722,
+            "property_name": "Walk to Wells Beach! Family-Friendly Gem w/ Patio",
+            "url": "https://evolve.com/vacation-rentals/us/me/wells/585413",
+            "address": "85 Mile Road",
+            "city": "Wells",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 723,
+            "property_name": "Dun Rovin East",
+            "url": "https://kmapropertygroup.com/rentals/dun-rovin-east/",
+            "address": "21 Surf Lane",
+            "city": "Kennebunk",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": 629,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
+          },
+          {
+            "id": 642,
+            "property_name": "3 Bedroom Condo is 100 feet walk to beach!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=172442",
+            "address": "11 Sunset Ave",
+            "city": "Saco",
+            "competitor": "Saco Bay Rentals",
+            "platform": "liverez",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 643,
+            "property_name": "Salty Breeze Studio",
+            "url": "https://www.vacasa.com/unit/129520",
+            "address": "358 Mile Road",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 644,
+            "property_name": "The Lobster Claw",
+            "url": "https://www.vacasa.com/unit/112065",
+            "address": "28 Coggeshall Lane",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 645,
+            "property_name": "Splash &amp; Relax at Nautical Mile",
+            "url": "https://www.vacasa.com/unit/125127",
+            "address": "1073 Post Road",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 646,
+            "property_name": "Cottages at Summer Village Beach Get-A-Way",
+            "url": "https://www.vacasa.com/unit/123598",
+            "address": "449 Post Road",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 647,
+            "property_name": "Wellington Manor 215",
+            "url": "https://www.vacasa.com/unit/17604",
+            "address": "1762 Post Road",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 648,
+            "property_name": "Evergreen Terrace",
+            "url": "https://www.vacasa.com/unit/75280",
+            "address": "21 Adams Lane",
+            "city": "Ogunquit",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 649,
+            "property_name": "Saltwater Cottage &amp; Studio",
+            "url": "https://www.vacasa.com/unit/126132",
+            "address": "79 Captain Thomas Road",
+            "city": "Ogunquit",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 650,
+            "property_name": "Eastwind Elegance",
+            "url": "https://www.vacasa.com/unit/95196",
+            "address": "548 Main Street",
+            "city": "Ogunquit",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 651,
+            "property_name": "Sea Belle",
+            "url": "https://www.vacasa.com/unit/21924",
+            "address": "5 Barn Point",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 652,
+            "property_name": "Pearly Shores",
+            "url": "https://www.vacasa.com/unit/115387",
+            "address": "303 Long Beach Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 653,
+            "property_name": "Grandeur On The Green",
+            "url": "https://www.vacasa.com/unit/1027231",
+            "address": "36 River Road",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 6,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 654,
+            "property_name": "Pied-\u00e0-terre Dock Square",
+            "url": "https://www.vacasa.com/unit/1027215",
+            "address": "5 Union Street",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 655,
+            "property_name": "Heart\u2019s Content Cottage 20 at Shorelands Resort",
+            "url": "https://www.vacasa.com/unit/1027241",
+            "address": "26 Wells Road",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 656,
+            "property_name": "Shorelands 44-2",
+            "url": "https://www.vacasa.com/unit/1027230",
+            "address": "26 Wells Road",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 657,
+            "property_name": "Shorelands 44-1",
+            "url": "https://www.vacasa.com/unit/1027234",
+            "address": "26 Wells Road",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 658,
+            "property_name": "Barefoot Bliss",
+            "url": "https://www.vacasa.com/unit/1027262",
+            "address": "6 Marsh View Avenue",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 6,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 659,
+            "property_name": "Shore breeze Inn - Tri-Plex",
+            "url": "https://www.vacasa.com/unit/1027269",
+            "address": "26 Wells Road",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 660,
+            "property_name": "Plover\u2019s Run Cottage 32 at Shorelands Resort",
+            "url": "https://www.vacasa.com/unit/1027240",
+            "address": "26 Wells Road",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 661,
+            "property_name": "Shorelands Resort Cottage 40",
+            "url": "https://www.vacasa.com/unit/1027239",
+            "address": "26 Wells Road",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 662,
+            "property_name": "Shorelands, Unit 44-3",
+            "url": "https://www.vacasa.com/unit/1027265",
+            "address": "26 Wells Road",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 663,
+            "property_name": "Kennebunk Beach House",
+            "url": "https://www.vacasa.com/unit/1027229",
+            "address": "33 Bayberry Avenue",
+            "city": "Kennebunk",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 664,
+            "property_name": "Little River Memories",
+            "url": "https://www.vacasa.com/unit/1027256",
+            "address": "1 Munro Lane",
+            "city": "Arundel",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 665,
+            "property_name": "Little Spruce Cottage",
+            "url": "https://www.vacasa.com/unit/1027228",
+            "address": "2 Ranger Lane",
+            "city": "Arundel",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 666,
+            "property_name": "Cape Arundel House",
+            "url": "https://www.vacasa.com/unit/1027248",
+            "address": "3 Colony Lane",
+            "city": "Arundel",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 667,
+            "property_name": "Salty Breeze Studio",
+            "url": "https://www.vacasa.com/unit/1027354",
+            "address": "358 Mile Road",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 668,
+            "property_name": "204 at the Shore",
+            "url": "https://www.vacasa.com/unit/1027332",
+            "address": "Barefoot Cottage Road",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 669,
+            "property_name": "The Lobster Claw",
+            "url": "https://www.vacasa.com/unit/1027338",
+            "address": "28 Coggeshall Lane",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 670,
+            "property_name": "Wellhouse Cottage",
+            "url": "https://www.vacasa.com/unit/73066",
+            "address": "Whites Bridge Road",
+            "city": "Standish",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 671,
+            "property_name": "Lenas&#x27; Lakeside Cabin",
+            "url": "https://www.vacasa.com/unit/91988",
+            "address": "40 Cedar Village Place",
+            "city": "Oakland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 672,
+            "property_name": "Togus Pond Retreat",
+            "url": "https://www.vacasa.com/unit/64577",
+            "address": "138 Allenwood Park Road",
+            "city": "Augusta",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 673,
+            "property_name": "Lake View Cottage",
+            "url": "https://www.vacasa.com/unit/64580",
+            "address": "24 Sunrise Loop",
+            "city": "Leeds",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 674,
+            "property_name": "Lakeside Haven at Parker Pond",
+            "url": "https://www.vacasa.com/unit/123520",
+            "address": "2 Fellows Farm Road South",
+            "city": "Fayette",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 675,
+            "property_name": "Coveside Carriage House",
+            "url": "https://www.vacasa.com/unit/81125",
+            "address": "5 Bufflehead Cove Road",
+            "city": "Trevett",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 676,
+            "property_name": "Blue Sky Cottage",
+            "url": "https://www.vacasa.com/unit/97143",
+            "address": "260 Island Road",
+            "city": "Spruce Head",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 677,
+            "property_name": "Appalachee Pond Waterfront Cottage",
+            "url": "https://www.vacasa.com/unit/62561",
+            "address": "83 Appalachee Road",
+            "city": "Boothbay Harbor",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 678,
+            "property_name": "Charming Hideaway",
+            "url": "https://www.vacasa.com/unit/1027107",
+            "address": "431 Gorham Road",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 679,
+            "property_name": "The Captain&#x27;s Ship",
+            "url": "https://www.vacasa.com/unit/1027227",
+            "address": "99 West Grand Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 6,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 680,
+            "property_name": "Old Orchard Beach House",
+            "url": "https://www.vacasa.com/unit/1027098",
+            "address": "54 School Street",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 681,
+            "property_name": "Beachfront Memories",
+            "url": "https://www.vacasa.com/unit/1027284",
+            "address": "4 Cleaves Street",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 682,
+            "property_name": "Salt &amp; Petal",
+            "url": "https://www.vacasa.com/unit/1027299",
+            "address": "38 Cedar Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 683,
+            "property_name": "Scouten Beachfront",
+            "url": "https://www.vacasa.com/unit/1027287",
+            "address": "4 Cleaves Street",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 684,
+            "property_name": "Beach Waves",
+            "url": "https://www.vacasa.com/unit/1027242",
+            "address": "62 West Grand Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 685,
+            "property_name": "Salt Water Breeze",
+            "url": "https://www.vacasa.com/unit/1027356",
+            "address": "3 Atlantic Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 686,
+            "property_name": "Cabin at the Beach",
+            "url": "https://www.vacasa.com/unit/1027306",
+            "address": "38 Cedar Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 687,
+            "property_name": "Sunrise Deck",
+            "url": "https://www.vacasa.com/unit/1027268",
+            "address": "100 West Grand Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 688,
+            "property_name": "Old Orchard Cottage",
+            "url": "https://www.vacasa.com/unit/1027293",
+            "address": "123 Portland Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 689,
+            "property_name": "By the Sea",
+            "url": "https://www.vacasa.com/unit/1027250",
+            "address": "37 Reggio Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 690,
+            "property_name": "Cumberland Casa - B",
+            "url": "https://www.vacasa.com/unit/1027307",
+            "address": "439 Cumberland Avenue",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 691,
+            "property_name": "East End Annex",
+            "url": "https://www.vacasa.com/unit/1027302",
+            "address": "150 Congress Street",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 692,
+            "property_name": "Cumberland Casa - A",
+            "url": "https://www.vacasa.com/unit/1027304",
+            "address": "439 Cumberland Avenue",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 693,
+            "property_name": "Two Ensuite Historic Portland Charmer",
+            "url": "https://www.vacasa.com/unit/1027258",
+            "address": "56 Pine Street",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 694,
+            "property_name": "Pearl of Portland",
+            "url": "https://www.vacasa.com/unit/1027291",
+            "address": "7 Cleeve Street",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 695,
+            "property_name": "Morning on the Atlantic",
+            "url": "https://www.vacasa.com/unit/1027292",
+            "address": "Cutter Street",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 696,
+            "property_name": "A Foodie\u2019s Delight",
+            "url": "https://www.vacasa.com/unit/1027290",
+            "address": "7 Cleeve Street",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 697,
+            "property_name": "The Landing on North",
+            "url": "https://www.vacasa.com/unit/1027397",
+            "address": "46 Walnut Street",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 698,
+            "property_name": "Two Ensuite West End Charmer",
+            "url": "https://www.vacasa.com/unit/1027303",
+            "address": "56 Pine Street",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 699,
+            "property_name": "Cumberland Charm",
+            "url": "https://www.vacasa.com/unit/1027285",
+            "address": "7 Cleeve Street",
+            "city": "Portland",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 700,
+            "property_name": "Sea Spray Cove",
+            "url": "https://www.vacasa.com/unit/1027261",
+            "address": "3 Seaspray Drive",
+            "city": "Biddeford",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 701,
+            "property_name": "Ocean Tide Escape",
+            "url": "https://www.vacasa.com/unit/1027271",
+            "address": "129 Hills Beach Road",
+            "city": "Biddeford",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 702,
+            "property_name": "The Blue Lobster",
+            "url": "https://www.vacasa.com/unit/1027272",
+            "address": "155 Hills Beach Road",
+            "city": "Biddeford",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 703,
+            "property_name": "Hills Beach Escape",
+            "url": "https://www.vacasa.com/unit/1027399",
+            "address": "151 Hills Beach Road",
+            "city": "Biddeford",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 704,
+            "property_name": "Wiggly Bridge Landing",
+            "url": "https://www.vacasa.com/unit/1027141",
+            "address": "341 York Street",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 705,
+            "property_name": "Meet Me At Sea",
+            "url": "https://www.vacasa.com/unit/1027321",
+            "address": "1 Cappy's Lane",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 706,
+            "property_name": "Sea Belle",
+            "url": "https://www.vacasa.com/unit/1027318",
+            "address": "5 Barn Point",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 707,
+            "property_name": "Lil&#x27; Cottage Retreat",
+            "url": "https://www.vacasa.com/unit/1027329",
+            "address": "221 Long Beach Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 708,
+            "property_name": "Pearly Shores",
+            "url": "https://www.vacasa.com/unit/1027340",
+            "address": "303 Long Beach Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 709,
+            "property_name": "Seafoam Dreams",
+            "url": "https://www.vacasa.com/unit/1027343",
+            "address": "303 Long Beach Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 710,
+            "property_name": "Shimmering Seaview",
+            "url": "https://www.vacasa.com/unit/1027325",
+            "address": "303 Long Beach Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 711,
+            "property_name": "Big Cottage",
+            "url": "https://www.vacasa.com/unit/1027326",
+            "address": "15 Moody Lane",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 712,
+            "property_name": "Long Sands Beach Escape",
+            "url": "https://www.vacasa.com/unit/1027328",
+            "address": "19 Weston Avenue Loop",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 713,
+            "property_name": "Gull&#x27;s Getaway",
+            "url": "https://www.vacasa.com/unit/1027342",
+            "address": "303 Long Beach Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 714,
+            "property_name": "Sea Rose",
+            "url": "https://www.vacasa.com/unit/1027314",
+            "address": "1 Cappy's Lane",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 715,
+            "property_name": "Little Cottage",
+            "url": "https://www.vacasa.com/unit/1027327",
+            "address": "15 Moody Lane",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 716,
+            "property_name": "Nubble&#x27;s Nest",
+            "url": "https://www.vacasa.com/unit/1027334",
+            "address": "6 Sixth Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 717,
+            "property_name": "Seaglass Cottage",
+            "url": "https://www.vacasa.com/unit/1027344",
+            "address": "303 Long Beach Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 718,
+            "property_name": "Nubble&#x27;s Perch",
+            "url": "https://www.vacasa.com/unit/1027336",
+            "address": "6 Sixth Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 719,
+            "property_name": "Otis Cottages",
+            "url": "https://www.vacasa.com/unit/1027324",
+            "address": "15 Moody Lane",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 720,
+            "property_name": "The Willow Cove",
+            "url": "https://www.vacasa.com/unit/1027315",
+            "address": "600 Shore Road",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 6,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 721,
+            "property_name": "Coastal Gem",
+            "url": "https://www.vacasa.com/unit/1027330",
+            "address": "3 Strawberry Lane",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-06-07",
+            "date_last_seen": "2026-06-07",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          }
+        ],
+        "lost": [
+          {
+            "id": 631,
+            "property_name": "Cast & Relax! Little Blue Cabin on Wadleigh Pond",
+            "url": "https://evolve.com/vacation-rentals/us/me/lyman/577868",
+            "address": "212 Wadleigh Pond Road",
+            "city": "Lyman",
+            "competitor": "Evolve Vacation Rentals",
+            "platform": "evolve",
+            "bedrooms": 1,
+            "date_first_seen": "2026-04-12",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 629,
+            "property_name": "21 Surf KBK",
+            "url": "https://kmapropertygroup.com/rentals/21-surf-kbk/",
+            "address": "21 Surf Lane",
+            "city": "Kennebunk",
+            "competitor": "KMA Property Group",
+            "platform": "kma_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-08",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": 723,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
+          },
+          {
+            "id": 633,
+            "property_name": "[propertytype]                                    [propertytitle]                    [community]                         [priceormininc] [priceincrateTypewdmsim]",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=[propertyid]",
+            "address": null,
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 5,
+            "date_first_seen": "2026-04-27",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 636,
+            "property_name": "2BR condo is a 5-minute walk to Old Orchard Pier and amusements!",
+            "url": "https://www.sacobayrentals.com/vacation-rental-home.asp?PageDataID=188136",
+            "address": "11 Sunset Ave",
+            "city": "Saco",
+            "competitor": "Saco Bay Rentals",
+            "platform": "liverez",
+            "bedrooms": 2,
+            "date_first_seen": "2026-05-15",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 579,
+            "property_name": "The Eastern Avenue Cottage",
+            "url": "https://www.vacasa.com/unit/14345",
+            "address": "11 Clam Lane",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 580,
+            "property_name": "Sweet Summer Time",
+            "url": "https://www.vacasa.com/unit/127748",
+            "address": "91 College Drive",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 581,
+            "property_name": "Seas the Day",
+            "url": "https://www.vacasa.com/unit/113770",
+            "address": "45 Church Street",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 582,
+            "property_name": "Sea Gold",
+            "url": "https://www.vacasa.com/unit/48972",
+            "address": "24 Gold Ribbon Drive",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 583,
+            "property_name": "Writer&#x27;s Retreat",
+            "url": "https://www.vacasa.com/unit/122129",
+            "address": "231 Tatnic Road",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 584,
+            "property_name": "Family Beach Retreat",
+            "url": "https://www.vacasa.com/unit/60561",
+            "address": "42 Ocean Avenue",
+            "city": "Wells",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 585,
+            "property_name": "The Lookout #210",
+            "url": "https://www.vacasa.com/unit/103133",
+            "address": "23 Ontio Way",
+            "city": "Ogunquit",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 586,
+            "property_name": "Ocean Escape",
+            "url": "https://www.vacasa.com/unit/93748",
+            "address": "Marginal Way",
+            "city": "Ogunquit",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 587,
+            "property_name": "Surf&#x27;s Inn",
+            "url": "https://www.vacasa.com/unit/28594",
+            "address": "8 Birch Circle",
+            "city": "Ogunquit",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 588,
+            "property_name": "Three By The Sea",
+            "url": "https://www.vacasa.com/unit/33760",
+            "address": "312 Ridge Road",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 589,
+            "property_name": "Long Sands Beach Escape",
+            "url": "https://www.vacasa.com/unit/61374",
+            "address": "19 Weston Avenue Loop",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 590,
+            "property_name": "The Cottage at Long Sands",
+            "url": "https://www.vacasa.com/unit/16056",
+            "address": "800 York Street",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 591,
+            "property_name": "Pied-\u00e0-terre Dock Square",
+            "url": "https://www.vacasa.com/unit/20237",
+            "address": "5 Union Street",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 592,
+            "property_name": "Grandeur On The Green",
+            "url": "https://www.vacasa.com/unit/3202",
+            "address": null,
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 593,
+            "property_name": "Plover\u2019s Run Cottage 32 at Shorelands Resort",
+            "url": "https://www.vacasa.com/unit/34171",
+            "address": "26 Wells Road",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 594,
+            "property_name": "Shorelands, Unit 44-3",
+            "url": "https://www.vacasa.com/unit/107318",
+            "address": "26 Wells Road",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 595,
+            "property_name": "Shorelands Resort Cottage 40",
+            "url": "https://www.vacasa.com/unit/34144",
+            "address": "26 Wells Road",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 596,
+            "property_name": "Kennebunk Beach House",
+            "url": "https://www.vacasa.com/unit/101970",
+            "address": "33 Bayberry Avenue",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 597,
+            "property_name": "Little Spruce Cottage",
+            "url": "https://www.vacasa.com/unit/97432",
+            "address": "2 Ranger Lane",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 598,
+            "property_name": "Little River Memories",
+            "url": "https://www.vacasa.com/unit/78028",
+            "address": "1 Munro Lane",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 599,
+            "property_name": "Cape Arundel House",
+            "url": "https://www.vacasa.com/unit/65104",
+            "address": "3 Colony Lane",
+            "city": "Kennebunkport",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 600,
+            "property_name": "Ocean Tide Escape",
+            "url": "https://www.vacasa.com/unit/125686",
+            "address": "129 Hills Beach Road",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 601,
+            "property_name": "The Blue Lobster",
+            "url": "https://www.vacasa.com/unit/127927",
+            "address": "155 Hills Beach Road",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 602,
+            "property_name": "Sea Spray Cove",
+            "url": "https://www.vacasa.com/unit/110454",
+            "address": "3 Seaspray Drive",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 603,
+            "property_name": "Salt Water Breeze",
+            "url": "https://www.vacasa.com/unit/129771",
+            "address": "3 Atlantic Avenue",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 604,
+            "property_name": "Beach Waves",
+            "url": "https://www.vacasa.com/unit/129773",
+            "address": "62 West Grand Avenue",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 605,
+            "property_name": "Cabin at the Beach",
+            "url": "https://www.vacasa.com/unit/108375",
+            "address": "38 Cedar Avenue",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 606,
+            "property_name": "Old Orchard Cottage",
+            "url": "https://www.vacasa.com/unit/57685",
+            "address": "123 Portland Avenue",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 607,
+            "property_name": "Old Orchard Beach House - A",
+            "url": "https://www.vacasa.com/unit/68426",
+            "address": "Fayette Street",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 608,
+            "property_name": "Sunrise Deck",
+            "url": "https://www.vacasa.com/unit/49861",
+            "address": "100 West Grand Avenue",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 609,
+            "property_name": "By the Sea",
+            "url": "https://www.vacasa.com/unit/19369",
+            "address": "37 Reggio Avenue",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 610,
+            "property_name": "Charming Hideaway",
+            "url": "https://www.vacasa.com/unit/118545",
+            "address": "431 Gorham Road",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 611,
+            "property_name": "Cumberland Casa - A",
+            "url": "https://www.vacasa.com/unit/105289",
+            "address": "439 Cumberland Avenue",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 612,
+            "property_name": "Two Ensuite Historic Portland Charmer",
+            "url": "https://www.vacasa.com/unit/96638",
+            "address": "56 Pine Street",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 613,
+            "property_name": "Pearl of Portland",
+            "url": "https://www.vacasa.com/unit/38850",
+            "address": "7 Cleeve Street",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 614,
+            "property_name": "East End Annex",
+            "url": "https://www.vacasa.com/unit/94578",
+            "address": "Kellogg Street",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 615,
+            "property_name": "A Foodie\u2019s Delight",
+            "url": "https://www.vacasa.com/unit/28219",
+            "address": "7 Cleeve Street",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 616,
+            "property_name": "Two Ensuite West End Charmer",
+            "url": "https://www.vacasa.com/unit/96637",
+            "address": "56 Pine Street",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 617,
+            "property_name": "Cumberland Charm",
+            "url": "https://www.vacasa.com/unit/38528",
+            "address": "7 Cleeve Street",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 618,
+            "property_name": "Wiggly Bridge Landing",
+            "url": "https://www.vacasa.com/unit/125782",
+            "address": "341 York Street",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 619,
+            "property_name": "York Starfish Haven",
+            "url": "https://www.vacasa.com/unit/4709",
+            "address": "140 Airport Drive",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 620,
+            "property_name": "Gull&#x27;s Getaway",
+            "url": "https://www.vacasa.com/unit/115388",
+            "address": "303 Long Beach Avenue",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 621,
+            "property_name": "Little Cottage",
+            "url": "https://www.vacasa.com/unit/43441",
+            "address": "15 Moody Lane",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 622,
+            "property_name": "Big Cottage",
+            "url": "https://www.vacasa.com/unit/43442",
+            "address": "15 Moody Lane",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 623,
+            "property_name": "The Willow Cove",
+            "url": "https://www.vacasa.com/unit/126082",
+            "address": "600 Shore Road",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 6,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 624,
+            "property_name": "Otis Cottages",
+            "url": "https://www.vacasa.com/unit/43476",
+            "address": "15 Moody Lane",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 5,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 625,
+            "property_name": "Seaglass Cottage",
+            "url": "https://www.vacasa.com/unit/115391",
+            "address": "303 Long Beach Avenue",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 626,
+            "property_name": "Sea La Vie",
+            "url": "https://www.vacasa.com/unit/26715",
+            "address": "1 Cappy's Lane",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 627,
+            "property_name": "Sea Rose",
+            "url": "https://www.vacasa.com/unit/10464",
+            "address": "1 Cappy's Lane",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 628,
+            "property_name": "Shimmering Seaview",
+            "url": "https://www.vacasa.com/unit/115389",
+            "address": "303 Long Beach Avenue",
+            "city": "Kittery",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-03-18",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 630,
+            "property_name": "Hills Beach Escape",
+            "url": "https://www.vacasa.com/unit/130203",
+            "address": "151 Hills Beach Road",
+            "city": "Saco",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-12",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 632,
+            "property_name": "The Landing on North",
+            "url": "https://www.vacasa.com/unit/130007",
+            "address": "46 Walnut Street",
+            "city": "Scarborough",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 2,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 634,
+            "property_name": "Sea Shell",
+            "url": "https://www.vacasa.com/unit/130290",
+            "address": "51 Long Beach Avenue",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-05-04",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 635,
+            "property_name": "Sandcastle Dreams",
+            "url": "https://www.vacasa.com/unit/130009",
+            "address": "121 Portland Avenue",
+            "city": "Old Orchard Beach",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-05-04",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 637,
+            "property_name": "Castle Rock",
+            "url": "https://www.vacasa.com/unit/21896",
+            "address": "5 Barn Point",
+            "city": "York",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-05-31",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 638,
+            "property_name": "Blueberry Point",
+            "url": "https://www.vacasa.com/unit/130291",
+            "address": "25 Blueberry Point Road",
+            "city": "Raymond",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 4,
+            "date_first_seen": "2026-05-31",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 639,
+            "property_name": "Maine Memories",
+            "url": "https://www.vacasa.com/unit/42148",
+            "address": "4 Shinbone Alley",
+            "city": "Wiscasset",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-05-31",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 640,
+            "property_name": "Sheepscot Beauty",
+            "url": "https://www.vacasa.com/unit/41387",
+            "address": "4 Shinbone Alley",
+            "city": "Wiscasset",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-05-31",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 641,
+            "property_name": "Slice of Heaven",
+            "url": "https://www.vacasa.com/unit/1025173",
+            "address": "15 Summit Avenue",
+            "city": "Lincolnville",
+            "competitor": "Vacasa",
+            "platform": "vacasa",
+            "bedrooms": 1,
+            "date_first_seen": "2026-05-31",
+            "date_last_seen": "2026-05-31",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          }
+        ]
+      },
       "2026-05-31": {
         "gained": [
           {
@@ -5767,9 +8125,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 560,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 561,
@@ -5782,9 +8140,9 @@
             "bedrooms": 10,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 561,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 562,
@@ -5797,9 +8155,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 562,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 563,
@@ -5812,9 +8170,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 563,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 564,
@@ -5827,9 +8185,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 564,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 565,
@@ -5842,9 +8200,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 565,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 566,
@@ -5857,9 +8215,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 566,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 567,
@@ -5872,9 +8230,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 567,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 568,
@@ -5887,9 +8245,9 @@
             "bedrooms": null,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 568,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 569,
@@ -5902,9 +8260,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-04-26",
             "date_last_seen": "2026-05-16",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 569,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 559,
@@ -8282,9 +10640,9 @@
             "bedrooms": 2,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-12",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 245,
+            "flagged_at": "2026-06-08T00:32:43Z",
+            "is_rename": true
           },
           {
             "id": 246,
@@ -8966,6 +11324,94 @@
       }
     },
     "by_competitor": {
+      "Evolve Vacation Rentals": {
+        "2026-06-07": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-05-31": {
+          "gained": 0,
+          "lost": 3
+        },
+        "2026-05-24": {
+          "gained": 4,
+          "lost": 0
+        },
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-05-04": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-04-26": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-04-12": {
+          "gained": 1,
+          "lost": 4
+        }
+      },
+      "Saco Bay Rentals": {
+        "2026-06-07": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-05-15": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-05-04": {
+          "gained": 0,
+          "lost": 2
+        },
+        "2026-04-12": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "Vacasa": {
+        "2026-06-07": {
+          "gained": 79,
+          "lost": 59
+        },
+        "2026-05-31": {
+          "gained": 5,
+          "lost": 1
+        },
+        "2026-05-24": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-05-04": {
+          "gained": 2,
+          "lost": 1
+        },
+        "2026-04-26": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-04-12": {
+          "gained": 3,
+          "lost": 4
+        }
+      },
+      "Ocean Park Realty": {
+        "2026-06-07": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-05-31": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-04-27": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
       "Anchor Real Estate Rentals": {
         "2026-05-31": {
           "gained": 1,
@@ -9002,38 +11448,6 @@
           "lost": 0
         }
       },
-      "Ocean Park Realty": {
-        "2026-05-31": {
-          "gained": 1,
-          "lost": 10
-        },
-        "2026-04-27": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
-      "Vacasa": {
-        "2026-05-31": {
-          "gained": 5,
-          "lost": 1
-        },
-        "2026-05-24": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-05-04": {
-          "gained": 2,
-          "lost": 1
-        },
-        "2026-04-26": {
-          "gained": 1,
-          "lost": 2
-        },
-        "2026-04-12": {
-          "gained": 3,
-          "lost": 4
-        }
-      },
       "Coastal Getaways": {
         "2026-05-31": {
           "gained": 0,
@@ -9046,32 +11460,6 @@
         "2026-04-26": {
           "gained": 2,
           "lost": 0
-        }
-      },
-      "Evolve Vacation Rentals": {
-        "2026-05-31": {
-          "gained": 0,
-          "lost": 3
-        },
-        "2026-05-24": {
-          "gained": 4,
-          "lost": 0
-        },
-        "2026-05-15": {
-          "gained": 1,
-          "lost": 1
-        },
-        "2026-05-04": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-04-26": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 4
         }
       },
       "Coastline Vacation Rentals": {
@@ -9148,20 +11536,6 @@
           "lost": 1
         }
       },
-      "Saco Bay Rentals": {
-        "2026-05-15": {
-          "gained": 1,
-          "lost": 1
-        },
-        "2026-05-04": {
-          "gained": 0,
-          "lost": 2
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
       "Tamarack Rentals": {
         "2026-05-15": {
           "gained": 0,
@@ -9200,6 +11574,22 @@
       }
     },
     "by_competitor_summary": {
+      "Evolve Vacation Rentals": {
+        "gained": 7,
+        "lost": 11
+      },
+      "Saco Bay Rentals": {
+        "gained": 3,
+        "lost": 4
+      },
+      "Vacasa": {
+        "gained": 90,
+        "lost": 67
+      },
+      "Ocean Park Realty": {
+        "gained": 2,
+        "lost": 1
+      },
       "Anchor Real Estate Rentals": {
         "gained": 6,
         "lost": 1
@@ -9208,21 +11598,9 @@
         "gained": 3,
         "lost": 1
       },
-      "Ocean Park Realty": {
-        "gained": 2,
-        "lost": 10
-      },
-      "Vacasa": {
-        "gained": 11,
-        "lost": 9
-      },
       "Coastal Getaways": {
         "gained": 3,
         "lost": 1
-      },
-      "Evolve Vacation Rentals": {
-        "gained": 6,
-        "lost": 10
       },
       "Coastline Vacation Rentals": {
         "gained": 2,
@@ -9252,10 +11630,6 @@
         "gained": 7,
         "lost": 7
       },
-      "Saco Bay Rentals": {
-        "gained": 2,
-        "lost": 3
-      },
       "Tamarack Rentals": {
         "gained": 1,
         "lost": 1
@@ -9273,8 +11647,8 @@
         "lost": 0
       }
     },
-    "total_gained": 63,
-    "total_lost": 50,
-    "total_renamed_hidden": 109
+    "total_gained": 144,
+    "total_lost": 101,
+    "total_renamed_hidden": 122
   }
 }
