@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-02",
-  "total_properties": 1308,
+  "generated": "2026-08-09",
+  "total_properties": 1317,
   "total_competitors": 27,
   "current": [
     {
@@ -39,11 +39,11 @@
     {
       "competitor": "Garnsey Brothers",
       "platform": "rentalpro_custom",
-      "count": 89,
-      "with_address": 76,
-      "with_bedrooms": 89,
-      "total_bedrooms": 199,
-      "estimated_total_bedrooms": 199,
+      "count": 90,
+      "with_address": 77,
+      "with_bedrooms": 90,
+      "total_bedrooms": 200,
+      "estimated_total_bedrooms": 200,
       "avg_bedrooms": 2.2,
       "cities": [
         "Ogunquit",
@@ -68,31 +68,31 @@
       "is_us": false
     },
     {
-      "competitor": "Ocean Park Realty",
-      "platform": "oceanpark_custom",
-      "count": 76,
-      "with_address": 60,
-      "with_bedrooms": 53,
-      "total_bedrooms": 167,
-      "estimated_total_bedrooms": 239,
-      "avg_bedrooms": 3.2,
-      "cities": [
-        "Old Orchard Beach"
-      ],
-      "is_us": false
-    },
-    {
       "competitor": "Sand Dollar Real Estate",
       "platform": "jeanknapp_custom",
-      "count": 73,
-      "with_address": 73,
-      "with_bedrooms": 73,
-      "total_bedrooms": 206,
-      "estimated_total_bedrooms": 206,
+      "count": 74,
+      "with_address": 74,
+      "with_bedrooms": 74,
+      "total_bedrooms": 209,
+      "estimated_total_bedrooms": 209,
       "avg_bedrooms": 2.8,
       "cities": [
         "Biddeford",
         "Kennebunkport"
+      ],
+      "is_us": false
+    },
+    {
+      "competitor": "Ocean Park Realty",
+      "platform": "oceanpark_custom",
+      "count": 73,
+      "with_address": 57,
+      "with_bedrooms": 51,
+      "total_bedrooms": 163,
+      "estimated_total_bedrooms": 233,
+      "avg_bedrooms": 3.2,
+      "cities": [
+        "Old Orchard Beach"
       ],
       "is_us": false
     },
@@ -124,16 +124,34 @@
     {
       "competitor": "Salt & Shine Vacation Rentals",
       "platform": "ownerrez",
-      "count": 60,
-      "with_address": 60,
-      "with_bedrooms": 60,
-      "total_bedrooms": 191,
-      "estimated_total_bedrooms": 191,
+      "count": 61,
+      "with_address": 61,
+      "with_bedrooms": 61,
+      "total_bedrooms": 195,
+      "estimated_total_bedrooms": 195,
       "avg_bedrooms": 3.2,
       "cities": [
         "Kennebunk",
         "Ogunquit",
         "Wells",
+        "York"
+      ],
+      "is_us": false
+    },
+    {
+      "competitor": "KPort Concierge",
+      "platform": "lodgify",
+      "count": 57,
+      "with_address": 57,
+      "with_bedrooms": 57,
+      "total_bedrooms": 215,
+      "estimated_total_bedrooms": 215,
+      "avg_bedrooms": 3.8,
+      "cities": [
+        "Arundel",
+        "Biddeford",
+        "Kennebunk",
+        "Kennebunkport",
         "York"
       ],
       "is_us": false
@@ -152,24 +170,6 @@
         "Old Orchard Beach",
         "Saco",
         "Scarborough"
-      ],
-      "is_us": false
-    },
-    {
-      "competitor": "KPort Concierge",
-      "platform": "lodgify",
-      "count": 56,
-      "with_address": 56,
-      "with_bedrooms": 56,
-      "total_bedrooms": 213,
-      "estimated_total_bedrooms": 213,
-      "avg_bedrooms": 3.8,
-      "cities": [
-        "Arundel",
-        "Biddeford",
-        "Kennebunk",
-        "Kennebunkport",
-        "York"
       ],
       "is_us": false
     },
@@ -246,17 +246,17 @@
       "count": 47,
       "with_address": 0,
       "with_bedrooms": 35,
-      "total_bedrooms": 176,
-      "estimated_total_bedrooms": 176,
-      "avg_bedrooms": 3.8,
+      "total_bedrooms": 184,
+      "estimated_total_bedrooms": 184,
+      "avg_bedrooms": 3.9,
       "cities": [
+        "Arundel",
         "Kennebunk",
         "Kennebunkport",
         "Kittery",
         "Ogunquit",
         "Old Orchard Beach",
         "Saco",
-        "Sanford",
         "Scarborough",
         "Wells",
         "York"
@@ -399,6 +399,22 @@
       "is_us": false
     },
     {
+      "competitor": "Ocean Dreams Maine",
+      "platform": "guesty",
+      "count": 28,
+      "with_address": 27,
+      "with_bedrooms": 28,
+      "total_bedrooms": 67,
+      "estimated_total_bedrooms": 67,
+      "avg_bedrooms": 2.4,
+      "cities": [
+        "Ogunquit",
+        "Wells",
+        "York"
+      ],
+      "is_us": false
+    },
+    {
       "competitor": "Luxury Maine Rentals",
       "platform": "liverez",
       "count": 25,
@@ -468,22 +484,6 @@
       "cities": [
         "Kennebunk",
         "Kennebunkport"
-      ],
-      "is_us": false
-    },
-    {
-      "competitor": "Ocean Dreams Maine",
-      "platform": "guesty",
-      "count": 20,
-      "with_address": 19,
-      "with_bedrooms": 20,
-      "total_bedrooms": 50,
-      "estimated_total_bedrooms": 50,
-      "avg_bedrooms": 2.5,
-      "cities": [
-        "Ogunquit",
-        "Wells",
-        "York"
       ],
       "is_us": false
     }
@@ -1051,21 +1051,43 @@
       "Tamarack Rentals": 53,
       "TopHost Vacation Rentals": 29,
       "Grand Welcome (Our Company)": 47
+    },
+    "2026-08-09": {
+      "Anchor Real Estate Rentals": 52,
+      "Coastal Getaways": 32,
+      "Coastline Vacation Rentals": 53,
+      "Evolve Vacation Rentals": 68,
+      "Garnsey Brothers": 90,
+      "Goose Rocks Beach Rentals": 46,
+      "KMA Property Group": 43,
+      "KPort Concierge": 57,
+      "Kennebunk Beach Realty": 20,
+      "Maine Street Property Management": 24,
+      "Ocean Dreams Maine": 28,
+      "Ocean Park Realty": 73,
+      "Ogunquit Rental Properties": 35,
+      "Salt & Shine Vacation Rentals": 61,
+      "Sand Dollar Real Estate": 74,
+      "Seagrass Property Rentals": 31,
+      "Seashore Property Management": 23,
+      "Tamarack Rentals": 53,
+      "TopHost Vacation Rentals": 29,
+      "Grand Welcome (Our Company)": 47
     }
   },
   "trends": {
-    "latest_date": "2026-08-02",
+    "latest_date": "2026-08-09",
     "comparison_dates": {
-      "week_ago": "2026-07-19",
-      "month_ago": "2026-06-28",
+      "week_ago": "2026-07-26",
+      "month_ago": "2026-07-05",
       "first": "2026-03-18"
     },
     "entities": {
       "Anchor Real Estate Rentals": {
         "current": 52,
-        "wow_prev": 54,
-        "wow_change": -2,
-        "wow_pct": -3.7,
+        "wow_prev": 52,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 55,
         "mom_change": -3,
         "mom_pct": -5.5,
@@ -1118,18 +1140,18 @@
         "trend": "growing"
       },
       "Garnsey Brothers": {
-        "current": 89,
+        "current": 90,
         "wow_prev": 89,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_change": 1,
+        "wow_pct": 1.1,
         "mom_prev": 89,
-        "mom_change": 0,
-        "mom_pct": 0.0,
+        "mom_change": 1,
+        "mom_pct": 1.1,
         "first_date": "2026-03-18",
         "first": 88,
-        "all_time_change": 1,
-        "all_time_pct": 1.1,
-        "trend": "stable"
+        "all_time_change": 2,
+        "all_time_pct": 2.3,
+        "trend": "growing"
       },
       "Jean Knapp Rentals": {
         "current": 55,
@@ -1146,18 +1168,18 @@
         "trend": "stable"
       },
       "KPort Concierge": {
-        "current": 56,
+        "current": 57,
         "wow_prev": 56,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_change": 1,
+        "wow_pct": 1.8,
         "mom_prev": 56,
-        "mom_change": 0,
-        "mom_pct": 0.0,
+        "mom_change": 1,
+        "mom_pct": 1.8,
         "first_date": "2026-03-18",
         "first": 54,
-        "all_time_change": 2,
-        "all_time_pct": 3.7,
-        "trend": "stable"
+        "all_time_change": 3,
+        "all_time_pct": 5.6,
+        "trend": "growing"
       },
       "Kennebunk Beach Realty": {
         "current": 20,
@@ -1202,18 +1224,18 @@
         "trend": "stable"
       },
       "Ocean Dreams Maine": {
-        "current": 20,
+        "current": 28,
         "wow_prev": 20,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_change": 8,
+        "wow_pct": 40.0,
         "mom_prev": 20,
-        "mom_change": 0,
-        "mom_pct": 0.0,
+        "mom_change": 8,
+        "mom_pct": 40.0,
         "first_date": "2026-03-18",
         "first": 20,
-        "all_time_change": 0,
-        "all_time_pct": 0.0,
-        "trend": "stable"
+        "all_time_change": 8,
+        "all_time_pct": 40.0,
+        "trend": "growing"
       },
       "Saco Bay Rentals": {
         "current": 25,
@@ -1230,31 +1252,31 @@
         "trend": "stable"
       },
       "Salt & Shine Vacation Rentals": {
-        "current": 60,
+        "current": 61,
         "wow_prev": 60,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_change": 1,
+        "wow_pct": 1.7,
         "mom_prev": 60,
-        "mom_change": 0,
-        "mom_pct": 0.0,
+        "mom_change": 1,
+        "mom_pct": 1.7,
         "first_date": "2026-03-18",
         "first": 61,
-        "all_time_change": -1,
-        "all_time_pct": -1.6,
-        "trend": "stable"
+        "all_time_change": 0,
+        "all_time_pct": 0.0,
+        "trend": "growing"
       },
       "Sand Dollar Real Estate": {
-        "current": 73,
+        "current": 74,
         "wow_prev": 73,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_change": 1,
+        "wow_pct": 1.4,
         "mom_prev": 72,
-        "mom_change": 1,
-        "mom_pct": 1.4,
+        "mom_change": 2,
+        "mom_pct": 2.8,
         "first_date": "2026-03-18",
         "first": 72,
-        "all_time_change": 1,
-        "all_time_pct": 1.4,
+        "all_time_change": 2,
+        "all_time_pct": 2.8,
         "trend": "growing"
       },
       "Seagrass Property Rentals": {
@@ -1332,14 +1354,14 @@
         "wow_prev": 46,
         "wow_change": 0,
         "wow_pct": 0.0,
-        "mom_prev": 47,
-        "mom_change": -1,
-        "mom_pct": -2.1,
+        "mom_prev": 46,
+        "mom_change": 0,
+        "mom_pct": 0.0,
         "first_date": "2026-03-19",
         "first": 47,
         "all_time_change": -1,
         "all_time_pct": -2.1,
-        "trend": "declining"
+        "trend": "stable"
       },
       "KPT Luxury Properties": {
         "current": 29,
@@ -1413,9 +1435,9 @@
       },
       "TopHost Vacation Rentals": {
         "current": 29,
-        "wow_prev": 29,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_prev": 30,
+        "wow_change": -1,
+        "wow_pct": -3.3,
         "mom_prev": 29,
         "mom_change": 0,
         "mom_pct": 0.0,
@@ -1426,18 +1448,18 @@
         "trend": "stable"
       },
       "Ocean Park Realty": {
-        "current": 76,
-        "wow_prev": 70,
-        "wow_change": 6,
-        "wow_pct": 8.6,
-        "mom_prev": 75,
-        "mom_change": 1,
-        "mom_pct": 1.3,
+        "current": 73,
+        "wow_prev": 76,
+        "wow_change": -3,
+        "wow_pct": -3.9,
+        "mom_prev": 74,
+        "mom_change": -1,
+        "mom_pct": -1.4,
         "first_date": "2026-04-26",
         "first": 74,
-        "all_time_change": 2,
-        "all_time_pct": 2.7,
-        "trend": "growing"
+        "all_time_change": -1,
+        "all_time_pct": -1.4,
+        "trend": "declining"
       }
     },
     "growing": [
@@ -1457,6 +1479,21 @@
         "trend": "growing"
       },
       {
+        "name": "Ocean Dreams Maine",
+        "current": 28,
+        "wow_prev": 20,
+        "wow_change": 8,
+        "wow_pct": 40.0,
+        "mom_prev": 20,
+        "mom_change": 8,
+        "mom_pct": 40.0,
+        "first_date": "2026-03-18",
+        "first": 20,
+        "all_time_change": 8,
+        "all_time_pct": 40.0,
+        "trend": "growing"
+      },
+      {
         "name": "Bayley Vacation Rentals",
         "current": 56,
         "wow_prev": 55,
@@ -1469,6 +1506,21 @@
         "first": 53,
         "all_time_change": 3,
         "all_time_pct": 5.7,
+        "trend": "growing"
+      },
+      {
+        "name": "Sand Dollar Real Estate",
+        "current": 74,
+        "wow_prev": 73,
+        "wow_change": 1,
+        "wow_pct": 1.4,
+        "mom_prev": 72,
+        "mom_change": 2,
+        "mom_pct": 2.8,
+        "first_date": "2026-03-18",
+        "first": 72,
+        "all_time_change": 2,
+        "all_time_pct": 2.8,
         "trend": "growing"
       },
       {
@@ -1502,6 +1554,36 @@
         "trend": "growing"
       },
       {
+        "name": "Garnsey Brothers",
+        "current": 90,
+        "wow_prev": 89,
+        "wow_change": 1,
+        "wow_pct": 1.1,
+        "mom_prev": 89,
+        "mom_change": 1,
+        "mom_pct": 1.1,
+        "first_date": "2026-03-18",
+        "first": 88,
+        "all_time_change": 2,
+        "all_time_pct": 2.3,
+        "trend": "growing"
+      },
+      {
+        "name": "KPort Concierge",
+        "current": 57,
+        "wow_prev": 56,
+        "wow_change": 1,
+        "wow_pct": 1.8,
+        "mom_prev": 56,
+        "mom_change": 1,
+        "mom_pct": 1.8,
+        "first_date": "2026-03-18",
+        "first": 54,
+        "all_time_change": 3,
+        "all_time_pct": 5.6,
+        "trend": "growing"
+      },
+      {
         "name": "Maine Seaside Rentals",
         "current": 80,
         "wow_prev": 80,
@@ -1517,18 +1599,18 @@
         "trend": "growing"
       },
       {
-        "name": "Sand Dollar Real Estate",
-        "current": 73,
-        "wow_prev": 73,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 72,
+        "name": "Salt & Shine Vacation Rentals",
+        "current": 61,
+        "wow_prev": 60,
+        "wow_change": 1,
+        "wow_pct": 1.7,
+        "mom_prev": 60,
         "mom_change": 1,
-        "mom_pct": 1.4,
+        "mom_pct": 1.7,
         "first_date": "2026-03-18",
-        "first": 72,
-        "all_time_change": 1,
-        "all_time_pct": 1.4,
+        "first": 61,
+        "all_time_change": 0,
+        "all_time_pct": 0.0,
         "trend": "growing"
       },
       {
@@ -1545,30 +1627,15 @@
         "all_time_change": 7,
         "all_time_pct": 17.5,
         "trend": "growing"
-      },
-      {
-        "name": "Ocean Park Realty",
-        "current": 76,
-        "wow_prev": 70,
-        "wow_change": 6,
-        "wow_pct": 8.6,
-        "mom_prev": 75,
-        "mom_change": 1,
-        "mom_pct": 1.3,
-        "first_date": "2026-04-26",
-        "first": 74,
-        "all_time_change": 2,
-        "all_time_pct": 2.7,
-        "trend": "growing"
       }
     ],
     "declining": [
       {
         "name": "Anchor Real Estate Rentals",
         "current": 52,
-        "wow_prev": 54,
-        "wow_change": -2,
-        "wow_pct": -3.7,
+        "wow_prev": 52,
+        "wow_change": 0,
+        "wow_pct": 0.0,
         "mom_prev": 55,
         "mom_change": -3,
         "mom_pct": -5.5,
@@ -1579,18 +1646,18 @@
         "trend": "declining"
       },
       {
-        "name": "Goose Rocks Beach Rentals",
-        "current": 46,
-        "wow_prev": 46,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 47,
+        "name": "Ocean Park Realty",
+        "current": 73,
+        "wow_prev": 76,
+        "wow_change": -3,
+        "wow_pct": -3.9,
+        "mom_prev": 74,
         "mom_change": -1,
-        "mom_pct": -2.1,
-        "first_date": "2026-03-19",
-        "first": 47,
+        "mom_pct": -1.4,
+        "first_date": "2026-04-26",
+        "first": 74,
         "all_time_change": -1,
-        "all_time_pct": -2.1,
+        "all_time_pct": -1.4,
         "trend": "declining"
       }
     ],
@@ -1611,21 +1678,6 @@
         "trend": "stable"
       },
       {
-        "name": "Garnsey Brothers",
-        "current": 89,
-        "wow_prev": 89,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 89,
-        "mom_change": 0,
-        "mom_pct": 0.0,
-        "first_date": "2026-03-18",
-        "first": 88,
-        "all_time_change": 1,
-        "all_time_pct": 1.1,
-        "trend": "stable"
-      },
-      {
         "name": "Jean Knapp Rentals",
         "current": 55,
         "wow_prev": 55,
@@ -1638,21 +1690,6 @@
         "first": 46,
         "all_time_change": 9,
         "all_time_pct": 19.6,
-        "trend": "stable"
-      },
-      {
-        "name": "KPort Concierge",
-        "current": 56,
-        "wow_prev": 56,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 56,
-        "mom_change": 0,
-        "mom_pct": 0.0,
-        "first_date": "2026-03-18",
-        "first": 54,
-        "all_time_change": 2,
-        "all_time_pct": 3.7,
         "trend": "stable"
       },
       {
@@ -1686,21 +1723,6 @@
         "trend": "stable"
       },
       {
-        "name": "Ocean Dreams Maine",
-        "current": 20,
-        "wow_prev": 20,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 20,
-        "mom_change": 0,
-        "mom_pct": 0.0,
-        "first_date": "2026-03-18",
-        "first": 20,
-        "all_time_change": 0,
-        "all_time_pct": 0.0,
-        "trend": "stable"
-      },
-      {
         "name": "Saco Bay Rentals",
         "current": 25,
         "wow_prev": 25,
@@ -1713,21 +1735,6 @@
         "first": 25,
         "all_time_change": 0,
         "all_time_pct": 0.0,
-        "trend": "stable"
-      },
-      {
-        "name": "Salt & Shine Vacation Rentals",
-        "current": 60,
-        "wow_prev": 60,
-        "wow_change": 0,
-        "wow_pct": 0.0,
-        "mom_prev": 60,
-        "mom_change": 0,
-        "mom_pct": 0.0,
-        "first_date": "2026-03-18",
-        "first": 61,
-        "all_time_change": -1,
-        "all_time_pct": -1.6,
         "trend": "stable"
       },
       {
@@ -1773,6 +1780,21 @@
         "first": 52,
         "all_time_change": 1,
         "all_time_pct": 1.9,
+        "trend": "stable"
+      },
+      {
+        "name": "Goose Rocks Beach Rentals",
+        "current": 46,
+        "wow_prev": 46,
+        "wow_change": 0,
+        "wow_pct": 0.0,
+        "mom_prev": 46,
+        "mom_change": 0,
+        "mom_pct": 0.0,
+        "first_date": "2026-03-19",
+        "first": 47,
+        "all_time_change": -1,
+        "all_time_pct": -2.1,
         "trend": "stable"
       },
       {
@@ -1838,9 +1860,9 @@
       {
         "name": "TopHost Vacation Rentals",
         "current": 29,
-        "wow_prev": 29,
-        "wow_change": 0,
-        "wow_pct": 0.0,
+        "wow_prev": 30,
+        "wow_change": -1,
+        "wow_pct": -3.3,
         "mom_prev": 29,
         "mom_change": 0,
         "mom_pct": 0.0,
@@ -1864,13 +1886,13 @@
       "gross_lost": 67
     },
     "Garnsey Brothers": {
-      "score": 76,
+      "score": 83,
       "rating": "strong",
-      "size_score": 97,
-      "trend_score": 50,
-      "stability_score": 89.0,
-      "churn_rate": 2.2,
-      "gross_gained": 1,
+      "size_score": 98,
+      "trend_score": 72.3,
+      "stability_score": 83.5,
+      "churn_rate": 3.3,
+      "gross_gained": 2,
       "gross_lost": 1
     },
     "Maine Seaside Rentals": {
@@ -1883,25 +1905,25 @@
       "gross_gained": 3,
       "gross_lost": 0
     },
-    "Ocean Park Realty": {
+    "Sand Dollar Real Estate": {
       "score": 79,
       "rating": "strong",
-      "size_score": 94,
-      "trend_score": 72.7,
-      "stability_score": 73.5,
-      "churn_rate": 5.3,
+      "size_score": 93,
+      "trend_score": 72.8,
+      "stability_score": 73.0,
+      "churn_rate": 5.4,
       "gross_gained": 3,
       "gross_lost": 1
     },
-    "Sand Dollar Real Estate": {
-      "score": 80,
-      "rating": "strong",
+    "Ocean Park Realty": {
+      "score": 55,
+      "rating": "stable",
       "size_score": 93,
-      "trend_score": 71.4,
-      "stability_score": 79.5,
-      "churn_rate": 4.1,
-      "gross_gained": 2,
-      "gross_lost": 1
+      "trend_score": 28.6,
+      "stability_score": 52.0,
+      "churn_rate": 9.6,
+      "gross_gained": 3,
+      "gross_lost": 4
     },
     "Evolve Vacation Rentals": {
       "score": 56,
@@ -1914,14 +1936,24 @@
       "gross_lost": 12
     },
     "Salt & Shine Vacation Rentals": {
-      "score": 74,
-      "rating": "stable",
+      "score": 80,
+      "rating": "strong",
       "size_score": 89,
-      "trend_score": 50,
-      "stability_score": 91.5,
-      "churn_rate": 1.7,
-      "gross_gained": 0,
+      "trend_score": 70,
+      "stability_score": 83.5,
+      "churn_rate": 3.3,
+      "gross_gained": 1,
       "gross_lost": 1
+    },
+    "KPort Concierge": {
+      "score": 71,
+      "rating": "stable",
+      "size_score": 88,
+      "trend_score": 75.6,
+      "stability_score": 47.5,
+      "churn_rate": 10.5,
+      "gross_gained": 4,
+      "gross_lost": 2
     },
     "Bayley Vacation Rentals": {
       "score": 78,
@@ -1932,16 +1964,6 @@
       "churn_rate": 5.4,
       "gross_gained": 3,
       "gross_lost": 0
-    },
-    "KPort Concierge": {
-      "score": 63,
-      "rating": "stable",
-      "size_score": 87,
-      "trend_score": 50,
-      "stability_score": 55.5,
-      "churn_rate": 8.9,
-      "gross_gained": 3,
-      "gross_lost": 2
     },
     "Jean Knapp Rentals": {
       "score": 54,
@@ -1994,10 +2016,10 @@
       "gross_lost": 0
     },
     "Goose Rocks Beach Rentals": {
-      "score": 63,
+      "score": 72,
       "rating": "stable",
       "size_score": 83,
-      "trend_score": 27.9,
+      "trend_score": 50,
       "stability_score": 89.0,
       "churn_rate": 2.2,
       "gross_gained": 0,
@@ -2063,6 +2085,16 @@
       "gross_gained": 2,
       "gross_lost": 1
     },
+    "Ocean Dreams Maine": {
+      "score": 62,
+      "rating": "stable",
+      "size_score": 72,
+      "trend_score": 100,
+      "stability_score": 0,
+      "churn_rate": 32.1,
+      "gross_gained": 8,
+      "gross_lost": 1
+    },
     "Luxury Maine Rentals": {
       "score": 71,
       "rating": "stable",
@@ -2112,22 +2144,12 @@
       "churn_rate": 35.0,
       "gross_gained": 4,
       "gross_lost": 3
-    },
-    "Ocean Dreams Maine": {
-      "score": 40,
-      "rating": "watch",
-      "size_score": 65,
-      "trend_score": 50,
-      "stability_score": 0,
-      "churn_rate": 80.0,
-      "gross_gained": 8,
-      "gross_lost": 8
     }
   },
   "towns": [
     {
       "town": "Wells",
-      "total": 187,
+      "total": 195,
       "competitor_count": 14,
       "top_competitor": "Garnsey Brothers",
       "top_competitor_count": 87,
@@ -2135,57 +2157,57 @@
         {
           "name": "Garnsey Brothers",
           "count": 87,
-          "share": 46.5
+          "share": 44.6
+        },
+        {
+          "name": "Ocean Dreams Maine",
+          "count": 24,
+          "share": 12.3
         },
         {
           "name": "Evolve Vacation Rentals",
           "count": 17,
-          "share": 9.1
-        },
-        {
-          "name": "Ocean Dreams Maine",
-          "count": 17,
-          "share": 9.1
+          "share": 8.7
         },
         {
           "name": "Salt & Shine Vacation Rentals",
           "count": 10,
-          "share": 5.3
+          "share": 5.1
         },
         {
           "name": "Vacasa",
           "count": 9,
-          "share": 4.8
+          "share": 4.6
         },
         {
           "name": "Anchor Real Estate Rentals",
           "count": 8,
-          "share": 4.3
+          "share": 4.1
         },
         {
           "name": "Coastline Vacation Rentals",
           "count": 8,
-          "share": 4.3
+          "share": 4.1
+        },
+        {
+          "name": "Grand Welcome (Our Company)",
+          "count": 8,
+          "share": 4.1
         },
         {
           "name": "Jean Knapp Rentals",
           "count": 8,
-          "share": 4.3
-        },
-        {
-          "name": "Grand Welcome (Our Company)",
-          "count": 7,
-          "share": 3.7
+          "share": 4.1
         },
         {
           "name": "Maine Street Property Management",
           "count": 7,
-          "share": 3.7
+          "share": 3.6
         },
         {
           "name": "KMA Property Group",
           "count": 6,
-          "share": 3.2
+          "share": 3.1
         },
         {
           "name": "Coastal Getaways",
@@ -2205,70 +2227,26 @@
       ]
     },
     {
-      "town": "Old Orchard Beach",
-      "total": 177,
-      "competitor_count": 7,
-      "top_competitor": "Ocean Park Realty",
-      "top_competitor_count": 76,
-      "competitors": [
-        {
-          "name": "Ocean Park Realty",
-          "count": 76,
-          "share": 42.9
-        },
-        {
-          "name": "Evolve Vacation Rentals",
-          "count": 26,
-          "share": 14.7
-        },
-        {
-          "name": "Tamarack Rentals",
-          "count": 25,
-          "share": 14.1
-        },
-        {
-          "name": "Seashore Property Management",
-          "count": 23,
-          "share": 13.0
-        },
-        {
-          "name": "Vacasa",
-          "count": 16,
-          "share": 9.0
-        },
-        {
-          "name": "Bayley Vacation Rentals",
-          "count": 8,
-          "share": 4.5
-        },
-        {
-          "name": "Grand Welcome (Our Company)",
-          "count": 3,
-          "share": 1.7
-        }
-      ]
-    },
-    {
       "town": "Kennebunkport",
-      "total": 175,
+      "total": 176,
       "competitor_count": 11,
       "top_competitor": "Sand Dollar Real Estate",
-      "top_competitor_count": 71,
+      "top_competitor_count": 72,
       "competitors": [
         {
           "name": "Sand Dollar Real Estate",
-          "count": 71,
-          "share": 40.6
+          "count": 72,
+          "share": 40.9
         },
         {
           "name": "Goose Rocks Beach Rentals",
           "count": 28,
-          "share": 16.0
+          "share": 15.9
         },
         {
           "name": "KPort Concierge",
           "count": 21,
-          "share": 12.0
+          "share": 11.9
         },
         {
           "name": "KPT Luxury Properties",
@@ -2278,7 +2256,7 @@
         {
           "name": "Seagrass Property Rentals",
           "count": 11,
-          "share": 6.3
+          "share": 6.2
         },
         {
           "name": "Coastline Vacation Rentals",
@@ -2313,46 +2291,90 @@
       ]
     },
     {
+      "town": "Old Orchard Beach",
+      "total": 174,
+      "competitor_count": 7,
+      "top_competitor": "Ocean Park Realty",
+      "top_competitor_count": 73,
+      "competitors": [
+        {
+          "name": "Ocean Park Realty",
+          "count": 73,
+          "share": 42.0
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 26,
+          "share": 14.9
+        },
+        {
+          "name": "Tamarack Rentals",
+          "count": 25,
+          "share": 14.4
+        },
+        {
+          "name": "Seashore Property Management",
+          "count": 23,
+          "share": 13.2
+        },
+        {
+          "name": "Vacasa",
+          "count": 16,
+          "share": 9.2
+        },
+        {
+          "name": "Bayley Vacation Rentals",
+          "count": 8,
+          "share": 4.6
+        },
+        {
+          "name": "Grand Welcome (Our Company)",
+          "count": 3,
+          "share": 1.7
+        }
+      ]
+    },
+    {
       "town": "York",
-      "total": 159,
+      "total": 162,
       "competitor_count": 11,
       "top_competitor": "Salt & Shine Vacation Rentals",
-      "top_competitor_count": 48,
+      "top_competitor_count": 49,
       "competitors": [
         {
           "name": "Salt & Shine Vacation Rentals",
-          "count": 48,
+          "count": 49,
           "share": 30.2
         },
         {
           "name": "Anchor Real Estate Rentals",
           "count": 27,
-          "share": 17.0
+          "share": 16.7
         },
         {
           "name": "Coastal Getaways",
           "count": 27,
-          "share": 17.0
+          "share": 16.7
         },
         {
           "name": "Vacasa",
           "count": 23,
-          "share": 14.5
+          "share": 14.2
         },
         {
           "name": "Grand Welcome (Our Company)",
-          "count": 8,
-          "share": 5.0
+          "count": 9,
+          "share": 5.6
         },
         {
           "name": "KMA Property Group",
           "count": 7,
-          "share": 4.4
+          "share": 4.3
         },
         {
           "name": "Maine Street Property Management",
           "count": 6,
-          "share": 3.8
+          "share": 3.7
         },
         {
           "name": "Evolve Vacation Rentals",
@@ -2366,8 +2388,8 @@
         },
         {
           "name": "Ocean Dreams Maine",
-          "count": 2,
-          "share": 1.3
+          "count": 3,
+          "share": 1.9
         },
         {
           "name": "KPort Concierge",
@@ -2378,7 +2400,7 @@
     },
     {
       "town": "Kennebunk",
-      "total": 147,
+      "total": 146,
       "competitor_count": 14,
       "top_competitor": "Coastline Vacation Rentals",
       "top_competitor_count": 26,
@@ -2386,22 +2408,22 @@
         {
           "name": "Coastline Vacation Rentals",
           "count": 26,
-          "share": 17.7
+          "share": 17.8
         },
         {
           "name": "Goose Rocks Beach Rentals",
           "count": 18,
-          "share": 12.2
+          "share": 12.3
         },
         {
           "name": "KPort Concierge",
           "count": 18,
-          "share": 12.2
+          "share": 12.3
         },
         {
           "name": "Seagrass Property Rentals",
           "count": 18,
-          "share": 12.2
+          "share": 12.3
         },
         {
           "name": "Kennebunk Beach Realty",
@@ -2411,12 +2433,12 @@
         {
           "name": "KPT Luxury Properties",
           "count": 16,
-          "share": 10.9
+          "share": 11.0
         },
         {
           "name": "Vacasa",
           "count": 14,
-          "share": 9.5
+          "share": 9.6
         },
         {
           "name": "Evolve Vacation Rentals",
@@ -2431,12 +2453,12 @@
         {
           "name": "Coastal Getaways",
           "count": 3,
-          "share": 2.0
+          "share": 2.1
         },
         {
           "name": "Grand Welcome (Our Company)",
-          "count": 3,
-          "share": 2.0
+          "count": 2,
+          "share": 1.4
         },
         {
           "name": "Bayley Vacation Rentals",
@@ -2643,7 +2665,7 @@
     },
     {
       "town": "Scarborough",
-      "total": 26,
+      "total": 25,
       "competitor_count": 5,
       "top_competitor": "Bayley Vacation Rentals",
       "top_competitor_count": 20,
@@ -2651,27 +2673,61 @@
         {
           "name": "Bayley Vacation Rentals",
           "count": 20,
-          "share": 76.9
-        },
-        {
-          "name": "Grand Welcome (Our Company)",
-          "count": 2,
-          "share": 7.7
+          "share": 80.0
         },
         {
           "name": "KMA Property Group",
           "count": 2,
-          "share": 7.7
+          "share": 8.0
+        },
+        {
+          "name": "Grand Welcome (Our Company)",
+          "count": 1,
+          "share": 4.0
         },
         {
           "name": "TopHost Vacation Rentals",
           "count": 1,
-          "share": 3.8
+          "share": 4.0
         },
         {
           "name": "Vacasa",
           "count": 1,
-          "share": 3.8
+          "share": 4.0
+        }
+      ]
+    },
+    {
+      "town": "Arundel",
+      "total": 7,
+      "competitor_count": 5,
+      "top_competitor": "Vacasa",
+      "top_competitor_count": 3,
+      "competitors": [
+        {
+          "name": "Vacasa",
+          "count": 3,
+          "share": 42.9
+        },
+        {
+          "name": "Evolve Vacation Rentals",
+          "count": 1,
+          "share": 14.3
+        },
+        {
+          "name": "Grand Welcome (Our Company)",
+          "count": 1,
+          "share": 14.3
+        },
+        {
+          "name": "KPort Concierge",
+          "count": 1,
+          "share": 14.3
+        },
+        {
+          "name": "Seagrass Property Rentals",
+          "count": 1,
+          "share": 14.3
         }
       ]
     },
@@ -2694,35 +2750,6 @@
         },
         {
           "name": "Grand Welcome (Our Company)",
-          "count": 1,
-          "share": 16.7
-        }
-      ]
-    },
-    {
-      "town": "Arundel",
-      "total": 6,
-      "competitor_count": 4,
-      "top_competitor": "Vacasa",
-      "top_competitor_count": 3,
-      "competitors": [
-        {
-          "name": "Vacasa",
-          "count": 3,
-          "share": 50.0
-        },
-        {
-          "name": "Evolve Vacation Rentals",
-          "count": 1,
-          "share": 16.7
-        },
-        {
-          "name": "KPort Concierge",
-          "count": 1,
-          "share": 16.7
-        },
-        {
-          "name": "Seagrass Property Rentals",
           "count": 1,
           "share": 16.7
         }
@@ -2873,20 +2900,6 @@
       "competitors": [
         {
           "name": "Evolve Vacation Rentals",
-          "count": 1,
-          "share": 100.0
-        }
-      ]
-    },
-    {
-      "town": "Sanford",
-      "total": 1,
-      "competitor_count": 1,
-      "top_competitor": "Grand Welcome (Our Company)",
-      "top_competitor_count": 1,
-      "competitors": [
-        {
-          "name": "Grand Welcome (Our Company)",
           "count": 1,
           "share": 100.0
         }
@@ -3190,183 +3203,183 @@
   "franchise": {
     "total_locations": 55,
     "active_locations": 55,
-    "total_properties": 2285,
-    "total_bedrooms": 6204,
+    "total_properties": 2319,
+    "total_bedrooms": 6707,
     "locations": [
       {
         "location": "The Ozarks",
         "slug": "branson-the-ozarks",
-        "property_count": 423,
-        "total_bedrooms": 987,
-        "avg_bedrooms": 2.3
+        "property_count": 427,
+        "total_bedrooms": 1317,
+        "avg_bedrooms": 3.1
       },
       {
         "location": "Orlando",
         "slug": "florida-orlando",
         "property_count": 169,
-        "total_bedrooms": 648,
-        "avg_bedrooms": 3.8
+        "total_bedrooms": 662,
+        "avg_bedrooms": 3.9
       },
       {
         "location": "Mammoth Lakes",
         "slug": "california-mammoth-lakes",
-        "property_count": 101,
-        "total_bedrooms": 194,
-        "avg_bedrooms": 1.9
+        "property_count": 102,
+        "total_bedrooms": 162,
+        "avg_bedrooms": 1.6
       },
       {
         "location": "Nashville",
         "slug": "tennessee-nashville",
-        "property_count": 95,
-        "total_bedrooms": 222,
+        "property_count": 96,
+        "total_bedrooms": 224,
         "avg_bedrooms": 2.3
       },
       {
         "location": "Lake Of The Ozarks",
         "slug": "missouri-lake-of-the-ozarks",
         "property_count": 93,
-        "total_bedrooms": 294,
-        "avg_bedrooms": 3.2
-      },
-      {
-        "location": "Nevada North Lake Tahoe",
-        "slug": "california-nevada-north-lake-tahoe",
-        "property_count": 81,
-        "total_bedrooms": 237,
-        "avg_bedrooms": 2.9
+        "total_bedrooms": 356,
+        "avg_bedrooms": 3.8
       },
       {
         "location": "South Lake Tahoe",
         "slug": "california-south-lake-tahoe",
-        "property_count": 77,
-        "total_bedrooms": 244,
-        "avg_bedrooms": 3.2
+        "property_count": 80,
+        "total_bedrooms": 233,
+        "avg_bedrooms": 2.9
+      },
+      {
+        "location": "Nevada North Lake Tahoe",
+        "slug": "california-nevada-north-lake-tahoe",
+        "property_count": 79,
+        "total_bedrooms": 243,
+        "avg_bedrooms": 3.1
       },
       {
         "location": "Hawaii",
         "slug": "hawaii",
-        "property_count": 73,
-        "total_bedrooms": 146,
-        "avg_bedrooms": 2.0
+        "property_count": 74,
+        "total_bedrooms": 136,
+        "avg_bedrooms": 1.8
       },
       {
         "location": "Austin",
         "slug": "texas-austin",
-        "property_count": 66,
-        "total_bedrooms": 182,
-        "avg_bedrooms": 2.8
+        "property_count": 67,
+        "total_bedrooms": 240,
+        "avg_bedrooms": 3.6
       },
       {
         "location": "Big Island",
         "slug": "hawaii-big-island",
         "property_count": 59,
-        "total_bedrooms": 108,
-        "avg_bedrooms": 1.8
+        "total_bedrooms": 123,
+        "avg_bedrooms": 2.1
       },
       {
         "location": "Smoky Mountains",
         "slug": "tennessee-smoky-mountains",
         "property_count": 59,
-        "total_bedrooms": 167,
-        "avg_bedrooms": 2.8
+        "total_bedrooms": 172,
+        "avg_bedrooms": 2.9
       },
       {
         "location": "Sea Ranch",
         "slug": "california-sea-ranch",
         "property_count": 49,
-        "total_bedrooms": 139,
+        "total_bedrooms": 118,
+        "avg_bedrooms": 2.4
+      },
+      {
+        "location": "New Braunfels",
+        "slug": "texas-new-braunfels",
+        "property_count": 48,
+        "total_bedrooms": 146,
+        "avg_bedrooms": 3.0
+      },
+      {
+        "location": "Glacier Country",
+        "slug": "montana-glacier-country",
+        "property_count": 47,
+        "total_bedrooms": 129,
         "avg_bedrooms": 2.8
       },
       {
         "location": "Southern Coastal",
         "slug": "maine-southern-coastal",
         "property_count": 47,
-        "total_bedrooms": 176,
-        "avg_bedrooms": 3.8
-      },
-      {
-        "location": "Glacier Country",
-        "slug": "montana-glacier-country",
-        "property_count": 46,
-        "total_bedrooms": 126,
-        "avg_bedrooms": 2.8
+        "total_bedrooms": 184,
+        "avg_bedrooms": 3.9
       },
       {
         "location": "Lake Geneva",
         "slug": "wisconsin-lake-geneva",
         "property_count": 41,
-        "total_bedrooms": 137,
-        "avg_bedrooms": 3.3
+        "total_bedrooms": 140,
+        "avg_bedrooms": 3.4
       },
       {
         "location": "Carolina Hilton Head Island",
         "slug": "south-carolina-hilton-head-island",
         "property_count": 40,
-        "total_bedrooms": 97,
-        "avg_bedrooms": 2.4
+        "total_bedrooms": 103,
+        "avg_bedrooms": 2.6
       },
       {
         "location": "Panama City Beach",
         "slug": "florida-panama-city-beach",
-        "property_count": 39,
-        "total_bedrooms": 88,
-        "avg_bedrooms": 2.2
+        "property_count": 40,
+        "total_bedrooms": 80,
+        "avg_bedrooms": 2.0
       },
       {
         "location": "Bend Central Oregon",
         "slug": "oregon-bend-central-oregon",
         "property_count": 38,
-        "total_bedrooms": 104,
-        "avg_bedrooms": 2.8
+        "total_bedrooms": 95,
+        "avg_bedrooms": 2.5
       },
       {
         "location": "Southern",
         "slug": "utah-southern",
         "property_count": 38,
-        "total_bedrooms": 111,
-        "avg_bedrooms": 2.9
+        "total_bedrooms": 114,
+        "avg_bedrooms": 3.0
+      },
+      {
+        "location": "Hollywood Sunny Isles",
+        "slug": "florida-hollywood-sunny-isles",
+        "property_count": 37,
+        "total_bedrooms": 86,
+        "avg_bedrooms": 2.3
       },
       {
         "location": "Broken Bow",
         "slug": "oklahoma-broken-bow",
         "property_count": 36,
-        "total_bedrooms": 105,
-        "avg_bedrooms": 2.9
-      },
-      {
-        "location": "Hollywood Sunny Isles",
-        "slug": "florida-hollywood-sunny-isles",
-        "property_count": 34,
-        "total_bedrooms": 113,
-        "avg_bedrooms": 3.3
+        "total_bedrooms": 117,
+        "avg_bedrooms": 3.2
       },
       {
         "location": "Galveston",
         "slug": "texas-galveston",
         "property_count": 33,
-        "total_bedrooms": 80,
-        "avg_bedrooms": 2.4
+        "total_bedrooms": 77,
+        "avg_bedrooms": 2.3
       },
       {
         "location": "Palm Springs",
         "slug": "california-palm-springs",
         "property_count": 32,
-        "total_bedrooms": 115,
-        "avg_bedrooms": 3.6
-      },
-      {
-        "location": "New Braunfels",
-        "slug": "texas-new-braunfels",
-        "property_count": 31,
-        "total_bedrooms": 75,
-        "avg_bedrooms": 2.4
+        "total_bedrooms": 85,
+        "avg_bedrooms": 2.7
       },
       {
         "location": "Monterey Bay Sierra Foothills",
         "slug": "california-monterey-bay-sierra-foothills",
         "property_count": 30,
-        "total_bedrooms": 82,
-        "avg_bedrooms": 2.8
+        "total_bedrooms": 88,
+        "avg_bedrooms": 2.9
       },
       {
         "location": "Palm Beach",
@@ -3379,64 +3392,64 @@
         "location": "Breckenridge",
         "slug": "colorado-breckenridge",
         "property_count": 28,
-        "total_bedrooms": 70,
-        "avg_bedrooms": 2.5
+        "total_bedrooms": 79,
+        "avg_bedrooms": 2.8
       },
       {
         "location": "Gulf Shores",
         "slug": "alabama-gulf-shores",
         "property_count": 25,
-        "total_bedrooms": 90,
-        "avg_bedrooms": 3.6
+        "total_bedrooms": 108,
+        "avg_bedrooms": 4.3
       },
       {
         "location": "Destin And Miramar Beach",
         "slug": "florida-destin-and-miramar-beach",
         "property_count": 24,
-        "total_bedrooms": 54,
-        "avg_bedrooms": 2.2
+        "total_bedrooms": 46,
+        "avg_bedrooms": 1.9
       },
       {
         "location": "Long Beach",
         "slug": "california-long-beach",
         "property_count": 24,
-        "total_bedrooms": 60,
-        "avg_bedrooms": 2.5
+        "total_bedrooms": 54,
+        "avg_bedrooms": 2.2
+      },
+      {
+        "location": "Miami",
+        "slug": "florida-miami",
+        "property_count": 24,
+        "total_bedrooms": 34,
+        "avg_bedrooms": 1.4
       },
       {
         "location": "North Georgia Mountains",
         "slug": "georgia-north-georgia-mountains",
         "property_count": 24,
-        "total_bedrooms": 76,
-        "avg_bedrooms": 3.2
+        "total_bedrooms": 72,
+        "avg_bedrooms": 3.0
       },
       {
         "location": "Port Aransas North Padre Island",
         "slug": "texas-port-aransas-north-padre-island",
         "property_count": 24,
-        "total_bedrooms": 64,
-        "avg_bedrooms": 2.7
+        "total_bedrooms": 68,
+        "avg_bedrooms": 2.8
       },
       {
         "location": "Hill Country",
         "slug": "texas-hill-country",
         "property_count": 23,
-        "total_bedrooms": 69,
-        "avg_bedrooms": 3.0
+        "total_bedrooms": 96,
+        "avg_bedrooms": 4.2
       },
       {
         "location": "St Augustine",
         "slug": "florida-st-augustine",
         "property_count": 23,
-        "total_bedrooms": 67,
-        "avg_bedrooms": 2.9
-      },
-      {
-        "location": "Miami",
-        "slug": "florida-miami",
-        "property_count": 22,
-        "total_bedrooms": 43,
-        "avg_bedrooms": 2.0
+        "total_bedrooms": 65,
+        "avg_bedrooms": 2.8
       },
       {
         "location": "Orange Beach",
@@ -3449,8 +3462,8 @@
         "location": "Park City",
         "slug": "utah-park-city",
         "property_count": 21,
-        "total_bedrooms": 47,
-        "avg_bedrooms": 2.2
+        "total_bedrooms": 58,
+        "avg_bedrooms": 2.8
       },
       {
         "location": "Big Bear Lake Arrowhead",
@@ -3463,29 +3476,29 @@
         "location": "White Mountains",
         "slug": "seacoast-white-mountains",
         "property_count": 19,
-        "total_bedrooms": 21,
-        "avg_bedrooms": 1.1
+        "total_bedrooms": 32,
+        "avg_bedrooms": 1.7
       },
       {
         "location": "Beaches",
         "slug": "delaware-beaches",
         "property_count": 17,
-        "total_bedrooms": 45,
-        "avg_bedrooms": 2.7
+        "total_bedrooms": 52,
+        "avg_bedrooms": 3.1
       },
       {
         "location": "Franklin",
         "slug": "tennessee-franklin",
         "property_count": 15,
-        "total_bedrooms": 51,
-        "avg_bedrooms": 3.4
+        "total_bedrooms": 45,
+        "avg_bedrooms": 3.0
       },
       {
         "location": "Oahu",
         "slug": "hawaii-oahu",
-        "property_count": 14,
-        "total_bedrooms": 32,
-        "avg_bedrooms": 2.3
+        "property_count": 15,
+        "total_bedrooms": 31,
+        "avg_bedrooms": 2.1
       },
       {
         "location": "Newport Beach",
@@ -3505,8 +3518,8 @@
         "location": "Santa Barbara",
         "slug": "california-santa-barbara",
         "property_count": 11,
-        "total_bedrooms": 28,
-        "avg_bedrooms": 2.5
+        "total_bedrooms": 29,
+        "avg_bedrooms": 2.6
       },
       {
         "location": "North Atlanta",
@@ -3533,8 +3546,8 @@
         "location": "Carolina Lake Norman",
         "slug": "north-carolina-lake-norman",
         "property_count": 7,
-        "total_bedrooms": 27,
-        "avg_bedrooms": 3.9
+        "total_bedrooms": 25,
+        "avg_bedrooms": 3.6
       },
       {
         "location": "Scottsdale",
@@ -4565,29 +4578,87 @@
         "White Mountains": 19,
         "Winter Park And Grand County": 3,
         "Grand Welcome Total": 2285
+      },
+      "2026-08-09": {
+        "Austin": 67,
+        "Beaches": 17,
+        "Bend Central Oregon": 38,
+        "Big Bear Lake Arrowhead": 19,
+        "Big Island": 59,
+        "Breckenridge": 28,
+        "Broken Bow": 36,
+        "Cape Cod Falmouth Mashpee": 8,
+        "Carolina Hilton Head Island": 40,
+        "Carolina Lake Norman": 7,
+        "Destin And Miramar Beach": 24,
+        "Franklin": 15,
+        "Galveston": 33,
+        "Glacier Country": 47,
+        "Gulf Shores": 25,
+        "Hawaii": 74,
+        "Hill Country": 23,
+        "Hollywood Sunny Isles": 37,
+        "Houston": 1,
+        "Lake Geneva": 41,
+        "Lake Of The Ozarks": 93,
+        "Long Beach": 24,
+        "Mammoth Lakes": 102,
+        "Mesa": 2,
+        "Miami": 24,
+        "Monterey Bay Sierra Foothills": 30,
+        "Nashville": 96,
+        "Nevada North Lake Tahoe": 79,
+        "New Braunfels": 48,
+        "Newport Beach": 12,
+        "North Atlanta": 9,
+        "North Georgia Mountains": 24,
+        "Oahu": 15,
+        "Oceanside Carlsbad Encinitas": 12,
+        "Orange Beach": 22,
+        "Orlando": 169,
+        "Palm Beach": 30,
+        "Palm Springs": 32,
+        "Panama City Beach": 40,
+        "Park City": 21,
+        "Port Aransas North Padre Island": 24,
+        "San Antonio": 2,
+        "Santa Barbara": 11,
+        "Scottsdale": 5,
+        "Sea Ranch": 49,
+        "Smoky Mountains": 59,
+        "South Lake Tahoe": 80,
+        "Southern": 38,
+        "Southern Coastal": 47,
+        "Space Coast": 1,
+        "St Augustine": 23,
+        "The Ozarks": 427,
+        "Vail Valley": 8,
+        "White Mountains": 19,
+        "Winter Park And Grand County": 3,
+        "Grand Welcome Total": 2319
       }
     },
     "trends": {
-      "latest_date": "2026-08-02",
+      "latest_date": "2026-08-09",
       "comparison_dates": {
         "week_ago": "2026-07-19",
-        "month_ago": "2026-06-28",
+        "month_ago": "2026-07-05",
         "first": "2026-03-19"
       },
       "entities": {
         "Austin": {
-          "current": 66,
+          "current": 67,
           "wow_prev": 66,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 68,
-          "mom_change": -2,
-          "mom_pct": -2.9,
+          "wow_change": 1,
+          "wow_pct": 1.5,
+          "mom_prev": 66,
+          "mom_change": 1,
+          "mom_pct": 1.5,
           "first_date": "2026-03-19",
           "first": 71,
-          "all_time_change": -5,
-          "all_time_pct": -7.0,
-          "trend": "declining"
+          "all_time_change": -4,
+          "all_time_pct": -5.6,
+          "trend": "growing"
         },
         "Beaches": {
           "current": 17,
@@ -4720,14 +4791,14 @@
           "wow_prev": 7,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 6,
-          "mom_change": 1,
-          "mom_pct": 16.7,
+          "mom_prev": 7,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 5,
           "all_time_change": 2,
           "all_time_pct": 40.0,
-          "trend": "growing"
+          "trend": "stable"
         },
         "Destin And Miramar Beach": {
           "current": 24,
@@ -4762,9 +4833,9 @@
           "wow_prev": 32,
           "wow_change": 1,
           "wow_pct": 3.1,
-          "mom_prev": 30,
-          "mom_change": 3,
-          "mom_pct": 10.0,
+          "mom_prev": 32,
+          "mom_change": 1,
+          "mom_pct": 3.1,
           "first_date": "2026-03-19",
           "first": 20,
           "all_time_change": 13,
@@ -4772,17 +4843,17 @@
           "trend": "growing"
         },
         "Glacier Country": {
-          "current": 46,
+          "current": 47,
           "wow_prev": 44,
-          "wow_change": 2,
-          "wow_pct": 4.5,
-          "mom_prev": 44,
+          "wow_change": 3,
+          "wow_pct": 6.8,
+          "mom_prev": 45,
           "mom_change": 2,
-          "mom_pct": 4.5,
+          "mom_pct": 4.4,
           "first_date": "2026-03-19",
           "first": 36,
-          "all_time_change": 10,
-          "all_time_pct": 27.8,
+          "all_time_change": 11,
+          "all_time_pct": 30.6,
           "trend": "growing"
         },
         "Gulf Shores": {
@@ -4800,18 +4871,18 @@
           "trend": "growing"
         },
         "Hawaii": {
-          "current": 73,
+          "current": 74,
           "wow_prev": 73,
-          "wow_change": 0,
-          "wow_pct": 0.0,
+          "wow_change": 1,
+          "wow_pct": 1.4,
           "mom_prev": 73,
-          "mom_change": 0,
-          "mom_pct": 0.0,
+          "mom_change": 1,
+          "mom_pct": 1.4,
           "first_date": "2026-03-19",
           "first": 73,
-          "all_time_change": 0,
-          "all_time_pct": 0.0,
-          "trend": "stable"
+          "all_time_change": 1,
+          "all_time_pct": 1.4,
+          "trend": "growing"
         },
         "Hill Country": {
           "current": 23,
@@ -4828,17 +4899,17 @@
           "trend": "declining"
         },
         "Hollywood Sunny Isles": {
-          "current": 34,
+          "current": 37,
           "wow_prev": 31,
-          "wow_change": 3,
-          "wow_pct": 9.7,
-          "mom_prev": 23,
-          "mom_change": 11,
-          "mom_pct": 47.8,
+          "wow_change": 6,
+          "wow_pct": 19.4,
+          "mom_prev": 25,
+          "mom_change": 12,
+          "mom_pct": 48.0,
           "first_date": "2026-03-19",
           "first": 18,
-          "all_time_change": 16,
-          "all_time_pct": 88.9,
+          "all_time_change": 19,
+          "all_time_pct": 105.6,
           "trend": "growing"
         },
         "Houston": {
@@ -4874,9 +4945,9 @@
           "wow_prev": 91,
           "wow_change": 2,
           "wow_pct": 2.2,
-          "mom_prev": 91,
-          "mom_change": 2,
-          "mom_pct": 2.2,
+          "mom_prev": 92,
+          "mom_change": 1,
+          "mom_pct": 1.1,
           "first_date": "2026-03-19",
           "first": 65,
           "all_time_change": 28,
@@ -4898,18 +4969,18 @@
           "trend": "growing"
         },
         "Mammoth Lakes": {
-          "current": 101,
+          "current": 102,
           "wow_prev": 100,
-          "wow_change": 1,
-          "wow_pct": 1.0,
-          "mom_prev": 103,
-          "mom_change": -2,
-          "mom_pct": -1.9,
+          "wow_change": 2,
+          "wow_pct": 2.0,
+          "mom_prev": 100,
+          "mom_change": 2,
+          "mom_pct": 2.0,
           "first_date": "2026-03-19",
           "first": 103,
-          "all_time_change": -2,
-          "all_time_pct": -1.9,
-          "trend": "declining"
+          "all_time_change": -1,
+          "all_time_pct": -1.0,
+          "trend": "growing"
         },
         "Mesa": {
           "current": 2,
@@ -4926,17 +4997,17 @@
           "trend": "stable"
         },
         "Miami": {
-          "current": 22,
+          "current": 24,
           "wow_prev": 19,
-          "wow_change": 3,
-          "wow_pct": 15.8,
-          "mom_prev": 11,
+          "wow_change": 5,
+          "wow_pct": 26.3,
+          "mom_prev": 13,
           "mom_change": 11,
-          "mom_pct": 100.0,
+          "mom_pct": 84.6,
           "first_date": "2026-03-19",
           "first": 8,
-          "all_time_change": 14,
-          "all_time_pct": 175.0,
+          "all_time_change": 16,
+          "all_time_pct": 200.0,
           "trend": "growing"
         },
         "Monterey Bay Sierra Foothills": {
@@ -4954,45 +5025,45 @@
           "trend": "stable"
         },
         "Nashville": {
-          "current": 95,
+          "current": 96,
           "wow_prev": 95,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 101,
-          "mom_change": -6,
-          "mom_pct": -5.9,
+          "wow_change": 1,
+          "wow_pct": 1.1,
+          "mom_prev": 96,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 101,
-          "all_time_change": -6,
-          "all_time_pct": -5.9,
-          "trend": "declining"
+          "all_time_change": -5,
+          "all_time_pct": -5.0,
+          "trend": "stable"
         },
         "Nevada North Lake Tahoe": {
-          "current": 81,
+          "current": 79,
           "wow_prev": 81,
-          "wow_change": 0,
-          "wow_pct": 0.0,
+          "wow_change": -2,
+          "wow_pct": -2.5,
           "mom_prev": 84,
-          "mom_change": -3,
-          "mom_pct": -3.6,
+          "mom_change": -5,
+          "mom_pct": -6.0,
           "first_date": "2026-03-19",
           "first": 87,
-          "all_time_change": -6,
-          "all_time_pct": -6.9,
+          "all_time_change": -8,
+          "all_time_pct": -9.2,
           "trend": "declining"
         },
         "New Braunfels": {
-          "current": 31,
+          "current": 48,
           "wow_prev": 30,
-          "wow_change": 1,
-          "wow_pct": 3.3,
-          "mom_prev": 24,
-          "mom_change": 7,
-          "mom_pct": 29.2,
+          "wow_change": 18,
+          "wow_pct": 60.0,
+          "mom_prev": 27,
+          "mom_change": 21,
+          "mom_pct": 77.8,
           "first_date": "2026-03-19",
           "first": 21,
-          "all_time_change": 10,
-          "all_time_pct": 47.6,
+          "all_time_change": 27,
+          "all_time_pct": 128.6,
           "trend": "growing"
         },
         "Newport Beach": {
@@ -5038,18 +5109,18 @@
           "trend": "growing"
         },
         "Oahu": {
-          "current": 14,
+          "current": 15,
           "wow_prev": 14,
-          "wow_change": 0,
-          "wow_pct": 0.0,
+          "wow_change": 1,
+          "wow_pct": 7.1,
           "mom_prev": 14,
-          "mom_change": 0,
-          "mom_pct": 0.0,
+          "mom_change": 1,
+          "mom_pct": 7.1,
           "first_date": "2026-03-19",
           "first": 15,
-          "all_time_change": -1,
-          "all_time_pct": -6.7,
-          "trend": "stable"
+          "all_time_change": 0,
+          "all_time_pct": 0.0,
+          "trend": "growing"
         },
         "Oceanside Carlsbad": {
           "current": 12,
@@ -5070,9 +5141,9 @@
           "wow_prev": 19,
           "wow_change": 3,
           "wow_pct": 15.8,
-          "mom_prev": 18,
-          "mom_change": 4,
-          "mom_pct": 22.2,
+          "mom_prev": 19,
+          "mom_change": 3,
+          "mom_pct": 15.8,
           "first_date": "2026-03-19",
           "first": 15,
           "all_time_change": 7,
@@ -5084,28 +5155,28 @@
           "wow_prev": 168,
           "wow_change": 1,
           "wow_pct": 0.6,
-          "mom_prev": 167,
-          "mom_change": 2,
-          "mom_pct": 1.2,
+          "mom_prev": 169,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 163,
           "all_time_change": 6,
           "all_time_pct": 3.7,
-          "trend": "growing"
+          "trend": "stable"
         },
         "Palm Beach": {
           "current": 30,
           "wow_prev": 30,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 28,
-          "mom_change": 2,
-          "mom_pct": 7.1,
+          "mom_prev": 30,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 29,
           "all_time_change": 1,
           "all_time_pct": 3.4,
-          "trend": "growing"
+          "trend": "stable"
         },
         "Palm Springs": {
           "current": 32,
@@ -5122,17 +5193,17 @@
           "trend": "declining"
         },
         "Panama City Beach": {
-          "current": 39,
+          "current": 40,
           "wow_prev": 39,
-          "wow_change": 0,
-          "wow_pct": 0.0,
+          "wow_change": 1,
+          "wow_pct": 2.6,
           "mom_prev": 37,
-          "mom_change": 2,
-          "mom_pct": 5.4,
+          "mom_change": 3,
+          "mom_pct": 8.1,
           "first_date": "2026-03-19",
           "first": 33,
-          "all_time_change": 6,
-          "all_time_pct": 18.2,
+          "all_time_change": 7,
+          "all_time_pct": 21.2,
           "trend": "growing"
         },
         "Park City": {
@@ -5210,41 +5281,41 @@
           "wow_prev": 49,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 50,
-          "mom_change": -1,
-          "mom_pct": -2.0,
+          "mom_prev": 49,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 48,
           "all_time_change": 1,
           "all_time_pct": 2.1,
-          "trend": "declining"
+          "trend": "stable"
         },
         "Smoky Mountains": {
           "current": 59,
           "wow_prev": 59,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 62,
-          "mom_change": -3,
-          "mom_pct": -4.8,
+          "mom_prev": 59,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 63,
           "all_time_change": -4,
           "all_time_pct": -6.3,
-          "trend": "declining"
+          "trend": "stable"
         },
         "South Lake Tahoe": {
-          "current": 77,
+          "current": 80,
           "wow_prev": 78,
-          "wow_change": -1,
-          "wow_pct": -1.3,
+          "wow_change": 2,
+          "wow_pct": 2.6,
           "mom_prev": 76,
-          "mom_change": 1,
-          "mom_pct": 1.3,
+          "mom_change": 4,
+          "mom_pct": 5.3,
           "first_date": "2026-03-19",
           "first": 73,
-          "all_time_change": 4,
-          "all_time_pct": 5.5,
+          "all_time_change": 7,
+          "all_time_pct": 9.6,
           "trend": "growing"
         },
         "Southern": {
@@ -5308,14 +5379,14 @@
           "wow_prev": 8,
           "wow_change": 0,
           "wow_pct": 0.0,
-          "mom_prev": 7,
-          "mom_change": 1,
-          "mom_pct": 14.3,
+          "mom_prev": 8,
+          "mom_change": 0,
+          "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 7,
           "all_time_change": 1,
           "all_time_pct": 14.3,
-          "trend": "growing"
+          "trend": "stable"
         },
         "White Mountains": {
           "current": 19,
@@ -5346,17 +5417,17 @@
           "trend": "stable"
         },
         "Grand Welcome Total": {
-          "current": 2285,
+          "current": 2319,
           "wow_prev": 2246,
-          "wow_change": 39,
-          "wow_pct": 1.7,
-          "mom_prev": 2234,
-          "mom_change": 51,
-          "mom_pct": 2.3,
+          "wow_change": 73,
+          "wow_pct": 3.3,
+          "mom_prev": 2240,
+          "mom_change": 79,
+          "mom_pct": 3.5,
           "first_date": "2026-03-19",
           "first": 2127,
-          "all_time_change": 158,
-          "all_time_pct": 7.4,
+          "all_time_change": 192,
+          "all_time_pct": 9.0,
           "trend": "growing"
         },
         "Oceanside Carlsbad Encinitas": {
@@ -5374,109 +5445,109 @@
           "trend": "stable"
         },
         "The Ozarks": {
-          "current": 423,
+          "current": 427,
           "wow_prev": 413,
-          "wow_change": 10,
-          "wow_pct": 2.4,
-          "mom_prev": 411,
-          "mom_change": 12,
-          "mom_pct": 2.9,
+          "wow_change": 14,
+          "wow_pct": 3.4,
+          "mom_prev": 413,
+          "mom_change": 14,
+          "mom_pct": 3.4,
           "first_date": "2026-04-13",
           "first": 393,
-          "all_time_change": 30,
-          "all_time_pct": 7.6,
+          "all_time_change": 34,
+          "all_time_pct": 8.7,
           "trend": "growing"
         }
       },
       "growing": [
         {
           "name": "Grand Welcome Total",
-          "current": 2285,
+          "current": 2319,
           "wow_prev": 2246,
-          "wow_change": 39,
-          "wow_pct": 1.7,
-          "mom_prev": 2234,
-          "mom_change": 51,
-          "mom_pct": 2.3,
+          "wow_change": 73,
+          "wow_pct": 3.3,
+          "mom_prev": 2240,
+          "mom_change": 79,
+          "mom_pct": 3.5,
           "first_date": "2026-03-19",
           "first": 2127,
-          "all_time_change": 158,
-          "all_time_pct": 7.4,
-          "trend": "growing"
-        },
-        {
-          "name": "The Ozarks",
-          "current": 423,
-          "wow_prev": 413,
-          "wow_change": 10,
-          "wow_pct": 2.4,
-          "mom_prev": 411,
-          "mom_change": 12,
-          "mom_pct": 2.9,
-          "first_date": "2026-04-13",
-          "first": 393,
-          "all_time_change": 30,
-          "all_time_pct": 7.6,
-          "trend": "growing"
-        },
-        {
-          "name": "Hollywood Sunny Isles",
-          "current": 34,
-          "wow_prev": 31,
-          "wow_change": 3,
-          "wow_pct": 9.7,
-          "mom_prev": 23,
-          "mom_change": 11,
-          "mom_pct": 47.8,
-          "first_date": "2026-03-19",
-          "first": 18,
-          "all_time_change": 16,
-          "all_time_pct": 88.9,
-          "trend": "growing"
-        },
-        {
-          "name": "Miami",
-          "current": 22,
-          "wow_prev": 19,
-          "wow_change": 3,
-          "wow_pct": 15.8,
-          "mom_prev": 11,
-          "mom_change": 11,
-          "mom_pct": 100.0,
-          "first_date": "2026-03-19",
-          "first": 8,
-          "all_time_change": 14,
-          "all_time_pct": 175.0,
+          "all_time_change": 192,
+          "all_time_pct": 9.0,
           "trend": "growing"
         },
         {
           "name": "New Braunfels",
-          "current": 31,
+          "current": 48,
           "wow_prev": 30,
-          "wow_change": 1,
-          "wow_pct": 3.3,
-          "mom_prev": 24,
-          "mom_change": 7,
-          "mom_pct": 29.2,
+          "wow_change": 18,
+          "wow_pct": 60.0,
+          "mom_prev": 27,
+          "mom_change": 21,
+          "mom_pct": 77.8,
           "first_date": "2026-03-19",
           "first": 21,
-          "all_time_change": 10,
-          "all_time_pct": 47.6,
+          "all_time_change": 27,
+          "all_time_pct": 128.6,
           "trend": "growing"
         },
         {
-          "name": "Orange Beach",
-          "current": 22,
-          "wow_prev": 19,
-          "wow_change": 3,
-          "wow_pct": 15.8,
-          "mom_prev": 18,
-          "mom_change": 4,
-          "mom_pct": 22.2,
+          "name": "The Ozarks",
+          "current": 427,
+          "wow_prev": 413,
+          "wow_change": 14,
+          "wow_pct": 3.4,
+          "mom_prev": 413,
+          "mom_change": 14,
+          "mom_pct": 3.4,
+          "first_date": "2026-04-13",
+          "first": 393,
+          "all_time_change": 34,
+          "all_time_pct": 8.7,
+          "trend": "growing"
+        },
+        {
+          "name": "Hollywood Sunny Isles",
+          "current": 37,
+          "wow_prev": 31,
+          "wow_change": 6,
+          "wow_pct": 19.4,
+          "mom_prev": 25,
+          "mom_change": 12,
+          "mom_pct": 48.0,
           "first_date": "2026-03-19",
-          "first": 15,
+          "first": 18,
+          "all_time_change": 19,
+          "all_time_pct": 105.6,
+          "trend": "growing"
+        },
+        {
+          "name": "Miami",
+          "current": 24,
+          "wow_prev": 19,
+          "wow_change": 5,
+          "wow_pct": 26.3,
+          "mom_prev": 13,
+          "mom_change": 11,
+          "mom_pct": 84.6,
+          "first_date": "2026-03-19",
+          "first": 8,
+          "all_time_change": 16,
+          "all_time_pct": 200.0,
+          "trend": "growing"
+        },
+        {
+          "name": "South Lake Tahoe",
+          "current": 80,
+          "wow_prev": 78,
+          "wow_change": 2,
+          "wow_pct": 2.6,
+          "mom_prev": 76,
+          "mom_change": 4,
+          "mom_pct": 5.3,
+          "first_date": "2026-03-19",
+          "first": 73,
           "all_time_change": 7,
-          "all_time_pct": 46.7,
+          "all_time_pct": 9.6,
           "trend": "growing"
         },
         {
@@ -5495,18 +5566,33 @@
           "trend": "growing"
         },
         {
-          "name": "Galveston",
-          "current": 33,
-          "wow_prev": 32,
-          "wow_change": 1,
-          "wow_pct": 3.1,
-          "mom_prev": 30,
+          "name": "Orange Beach",
+          "current": 22,
+          "wow_prev": 19,
+          "wow_change": 3,
+          "wow_pct": 15.8,
+          "mom_prev": 19,
           "mom_change": 3,
-          "mom_pct": 10.0,
+          "mom_pct": 15.8,
           "first_date": "2026-03-19",
-          "first": 20,
-          "all_time_change": 13,
-          "all_time_pct": 65.0,
+          "first": 15,
+          "all_time_change": 7,
+          "all_time_pct": 46.7,
+          "trend": "growing"
+        },
+        {
+          "name": "Panama City Beach",
+          "current": 40,
+          "wow_prev": 39,
+          "wow_change": 1,
+          "wow_pct": 2.6,
+          "mom_prev": 37,
+          "mom_change": 3,
+          "mom_pct": 8.1,
+          "first_date": "2026-03-19",
+          "first": 33,
+          "all_time_change": 7,
+          "all_time_pct": 21.2,
           "trend": "growing"
         },
         {
@@ -5571,32 +5657,32 @@
         },
         {
           "name": "Glacier Country",
-          "current": 46,
+          "current": 47,
           "wow_prev": 44,
-          "wow_change": 2,
-          "wow_pct": 4.5,
-          "mom_prev": 44,
+          "wow_change": 3,
+          "wow_pct": 6.8,
+          "mom_prev": 45,
           "mom_change": 2,
-          "mom_pct": 4.5,
+          "mom_pct": 4.4,
           "first_date": "2026-03-19",
           "first": 36,
-          "all_time_change": 10,
-          "all_time_pct": 27.8,
+          "all_time_change": 11,
+          "all_time_pct": 30.6,
           "trend": "growing"
         },
         {
-          "name": "Lake Of The Ozarks",
-          "current": 93,
-          "wow_prev": 91,
+          "name": "Mammoth Lakes",
+          "current": 102,
+          "wow_prev": 100,
           "wow_change": 2,
-          "wow_pct": 2.2,
-          "mom_prev": 91,
+          "wow_pct": 2.0,
+          "mom_prev": 100,
           "mom_change": 2,
-          "mom_pct": 2.2,
+          "mom_pct": 2.0,
           "first_date": "2026-03-19",
-          "first": 65,
-          "all_time_change": 28,
-          "all_time_pct": 43.1,
+          "first": 103,
+          "all_time_change": -1,
+          "all_time_pct": -1.0,
           "trend": "growing"
         },
         {
@@ -5615,48 +5701,18 @@
           "trend": "growing"
         },
         {
-          "name": "Orlando",
-          "current": 169,
-          "wow_prev": 168,
+          "name": "Austin",
+          "current": 67,
+          "wow_prev": 66,
           "wow_change": 1,
-          "wow_pct": 0.6,
-          "mom_prev": 167,
-          "mom_change": 2,
-          "mom_pct": 1.2,
+          "wow_pct": 1.5,
+          "mom_prev": 66,
+          "mom_change": 1,
+          "mom_pct": 1.5,
           "first_date": "2026-03-19",
-          "first": 163,
-          "all_time_change": 6,
-          "all_time_pct": 3.7,
-          "trend": "growing"
-        },
-        {
-          "name": "Palm Beach",
-          "current": 30,
-          "wow_prev": 30,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 28,
-          "mom_change": 2,
-          "mom_pct": 7.1,
-          "first_date": "2026-03-19",
-          "first": 29,
-          "all_time_change": 1,
-          "all_time_pct": 3.4,
-          "trend": "growing"
-        },
-        {
-          "name": "Panama City Beach",
-          "current": 39,
-          "wow_prev": 39,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 37,
-          "mom_change": 2,
-          "mom_pct": 5.4,
-          "first_date": "2026-03-19",
-          "first": 33,
-          "all_time_change": 6,
-          "all_time_pct": 18.2,
+          "first": 71,
+          "all_time_change": -4,
+          "all_time_pct": -5.6,
           "trend": "growing"
         },
         {
@@ -5675,18 +5731,18 @@
           "trend": "growing"
         },
         {
-          "name": "Carolina Lake Norman",
-          "current": 7,
-          "wow_prev": 7,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 6,
+          "name": "Galveston",
+          "current": 33,
+          "wow_prev": 32,
+          "wow_change": 1,
+          "wow_pct": 3.1,
+          "mom_prev": 32,
           "mom_change": 1,
-          "mom_pct": 16.7,
+          "mom_pct": 3.1,
           "first_date": "2026-03-19",
-          "first": 5,
-          "all_time_change": 2,
-          "all_time_pct": 40.0,
+          "first": 20,
+          "all_time_change": 13,
+          "all_time_pct": 65.0,
           "trend": "growing"
         },
         {
@@ -5705,6 +5761,21 @@
           "trend": "growing"
         },
         {
+          "name": "Hawaii",
+          "current": 74,
+          "wow_prev": 73,
+          "wow_change": 1,
+          "wow_pct": 1.4,
+          "mom_prev": 73,
+          "mom_change": 1,
+          "mom_pct": 1.4,
+          "first_date": "2026-03-19",
+          "first": 73,
+          "all_time_change": 1,
+          "all_time_pct": 1.4,
+          "trend": "growing"
+        },
+        {
           "name": "Lake Geneva",
           "current": 41,
           "wow_prev": 40,
@@ -5717,6 +5788,21 @@
           "first": 44,
           "all_time_change": -3,
           "all_time_pct": -6.8,
+          "trend": "growing"
+        },
+        {
+          "name": "Lake Of The Ozarks",
+          "current": 93,
+          "wow_prev": 91,
+          "wow_change": 2,
+          "wow_pct": 2.2,
+          "mom_prev": 92,
+          "mom_change": 1,
+          "mom_pct": 1.1,
+          "first_date": "2026-03-19",
+          "first": 65,
+          "all_time_change": 28,
+          "all_time_pct": 43.1,
           "trend": "growing"
         },
         {
@@ -5735,18 +5821,18 @@
           "trend": "growing"
         },
         {
-          "name": "South Lake Tahoe",
-          "current": 77,
-          "wow_prev": 78,
-          "wow_change": -1,
-          "wow_pct": -1.3,
-          "mom_prev": 76,
+          "name": "Oahu",
+          "current": 15,
+          "wow_prev": 14,
+          "wow_change": 1,
+          "wow_pct": 7.1,
+          "mom_prev": 14,
           "mom_change": 1,
-          "mom_pct": 1.3,
+          "mom_pct": 7.1,
           "first_date": "2026-03-19",
-          "first": 73,
-          "all_time_change": 4,
-          "all_time_pct": 5.5,
+          "first": 15,
+          "all_time_change": 0,
+          "all_time_pct": 0.0,
           "trend": "growing"
         },
         {
@@ -5763,37 +5849,22 @@
           "all_time_change": 7,
           "all_time_pct": 17.5,
           "trend": "growing"
-        },
-        {
-          "name": "Vail Valley",
-          "current": 8,
-          "wow_prev": 8,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 7,
-          "mom_change": 1,
-          "mom_pct": 14.3,
-          "first_date": "2026-03-19",
-          "first": 7,
-          "all_time_change": 1,
-          "all_time_pct": 14.3,
-          "trend": "growing"
         }
       ],
       "declining": [
         {
-          "name": "Nashville",
-          "current": 95,
-          "wow_prev": 95,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 101,
-          "mom_change": -6,
-          "mom_pct": -5.9,
+          "name": "Nevada North Lake Tahoe",
+          "current": 79,
+          "wow_prev": 81,
+          "wow_change": -2,
+          "wow_pct": -2.5,
+          "mom_prev": 84,
+          "mom_change": -5,
+          "mom_pct": -6.0,
           "first_date": "2026-03-19",
-          "first": 101,
-          "all_time_change": -6,
-          "all_time_pct": -5.9,
+          "first": 87,
+          "all_time_change": -8,
+          "all_time_pct": -9.2,
           "trend": "declining"
         },
         {
@@ -5812,51 +5883,6 @@
           "trend": "declining"
         },
         {
-          "name": "Nevada North Lake Tahoe",
-          "current": 81,
-          "wow_prev": 81,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 84,
-          "mom_change": -3,
-          "mom_pct": -3.6,
-          "first_date": "2026-03-19",
-          "first": 87,
-          "all_time_change": -6,
-          "all_time_pct": -6.9,
-          "trend": "declining"
-        },
-        {
-          "name": "Smoky Mountains",
-          "current": 59,
-          "wow_prev": 59,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 62,
-          "mom_change": -3,
-          "mom_pct": -4.8,
-          "first_date": "2026-03-19",
-          "first": 63,
-          "all_time_change": -4,
-          "all_time_pct": -6.3,
-          "trend": "declining"
-        },
-        {
-          "name": "Austin",
-          "current": 66,
-          "wow_prev": 66,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 68,
-          "mom_change": -2,
-          "mom_pct": -2.9,
-          "first_date": "2026-03-19",
-          "first": 71,
-          "all_time_change": -5,
-          "all_time_pct": -7.0,
-          "trend": "declining"
-        },
-        {
           "name": "Beaches",
           "current": 17,
           "wow_prev": 17,
@@ -5869,21 +5895,6 @@
           "first": 20,
           "all_time_change": -3,
           "all_time_pct": -15.0,
-          "trend": "declining"
-        },
-        {
-          "name": "Mammoth Lakes",
-          "current": 101,
-          "wow_prev": 100,
-          "wow_change": 1,
-          "wow_pct": 1.0,
-          "mom_prev": 103,
-          "mom_change": -2,
-          "mom_pct": -1.9,
-          "first_date": "2026-03-19",
-          "first": 103,
-          "all_time_change": -2,
-          "all_time_pct": -1.9,
           "trend": "declining"
         },
         {
@@ -5914,21 +5925,6 @@
           "first": 24,
           "all_time_change": 0,
           "all_time_pct": 0.0,
-          "trend": "declining"
-        },
-        {
-          "name": "Sea Ranch",
-          "current": 49,
-          "wow_prev": 49,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 50,
-          "mom_change": -1,
-          "mom_pct": -2.0,
-          "first_date": "2026-03-19",
-          "first": 48,
-          "all_time_change": 1,
-          "all_time_pct": 2.1,
           "trend": "declining"
         }
       ],
@@ -5994,6 +5990,21 @@
           "trend": "stable"
         },
         {
+          "name": "Carolina Lake Norman",
+          "current": 7,
+          "wow_prev": 7,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 7,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 5,
+          "all_time_change": 2,
+          "all_time_pct": 40.0,
+          "trend": "stable"
+        },
+        {
           "name": "Franklin",
           "current": 15,
           "wow_prev": 15,
@@ -6004,21 +6015,6 @@
           "mom_pct": 0.0,
           "first_date": "2026-03-19",
           "first": 15,
-          "all_time_change": 0,
-          "all_time_pct": 0.0,
-          "trend": "stable"
-        },
-        {
-          "name": "Hawaii",
-          "current": 73,
-          "wow_prev": 73,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 73,
-          "mom_change": 0,
-          "mom_pct": 0.0,
-          "first_date": "2026-03-19",
-          "first": 73,
           "all_time_change": 0,
           "all_time_pct": 0.0,
           "trend": "stable"
@@ -6069,6 +6065,21 @@
           "trend": "stable"
         },
         {
+          "name": "Nashville",
+          "current": 96,
+          "wow_prev": 95,
+          "wow_change": 1,
+          "wow_pct": 1.1,
+          "mom_prev": 96,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 101,
+          "all_time_change": -5,
+          "all_time_pct": -5.0,
+          "trend": "stable"
+        },
+        {
           "name": "Newport Beach",
           "current": 12,
           "wow_prev": 12,
@@ -6099,21 +6110,6 @@
           "trend": "stable"
         },
         {
-          "name": "Oahu",
-          "current": 14,
-          "wow_prev": 14,
-          "wow_change": 0,
-          "wow_pct": 0.0,
-          "mom_prev": 14,
-          "mom_change": 0,
-          "mom_pct": 0.0,
-          "first_date": "2026-03-19",
-          "first": 15,
-          "all_time_change": -1,
-          "all_time_pct": -6.7,
-          "trend": "stable"
-        },
-        {
           "name": "Oceanside Carlsbad",
           "current": 12,
           "wow_prev": null,
@@ -6126,6 +6122,36 @@
           "first": 12,
           "all_time_change": 0,
           "all_time_pct": 0.0,
+          "trend": "stable"
+        },
+        {
+          "name": "Orlando",
+          "current": 169,
+          "wow_prev": 168,
+          "wow_change": 1,
+          "wow_pct": 0.6,
+          "mom_prev": 169,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 163,
+          "all_time_change": 6,
+          "all_time_pct": 3.7,
+          "trend": "stable"
+        },
+        {
+          "name": "Palm Beach",
+          "current": 30,
+          "wow_prev": 30,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 30,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 29,
+          "all_time_change": 1,
+          "all_time_pct": 3.4,
           "trend": "stable"
         },
         {
@@ -6174,6 +6200,36 @@
           "trend": "stable"
         },
         {
+          "name": "Sea Ranch",
+          "current": 49,
+          "wow_prev": 49,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 49,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 48,
+          "all_time_change": 1,
+          "all_time_pct": 2.1,
+          "trend": "stable"
+        },
+        {
+          "name": "Smoky Mountains",
+          "current": 59,
+          "wow_prev": 59,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 59,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 63,
+          "all_time_change": -4,
+          "all_time_pct": -6.3,
+          "trend": "stable"
+        },
+        {
           "name": "Southern",
           "current": 38,
           "wow_prev": 38,
@@ -6216,6 +6272,21 @@
           "first": 20,
           "all_time_change": 3,
           "all_time_pct": 15.0,
+          "trend": "stable"
+        },
+        {
+          "name": "Vail Valley",
+          "current": 8,
+          "wow_prev": 8,
+          "wow_change": 0,
+          "wow_pct": 0.0,
+          "mom_prev": 8,
+          "mom_change": 0,
+          "mom_pct": 0.0,
+          "first_date": "2026-03-19",
+          "first": 7,
+          "all_time_change": 1,
+          "all_time_pct": 14.3,
           "trend": "stable"
         },
         {
@@ -6268,6 +6339,132 @@
   },
   "listing_changes": {
     "dates": {
+      "2026-08-09": {
+        "gained": [
+          {
+            "id": 779,
+            "property_name": "Point East 102  PE102\u00a0\u00a0Marsh View",
+            "url": "https://www.rentalprorentals.com/garnsey/ShowProp.cfm?propid=682",
+            "address": "1801 Post Road",
+            "city": null,
+            "competitor": "Garnsey Brothers",
+            "platform": "rentalpro_custom",
+            "bedrooms": 1,
+            "date_first_seen": "2026-08-09",
+            "date_last_seen": "2026-08-09",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 777,
+            "property_name": "13 Atlantic Circle",
+            "url": "https://book.kportconcierge.com/en/5559539/13-atlantic-circle",
+            "address": "0 Km",
+            "city": null,
+            "competitor": "KPort Concierge",
+            "platform": "lodgify",
+            "bedrooms": 2,
+            "date_first_seen": "2026-08-09",
+            "date_last_seen": "2026-08-09",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 776,
+            "property_name": "Above the Tides",
+            "url": "https://www.saltandshinerentals.com/above-the-tides-york-orp5b780a5x",
+            "address": "9 Second Ave",
+            "city": "York",
+            "competitor": "Salt & Shine Vacation Rentals",
+            "platform": "ownerrez",
+            "bedrooms": 4,
+            "date_first_seen": "2026-08-09",
+            "date_last_seen": "2026-08-09",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 778,
+            "property_name": "29 Fishers Lane ~ Winer Rental",
+            "url": "https://www.sanddollarrealestate.com/vacation-rentals/rental/29fisherslanewinerrental/",
+            "address": "29 Fishers Lane",
+            "city": "Kennebunkport",
+            "competitor": "Sand Dollar Real Estate",
+            "platform": "jeanknapp_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-08-09",
+            "date_last_seen": "2026-08-09",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          }
+        ],
+        "lost": [
+          {
+            "id": 772,
+            "property_name": "43 Colby Ave. \"Sea Pines \"                    Ocean Park                         $1700 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327887",
+            "address": "43 Colby Ave",
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-07-26",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 773,
+            "property_name": "1 Sandpiper Road                    Ocean Park                         $4700 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327850",
+            "address": null,
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-07-26",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 774,
+            "property_name": "10 West Casco Ave.  \"All Dunn Inn\"                    Ocean Park                         $2500 min / week",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=328151",
+            "address": "10 West Casco Ave",
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": 3,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-07-26",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          },
+          {
+            "id": 775,
+            "property_name": "14 West Casco Ave.                    Ocean Park                         N/A",
+            "url": "https://oceanparkrealty.com/details.aspx?propertyid=327857",
+            "address": "14 West Casco Ave",
+            "city": "Old Orchard Beach",
+            "competitor": "Ocean Park Realty",
+            "platform": "oceanpark_custom",
+            "bedrooms": null,
+            "date_first_seen": "2026-04-26",
+            "date_last_seen": "2026-07-26",
+            "superseded_by_id": null,
+            "flagged_at": null,
+            "is_rename": false
+          }
+        ]
+      },
       "2026-08-02": {
         "gained": [
           {
@@ -6424,9 +6621,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-04-27",
             "date_last_seen": "2026-07-12",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 764,
+            "flagged_at": "2026-08-09T23:57:23Z",
+            "is_rename": true
           }
         ]
       },
@@ -6490,9 +6687,9 @@
             "bedrooms": 1,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-07-12",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 758,
+            "flagged_at": "2026-08-09T23:57:23Z",
+            "is_rename": true
           }
         ]
       },
@@ -10027,9 +10224,9 @@
             "bedrooms": 1,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-05-04",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 520,
+            "flagged_at": "2026-08-09T23:57:23Z",
+            "is_rename": true
           },
           {
             "id": 525,
@@ -10744,9 +10941,9 @@
             "bedrooms": 5,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-26",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 456,
+            "flagged_at": "2026-08-09T23:57:23Z",
+            "is_rename": true
           },
           {
             "id": 457,
@@ -10774,9 +10971,9 @@
             "bedrooms": 2,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-26",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 458,
+            "flagged_at": "2026-08-09T23:57:23Z",
+            "is_rename": true
           },
           {
             "id": 459,
@@ -10789,9 +10986,9 @@
             "bedrooms": 3,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-26",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 459,
+            "flagged_at": "2026-08-09T23:57:23Z",
+            "is_rename": true
           },
           {
             "id": 460,
@@ -10804,9 +11001,9 @@
             "bedrooms": 2,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-26",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 460,
+            "flagged_at": "2026-08-09T23:57:23Z",
+            "is_rename": true
           },
           {
             "id": 461,
@@ -10819,9 +11016,9 @@
             "bedrooms": 2,
             "date_first_seen": "2026-03-18",
             "date_last_seen": "2026-04-26",
-            "superseded_by_id": null,
-            "flagged_at": null,
-            "is_rename": false
+            "superseded_by_id": 461,
+            "flagged_at": "2026-08-09T23:57:23Z",
+            "is_rename": true
           },
           {
             "id": 462,
@@ -12604,6 +12801,80 @@
       }
     },
     "by_competitor": {
+      "Garnsey Brothers": {
+        "2026-08-09": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-04-12": {
+          "gained": 1,
+          "lost": 1
+        }
+      },
+      "KPort Concierge": {
+        "2026-08-09": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-06-21": {
+          "gained": 0,
+          "lost": 1
+        },
+        "2026-05-31": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-05-04": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-04-12": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "Salt & Shine Vacation Rentals": {
+        "2026-08-09": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-06-28": {
+          "gained": 0,
+          "lost": 1
+        }
+      },
+      "Sand Dollar Real Estate": {
+        "2026-08-09": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-08-02": {
+          "gained": 1,
+          "lost": 1
+        },
+        "2026-07-19": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
+      "Ocean Park Realty": {
+        "2026-08-09": {
+          "gained": 0,
+          "lost": 4
+        },
+        "2026-06-28": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-05-31": {
+          "gained": 1,
+          "lost": 0
+        },
+        "2026-04-27": {
+          "gained": 1,
+          "lost": 0
+        }
+      },
       "Evolve Vacation Rentals": {
         "2026-08-02": {
           "gained": 1,
@@ -12644,16 +12915,6 @@
         "2026-04-12": {
           "gained": 1,
           "lost": 4
-        }
-      },
-      "Sand Dollar Real Estate": {
-        "2026-08-02": {
-          "gained": 1,
-          "lost": 1
-        },
-        "2026-07-19": {
-          "gained": 1,
-          "lost": 0
         }
       },
       "TopHost Vacation Rentals": {
@@ -12730,36 +12991,18 @@
           "lost": 0
         }
       },
-      "Ocean Park Realty": {
-        "2026-07-26": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-06-28": {
-          "gained": 1,
-          "lost": 0
-        },
-        "2026-05-31": {
-          "gained": 1,
-          "lost": 0
-        },
-        "2026-04-27": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
       "Ocean Dreams Maine": {
         "2026-07-19": {
           "gained": 1,
-          "lost": 1
+          "lost": 0
         },
         "2026-05-15": {
           "gained": 1,
-          "lost": 1
+          "lost": 0
         },
         "2026-04-27": {
           "gained": 5,
-          "lost": 5
+          "lost": 0
         },
         "2026-04-26": {
           "gained": 1,
@@ -12838,12 +13081,6 @@
           "lost": 1
         }
       },
-      "Salt & Shine Vacation Rentals": {
-        "2026-06-28": {
-          "gained": 0,
-          "lost": 1
-        }
-      },
       "Seashore Property Management": {
         "2026-06-28": {
           "gained": 0,
@@ -12884,24 +13121,6 @@
         "2026-05-24": {
           "gained": 1,
           "lost": 0
-        },
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 0
-        }
-      },
-      "KPort Concierge": {
-        "2026-06-21": {
-          "gained": 0,
-          "lost": 1
-        },
-        "2026-05-31": {
-          "gained": 1,
-          "lost": 0
-        },
-        "2026-05-04": {
-          "gained": 1,
-          "lost": 1
         },
         "2026-04-12": {
           "gained": 1,
@@ -12975,22 +13194,32 @@
           "gained": 1,
           "lost": 0
         }
-      },
-      "Garnsey Brothers": {
-        "2026-04-12": {
-          "gained": 1,
-          "lost": 1
-        }
       }
     },
     "by_competitor_summary": {
+      "Garnsey Brothers": {
+        "gained": 2,
+        "lost": 1
+      },
+      "KPort Concierge": {
+        "gained": 4,
+        "lost": 2
+      },
+      "Salt & Shine Vacation Rentals": {
+        "gained": 1,
+        "lost": 1
+      },
+      "Sand Dollar Real Estate": {
+        "gained": 3,
+        "lost": 1
+      },
+      "Ocean Park Realty": {
+        "gained": 3,
+        "lost": 4
+      },
       "Evolve Vacation Rentals": {
         "gained": 11,
         "lost": 12
-      },
-      "Sand Dollar Real Estate": {
-        "gained": 2,
-        "lost": 1
       },
       "TopHost Vacation Rentals": {
         "gained": 2,
@@ -13004,13 +13233,9 @@
         "gained": 9,
         "lost": 4
       },
-      "Ocean Park Realty": {
-        "gained": 3,
-        "lost": 1
-      },
       "Ocean Dreams Maine": {
         "gained": 8,
-        "lost": 8
+        "lost": 1
       },
       "Bayley Vacation Rentals": {
         "gained": 3,
@@ -13036,10 +13261,6 @@
         "gained": 0,
         "lost": 1
       },
-      "Salt & Shine Vacation Rentals": {
-        "gained": 0,
-        "lost": 1
-      },
       "Seashore Property Management": {
         "gained": 1,
         "lost": 3
@@ -13051,10 +13272,6 @@
       "KMA Property Group": {
         "gained": 3,
         "lost": 0
-      },
-      "KPort Concierge": {
-        "gained": 3,
-        "lost": 2
       },
       "Saco Bay Rentals": {
         "gained": 3,
@@ -13071,14 +13288,10 @@
       "Kennebunk Beach Realty": {
         "gained": 4,
         "lost": 3
-      },
-      "Garnsey Brothers": {
-        "gained": 1,
-        "lost": 1
       }
     },
-    "total_gained": 168,
-    "total_lost": 113,
-    "total_renamed_hidden": 134
+    "total_gained": 172,
+    "total_lost": 109,
+    "total_renamed_hidden": 142
   }
 }
